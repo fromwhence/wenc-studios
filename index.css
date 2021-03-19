@@ -140,6 +140,11 @@ body.active::after {
   pointer-events: none;
 }
 
+/* Used fixed class to prevent scrolling when nav is open */
+.fixed {
+  position: fixed;
+}
+
 .nav {
   position: fixed;
   background-color: white;
@@ -147,7 +152,7 @@ body.active::after {
   border-left: 1px solid var(--clr-med-trans);
   top: 0;
   bottom: 0;
-  left: 40%;
+  left: 35%;
   right: 0;
   z-index: 100;
   transform: translateX(100%);
@@ -161,7 +166,7 @@ body.active::after {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 3.5rem 0 0;
+  margin: 3rem 0 0;
   padding: 0;
   z-index: 100;
 }

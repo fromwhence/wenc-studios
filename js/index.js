@@ -56,6 +56,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
   document.body.classList.toggle('active');
+  document.body.classList.toggle('fixed');
   navStickyBar.style.opacity = '0';
 });
 
@@ -63,6 +64,9 @@ navLinks.forEach(link => {
   link.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
     document.body.classList.toggle('active');
+    document.body.classList.toggle('fixed');
+    navStickyBar.style.opacity = '1';
+    // document.body.style.position = '';
   });
 });
 
