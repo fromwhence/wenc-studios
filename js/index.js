@@ -31,18 +31,15 @@ window.onscroll = () => {
   stickyNav();
 };
 
-// Get the navbar
+// Sticky nav hamburger and nav bar
 const navHamburger = document.querySelector('.nav-toggle');
-const navBar = document.querySelector('.nav-sticky-bar');
 const sticky = navHamburger.offsetTop;
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
 const stickyNav = () => {
   if (window.pageYOffset >= sticky) {
     navHamburger.classList.add('sticky');
-    navBar.classList.add('sticky-border');
   } else {
     navHamburger.classList.remove('sticky');
-    navBar.classList.remove('sticky-border');
   }
 };
 
