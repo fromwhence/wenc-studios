@@ -335,7 +335,8 @@ body.active::after {
   border: none;
   height: 0.9em;
   width: 0.9em;
-  /* margin: 0 0.875em; */
+  margin: 0 0.875em;
+  padding: 0;
   cursor: pointer;
   background: var(--clr-light-trans);
   border-radius: 50%;
