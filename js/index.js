@@ -33,13 +33,16 @@ window.onscroll = () => {
 
 // Sticky nav hamburger and nav bar
 const navHamburger = document.querySelector('.nav-toggle');
+const navStickyBar = document.querySelector('.nav-sticky-bar');
 const sticky = navHamburger.offsetTop;
 
 const stickyNav = () => {
   if (window.pageYOffset >= sticky) {
     navHamburger.classList.add('sticky');
+    navStickyBar.style.opacity = '1';
   } else {
     navHamburger.classList.remove('sticky');
+    navStickyBar.style.opacity = '0';
   }
 };
 
@@ -50,6 +53,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
   document.body.classList.toggle('active');
+  navStickyBar.style.opacity = '0';
 });
 
 navLinks.forEach(link => {

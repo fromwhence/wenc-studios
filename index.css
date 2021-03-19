@@ -204,9 +204,10 @@ body.active::after {
 .nav-sticky-bar {
   position: fixed;
   width: 100%;
-  height: 2.75rem;
+  height: 2.5rem;
   background-color: white;
   z-index: 1;
+  opacity: 0;
 }
 
 .nav-open .nav-sticky-bar {
