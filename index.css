@@ -367,12 +367,21 @@ body.active::after {
 
 .services,
 .rates,
+.schedule,
 .contact {
   padding: 3rem 1.75rem 2.5rem;
   border-top: 1px solid var(--clr-light-trans);
+  background: rgb(222, 222, 222);
+  background: linear-gradient(
+    0deg,
+    rgb(240, 240, 240) 0%,
+    rgba(255, 255, 255, 1) 55%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
-.rates {
+.rates,
+.contact {
   background: white;
 }
 
