@@ -333,10 +333,10 @@ body.active::after {
 
 .dots-dot {
   border: none;
-  height: 0.9em;
-  width: 0.9em;
-  margin: 0 0.875em;
-  padding: 0;
+  height: 1em;
+  width: 1em;
+  margin: 0 1em;
+  padding: 0.5em;
   cursor: pointer;
   background: var(--clr-light-trans);
   border-radius: 50%;
