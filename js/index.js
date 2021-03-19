@@ -27,20 +27,41 @@
 })(document, window);
 
 // Navigation hamburger
-
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav-link');
-const navModal = document.querySelector('.nav-modal');
 
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
-  navModal.classList.toggle('active');
+  document.body.classList.toggle('active');
 });
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
-    navModal.classList.toggle('active');
+    document.body.classList.toggle('active');
+  });
+});
+
+// Accordion tier examples
+const accordionLinks = document.querySelectorAll('.tier-example-link');
+
+accordionLinks.forEach(accordionLink => {
+  accordionLink.addEventListener('click', event => {
+    const activeAccordionLink = document.querySelector(
+      '.tier-example-link.active'
+    );
+    if (activeAccordionLink && activeAccordionLink !== accordionLink) {
+      activeAccordionLink.classList.remove('active');
+      activeAccordionLink.nextElementSibling.style.maxHeight = 0;
+    }
+    accordionLink.classList.toggle('active');
+    const accordionItemContent = accordionLink.nextElementSibling;
+    if (accordionLink.classList.contains('active')) {
+      accordionItemContent.style.maxHeight =
+        accordionItemContent.scrollHeight + 'px';
+    } else {
+      accordionItemContent.style.maxHeight = 0;
+    }
   });
 });
 
