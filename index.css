@@ -325,22 +325,22 @@ body.active::after {
 }
 
 .dots {
-  margin: 0.75rem auto 1.5rem;
+  margin: 0.625rem auto 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
 }
 
 .dots-dot {
   border: none;
-  height: 0.9rem;
-  width: 0.9rem;
-  margin: 0 0.75rem;
+  height: 0.9em;
+  width: 0.9em;
+  margin: 0 0.875em;
   cursor: pointer;
   background: var(--clr-light-trans);
   border-radius: 50%;
   transition: all 0.3s;
+  z-index: 1;
 }
 
 .dots-dot--active {
