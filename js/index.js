@@ -35,14 +35,17 @@ window.onscroll = () => {
 const navHamburger = document.querySelector('.nav-toggle');
 const navStickyBar = document.querySelector('.nav-sticky-bar');
 const sticky = navHamburger.offsetTop;
+console.log(sticky + 2);
 
 const stickyNav = () => {
   if (window.pageYOffset >= sticky) {
     navHamburger.classList.add('sticky');
     navStickyBar.style.opacity = '1';
+    navStickyBar.style.height = '2.25rem';
   } else {
     navHamburger.classList.remove('sticky');
     navStickyBar.style.opacity = '0';
+    navStickyBar.style.height = '0';
   }
 };
 
