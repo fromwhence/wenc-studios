@@ -26,6 +26,26 @@
   unfocus();
 })(document, window);
 
+// Sticky hamburger nav
+window.onscroll = () => {
+  stickyNav();
+};
+
+// Get the navbar
+const navHamburger = document.querySelector('.nav-toggle');
+const navBar = document.querySelector('.nav-sticky-bar');
+const sticky = navHamburger.offsetTop;
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+const stickyNav = () => {
+  if (window.pageYOffset >= sticky) {
+    navHamburger.classList.add('sticky');
+    navBar.classList.add('sticky-border');
+  } else {
+    navHamburger.classList.remove('sticky');
+    navBar.classList.remove('sticky-border');
+  }
+};
+
 // Navigation hamburger
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav-link');
