@@ -203,7 +203,7 @@ body.active::after {
 
 .sticky {
   position: fixed;
-  top: 0.675rem;
+  top: 0.75rem;
 }
 
 .nav-sticky-bar {
