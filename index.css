@@ -197,7 +197,6 @@ body.active::after {
 
 .sticky {
   position: fixed;
-  opacity: 0.4;
   top: 0.825rem;
 }
 
