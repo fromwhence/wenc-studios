@@ -50,23 +50,22 @@ const stickyNav = () => {
 };
 
 // Navigation hamburger
+const nav = document.querySelector('.nav');
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav-link');
 
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
   document.body.classList.toggle('active');
-  // document.body.classList.toggle('fixed');
-  navStickyBar.style.opacity = '0';
+  document.body.classList.toggle('no-scroll');
+  nav.classList.toggle('no-scroll');
 });
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
     document.body.classList.toggle('active');
-    // document.body.classList.toggle('fixed');
-    navStickyBar.style.opacity = '1';
-    // document.body.style.position = '';
+    nav.classList.toggle('no-scroll');
   });
 });
 

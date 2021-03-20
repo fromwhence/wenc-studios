@@ -52,6 +52,12 @@ body {
   background: white;
 }
 
+/* Prevent scroll when sidenav is open */
+.no-scroll {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -140,11 +146,6 @@ body.active::after {
   pointer-events: none;
 }
 
-/* Used fixed class to prevent scrolling when nav is open */
-/* .fixed {
-  position: fixed;
-} */
-
 .nav {
   position: fixed;
   background-color: white;
@@ -224,6 +225,10 @@ body.active::after {
 
 .nav-open .nav-sticky-bar {
   opacity: 0;
+}
+
+.nav-open .nav-toggle {
+  top: 1.5rem;
 }
 
 .nav-open .nav {
