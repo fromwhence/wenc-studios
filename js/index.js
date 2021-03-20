@@ -40,12 +40,12 @@ console.log(sticky);
 const stickyNav = () => {
   if (window.pageYOffset >= sticky) {
     navHamburger.classList.add('sticky');
-    navStickyBar.style.opacity = '1';
     navStickyBar.style.height = '3rem';
+    navStickyBar.style.opacity = '1';
   } else {
     navHamburger.classList.remove('sticky');
-    navStickyBar.style.opacity = '0';
     navStickyBar.style.height = '0';
+    navStickyBar.style.opacity = '0';
   }
 };
 
@@ -57,12 +57,14 @@ const navLinks = document.querySelectorAll('.nav-link');
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
   document.body.classList.toggle('active');
+  navStickyBar.classList.toggle('hide');
 });
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
     document.body.classList.toggle('active');
+    navStickyBar.classList.toggle('hide');
   });
 });
 
