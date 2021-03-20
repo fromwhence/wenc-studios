@@ -141,9 +141,9 @@ body.active::after {
 }
 
 /* Used fixed class to prevent scrolling when nav is open */
-.fixed {
+/* .fixed {
   position: fixed;
-}
+} */
 
 .nav {
   position: fixed;
@@ -193,7 +193,7 @@ body.active::after {
   background: transparent;
   border: none;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 1.25rem;
   top: 1.5rem;
   z-index: 1000;
@@ -203,7 +203,7 @@ body.active::after {
 
 .sticky {
   position: fixed;
-  top: 0.75rem;
+  top: 1rem;
 }
 
 .nav-sticky-bar {
@@ -234,7 +234,7 @@ body.active::after {
 .hamburger::before,
 .hamburger::after {
   background: var(--clr-med);
-  width: 2em;
+  width: 2.25em;
   height: 3px;
   border-radius: 1em;
   transition: transform 200ms;
@@ -249,10 +249,10 @@ body.active::after {
 }
 
 .hamburger::before {
-  top: 6px;
+  top: 7px;
 }
 .hamburger::after {
-  bottom: 6px;
+  bottom: 7px;
 }
 
 .nav-open .hamburger,
@@ -276,7 +276,7 @@ body.active::after {
 }
 
 .nav-open .hamburger::before {
-  transform: rotate(90deg) translateX(-6px);
+  transform: rotate(90deg) translateX(-7px);
 }
 
 .nav-open .hamburger::after {
