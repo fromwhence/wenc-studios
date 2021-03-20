@@ -184,22 +184,25 @@ body.active::after {
 }
 
 .nav-toggle {
-  padding: 0.5rem 0.25rem;
+  padding: 1rem 0.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
   position: fixed;
-  right: 1.25rem;
-  top: 1.5rem;
+  right: 1.2rem;
+  top: 1rem;
   z-index: 1000;
   opacity: 1;
+  border: 1px solid transparent;
   transition: opacity 500ms;
 }
 
 .sticky {
   position: fixed;
-  top: 1rem;
-  opacity: 0.5;
+  top: 0.75rem;
+  opacity: 0.6;
+  background: white;
+  border: 1px solid var(--clr-light-trans);
 }
 
 .nav-sticky-bar {
@@ -225,8 +228,9 @@ body.active::after {
 }
 
 .nav-open .nav-toggle {
-  top: 1.5rem;
+  top: 1.25rem;
   opacity: 1;
+  border: 1px solid transparent;
 }
 
 .nav-open .nav {
@@ -252,10 +256,10 @@ body.active::after {
 }
 
 .hamburger::before {
-  top: 6px;
+  top: 7px;
 }
 .hamburger::after {
-  bottom: 6px;
+  bottom: 7px;
 }
 
 .nav-open .hamburger,
@@ -279,7 +283,7 @@ body.active::after {
 }
 
 .nav-open .hamburger::before {
-  transform: rotate(90deg) translateX(-6px);
+  transform: rotate(90deg) translateX(-7px);
 }
 
 .nav-open .hamburger::after {
