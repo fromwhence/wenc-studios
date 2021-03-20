@@ -200,7 +200,7 @@ body.active::after {
 .sticky {
   position: fixed;
   top: 0.75rem;
-  opacity: 0.6;
+  opacity: 0.675;
   background: white;
   border: 1px solid var(--clr-light-trans);
 }
