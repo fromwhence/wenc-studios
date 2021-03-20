@@ -249,7 +249,7 @@ body.active::after {
 .hamburger::before,
 .hamburger::after {
   background: var(--clr-med);
-  width: 2.25em;
+  width: 2.5em;
   height: 3px;
   border-radius: 1em;
   transition: transform 200ms;
@@ -264,10 +264,10 @@ body.active::after {
 }
 
 .hamburger::before {
-  top: 8px;
+  top: 6px;
 }
 .hamburger::after {
-  bottom: 8px;
+  bottom: 6px;
 }
 
 .nav-open .hamburger,
@@ -291,7 +291,7 @@ body.active::after {
 }
 
 .nav-open .hamburger::before {
-  transform: rotate(90deg) translateX(-8px);
+  transform: rotate(90deg) translateX(-6px);
 }
 
 .nav-open .hamburger::after {

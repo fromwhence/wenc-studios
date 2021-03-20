@@ -41,7 +41,7 @@ const stickyNav = () => {
   if (window.pageYOffset >= sticky) {
     navHamburger.classList.add('sticky');
     navStickyBar.style.opacity = '1';
-    navStickyBar.style.height = '2.75rem';
+    navStickyBar.style.height = '2.5rem';
   } else {
     navHamburger.classList.remove('sticky');
     navStickyBar.style.opacity = '0';
