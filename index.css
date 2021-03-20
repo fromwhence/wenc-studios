@@ -122,7 +122,7 @@ button {
 }
 
 .tagline {
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -333,7 +333,6 @@ body.active::after {
 
 .slide-small:after {
   content: 'text';
-  color: red;
   position: absolute;
   bottom: 0;
 }
