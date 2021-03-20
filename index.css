@@ -52,12 +52,6 @@ body {
   background: white;
 }
 
-/* Prevent scroll when sidenav is open */
-.no-scroll {
-  height: 100%;
-  overflow-y: hidden;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -230,10 +224,6 @@ body.active::after {
   background-color: white;
   /* border-bottom: 1px solid var(--clr-light-trans); */
   z-index: 1;
-  opacity: 0;
-}
-
-.nav-open .nav-sticky-bar {
   opacity: 0;
 }
 
