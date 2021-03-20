@@ -35,7 +35,7 @@ window.onscroll = () => {
 const navHamburger = document.querySelector('.nav-toggle');
 const navStickyBar = document.querySelector('.nav-sticky-bar');
 const sticky = navHamburger.offsetTop;
-console.log(sticky + 5);
+console.log(sticky + 5 + 'px');
 
 const stickyNav = () => {
   if (window.pageYOffset >= sticky) {

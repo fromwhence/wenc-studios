@@ -204,10 +204,10 @@ body.active::after {
 
 .sticky {
   position: fixed;
-  top: 1rem;
+  top: 0.875rem;
 }
 
-.nav-sticky-bar {
+/* .nav-sticky-bar {
   position: fixed;
   width: 100%;
   height: 0;
@@ -219,6 +219,16 @@ body.active::after {
     rgba(255, 255, 255, 0.75) 45%,
     rgba(255, 255, 255, 1) 100%
   );
+  z-index: 1;
+  opacity: 0;
+} */
+
+.nav-sticky-bar {
+  position: fixed;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  /* border-bottom: 1px solid var(--clr-light-trans); */
   z-index: 1;
   opacity: 0;
 }
@@ -254,10 +264,10 @@ body.active::after {
 }
 
 .hamburger::before {
-  top: 7px;
+  top: 8px;
 }
 .hamburger::after {
-  bottom: 7px;
+  bottom: 8px;
 }
 
 .nav-open .hamburger,
@@ -281,7 +291,7 @@ body.active::after {
 }
 
 .nav-open .hamburger::before {
-  transform: rotate(90deg) translateX(-7px);
+  transform: rotate(90deg) translateX(-8px);
 }
 
 .nav-open .hamburger::after {
