@@ -93,6 +93,11 @@ li {
   font-size: var(--fs-small);
   line-height: 1.75;
   padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+li::marker {
+  color: var(--clr-med);
 }
 
 strong {
@@ -200,7 +205,7 @@ body.active::after {
 .sticky {
   position: fixed;
   top: 0.75rem;
-  opacity: 0.675;
+  opacity: 0.75;
   background: white;
   border: 1px solid var(--clr-light-trans);
 }
@@ -411,13 +416,17 @@ body.active::after {
 .contact {
   padding: 2.5rem 1.75rem 2.5rem;
   border-top: 1px solid var(--clr-light-trans);
-  background: rgb(222, 222, 222);
+  background: white;
   background: linear-gradient(
     0deg,
     rgb(240, 240, 240) 0%,
     rgba(255, 255, 255, 1) 55%,
     rgba(255, 255, 255, 1) 100%
   );
+}
+
+.rates {
+  background: white;
 }
 
 .section-header {
