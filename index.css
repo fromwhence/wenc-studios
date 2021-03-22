@@ -114,7 +114,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2.25rem 0 1.5rem;
+  padding: 2.275rem 0 1.5rem;
   margin: 0 1.75rem;
   border-bottom: 1px solid var(--clr-light-trans);
 }
@@ -127,7 +127,7 @@ button {
 
 .tagline {
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -141,8 +141,23 @@ button {
   }
 }
 
+@media (min-width: 1200px) {
+  .header {
+    display: none;
+  }
+  .business-name-container {
+    position: fixed;
+  }
+}
+
 /* Nav menu */
 /* Background overlay */
+
+/* Fixed left side nav only for screens 1200px and wide */
+.side-nav {
+  display: none;
+}
+
 body.active::after {
   content: '';
   position: fixed;
@@ -169,20 +184,32 @@ body.active::after {
   transition: transform 300ms ease-out;
 }
 
-.nav-list {
+.nav-list,
+.side-nav-list {
   list-style: none;
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 3rem 0 0;
+  margin: 2.75rem 0 0;
   padding: 0;
   z-index: 100;
 }
 
-.nav-item {
+.side-nav-list {
+  position: fixed;
+  align-items: flex-start;
+  margin: 5rem 0 0;
+}
+
+.nav-item,
+.side-nav-item {
   margin-top: 2.75rem;
+}
+
+.side-nav-item {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -194,11 +221,25 @@ body.active::after {
   }
 }
 
-.nav-link {
+.nav-link,
+.side-nav-link {
   color: var(--clr-reg);
-  text-decoration: none;
   font-weight: var(--fw-reg);
   font-size: var(--fs-h4);
+  text-decoration: none;
+}
+
+.side-nav-link {
+  display: inline-block;
+  width: 100%;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--clr-light-trans);
+}
+
+.side-nav-link:hover {
+  color: black;
+  border-bottom: 1px solid var(--clr-dark);
 }
 
 .nav-toggle {
@@ -235,7 +276,7 @@ body.active::after {
 
 .nav-open .nav {
   transform: translateX(0);
-  box-shadow: -7px 0px 7px 0px var(--clr-med-trans);
+  /* box-shadow: -7px 0px 7px 0px rgba(50, 50, 50, 0.1); */
 }
 
 .hamburger,
@@ -306,6 +347,31 @@ body.active::after {
   }
   .nav-open .nav-toggle {
     top: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* Side nav for screens >= 1200px */
+@media (min-width: 1200px) {
+  .large-screen-container {
+    width: 100%;
+    display: flex;
+  }
+  .side-nav-container {
+    width: 310px;
+  }
+  .side-nav {
+    display: block;
+    width: inherit;
+    height: 100%;
+    padding: 2rem 1.5rem;
+    border-right: 1px solid var(--clr-light-trans);
+    background-color: var(--clr-light);
   }
 }
 
@@ -463,6 +529,16 @@ body.active::after {
   }
 }
 
+@media (min-width: 1200px) {
+  .services,
+  .rates,
+  .schedule,
+  .faq,
+  .contact {
+    padding: 3.25rem 4.25rem;
+  }
+}
+
 .about,
 .rates {
   background: white;
@@ -501,6 +577,12 @@ body.active::after {
 .section-image {
   margin: 1.25rem auto 1rem;
   border: 1px solid var(--clr-light-trans);
+}
+
+@media (min-width: 1200px) {
+  .section-header {
+    font-size: 1.725rem;
+  }
 }
 
 /* Rates */

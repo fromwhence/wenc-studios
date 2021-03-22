@@ -28,7 +28,7 @@ const slider = function () {
 
   // Resize carsousel based on slide image height
   const resizeSliderHeight = function () {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 2000) {
       slidesSmall.forEach(image => {
         image.classList.remove('is-hidden');
       });
