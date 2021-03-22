@@ -494,8 +494,9 @@ ul.tier-list {
 
 .tier-example-link {
   position: relative;
+  color: var(--clr-dark);
   padding: 0.875rem 0;
-  margin-left: 30%;
+  /* margin: 0 auto; */
   cursor: pointer;
 }
 
