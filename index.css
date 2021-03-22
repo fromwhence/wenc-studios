@@ -469,22 +469,15 @@ body.active::after {
   flex-wrap: nowrap;
 }
 
-ul.tier-list {
-  width: 70%;
-  /* list-style-type: none; */
-  list-style-position: inside;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--clr-light-trans);
-}
-
 ul.file-format-list {
   padding: 0.5rem 0 1rem 1.25rem;
 }
 
-.file-format-list li {
-  font-size: var(--fs-smaller);
-  line-height: 1.75;
-  padding-bottom: 0.5rem;
+ul.tier-list {
+  width: 72.5%;
+  list-style-type: none;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--clr-light-trans);
 }
 
 .no-bullet {
