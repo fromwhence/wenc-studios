@@ -15,23 +15,14 @@ ol[class] {
 }
 
 :root {
-  --clr-reg: #303030;
-  --clr-dark: hsl(0, 0%, 45%);
-  --clr-med: hsl(0, 0%, 56%);
-  --clr-med-trans: hsla(0, 0%, 56%, 0.5);
-  --clr-light-trans: hsla(0, 0%, 56%, 0.3);
   --clr-light: #f7f7f7;
-  /* New color scheme*/
-  --clr-light-new: hsla(0, 0%, 56%, 1);
-  --clr-lighter-new: rgb(180, 180, 180);
-  --clr-med-new: hsl(0, 0%, 75%);
-  /* Side nav */
   --clr-light-wide: #f2f3f3;
-  --clr-med-dark-new: #656c6d;
-  --clr-header-med: #879396;
-  --clr-header-wide: #778285;
-  --clr-reg-new: #414242;
-  --clr-dark-new: #495050;
+  --clr-med-new: hsl(0, 0%, 79%);
+  --clr-med-light: #c2c5c5;
+  --clr-med-dark-new: #686d6d;
+  --clr-header-med: #8a9597;
+  --clr-header-wide: #7b8183;
+  --clr-reg-new: #383838;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
@@ -60,14 +51,8 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: var(--clr-reg);
+  color: var(--clr-reg-new);
   background: white;
-}
-
-@media (min-width: 1200px) {
-  body {
-    color: var(--clr-reg-new);
-  }
 }
 
 img {
@@ -130,7 +115,7 @@ li::marker {
 }
 
 strong {
-  color: var(--clr-header-wide);
+  color: var(--clr-header-med);
   background-color: transparent;
 }
 
@@ -154,7 +139,7 @@ button {
   justify-content: space-between;
   padding: 2.325rem 0 1.5rem;
   margin: 0 1.75rem;
-  border-bottom: 1px solid var(--clr-med-trans);
+  border-bottom: 1px solid var(--clr-med-light);
 }
 
 .business-name {
@@ -194,7 +179,7 @@ body.active::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--clr-med-trans);
+  background-color: var(--clr-med-new);
   opacity: 0.8;
   pointer-events: none;
 }
@@ -210,7 +195,7 @@ body.active::after {
   position: fixed;
   background-color: white;
   color: var(--clr-reg);
-  border-left: 1px solid var(--clr-med-trans);
+  border-left: 1px solid var(--clr-med-new);
   top: 0;
   bottom: 0;
   left: 35%;
@@ -280,7 +265,7 @@ body.active::after {
   top: 1rem;
   opacity: 0.75;
   background: white;
-  border: 1px solid var(--clr-med-trans);
+  border: 1px solid var(--clr-med-light);
 }
 
 .nav-open .nav-toggle {
@@ -291,13 +276,12 @@ body.active::after {
 
 .nav-open .nav {
   transform: translateX(0);
-  /* box-shadow: -7px 0px 7px 0px rgba(50, 50, 50, 0.1); */
 }
 
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-med);
+  background: var(--clr-header-med);
   width: 2.5em;
   height: 3px;
   border-radius: 1em;
@@ -322,11 +306,11 @@ body.active::after {
 .nav-open .hamburger,
 .nav-open .hamburger::before,
 .nav-open .hamburger::after {
-  background: var(--clr-med);
+  background: var(--clr-header-med);
 }
 
 .nav-open .nav-toggle.sticky .hamburger {
-  background-color: var(--clr-med);
+  background-color: var(--clr-header-med);
   opacity: 1;
 }
 
@@ -445,21 +429,21 @@ body.active::after {
     width: 100%;
     padding-left: 1.925rem;
     padding-bottom: 0.5rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: var(--fw-reg);
     font-size: var(--fs-h4);
-    border-bottom: 1px solid var(--clr-light-new);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .side-nav-link:hover {
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
     transition: all 300ms;
   }
 
   .side-nav-link.active {
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
   }
 
   .main-content {
@@ -496,7 +480,7 @@ body.active::after {
 
 @media (min-width: 1400px) {
   .about-header {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 }
 
@@ -508,7 +492,7 @@ body.active::after {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  /* border: 1px solid var(--clr-med-trans); */
+  /* border: 1px solid var(--clr-med-light); */
 }
 
 .slide {
@@ -664,7 +648,6 @@ body.active::after {
     left: 0;
     margin-top: 0;
     background: white;
-    border: 1px solid var(--clr-light);
   }
 
   .slider-container.expand .slider {
@@ -738,7 +721,7 @@ body.active::after {
 .section-container {
   width: 100%;
   height: auto;
-  border-top: 1px solid var(--clr-med-trans);
+  border-top: 1px solid var(--clr-med-light);
 }
 
 .section-container.no-border {
@@ -819,7 +802,7 @@ body.active::after {
   padding-bottom: 1.375rem;
   color: var(--clr-header-wide);
   text-transform: uppercase;
-  border-bottom: 1px solid var(--clr-med-trans);
+  border-bottom: 1px solid var(--clr-med-light);
 }
 
 .section-subheader {
@@ -829,11 +812,6 @@ body.active::after {
 
 .section-paragraph {
   padding-bottom: 0.875rem;
-}
-
-.section-image {
-  margin: 1.25rem auto 1rem;
-  border: 1px solid var(--clr-med-trans);
 }
 
 @media (min-width: 1200px) {
@@ -871,8 +849,6 @@ body.active::after {
     margin-left: 0rem;
     padding-left: 1.5rem;
   }
-
-
 }
 
 @media (min-width: 1500px) {
@@ -881,17 +857,47 @@ body.active::after {
   }
 }
 
+/* Services section */
+.studio-image {
+  margin: 1.25rem auto 1rem;
+  border: 1px solid var(--clr-med-light);
+}
+
+/* Services text to left, image to right at wider screens */
+
+@media (min-width: 1350px) {
+  .studio-image {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+  
+}
+
+@media (min-width: 1500px) {
+  .text-side-image-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .studio-image {
+    margin: 0;
+    margin-top: -2rem;
+    border: 1px solid var(--clr-med-light);
+  }
+}
+
 /* Rates */
 .tier-description {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-top: 1px solid var(--clr-med-trans);
+  border-top: 1px solid var(--clr-med-light);
   padding: 1.5rem 0 0;
 }
 
 .last {
-  border-bottom: 1px solid var(--clr-med-trans);
+  border-bottom: 1px solid var(--clr-med-light);
 }
 
 .tier-subheader {
@@ -918,13 +924,13 @@ ul.tier-list {
   width: 70%;
   list-style-type: none;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--clr-med-trans);
+  border-bottom: 1px solid var(--clr-med-light);
 }
 
 /* Tier Pricing */
 .bold-item {
   font-weight: 600;
-  color: var(--clr-dark);
+  color: var(--clr-reg-new);
   font-size: var(--fs-reg);
   padding-bottom: 0.75rem;
 }
