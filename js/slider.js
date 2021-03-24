@@ -10,8 +10,8 @@ const slider = function () {
 
   const slideWidth = slides[0].getBoundingClientRect().width;
   const slideHeight = slides[0].getBoundingClientRect().height;
-  const slidesSmall = document.querySelectorAll('.slide-small');
-  const slidesLarge = document.querySelectorAll('.slide-large');
+  console.log(slideWidth, slideHeight);
+  const slideImage = document.querySelectorAll('.slide-image');
 
   let curSlide = 0;
   const maxSlide = slides.length;
@@ -28,26 +28,36 @@ const slider = function () {
 
   // Resize carsousel based on slide image height
   const resizeSliderHeight = function () {
-    if (window.innerWidth < 2000) {
-      slidesSmall.forEach(image => {
-        image.classList.remove('is-hidden');
-      });
-      slidesLarge.forEach(image => {
-        image.classList.add('is-hidden');
-      });
-      let imageHeight = slidesSmall[0].height;
-      slider.style.height = `${imageHeight + 30}px`;
+    if (window.innerWidth < 1200) {
+      let imageHeight = slideImage[0].height;
+      slider.style.height = `${imageHeight + 35}px`;
     } else {
-      slidesSmall.forEach(image => {
-        image.classList.add('is-hidden');
-      });
-      slidesLarge.forEach(image => {
-        image.classList.remove('is-hidden');
-      });
-      let imageHeight = slidesLarge[0].height;
-      slider.style.height = `${imageHeight}px`;
+      let imageHeight = slideImage[0].height;
+      slider.style.height = `${imageHeight + 35}px`;
     }
   };
+
+  // Full screen slider
+  const expandIcon = document.querySelector('.expand-slider');
+  const closeExpandedSlider = document.querySelector('.close-expanded-slider');
+  const sliderContainer = document.querySelector('.slider-container');
+
+  expandIcon.addEventListener('click', () => {
+    document.body.classList.add('active');
+    sliderContainer.classList.add('expand');
+    resizeSliderHeight();
+  });
+
+  closeExpandedSlider.addEventListener('click', () => {
+    sliderContainer.classList.remove('expand');
+    document.body.classList.remove('active');
+    resizeSliderHeight();
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  });
 
   window.addEventListener('load', resizeSliderHeight);
   window.addEventListener('resize', resizeSliderHeight);

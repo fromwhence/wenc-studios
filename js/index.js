@@ -34,7 +34,6 @@ window.onscroll = () => {
 // Sticky nav hamburger and nav bar
 const navHamburger = document.querySelector('.nav-toggle');
 const sticky = navHamburger.offsetTop;
-console.log(sticky);
 
 const stickyNav = () => {
   if (window.pageYOffset >= sticky) {
@@ -60,6 +59,37 @@ navLinks.forEach(link => {
     document.body.classList.toggle('active');
   });
 });
+
+// Side nav active assignment
+const sideNavLinks = document.querySelectorAll('.side-nav-link');
+
+sideNavLinks.forEach(sideNavLink => {
+  sideNavLink.addEventListener('click', event => {
+    const activeSideNavLink = document.querySelector('.side-nav-link.active');
+    if (activeSideNavLink && activeSideNavLink !== sideNavLink) {
+      activeSideNavLink.classList.remove('active');
+    }
+    sideNavLink.classList.toggle('active');
+  });
+});
+
+// Intersection nav active assignment
+const sectionAbout = document.querySelector('.section-container--about');
+
+const options = {
+  root: null,
+  threshold: 0.25,
+  rootMargin: '0px',
+};
+
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(entry => {
+    console.log(entry);
+  }),
+    options;
+});
+
+observer.observe(sectionAbout);
 
 // Accordion tier examples
 const accordionLinks = document.querySelectorAll('.tier-example-link');

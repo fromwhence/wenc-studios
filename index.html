@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Wenc Studios - Artwork Photography Specialists</title>
+    <title>Wenc Photo - Artwork Photography Specialists</title>
     <meta
       name="description"
       content="Wenc Studios - Artwork Photography Specialists"
@@ -44,8 +44,10 @@
       <div class="side-nav-container">
         <nav class="side-nav">
           <div class="business-name-container">
-            <h1 class="business-name"><strong>wenc</strong> photo</h1>
-            <p class="tagline">art documentation specialists</p>
+            <a href="#top" class="business-name-link">
+              <h1 class="business-name"><strong>wenc</strong> photo</h1>
+              <p class="tagline">art documentation specialists</p>
+            </a>
           </div>
           <ul class="side-nav-list">
             <li class="side-nav-item">
@@ -81,15 +83,15 @@
           </div>
         </footer>
       </div>
-      <main class="main-content overlay">
+      <main class="main-content">
         <header class="header">
           <div class="business-name-container">
             <h1 class="business-name"><strong>wenc</strong> photo</h1>
             <p class="tagline">art documentation specialists</p>
           </div>
         </header>
-        <div class="section-container no-border">
-          <section id="about" class="about">
+        <div class="id="about" section-container section-container--about no-border">
+          <section class="about">
             <h2 class="section-header about-header">About</h2>
             <p class="about-text about-text-hide section-paragraph">
               <b>Wenc Photo</b> is a Chicago-based service, specializing in the
@@ -99,39 +101,56 @@
             <div class="slider-side-text-container">
               <!-- Slider -->
               <div class="slider-container">
+                <div class="close-expanded-slider active">
+                  <ion-icon
+                    name="close-outline"
+                    class="close-icon"
+                    aria-label="close expanded image slider"
+                  ></ion-icon>
+                </div>
                 <div class="slider">
                   <div class="slide">
                     <img
                       src="./images/kmwenc-latitude-ds-wencphoto.jpg"
                       alt="abstract painting"
-                      class="slide-small"
+                      class="slide-image"
                     />
-                    <!-- <img src="" alt="abstract painting" class="slide-large" /> -->
                     <p class="artist-title">Artist Name, 'Artwork Title'</p>
                   </div>
                   <div class="slide">
                     <img
                       src="./images/kmwenc-flow-ds-wencphoto.jpg"
                       alt="abstract painting"
-                      class="slide-small"
+                      class="slide-image"
                     />
-                    <!-- <img src="" alt="abstract painting" class="slide-large" /> -->
                     <p class="artist-title">Artist Name, 'Artwork Title'</p>
                   </div>
                   <div class="slide">
                     <img
                       src="./images/kmwenc-unbound-liberty-ds-wencphoto.jpg"
                       alt="abstract painting"
-                      class="slide-small"
+                      class="slide-image"
                     />
-                    <!-- <img src="" alt="abstract painting" class="slide-large" /> -->
                     <p class="artist-title">Artist Name, 'Artwork Title'</p>
                   </div>
+                  <div class="expand-slider">
+                    <ion-icon
+                      name="expand-outline"
+                      class="expand-outline"
+                    ></ion-icon>
+                    <p class="expand-text">Enlarge</p>
+                  </div>
                   <button class="slider-btn slider-btn--left">
-                    <ion-icon name="chevron-back-outline"></ion-icon>
+                    <ion-icon
+                      name="chevron-back-outline"
+                      aria-label="previous button"
+                    ></ion-icon>
                   </button>
                   <button class="slider-btn slider-btn--right">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      aria-label="next button"
+                    ></ion-icon>
                   </button>
                 </div>
                 <div class="dots"></div>
@@ -146,9 +165,7 @@
                 </p>
                 <p class="about-text section-paragraph hide">
                   <b>Wenc Photo</b> is a Chicago-based service, specializing in
-                  the photography of artwork for artists and galleries. The
-                  following images are examples of our clients artwork that we
-                  documented.
+                  the photography of artwork for artists and galleries.
                 </p>
                 <p class="about-text section-paragraph">
                   In today's digitally-driven art world, having accurate,
@@ -159,14 +176,16 @@
                 </p>
                 <p class="about-text section-paragraph">
                   We're dedicated to fulfilling these photographic needs and
-                  look forward to collaborating with you.
+                  look forward to collaborating with you. In addition, the
+                  images we capture are ideal for print reproduction and
+                  archival purposes.
                 </p>
               </div>
             </div>
           </section>
         </div>
-        <div class="section-container bg">
-          <section id="services" class="services">
+        <div id="services" class="section-container bg">
+          <section class="services">
             <h2 class="section-header">What we do</h2>
             <h3 class="section-subheader">Our studio or on location</h3>
             <p class="section-paragraph">
@@ -219,8 +238,8 @@
             </p>
           </section>
         </div>
-        <div class="section-container">
-          <section id="rates" class="rates">
+        <div id="rates" class="section-container">
+          <section class="rates">
             <h2 class="section-header">Rates</h2>
             <br />
             <p class="section-paragraph">
@@ -332,15 +351,15 @@
             </p>
           </section>
         </div>
-        <div class="section-container bg">
-          <section id="schedule" class="schedule">
+        <div id="schedule" class="section-container bg">
+          <section class="schedule">
             <h2 class="section-header">Schedule Photoshoot</h2>
             <br />
             <p class="section-paragraph">Insert text here</p>
           </section>
         </div>
-        <div class="section-container">
-          <section id="contact" class="contact">
+        <div id="contact" class="section-container">
+          <section class="contact">
             <h2 class="section-header">Contact</h2>
             <br />
             <p class="section-paragraph">Insert text here</p>
