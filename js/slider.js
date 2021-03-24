@@ -10,7 +10,6 @@ const slider = function () {
 
   const slideWidth = slides[0].getBoundingClientRect().width;
   const slideHeight = slides[0].getBoundingClientRect().height;
-  console.log(slideWidth, slideHeight);
   const slideImage = document.querySelectorAll('.slide-image');
 
   let curSlide = 0;
@@ -43,14 +42,12 @@ const slider = function () {
   const sliderContainer = document.querySelector('.slider-container');
 
   expandIcon.addEventListener('click', () => {
-    document.body.classList.add('active');
     sliderContainer.classList.add('expand');
     resizeSliderHeight();
   });
 
   closeExpandedSlider.addEventListener('click', () => {
     sliderContainer.classList.remove('expand');
-    document.body.classList.remove('active');
     resizeSliderHeight();
     window.scrollTo({
       top: 0,

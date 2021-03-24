@@ -74,22 +74,22 @@ sideNavLinks.forEach(sideNavLink => {
 });
 
 // Intersection nav active assignment
-const sectionAbout = document.querySelector('.section-container--about');
+const sections = document.querySelectorAll('.section-container');
+console.log(sections);
 
 const options = {
   root: null,
-  threshold: 0.25,
-  rootMargin: '0px',
+  threshold: 0.5,
+  rootMargin: 0,
 };
 
 const observer = new IntersectionObserver(function (entries, observer) {
-  entries.forEach(entry => {
-    console.log(entry);
-  }),
-    options;
+  entries.forEach(entry => {}), options;
 });
 
-observer.observe(sectionAbout);
+sections.forEach(section => {
+  observer.observe(section);
+});
 
 // Accordion tier examples
 const accordionLinks = document.querySelectorAll('.tier-example-link');
