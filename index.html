@@ -68,19 +68,17 @@
           </ul>
         </nav>
         <footer class="side-nav-footer">
-          <div class="footer-content">
-            <span class="footer-text">Wenc Photo &#169;</span>
-            <a href="tel:+1-773-220-3278" class="footer-link">773-220-3278</a>
-            <a href="mailto:wenc.matt@gmail.com" class="footer-link"
-              >info@wencphoto.com</a
-            >
-            <a
-              href="https://www.instagram.com/mattywenc/"
-              target="_blank"
-              class="footer-link"
-              ><ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
-            </a>
-          </div>
+          <span class="footer-text">Wenc Photo &#169;</span>
+          <a href="tel:+1-773-220-3278" class="footer-link">773-220-3278</a>
+          <a href="mailto:wenc.matt@gmail.com" class="footer-link"
+            >info@wencphoto.com</a
+          >
+          <a
+            href="https://www.instagram.com/mattywenc/"
+            target="_blank"
+            class="footer-link"
+            ><ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
+          </a>
         </footer>
       </div>
       <main class="main-content">
@@ -192,19 +190,19 @@
             <h2 class="section-header">What we do</h2>
             <h3 class="section-subheader">Our studio or on location</h3>
             <div class="text-side-image-container">
-              <img
+              <!-- <img
                 class="studio-image"
                 src="images/tethered_placeholder-imager.jpg"
                 alt="tethered photography setup"
-              />
+              /> -->
               <div class="services-side-text">
-                <p class="section-paragraph indent">
+                <p class="section-paragraph">
                   Artists have the option to schedule sessions at our studio or
                   theirs. When scheduling we can determine which location will
                   work best for the client and yield optimum results.
                 </p>
                 <h3 class="section-subheader">Equipment & Process</h3>
-                <ul>
+                <ul class="services-list">
                   <li>
                     Nikon Z 7 45.7 megapixel camera with exceptionally sharp
                     Nikon Z prime lenses.
@@ -224,9 +222,14 @@
                   </li>
                 </ul>
               </div>
+              <img
+                class="studio-image"
+                src="images/tethered_placeholder-imager.jpg"
+                alt="tethered photography setup"
+              />
             </div>
             <div class="side-by-side-text">
-              <div class="text-container text-margin-right">
+              <div class="text-container">
                 <h3 class="section-subheader">Collaborate</h3>
                 <p class="section-paragraph">
                   The artist or gallerist should be present during the
@@ -257,22 +260,26 @@
           <section class="rates">
             <h2 class="section-header">Rates</h2>
             <br />
-            <p class="section-paragraph">
-              We provide three tiers of service to best meet our clients diverse
-              needs.
-            </p>
-            <p class="section-paragraph">
-              All options include the delivery of your artwork in following file
-              formats and associated color space:
-            </p>
-            <ul class="file-format-list">
-              <li>High resolution TIFF (ProPhoto RGB)</li>
-              <li>High resolution JPG (sRGB)</li>
-              <li>Web friendly JPG (sRGB)</li>
-            </ul>
-            <p class="section-paragraph">
-              Additional file formats are available upon request.
-            </p>
+            <div class="file-format-text-container">
+              <div class="file-format-text">
+                <p class="section-paragraph">
+                  We provide three tiers of service to best meet our clients
+                  diverse needs. All options include the delivery of your
+                  artwork in following file formats with associated color space.
+                </p>
+                <p class="section-paragraph--wide">
+                  Additional file formats are available upon request.
+                </p>
+              </div>
+              <ul class="file-format-list">
+                <li>High resolution TIFF (ProPhoto RGB)</li>
+                <li>High resolution JPG (sRGB)</li>
+                <li>Web friendly JPG (sRGB)</li>
+              </ul>
+              <p class="section-paragraph--hide">
+                Additional file formats are available upon request.
+              </p>
+            </div>
             <br />
             <div class="tier-description-container">
               <div class="tier-description">
@@ -283,6 +290,14 @@
                   <li>3-D artwork is documented from one direction.</li>
                   <li>3 files received for each artwork.</li>
                 </ul>
+                <div class="tier-example-container--wide">
+                  <div class="tier-example-artwork-content">
+                    <img
+                      src="images/kmwenc-flow-crop.jpg"
+                      alt="abstract painting"
+                    />
+                  </div>
+                </div>
               </div>
               <div class="tier-example-container">
                 <p class="tier-example-link">Sample</p>
@@ -310,6 +325,14 @@
                   <li>3-D artwork is documented from additional direction.</li>
                   <li>6 files received for each artwork.</li>
                 </ul>
+                <div class="tier-example-container--wide">
+                  <div class="tier-example-artwork-content">
+                    <img
+                      src="images/kmwenc-flow-crop.jpg"
+                      alt="abstract painting"
+                    />
+                  </div>
+                </div>
               </div>
               <div class="tier-example-container">
                 <p class="tier-example-link">Sample</p>
@@ -336,6 +359,14 @@
                   </li>
                   <li>9 files received for each artwork.</li>
                 </ul>
+                <div class="tier-example-container--wide">
+                  <div class="tier-example-artwork-content">
+                    <img
+                      src="images/kmwenc-flow-crop.jpg"
+                      alt="abstract painting"
+                    />
+                  </div>
+                </div>
               </div>
               <div class="tier-example-container">
                 <p class="tier-example-link">Sample</p>
@@ -354,15 +385,18 @@
               For in artist studio sessions, there is a three artwork minimum
               and a $50 fee to cover travel and equipment set-up time.
             </p>
-            <h3 class="section-subheader">Payment</h3>
+            <h3 class="section-subheader section-subheader--payment">
+              Payment
+            </h3>
             <p class="section-paragraph">
               Following client approval of images, an invoice will be provided
-              for all services rendered. After payment is received, all images
-              will be available for download on Dropbox.
+              for all services rendered. State and local sales taxes will be add
+              to net total. After payment is received, all imagess will be
+              available for download on Dropbox.
             </p>
             <p class="section-paragraph">
-              <b>Payment methods</b>: all major credit cards, Cash App, and
-              Venmo.
+              <b class="bold-text">Payment methods</b>: &nbsp;all major credit
+              cards, Cash App, and Venmo.
             </p>
           </section>
         </div>

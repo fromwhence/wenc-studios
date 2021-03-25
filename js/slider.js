@@ -56,6 +56,17 @@ const slider = function () {
     });
   });
 
+  window.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      sliderContainer.classList.remove('expand');
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  });
+
   window.addEventListener('load', resizeSliderHeight);
   window.addEventListener('resize', resizeSliderHeight);
   window.addEventListener('orientationchange', function () {
