@@ -1000,8 +1000,7 @@ ul.tier-list {
   font-size: var(--fs-smaller);
   color: rgba(255, 255, 255, 0.8);
   background-color: var(--clr-med-dark-new);
-  padding: 1.875rem;
-  padding-bottom: 2rem;
+  padding: 1.5rem 1.75rem 1.475rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
