@@ -199,7 +199,6 @@ body.active::after {
   position: fixed;
   background-color: white;
   color: var(--clr-reg);
-  /* border-left: 1px solid var(--clr-med-new); */
   top: 0;
   bottom: 0;
   left: 35%;
@@ -789,7 +788,7 @@ body.active::after {
   }
 
   .about-text {
-    padding: 0 0 0.75rem;
+    padding: 1.25rem 0 0.75rem;
   }
 
   .section-container {
@@ -816,11 +815,11 @@ body.active::after {
   .schedule,
   .faq,
   .contact {
-    padding: 2.75rem 3.75rem 3rem;
+    padding: 2.75rem 4rem 3rem;
     width: 100%;
     height: auto;
   }
-
+}
 
 .section-header {
   padding-bottom: 1.375rem;
@@ -848,6 +847,10 @@ body.active::after {
 
 /* Side by side layouts on wide screens */
 @media (min-width: 1350px) {
+  .about-text {
+    padding-top: 0;
+  }
+
   .about-text-hide {
     display: none;
   }
@@ -864,12 +867,12 @@ body.active::after {
 
   .slider-container {
     width: 750px;
-    margin-top: 0.5rem;
+    margin-top: 0.625rem;
   }
 
   .about-side-text {
     width: 35%;
-    margin-top: 2rem;
+    margin-top: 1.625rem;
     margin-left: 0rem;
     padding-left: 1.5rem;
   }
@@ -894,6 +897,10 @@ body.active::after {
 
 /* Services text to left, image to right at wider screens */
 @media (min-width: 1350px) {
+  .section-subheader--services {
+    padding-top: 1.5rem;
+  }
+
   .text-side-image-container {
     display: grid;
     grid-template-columns: 46.25% 46.25%;
@@ -905,7 +912,7 @@ body.active::after {
     width: 100%;
     height: 100%;
     margin: 0;
-    margin-top: -1rem;
+    margin-top: -2rem;
     border: 1px solid var(--clr-med-light);
   }
 
@@ -1008,7 +1015,7 @@ ul.tier-list {
     grid-column-gap: 7.5%;
     width: 100%;
     height: auto;
-    padding: 0 0 0.75rem;
+    padding: 0.25rem 0 0.75rem;
     margin: 0;
   }
 
@@ -1037,7 +1044,7 @@ ul.tier-list {
     display: grid;
     grid-template-columns: 7.5% 30% 1fr;
     grid-column-gap: 5%;
-    padding: 1.5rem 0 1.75rem;
+    padding: 1.75rem 0 1.75rem;
     margin: 0;
   }
 
@@ -1061,7 +1068,7 @@ ul.tier-list {
   }
 
   .tier-example-artwork-content {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     padding: 0;
   }

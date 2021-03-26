@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
     <script src="./js/index.js" async defer></script>
+    <script src="./js/intersectionNav.js" async defer></script>
     <script src="./js/slider.js" async defer></script>
     <script
       type="module"
@@ -51,19 +52,25 @@
           </div>
           <ul class="side-nav-list">
             <li class="side-nav-item">
-              <a href="#top" class="side-nav-link active">about</a>
+              <a href="#top" class="side-nav-link aboutNavItem">about</a>
             </li>
             <li class="side-nav-item">
-              <a href="#services" class="side-nav-link">services</a>
+              <a href="#services" class="side-nav-link servicesNavItem"
+                >services</a
+              >
             </li>
             <li class="side-nav-item">
-              <a href="#rates" class="side-nav-link">rates</a>
+              <a href="#rates" class="side-nav-link ratesNavItem">rates</a>
             </li>
             <li class="side-nav-item">
-              <a href="#schedule" class="side-nav-link">schedule</a>
+              <a href="#schedule" class="side-nav-link scheduleNavItem"
+                >schedule</a
+              >
             </li>
             <li class="side-nav-item">
-              <a href="#contact" class="side-nav-link">contact</a>
+              <a href="#contact" class="side-nav-link contactNavItem"
+                >contact</a
+              >
             </li>
           </ul>
         </nav>
@@ -188,7 +195,9 @@
         <div id="services" class="section-container bg">
           <section class="services">
             <h2 class="section-header">What we do</h2>
-            <h3 class="section-subheader">Our studio or on location</h3>
+            <h3 class="section-subheader section-subheader--services">
+              Our studio or on location
+            </h3>
             <div class="text-side-image-container">
               <!-- <img
                 class="studio-image"
