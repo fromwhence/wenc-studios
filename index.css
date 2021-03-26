@@ -83,6 +83,7 @@ h4 {
 p {
   font-size: var(--fs-small);
   line-height: 1.75;
+  text-size-adjust: none;
 }
 
 ul {
