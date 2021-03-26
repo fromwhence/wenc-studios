@@ -20,8 +20,9 @@ ol[class] {
   --clr-med-new: hsl(0, 0%, 79%);
   --clr-med-light: #c2c5c5;
   --clr-header-med: #8a9597;
+  --clr-header-wide-lighter: #747d7e;
   --clr-header-wide: #6c7475;
-  --clr-med-dark-new: #686d6d;
+  --clr-header-wide-darker: #676f70;
   --clr-reg-new: #383838;
   --fw-light: 300;
   --fw-reg: 400;
@@ -183,7 +184,7 @@ body.active::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--clr-med-dark-new);
+  background-color: var(--clr-header-wide-darker);
   opacity: 0.5;
   pointer-events: none;
 }
@@ -408,7 +409,7 @@ body.active::after {
     padding: 0;
     margin: 0;
     border-right: none;
-    background-color: var(--clr-med-dark-new);
+    background-color: var(--clr-header-wide-lighter);
   }
 
   .side-nav-list {
@@ -423,32 +424,36 @@ body.active::after {
 
   .side-nav-item {
     width: 100%;
-    margin-top: 2.5rem;
+  }
+
+  .side-nav-item {
+    display: block;
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-left: 1.925rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .side-nav-item:hover,
+  .side-nav-item.active {
+    background-color: var(--clr-header-wide-darker);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
   }
 
   .side-nav-link {
-    display: block;
     text-transform: capitalize;
     text-decoration: none;
     text-align: left;
-    width: 100%;
-    padding-left: 1.925rem;
-    padding-bottom: 0.5rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.9);
     font-weight: var(--fw-reg);
     font-size: var(--fs-h4);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
-  .side-nav-link:hover {
+  .side-nav-item:hover .side-nav-link,
+  .side-nav-item.active .side-nav-link {
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
-    transition: all 300ms;
-  }
-
-  .side-nav-link.active {
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    transition: all 250ms;
   }
 
   .main-content {
@@ -479,7 +484,6 @@ body.active::after {
 @media (min-width: 1200px) {
   .about-header {
     display: block;
-    margin-bottom: 0s5rem;
   }
 }
 
@@ -645,13 +649,13 @@ body.active::after {
     position: fixed;
     display: flex;
     flex-direction: row;
-    z-index: 100;
+    z-index: 99;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     margin-top: 0;
-    background: white;
+    background-color: white;
   }
 
   .slider-container.expand .slider {
@@ -666,6 +670,7 @@ body.active::after {
     margin-top: 1.5rem;
     overflow: visible;
     background: white;
+    /* border: 1px solid var(--clr-med-light); */
   }
 
   .slider-container.expand .is-invisible {
@@ -690,7 +695,7 @@ body.active::after {
     z-index: 100;
     right: 1rem;
     top: 0.5rem;
-    transition: colr 250ms;
+    transition: color 250ms;
   }
 
   .slider-container.expand .close-expanded-slider:hover {
@@ -734,17 +739,11 @@ body.active::after {
 
 .section-container.bg {
   background: white;
-  /* background: linear-gradient(
-    0deg,
-    var(--clr-light) 0%,
-    rgba(255, 255, 255, 1) 55%,
-    rgba(255, 255, 255, 1) 100%
-  ); */
   background: linear-gradient(
-    0deg,
+    180deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 1) 55%,
-    var(--clr-light) 100%
+    var(--clr-light-wide) 100%
   );
 }
 
@@ -769,7 +768,6 @@ body.active::after {
   .services,
   .rates,
   .schedule,
-  .faq,
   .contact {
     padding: 2.75rem 3.5rem;
   }
@@ -780,11 +778,14 @@ body.active::after {
   .services,
   .rates,
   .schedule,
-  .faq,
   .contact {
     padding: 2.75rem 3.5rem 3rem;
     width: 100%;
     height: auto;
+  }
+
+  .about {
+    padding-bottom: 2rem;
   }
 
   .about-text {
@@ -813,7 +814,6 @@ body.active::after {
   .services,
   .rates,
   .schedule,
-  .faq,
   .contact {
     padding: 2.75rem 4rem 3rem;
     width: 100%;
@@ -998,7 +998,7 @@ ul.tier-list {
 }
 
 .tier-example-artwork-content {
-  width: 65%;
+  width: 80%;
   margin: 0 auto;
   padding: 0.5rem 0 2rem;
 }
@@ -1081,8 +1081,8 @@ ul.tier-list {
 /* Footer */
 .footer {
   font-size: var(--fs-smaller);
-  color: rgba(255, 255, 255, 0.8);
-  background-color: var(--clr-med-dark-new);
+  color: rgba(255, 255, 255, 0.9);
+  background-color: var(--clr-header-wide);
   padding: 1.5rem 1.75rem 1.475rem;
   display: flex;
   justify-content: space-between;
@@ -1091,7 +1091,7 @@ ul.tier-list {
 
 .footer-link {
   display: block;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   font-size: inherit;
   text-decoration: none;
   margin-top: 0.5rem;
@@ -1099,14 +1099,14 @@ ul.tier-list {
 }
 
 .footer-icon {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.75rem;
   padding: 0;
   padding-top: 0.2rem;
 }
 
 .scroll-arrow {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 2.875rem;
 }
 
@@ -1142,7 +1142,7 @@ ul.tier-list {
     left: 1.75rem;
     padding: 0;
     margin: 0;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
     background-color: none;
   }
 }

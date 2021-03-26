@@ -1,3 +1,5 @@
+'use strict';
+
 function selectElementByClass(className) {
   return document.querySelector(`.${className}`);
 }
@@ -10,8 +12,6 @@ const sections = [
   selectElementByClass('contact'),
 ];
 
-console.log(sections);
-
 const navItems = {
   about: selectElementByClass('aboutNavItem'),
   services: selectElementByClass('servicesNavItem'),
@@ -20,13 +20,11 @@ const navItems = {
   contact: selectElementByClass('contactNavItem'),
 };
 
-console.log(navItems);
-
 // intersection observer setup
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.7,
+  threshold: 0.5,
 };
 
 function observerCallback(entries, observer) {
