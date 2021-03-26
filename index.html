@@ -51,21 +51,30 @@
             </a>
           </div>
           <ul class="side-nav-list">
-            <li class="side-nav-item aboutNavItem">
-              <a href="#top" class="side-nav-link">about</a>
-            </li>
-            <li class="side-nav-item servicesNavItem">
-              <a href="#services" class="side-nav-link">services</a>
-            </li>
-            <li class="side-nav-item ratesNavItem">
-              <a href="#rates" class="side-nav-link">rates</a>
-            </li>
-            <li class="side-nav-item scheduleNavItem">
-              <a href="#schedule" class="side-nav-link">schedule</a>
-            </li>
-            <li class="side-nav-item contactNavItem">
-              <a href="#contact" class="side-nav-link">contact</a>
-            </li>
+            <a href="#top" class="side-nav-link side-nav-item aboutNavItem">
+              <li>about</li>
+            </a>
+            <a
+              href="#services"
+              class="side-nav-link side-nav-item servicesNavItem"
+            >
+              <li>services</li>
+            </a>
+            <a href="#rates" class="side-nav-link side-nav-item ratesNavItem">
+              <li>rates</li>
+            </a>
+            <a
+              href="#schedule"
+              class="side-nav-link side-nav-item scheduleNavItem"
+            >
+              <li>schedule</li>
+            </a>
+            <a
+              href="#contact"
+              class="side-nav-link side-nav-item contactNavItem"
+            >
+              <li>contact</li>
+            </a>
           </ul>
         </nav>
         <footer class="side-nav-footer">
@@ -183,18 +192,13 @@
             </div>
           </section>
         </div>
-        <div class="section-container bg">
+        <div class="section-container">
           <section id="services" class="services">
             <h2 class="section-header">What we do</h2>
             <h3 class="section-subheader section-subheader--services">
               Our studio or on location
             </h3>
             <div class="text-side-image-container">
-              <!-- <img
-                class="studio-image"
-                src="images/tethered_placeholder-imager.jpg"
-                alt="tethered photography setup"
-              /> -->
               <div class="services-side-text">
                 <p class="section-paragraph">
                   Artists have the option to schedule sessions at our studio or
@@ -381,26 +385,33 @@
               </div>
             </div>
             <br />
-            <p class="section-paragraph">
-              For in artist studio sessions, there is a three artwork minimum
-              and a $50 fee to cover travel and equipment set-up time.
-            </p>
-            <h3 class="section-subheader section-subheader--payment">
-              Payment
-            </h3>
-            <p class="section-paragraph">
-              Following client approval of images, an invoice will be provided
-              for all services rendered. State and local sales taxes will be add
-              to net total. After payment is received, all imagess will be
-              available for download on Dropbox.
-            </p>
-            <p class="section-paragraph">
-              <b class="bold-text">Payment methods</b>: &nbsp;all major credit
-              cards, Cash App, and Venmo.
-            </p>
+            <div class="payment-text-container">
+              <h3 class="section-subheader section-subheader--payment">
+                Fees
+              </h3>
+              <p class="section-paragraph">
+                For in artist studio sessions, there is a three artwork minimum
+                and a $50 fee to cover travel and equipment set-up time.
+              </p>
+              <h3 class="section-subheader section-subheader--payment">
+                Payment
+              </h3>
+              <p class="section-paragraph">
+                Following client approval of images, an invoice will be provided
+                for all services rendered. State and local sales taxes will be add
+                to net total. After payment is received, all imagess will be
+                available for download on Dropbox.
+              </p>
+              <h3 class="section-subheader section-subheader--payment">
+                Payment Methods
+              </h3>
+                <p class="section-paragraph">All major credit
+                cards, Cash App, and Venmo.
+              </p>
+            </div>
           </section>
         </div>
-        <div class="section-container bg">
+        <div class="section-container">
           <section id="schedule" class="schedule">
             <h2 class="section-header">Schedule Photoshoot</h2>
             <br />
@@ -411,25 +422,9 @@
           <section id="contact" class="contact">
             <h2 class="section-header">Contact</h2>
             <div class="contact-container">
-              <div class="contact-form">
-                <br />
-                <p class="section-paragraph">
-                  Please use the following form to contact us with general
-                  questions. If you are ready to schedule a photoshoot, please
-                  use the schedule form. We also welcome your phone calls and
-                  text messages if your prefer to contact us directy. Thank you.
-                </p>
-                <div class="form-container">
-                  <input type="text" placeholder="Name" required />
-                  <input type="email" placeholder="Email address" required />
-                  <input type="text" placeholder="Phone" />
-                  <textarea placeholder="Message" required></textarea>
-                </div>
-                <button class="submit-btn">Submit</button>
-              </div>
               <div class="contact-details-container">
                 <div class="contact-details-sub-container">
-                  <h3 class="section-subheader">Address</h3>
+                  <h3 class="section-subheader contact-sub-header">Address</h3>
                   <address class="contact-details">
                     Hubbard Street Lofts<br />
                     1821 West Hubbard Street<br />
@@ -437,17 +432,48 @@
                     Chicago, Illinois 60622
                   </address>
                 </div>
-                <div class="contact-details-sub-container">
-                  <h3 class="section-subheader">Contact</h3>
-                  <address class="contact-details">
-                    <a href="mailto:jim@rock.com">info@wencphoto.com</a>
-                    <br />
-                    <a href="tel:+17732203218">773-220-3278</a>
-                  </address>
+                <div class="google-map-small">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.1747259320023!2d-87.67502278431446!3d41.889099272704364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d36d3413589%3A0xadf7ab23ce0d6985!2s1821%20W%20Hubbard%20St%2C%20Chicago%2C%20IL%2060622!5e0!3m2!1sen!2sus!4v1616787116394!5m2!1sen!2sus"
+                    width="325"
+                    height="250"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
                 </div>
-                <div class="contact-detailss-sub-container">
-                  <h3 class="section-subheader">Hours</h3>
-                  <p>By appointment only</p>
+                <div class="google-map-medium">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.699698365015!2d-87.67283400000001!3d41.889095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d36d3413589%3A0xadf7ab23ce0d6985!2s1821%20W%20Hubbard%20St%2C%20Chicago%2C%20IL%2060622!5e0!3m2!1sen!2sus!4v1616800199954!5m2!1sen!2sus" width="400" height="300" style="border: 1px solid #c2c5c5" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                  <div class="contact-details-sub-container contact-details-sub-container--hours">
+                    <h3 class="section-subheader">Hours</h3>
+                    <p>By appointment only</p>
+                    <p>Available daytime and evening</p>
+                  </div>
+                  <div class="contact-details-sub-container">
+                    <h3 class="section-subheader">Contact</h3>
+                    <address class="contact-details">
+                      <a href="mailto:jim@rock.com">info@wencphoto.com</a>
+                      <br />
+                      <a href="tel:+17732203218">773-220-3278</a>
+                    </address>
+                  </div>
+                </div>
+                <div class="contact-form">
+                  <br />
+                  <p class="section-paragraph section-paragraph--contact">
+                    Please use the following form to contact us with general
+                    questions. If you are ready to schedule a photoshoot, please
+                    use the schedule form. We also welcome phone calls and
+                    text messages if your prefer to contact us directy. We look
+                    forward to hearing from you.
+                  </p>
+                  <div class="form-container">
+                    <input type="text" placeholder="Name" required />
+                    <input type="email" placeholder="Email address" required />
+                    <input type="text" placeholder="Phone" />
+                    <textarea placeholder="Message" required></textarea>
+                    <button class="submit-button">Submit</button>
+                  </div>
                 </div>
               </div>
             </div>
