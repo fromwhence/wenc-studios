@@ -39,6 +39,11 @@ ol[class] {
   --fs-smallest: 0.8rem;
 }
 
+* {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -83,6 +88,7 @@ h4 {
 p {
   font-size: var(--fs-small);
   line-height: 1.75;
+  -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
 
@@ -217,6 +223,12 @@ body.active::after {
 
 .nav-item {
   margin-top: 2.75rem;
+}
+
+@media (min-width: 600px) {
+  .nav {
+    left: 55%;
+  }
 }
 
 @media (min-width: 768px) {
