@@ -1278,7 +1278,7 @@ textarea {
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1280px) {
   .google-map-small {
     display: none;
   }
