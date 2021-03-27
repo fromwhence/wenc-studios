@@ -25,6 +25,7 @@ ol[class] {
   --clr-header-wide: #6c7475;
   --clr-header-wide-darker: #676f70;
   --clr-reg-new: #383838;
+  --clr-reg-dark: #2c2c2c;
   --clr-business-name-bg: #3f4446;
   --fw-light: 300;
   --fw-reg: 400;
@@ -255,7 +256,7 @@ body.active::after {
 
 .nav-link {
   color: var(--clr-reg-new);
-  font-weight: var(--fw-reg);
+  font-weight: var(--fw-med);
   font-size: 1.2rem;
   text-decoration: none;
   text-transform: capitalize;
