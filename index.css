@@ -148,7 +148,7 @@ button {
   flex-direction: row;
   justify-content: space-between;
   padding: 2.325rem 0 1.5rem;
-  margin: 0 1.75rem;
+  margin: 0 1.625rem;
   border-bottom: 1px solid var(--clr-med-light);
 }
 
@@ -207,7 +207,7 @@ body.active::after {
   color: var(--clr-reg);
   top: 0;
   bottom: 0;
-  left: 35%;
+  left: 32.5%;
   right: 0;
   z-index: 100;
   transform: translateX(100%);
@@ -479,7 +479,7 @@ body.active::after {
 }
 
 .about-text {
-  padding: 0 1.75rem 0.75rem;
+  padding: 0 1.625rem 0.75rem;
 }
 
 .about-text-show {
@@ -761,7 +761,7 @@ body.active::after {
 .rates,
 .schedule,
 .contact {
-  padding: 2.275rem 1.75rem 2.275rem;
+  padding: 2.275rem 1.625rem 2.275rem;
 }
 
 @media (min-width: 768px) {
