@@ -26,7 +26,7 @@ ol[class] {
   --clr-header-wide-darker: #676f70;
   --clr-reg-new: #383838;
   --clr-reg-dark: #2c2c2c;
-  --clr-business-name-bg: #3f4446;
+  --clr-business-name-bg: #434b4b;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
@@ -747,14 +747,32 @@ body.active::after {
   border-top: none;
 }
 
+/* Inverse color for smaller screens */
+
 .section-container.bg {
-  background: white;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 55%,
-    var(--clr-light-wide) 100%
-  );
+  background-color: var(--clr-header-wide-darker);
+}
+
+.section-container.bg h2,
+.section-container.bg h3,
+.section-container.bg ul,
+.section-container.bg a {
+  color: white;
+  opacity: 0.9;
+}
+
+.section-container.bg a:hover {
+  text-decoration: none;
+}
+
+.section-container.bg p {
+  color: white;
+  opacity: 0.85;
+}
+
+.section-container.bg li::marker {
+  color: white;
+  opacity: 0.75;
 }
 
 .services,
@@ -1179,8 +1197,7 @@ textarea {
   margin: 0.5rem auto 0;
   padding: 1rem 2.75rem;
   text-align: center;
-  background-color: var(--clr-header-med);
-  border: 1px solid var(--clr-header-wide-darker);
+  background-color: var(--clr-header-wide-darker);
   border-top: none;
   color: white;
   font-family: inherit;
@@ -1340,7 +1357,7 @@ textarea {
 .footer {
   font-size: var(--fs-smaller);
   color: rgba(255, 255, 255, 0.9);
-  background-color: var(--clr-header-wide-darker);
+  background-color: var(--clr-business-name-bg);
   padding: 1.5rem 1.625rem 1.375rem;
   display: flex;
   justify-content: space-between;
