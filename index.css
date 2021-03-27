@@ -20,7 +20,7 @@ ol[class] {
   --clr-light-form: #ebeeee;
   --clr-med-new: hsl(0, 0%, 79%);
   --clr-med-light: #c2c5c5;
-  --clr-header-med: #8a9597;
+  --clr-header-med: #8b9799;
   --clr-header-wide-lighter: #747d7e;
   --clr-header-wide: #6c7475;
   --clr-header-wide-darker: #676f70;
@@ -33,7 +33,7 @@ ol[class] {
   --fs-h1: 2rem;
   --fs-h2: 1.75rem;
   --fs-h3: 1.575rem;
-  --fs-h4: 1.25rem;
+  --fs-h4: 1.2rem;
   --fs-h5: 1.125em;
   --fs-reg: 1rem;
   --fs-small: 0.95rem;
@@ -90,7 +90,7 @@ h4 {
 
 p {
   font-size: var(--fs-small);
-  line-height: 1.75;
+  line-height: 1.65;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
@@ -382,6 +382,7 @@ body.active::after {
 
   .side-nav-container {
     display: block;
+    background-color: pink;
   }
 
   .business-name-container {
@@ -393,8 +394,7 @@ body.active::after {
     );
     text-align: center;
     width: 300px;
-    padding: 2.125rem 0 1.75rem;
-    padding-right: 1rem;
+    padding: 2.125rem 1rem 1.75rem 0;
   }
 
   .business-name {
@@ -414,6 +414,7 @@ body.active::after {
     width: 100%;
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
+    padding-left: 0.125;
   }
 
   .side-nav {
@@ -431,7 +432,7 @@ body.active::after {
     position: fixed;
     align-items: flex-start;
     width: 300px;
-    top: 8rem;
+    top: 7.775rem;
     padding: 0;
     margin: 0;
     text-align: left;
@@ -439,21 +440,21 @@ body.active::after {
 
   .side-nav-list li {
     text-transform: capitalize;
-    text-decoration: none;
     list-style: none;
     text-align: left;
     color: rgba(255, 255, 255, 0.9);
     font-weight: var(--fw-reg);
     font-size: var(--fs-h4);
+    margin: 0;
+    padding: 0;
   }
 
   .side-nav-item {
     display: block;
     width: 100%;
     text-decoration: none;
-    padding-top: 1.725rem;
-    padding-left: 1.925rem;
-    padding-bottom: 0rem;
+    padding: 1.25rem 0 1.125rem 1.5rem;
+    padding-left: 1.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
@@ -817,7 +818,7 @@ body.active::after {
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1280px) {
   .about,
   .services,
   .rates,
@@ -866,7 +867,7 @@ body.active::after {
 }
 
 /* Side by side layouts on wide screens */
-@media (min-width: 1350px) {
+@media (min-width: 1280px) {
   .about-text {
     padding-top: 0;
   }
@@ -916,7 +917,7 @@ body.active::after {
 }
 
 /* Services text to left, image to right at wider screens */
-@media (min-width: 1350px) {
+@media (min-width: 1280px) {
   .section-subheader--services {
     padding-top: 1.5rem;
   }
@@ -1040,7 +1041,7 @@ ul.tier-list {
   display: none;
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1280px) {
   .file-format-text-container {
     display: grid;
     grid-template-columns: 45% 45%;
@@ -1116,7 +1117,7 @@ ul.tier-list {
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1280px) {
   .payment-text-container {
     width: 50%;
   }
@@ -1178,8 +1179,9 @@ textarea {
   margin: 1rem auto 0;
   padding: 1.275rem 3.25rem;
   text-align: center;
-  background-color: var(--clr-header-wide-lighter);
-  /* border-radius: 0.5rem; */
+  background-color: var(--clr-header-med);
+  border: 1px solid var(--clr-header-wide);
+  border-top: none;
   color: white;
   font-family: inherit;
   font-weight: 500;
@@ -1187,7 +1189,7 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color: var(--clr-header-wide-darker);
+  background-color: var(--clr-header-wide);
 }
 
 .contact {
@@ -1229,11 +1231,15 @@ textarea {
   text-decoration: underline;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .contact-container {
     display: grid;
     grid-template-columns: 35% 1fr;
     column-gap: 10%;
+  }
+
+  .contact-details {
+    font-size: var(--fs-reg);
   }
 
   .contact-details-container {
@@ -1304,7 +1310,7 @@ textarea {
 
   .contact-form {
     margin: 0 auto;
-    padding-right: 3rem;
+    padding-right: 4rem;
   }
 }
 
