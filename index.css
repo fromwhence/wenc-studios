@@ -26,7 +26,7 @@ ol[class] {
   --clr-header-wide-darker: #676f70;
   --clr-reg-new: #383838;
   --clr-reg-dark: #2c2c2c;
-  --clr-business-name-bg: #434b4b;
+  --clr-business-name-bg: #495252;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
@@ -204,7 +204,6 @@ body.active::after {
 .nav {
   position: fixed;
   background-color: white;
-  color: var(--clr-reg-new);
   top: 0;
   bottom: 0;
   left: 32.5%;
@@ -256,6 +255,7 @@ body.active::after {
 
 .nav-link {
   color: var(--clr-reg-new);
+  color: var(--clr-business-name-bg);
   font-weight: var(--fw-med);
   font-size: 1.2rem;
   text-decoration: none;
@@ -750,29 +750,34 @@ body.active::after {
 /* Inverse color for smaller screens */
 
 .section-container.bg {
-  background-color: var(--clr-header-wide-darker);
+  background-color: var(--clr-business-name-bg);
 }
 
 .section-container.bg h2,
 .section-container.bg h3,
 .section-container.bg ul,
+.section-container.bg li::marker,
+.section-container.bg p,
 .section-container.bg a {
   color: white;
   opacity: 0.9;
 }
 
-.section-container.bg a:hover {
-  text-decoration: none;
-}
-
-.section-container.bg p {
-  color: white;
-  opacity: 0.85;
+.section-container.bg h3 {
+  opacity: 0.9;
 }
 
 .section-container.bg li::marker {
-  color: white;
   opacity: 0.75;
+}
+
+.section-container.bg p,
+.section-container.bg a {
+  opacity: 0.85;
+}
+
+.section-container.bg a:hover {
+  text-decoration: none;
 }
 
 .services,
@@ -1197,7 +1202,7 @@ textarea {
   margin: 0.5rem auto 0;
   padding: 1rem 2.75rem;
   text-align: center;
-  background-color: var(--clr-header-wide-darker);
+  background-color: var(--clr-header-med);
   border-top: none;
   color: white;
   font-family: inherit;
