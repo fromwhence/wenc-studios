@@ -33,7 +33,7 @@ ol[class] {
   --fs-h1: 2rem;
   --fs-h2: 1.75rem;
   --fs-h3: 1.575rem;
-  --fs-h4: 1.2rem;
+  --fs-h4: 1.175rem;
   --fs-h5: 1.125em;
   --fs-reg: 1rem;
   --fs-small: 0.95rem;
@@ -256,7 +256,7 @@ body.active::after {
 .nav-link {
   color: var(--clr-reg-new);
   font-weight: var(--fw-reg);
-  font-size: var(--fs-h4);
+  font-size: 1.2rem;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -453,8 +453,7 @@ body.active::after {
     display: block;
     width: 100%;
     text-decoration: none;
-    padding: 1.25rem 0 1.125rem 1.5rem;
-    padding-left: 1.5rem;
+    padding: 1.25rem 0 1.125rem 1.575rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
@@ -1232,6 +1231,11 @@ textarea {
 }
 
 @media (min-width: 1024px) {
+  .google-map-small {
+    margin: 1rem 0;
+    border: 1px solid #c2c5c5;
+  }
+
   .contact-container {
     display: grid;
     grid-template-columns: 35% 1fr;
