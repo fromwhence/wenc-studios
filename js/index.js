@@ -26,26 +26,6 @@
   unfocus();
 })(document, window);
 
-// Removed inverse color scheme when screen is wider than 1200px
-const darkSections = document.querySelectorAll('.section-inverse');
-
-let intViewportWidth = window.innerWidth;
-
-const manageDarkBackground = intViewportWidth => {
-  if (intViewportWidth < 1200) {
-    darkSections.forEach(darkSection => {
-      darkSection.classList.add('dark');
-    });
-  } else {
-    darkSections.forEach(darkSection => {
-      darkSection.classList.remove('dark');
-    });
-  }
-};
-
-window.resize = manageDarkBackground(intViewportWidth);
-// window.addEventListener('onload', manageDarkBackground(intViewportWidth));
-
 // Sticky hamburger nav
 window.onscroll = () => {
   stickyNav();

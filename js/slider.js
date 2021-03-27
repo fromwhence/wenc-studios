@@ -32,14 +32,17 @@ const slider = function () {
       slider.style.height = `${imageHeight + 30}px`;
     } else {
       let imageHeight = slideImage[0].height;
-      slider.style.height = `${imageHeight + 35}px`;
+      slider.style.height = `${imageHeight + 25}px`;
     }
   };
 
   // Full screen slider
-  const expandIcon = document.querySelector('.expand-slider');
+  const expandIcon = document.querySelector('.expand-slider-icon');
   const closeExpandedSlider = document.querySelector('.close-expanded-slider');
   const sliderContainer = document.querySelector('.slider-container');
+  const expandedSliderContainer = document.querySelector(
+    '.slider-container--expanded'
+  );
 
   expandIcon.addEventListener('click', () => {
     sliderContainer.classList.add('expand');

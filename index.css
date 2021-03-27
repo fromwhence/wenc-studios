@@ -572,7 +572,7 @@ body.active::after {
 }
 
 .dots {
-  margin: 0.625rem auto 1.5rem;
+  margin: 1rem auto 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -597,17 +597,19 @@ body.active::after {
 
 /* Expanded slider feature */
 
-.expand-slider {
+.expand-slider-icon {
   color: var(--clr-header-wide);
   display: none;
   flex-direction: column;
   justify-content: flex-start;
   position: absolute;
-  right: 1.75rem;
+  right: 1.275rem;
   bottom: 0.25rem;
   cursor: pointer;
   overflow: visible;
   z-index: 100;
+  background-color: white;
+  padding: 0;
 }
 
 .expand-outline {
@@ -619,46 +621,51 @@ body.active::after {
   font-size: var(--fs-smaller);
 }
 
-.expand-slider:hover {
+.expand-slider-icon:hover {
   color: var(--clr-reg-new);
 }
 
 @media (min-width: 768px) {
+  .about-text:first-of-type {
+    padding-bottom: 0.5rem;
+  }
+
   .slider {
     margin: 0 auto 1rem;
   }
+
   .slide-image {
     width: 70%;
   }
+
   .slider-btn {
     font-size: var(--fs-h1);
     padding: 1.5rem;
   }
+
   .artist-title {
     bottom: -2.25rem;
     font-size: var(--fs-smaller);
   }
-  .dots {
-    margin: 0.75rem auto 2rem;
-  }
 }
 
 /* Expanded slider */
-
 .close-expanded-slider {
   display: none;
 }
 
 @media (min-width: 1200px) {
-  .expand-slider {
+  .dots {
+    margin-top: 1.5rem;
+  }
+
+  .expand-slider-icon {
     display: flex;
   }
 
-  .slider-container.expand {
+  .slider-container--expanded .expand {
     position: fixed;
-    display: flex;
-    flex-direction: row;
-    z-index: 99;
+    z-index: 98;
     width: 100%;
     height: 100%;
     top: 0;
@@ -667,19 +674,22 @@ body.active::after {
     background-color: white;
   }
 
+  .slider-container.expand {
+    z-index: 100;
+    background-color: white;
+  }
+
   .slider-container.expand .slider {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100%;
-    max-width: 955px;
-    min-height: auto;
+    max-width: 55%;
+    max-height: 90%;
     margin: 0 auto;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     overflow: visible;
     background: white;
-    /* border: 1px solid var(--clr-med-light); */
   }
 
   .slider-container.expand .is-invisible {
@@ -688,10 +698,10 @@ body.active::after {
 
   .slider-container.expand .slide {
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
   }
 
-  .slider-container.expand .expand-slider {
+  .slider-container.expand .expand-slider-icon {
     display: none;
   }
 
@@ -717,11 +727,11 @@ body.active::after {
   }
 
   .slider-container.expand .dots {
-    position: fixed;
-    bottom: 0.5rem;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: visible;
   }
 
   .slider-container.expand .slider-btn {
@@ -736,7 +746,6 @@ body.active::after {
 }
 
 /* Sections */
-
 .section-container {
   width: 100%;
   height: auto;
@@ -749,35 +758,37 @@ body.active::after {
 
 /* Inverse color for smaller screens */
 
-.section-inverse.dark {
-  background-color: var(--clr-business-name-bg);
-}
+@media (max-width: 1199px) {
+  .section-inverse {
+    background-color: var(--clr-business-name-bg);
+  }
 
-.section-inverse.dark h2,
-.section-inverse.dark h3,
-.section-inverse.dark ul,
-.section-inverse.dark li::marker,
-.section-inverse.dark p,
-.section-inverse.dark a {
-  color: white;
-  opacity: 0.9;
-}
+  .section-inverse h2,
+  .section-inverse h3,
+  .section-inverse ul,
+  .section-inverse li::marker,
+  .section-inverse p,
+  .section-inverse a {
+    color: white;
+    opacity: 0.9;
+  }
 
-.section-inverse.dark h3 {
-  opacity: 0.9;
-}
+  .section-inverse h3 {
+    opacity: 0.9;
+  }
 
-.section-inverse.dark li::marker {
-  opacity: 0.75;
-}
+  .section-inverse li::marker {
+    opacity: 0.75;
+  }
 
-.section-inverse.dark p,
-.section-inverse.dark a {
-  opacity: 0.85;
-}
+  .section-inverse p,
+  .section-inverse a {
+    opacity: 0.85;
+  }
 
-.section-inverse.dark a:hover {
-  text-decoration: none;
+  .section-inverse a:hover {
+    text-decoration: none;
+  }
 }
 
 .services,
@@ -1272,11 +1283,6 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  /* .google-map-small {
-    margin: 1rem 0;
-    border: 1px solid #c2c5c5;
-  } */
-
   .contact-container {
     display: grid;
     grid-template-columns: 35% 1fr;
@@ -1290,8 +1296,6 @@ textarea {
   .contact-details-container {
     text-align: left;
     min-width: 350px;
-    /* margin: 0 auto; */
-    /* padding-left: 1.75rem; */
   }
 
   .contact-details-sub-container {
