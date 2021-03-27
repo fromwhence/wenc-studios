@@ -749,34 +749,34 @@ body.active::after {
 
 /* Inverse color for smaller screens */
 
-.section-container.bg {
+.section-inverse.dark {
   background-color: var(--clr-business-name-bg);
 }
 
-.section-container.bg h2,
-.section-container.bg h3,
-.section-container.bg ul,
-.section-container.bg li::marker,
-.section-container.bg p,
-.section-container.bg a {
+.section-inverse.dark h2,
+.section-inverse.dark h3,
+.section-inverse.dark ul,
+.section-inverse.dark li::marker,
+.section-inverse.dark p,
+.section-inverse.dark a {
   color: white;
   opacity: 0.9;
 }
 
-.section-container.bg h3 {
+.section-inverse.dark h3 {
   opacity: 0.9;
 }
 
-.section-container.bg li::marker {
+.section-inverse.dark li::marker {
   opacity: 0.75;
 }
 
-.section-container.bg p,
-.section-container.bg a {
+.section-inverse.dark p,
+.section-inverse.dark a {
   opacity: 0.85;
 }
 
-.section-container.bg a:hover {
+.section-inverse.dark a:hover {
   text-decoration: none;
 }
 
@@ -831,13 +831,7 @@ body.active::after {
   }
 
   .section-container.bg {
-    background: white;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 55%,
-      var(--clr-light-wide) 100%
-    );
+    background-color: white;
   }
 }
 
@@ -904,27 +898,25 @@ body.active::after {
   }
 
   .slider-side-text-container {
-    display: flex;
-    position: relative;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    column-gap: 5%;
   }
 
   .slider-container {
-    width: 750px;
     margin-top: 0.625rem;
   }
 
   .about-side-text {
-    width: 35%;
+    /* width: 35%; */
     margin-top: 1.625rem;
-    margin-left: 0rem;
-    padding-left: 1.5rem;
   }
 }
 
 @media (min-width: 1500px) {
   .about-side-text {
-    margin-top: 4rem;
+    margin-top: 5rem;
+    padding-right: 3rem;
   }
 }
 
@@ -1307,11 +1299,14 @@ textarea {
   }
 
   .contact-sub-header {
+    text-align: left;
+    width: 50%;
     margin-top: 0.275rem;
+    margin: 0.275rem 0;
   }
 
   .section-paragraph--contact {
-    padding-top: 0.25rem;
+    padding-top: 0.75rem;
   }
 }
 
