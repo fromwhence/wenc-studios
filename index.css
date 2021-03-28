@@ -15,7 +15,7 @@ ol[class] {
 }
 
 :root {
-  --clr-light-form: #ebeeee;
+  --clr-light-form: #f9f9f9;
   --clr-med-new: #c9c9c9;
   --clr-med-light: #cccfcf;
   --clr-header-med: #8b9799;
@@ -25,7 +25,7 @@ ol[class] {
   --clr-reg-new: #383838;
   --clr-reg-dark: #2c2c2c;
   --clr-business-name-bg: #495252;
-  --clr-business-name-bg-darker: #394041;
+  --clr-business-name-bg-darker: #373d3d;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
@@ -171,7 +171,7 @@ button {
   }
 
   .header {
-    padding: 1.575rem 2rem 1.5rem;
+    padding: 1.6rem 2rem 1.5rem;
     margin: 0;
   }
 
@@ -287,7 +287,7 @@ body.active::after {
 }
 
 .nav-toggle {
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.425rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -297,6 +297,7 @@ body.active::after {
   z-index: 1000;
   opacity: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
   transition: opacity 500ms;
 }
 
@@ -704,6 +705,10 @@ body.active::after {
     margin-top: 1.5rem;
   }
 
+  .dots-dot {
+    margin: 0 1.275rem;
+  }
+
   .expand-slider-icon {
     display: flex;
   }
@@ -728,11 +733,9 @@ body.active::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
-    max-width: 55%;
+    max-width: 57.5%;
     max-height: 90%;
     margin: 0 auto;
-    margin-top: 1rem;
     overflow: visible;
     background: white;
   }
@@ -772,12 +775,7 @@ body.active::after {
   }
 
   .slider-container.expand .dots {
-    display: none;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: visible; */
+    height: 3rem;
   }
 
   .slider-container.expand .slider-btn {
@@ -829,7 +827,7 @@ body.active::after {
 
   .section-inverse p,
   .section-inverse a {
-    opacity: 0.85;
+    opacity: 0.95;
   }
 
   .section-inverse a:hover {
@@ -917,14 +915,15 @@ body.active::after {
 }
 
 .section-header {
-  padding-bottom: 1.375rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--clr-header-wide);
   text-transform: uppercase;
   border-bottom: 1px solid var(--clr-med-light);
 }
 
 .section-subheader {
-  padding: 1.25rem 0 1.25rem;
+  padding: 1.125rem 0;
   color: var(--clr-header-wide);
 }
 
@@ -937,6 +936,10 @@ body.active::after {
     font-size: 1.725rem;
     padding-bottom: 1rem;
     color: var(--clr-header-wide);
+  }
+
+  .section-paragraph.extra-bottom-padding {
+    padding-bottom: 1.75rem;
   }
 }
 
@@ -997,6 +1000,7 @@ body.active::after {
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
+    margin-bottom: 2rem;
   }
 
   .studio-image {
@@ -1012,10 +1016,11 @@ body.active::after {
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
-    margin-top: 2rem;
-    padding: 1.75rem;
+    margin-top: 0.25rem;
+    padding: 1.75rem 1.75rem 1.25rem;
     border: 1px solid var(--clr-med-light);
     border-radius: 0.5rem;
+    background-color: var(--clr-light-form);
   }
 
   .section-subheader--side {
@@ -1028,6 +1033,11 @@ body.active::after {
 }
 
 /* Rates */
+
+.section-header--rates {
+  margin-bottom: 1.125rem;
+}
+
 .tier-description {
   display: flex;
   justify-content: space-between;
@@ -1036,9 +1046,9 @@ body.active::after {
   padding: 1.5rem 0 0;
 }
 
-.last {
+/* .last {
   border-bottom: 1px solid var(--clr-med-light);
-}
+} */
 
 .tier-subheader {
   padding: 0.275rem 0 0;
@@ -1185,22 +1195,12 @@ ul.tier-list {
     margin: 0 auto;
     padding: 0;
   }
-
-  .section-subheader--payment {
-    padding-top: 0.5rem;
-  }
 }
 
 @media (min-width: 1000px) {
-  .payment-text-container {
-    width: 75%;
-  }
 }
 
 @media (min-width: 1280px) {
-  .payment-text-container {
-    width: 50%;
-  }
 }
 
 /* Contact section */
@@ -1433,7 +1433,7 @@ textarea {
   font-size: var(--fs-smaller);
   color: rgba(255, 255, 255, 0.9);
   background-color: var(--clr-business-name-bg);
-  padding: 1.25rem 1.625rem 1.375rem;
+  padding: 1.25rem 1.625rem 1.125rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1444,7 +1444,7 @@ textarea {
   color: rgba(255, 255, 255, 0.9);
   font-size: inherit;
   text-decoration: none;
-  margin-top: 0.5rem;
+  margin-top: 0.375rem;
   cursor: pointer;
 }
 
@@ -1469,7 +1469,7 @@ textarea {
 
 @media (min-width: 768px) {
   .footer {
-    padding: 1.75rem 2.125rem 1.75rem 1.75rem;
+    padding: 1.675rem 2.125rem 1.675rem 2rem;
   }
   .scroll-arrow {
     font-size: 3rem;
