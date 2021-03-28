@@ -15,18 +15,17 @@ ol[class] {
 }
 
 :root {
-  --clr-light: #f7f7f7;
-  --clr-light-wide: #f3f5f5;
   --clr-light-form: #ebeeee;
-  --clr-med-new: hsl(0, 0%, 79%);
+  --clr-med-new: #c9c9c9;
   --clr-med-light: #cccfcf;
   --clr-header-med: #8b9799;
   --clr-header-wide-lighter: #747d7e;
   --clr-header-wide: #6c7475;
-  --clr-header-wide-darker: #676f70;
+  --clr-header-wide-darker: #5e6768;
   --clr-reg-new: #383838;
   --clr-reg-dark: #2c2c2c;
   --clr-business-name-bg: #495252;
+  --clr-business-name-bg-darker: #394041;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
@@ -34,8 +33,8 @@ ol[class] {
   --fs-h1: 2rem;
   --fs-h2: 1.75rem;
   --fs-h3: 1.575rem;
-  --fs-h4: 1.175rem;
-  --fs-h5: 1.125em;
+  --fs-h4: 1.1625rem;
+  --fs-h5: 1.175em;
   --fs-reg: 1rem;
   --fs-small: 0.95rem;
   --fs-smaller: 0.9rem;
@@ -128,11 +127,11 @@ strong {
   color: var(--clr-header-wide);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   strong {
     color: white;
-    background-color: transparent;
     font-weight: 500;
+    background-color: transparent;
   }
 }
 
@@ -159,25 +158,36 @@ button {
 }
 
 .tagline {
-  font-size: 1rem;
+  font-size: 1.05rem;
   text-align: left;
+  padding-top: 0.25rem;
+  padding-left: 0.175rem;
+  text-transform: capitalize;
 }
 
 @media (min-width: 768px) {
+  .header-container {
+    background-color: var(--clr-business-name-bg);
+  }
+
   .header {
-    padding: 2.5rem 0 1.75rem;
-    margin: 0 2rem;
+    padding: 1.625rem 2rem 1.5rem;
+    margin: 0;
+  }
+
+  .business-name {
+    font-size: var(--fs-h2);
+    color: rgba(255, 255, 255, 0.85);
   }
 
   .tagline {
-    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+    padding-left: 0.12rem;
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 
 /* Nav menu */
-/* Background overlay */
-
-/* Fixed left side nav only for screens 1200px and wider */
 .side-nav {
   display: none;
 }
@@ -229,6 +239,15 @@ body.active::after {
   margin-top: 2.75rem;
 }
 
+.nav-link {
+  color: var(--clr-reg-new);
+  color: var(--clr-business-name-bg);
+  font-weight: var(--fw-med);
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 @media (min-width: 600px) {
   .nav {
     left: 55%;
@@ -239,27 +258,32 @@ body.active::after {
   .nav {
     left: 55%;
   }
+
+  .nav-list {
+    margin-top: 3.25rem;
+  }
+
   .nav-item {
-    margin-top: 4rem;
+    margin-top: 5rem;
+  }
+
+  .nav-link {
+    font-size: 1.325rem;
   }
 }
 
 @media (min-width: 1024px) {
   .nav {
-    left: 65%;
+    left: 60%;
   }
-  .nav-item {
+
+  .nav-list {
     margin-top: 4rem;
   }
-}
 
-.nav-link {
-  color: var(--clr-reg-new);
-  color: var(--clr-business-name-bg);
-  font-weight: var(--fw-med);
-  font-size: 1.2rem;
-  text-decoration: none;
-  text-transform: capitalize;
+  .nav-link {
+    font-size: 1.425rem;
+  }
 }
 
 .nav-toggle {
@@ -357,6 +381,29 @@ body.active::after {
     right: 1.5rem;
     top: 1.25rem;
   }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    background: var(--clr-med-new);
+    width: 3em;
+    height: 3px;
+    border-radius: 1.25em;
+    transition: transform 200ms;
+  }
+
+  .hamburger::before {
+    top: 9px;
+  }
+
+  .hamburger::after {
+    bottom: 9px;
+  }
+
+  .nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-9px);
+  }
+
   .sticky {
     top: 1.5rem;
   }
@@ -383,24 +430,19 @@ body.active::after {
 
   .side-nav-container {
     display: block;
-    background-color: pink;
   }
 
   .business-name-container {
-    background-color: var(--clr-business-name-bg);
-    background: linear-gradient(
-      0deg,
-      rgba(50, 56, 57, 1) 0%,
-      rgba(63, 68, 70, 1) 100%
-    );
+    background-color: var(--clr-business-name-bg-darker);
     text-align: center;
-    width: 300px;
-    padding: 2.125rem 1rem 1.75rem 0;
+    width: 290px;
+    padding: 2.125rem 1.75rem 1.75rem 0.75rem;
   }
 
   .business-name {
     color: rgba(255, 255, 255, 0.85);
-    padding-bottom: 0.25rem;
+    font-size: 1.9rem;
+    text-align: center;
   }
 
   .business-name-link {
@@ -414,14 +456,15 @@ body.active::after {
   .tagline {
     width: 100%;
     color: rgba(255, 255, 255, 0.9);
+    padding-top: 0.175rem;
+    padding-right: 0.25rem;
     text-align: center;
-    padding-left: 0.125;
   }
 
   .side-nav {
     display: block;
     position: fixed;
-    width: 300px;
+    width: 290px;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -432,8 +475,8 @@ body.active::after {
   .side-nav-list {
     position: fixed;
     align-items: flex-start;
-    width: 300px;
-    top: 7.775rem;
+    width: 290px;
+    top: 7.525rem;
     padding: 0;
     margin: 0;
     text-align: left;
@@ -445,7 +488,7 @@ body.active::after {
     text-align: left;
     color: rgba(255, 255, 255, 0.9);
     font-weight: var(--fw-reg);
-    font-size: var(--fs-h4);
+    font-size: var(--fs-h5);
     margin: 0;
     padding: 0;
   }
@@ -454,7 +497,7 @@ body.active::after {
     display: block;
     width: 100%;
     text-decoration: none;
-    padding: 1.25rem 0 1.125rem 1.575rem;
+    padding: 1.25rem 0 1.125rem 1.625rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
@@ -577,6 +620,7 @@ body.active::after {
   justify-content: center;
   align-items: center;
   overflow: visible;
+  background: transparent;
 }
 
 .dots-dot {
@@ -604,12 +648,13 @@ body.active::after {
   justify-content: flex-start;
   position: absolute;
   right: 1.275rem;
-  bottom: 0.25rem;
+  bottom: -0.275rem;
   cursor: pointer;
   overflow: visible;
   z-index: 100;
   background-color: white;
   padding: 0;
+  overflow: visible;
 }
 
 .expand-outline {
@@ -683,7 +728,7 @@ body.active::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     max-width: 55%;
     max-height: 90%;
     margin: 0 auto;
@@ -727,11 +772,12 @@ body.active::after {
   }
 
   .slider-container.expand .dots {
-    display: flex;
+    display: none;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    overflow: visible;
+    overflow: visible; */
   }
 
   .slider-container.expand .slider-btn {
@@ -760,7 +806,7 @@ body.active::after {
 
 @media (max-width: 1199px) {
   .section-inverse {
-    background-color: var(--clr-business-name-bg);
+    background-color: var(--clr-header-wide-darker);
   }
 
   .section-inverse h2,
@@ -822,7 +868,7 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2.75rem 3.5rem 3rem;
+    padding: 2.5rem 3.25rem 2.75rem;
     width: 100%;
     height: auto;
   }
@@ -838,7 +884,7 @@ body.active::after {
   .section-container {
     width: 100%;
     height: auto;
-    padding-left: 300px;
+    padding-left: 290px;
   }
 
   .section-container.bg {
@@ -889,7 +935,7 @@ body.active::after {
 @media (min-width: 1200px) {
   .section-header {
     font-size: 1.725rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: 1rem;
     color: var(--clr-header-wide);
   }
 }
@@ -915,12 +961,11 @@ body.active::after {
   }
 
   .slider-container {
-    margin-top: 0.625rem;
+    margin-top: 0.5rem;
   }
 
   .about-side-text {
-    /* width: 35%; */
-    margin-top: 1.625rem;
+    margin-top: 1.75rem;
   }
 }
 
@@ -968,8 +1013,17 @@ body.active::after {
     grid-template-columns: 45% 45%;
     column-gap: 10%;
     margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--clr-med-light);
+    padding: 1.75rem;
+    border: 1px solid var(--clr-med-light);
+    border-radius: 0.5rem;
+  }
+
+  .section-subheader--side {
+    padding: 0;
+    padding-bottom: 0.75rem;
+    margin: 0;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--clr-med-light);
   }
 }
 
@@ -1231,7 +1285,7 @@ textarea {
 
 .contact-sub-header {
   display: block;
-  padding: 1rem 0;
+  padding: 1rem 0 0.75rem;
   margin: 0 auto 0.75rem;
   width: 35%;
   text-align: center;
@@ -1243,7 +1297,7 @@ textarea {
 }
 
 .contact-details--address {
-  padding-bottom: 0.325rem;
+  padding-bottom: 0.5rem;
 }
 
 .contact-details-sub-container--hours {
@@ -1302,11 +1356,10 @@ textarea {
     margin-bottom: 0rem;
   }
 
-  .contact-sub-header {
+  h3.contact-sub-header {
     text-align: left;
     width: 50%;
-    margin-top: 0.275rem;
-    margin: 0.275rem 0;
+    margin: 0.275rem 0 1rem;
   }
 
   .section-paragraph--contact {
@@ -1323,6 +1376,15 @@ textarea {
 
   .contact-details-container {
     padding-left: 0rem;
+  }
+
+  .form-container {
+    padding: 0.75rem;
+  }
+
+  .submit-button {
+    padding: 1.25rem 3.25rem;
+    border-radius: 0.5rem;
   }
 }
 
@@ -1371,7 +1433,7 @@ textarea {
   font-size: var(--fs-smaller);
   color: rgba(255, 255, 255, 0.9);
   background-color: var(--clr-business-name-bg);
-  padding: 1.5rem 1.625rem 1.375rem;
+  padding: 1.25rem 1.625rem 1.375rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1427,7 +1489,7 @@ textarea {
     display: block;
     position: fixed;
     bottom: 2rem;
-    left: 1.75rem;
+    left: 1.5rem;
     padding: 0;
     margin: 0;
     font-size: 0.9rem;
