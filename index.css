@@ -435,15 +435,17 @@ body.active::after {
 
   .business-name-container {
     background-color: var(--clr-business-name-bg-darker);
-    text-align: center;
-    width: 290px;
-    padding: 2.125rem 1.75rem 1.75rem 0.75rem;
+    width: 285px;
+    padding: 1.475rem 1.425rem 1.425rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
   .business-name {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1.9rem;
-    text-align: center;
+    width: 100%;
+    text-align: left;
+    padding-left: 0.325rem;
   }
 
   .business-name-link {
@@ -456,16 +458,17 @@ body.active::after {
 
   .tagline {
     width: 100%;
+    text-align: left;
     color: rgba(255, 255, 255, 0.9);
-    padding-top: 0.175rem;
-    padding-right: 0.25rem;
-    text-align: center;
+    padding: 0;
+    padding-top: 0.15rem;
+    padding-left: 0.775rem;
   }
 
   .side-nav {
     display: block;
     position: fixed;
-    width: 290px;
+    width: 285px;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -476,8 +479,8 @@ body.active::after {
   .side-nav-list {
     position: fixed;
     align-items: flex-start;
-    width: 290px;
-    top: 7.525rem;
+    width: 285px;
+    top: 107px;
     padding: 0;
     margin: 0;
     text-align: left;
@@ -498,7 +501,7 @@ body.active::after {
     display: block;
     width: 100%;
     text-decoration: none;
-    padding: 1.25rem 0 1.125rem 1.625rem;
+    padding: 1.25rem 0 1.2rem 1.875rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
@@ -866,7 +869,7 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2.5rem 3.25rem 2.75rem;
+    padding: 2.25rem 3.25rem 2.75rem;
     width: 100%;
     height: auto;
   }
@@ -882,7 +885,7 @@ body.active::after {
   .section-container {
     width: 100%;
     height: auto;
-    padding-left: 290px;
+    padding-left: 285px;
   }
 
   .section-container.bg {
@@ -896,12 +899,13 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2.5rem 4rem 3rem;
+    padding: 2.25rem 4rem 3rem;
     width: 100%;
     height: auto;
   }
 
-  .schedule {
+  .schedule,
+  .contact {
     height: 100vh;
   }
 }
@@ -932,7 +936,7 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .section-header {
-    font-size: 1.725rem;
+    font-size: 1.675rem;
     padding-bottom: 1rem;
     color: var(--clr-header-wide);
   }
@@ -992,7 +996,7 @@ body.active::after {
 /* Services text to left, image to right at wider screens */
 @media (min-width: 1280px) {
   .section-subheader--services {
-    padding-top: 1.5rem;
+    padding-top: 1.125rem;
   }
 
   .text-side-image-container {
@@ -1458,7 +1462,7 @@ textarea {
 }
 
 .footer-icon {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 1.75rem;
   padding: 0;
   padding-top: 0.2rem;
@@ -1498,8 +1502,8 @@ textarea {
   .side-nav-footer {
     display: block;
     position: fixed;
-    bottom: 2rem;
-    left: 1.5rem;
+    bottom: 1.75rem;
+    left: 1.75rem;
     padding: 0;
     margin: 0;
     font-size: 0.9rem;
