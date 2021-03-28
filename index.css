@@ -1292,10 +1292,6 @@ textarea {
   border-bottom: 1px solid var(--clr-med-light);
 }
 
-.contact-sub-header--address {
-  padding-top: 1.75rem;
-}
-
 .contact-details--address {
   padding-bottom: 0.5rem;
 }
@@ -1305,7 +1301,7 @@ textarea {
 }
 
 .contact-details-sub-container:last-of-type {
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
 }
 
 .google-map--responsive {
