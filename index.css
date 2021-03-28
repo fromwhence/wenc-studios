@@ -896,13 +896,12 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2.75rem 4rem 3rem;
+    padding: 2.5rem 4rem 3rem;
     width: 100%;
     height: auto;
   }
 
-  .schedule,
-  .contact {
+  .schedule {
     height: 100vh;
   }
 }
@@ -1235,6 +1234,13 @@ ul.tier-list {
   border: 1px solid var(--clr-med-light);
 }
 
+@media (min-width: 768px) {
+  .form-container {
+    margin: 1rem auto;
+    width: 75%;
+  }
+}
+
 input {
   border: 1px solid var(--clr-med-light);
   margin-bottom: 0.5rem;
@@ -1272,7 +1278,7 @@ textarea {
 }
 
 .contact {
-  padding-bottom: 1.75rem;
+  padding-bottom: 2rem;
 }
 
 .contact-details-container {
@@ -1335,8 +1341,8 @@ textarea {
 @media (min-width: 1024px) {
   .contact-container {
     display: grid;
-    grid-template-columns: 35% 1fr;
-    column-gap: 10%;
+    grid-template-columns: 40% 1fr;
+    column-gap: 7.5%;
   }
 
   .contact-details {
@@ -1361,13 +1367,18 @@ textarea {
   .section-paragraph--contact {
     padding-top: 0.75rem;
   }
+
+  .form-container {
+    width: 100%;
+    padding: 0.75rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .contact-container {
     display: grid;
-    grid-template-columns: 40% 40fr;
-    column-gap: 10%;
+    grid-template-columns: 45% 1fr;
+    column-gap: 5%;
   }
 
   .contact-details-container {
@@ -1375,6 +1386,7 @@ textarea {
   }
 
   .form-container {
+    width: 100%;
     padding: 0.75rem;
   }
 
@@ -1415,18 +1427,19 @@ textarea {
   .contact-container {
     display: grid;
     grid-template-columns: 40% 1fr;
-    column-gap: 10%;
+    column-gap: 7.5%;
+    margin-bottom: 2rem;
   }
 
   .contact-form {
     margin: 0 auto;
-    padding-right: 4rem;
+    padding-right: 2.75rem;
   }
 }
 
 /* Footer */
 .footer {
-  font-size: var(--fs-smaller);
+  font-size: var(--fs-smallest);
   color: rgba(255, 255, 255, 0.9);
   background-color: var(--clr-business-name-bg);
   padding: 1.25rem 1.625rem 1.125rem;
@@ -1465,6 +1478,7 @@ textarea {
 
 @media (min-width: 768px) {
   .footer {
+    font-size: var(--fs-smaller);
     padding: 1.675rem 2.125rem 1.675rem 2rem;
   }
   .scroll-arrow {
