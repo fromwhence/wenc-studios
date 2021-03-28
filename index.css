@@ -437,7 +437,6 @@ body.active::after {
     background-color: var(--clr-business-name-bg-darker);
     width: 285px;
     padding: 1.475rem 1.425rem 1.425rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
   .business-name {
@@ -480,10 +479,9 @@ body.active::after {
     position: fixed;
     align-items: flex-start;
     width: 285px;
-    top: 107px;
+    top: 106px;
     padding: 0;
     margin: 0;
-    text-align: left;
   }
 
   .side-nav-list li {
@@ -501,7 +499,7 @@ body.active::after {
     display: block;
     width: 100%;
     text-decoration: none;
-    padding: 1.25rem 0 1.2rem 1.875rem;
+    padding: 1.625rem 0 0.425rem 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
