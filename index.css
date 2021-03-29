@@ -17,6 +17,7 @@ ol[class] {
 :root {
   --clr-light-form: #f9f9f9;
   --clr-med-new: #c9c9c9;
+  --clr-med-lighter: #d3d8d8;
   --clr-med-light: #cccfcf;
   --clr-header-med: #8b9799;
   --clr-header-wide-lighter: #747d7e;
@@ -148,7 +149,7 @@ button {
   justify-content: space-between;
   padding: 2.125rem 0 1.375rem;
   margin: 0 1.625rem;
-  border-bottom: 1px solid var(--clr-med-light);
+  border-bottom: 1px solid var(--clr-med-lighter);
 }
 
 .business-name {
@@ -306,7 +307,7 @@ body.active::after {
   top: 1rem;
   opacity: 0.75;
   background: white;
-  border: 1px solid var(--clr-med-light);
+  border: 1px solid var(--clr-med-lighter);
 }
 
 .nav-open .nav-toggle {
@@ -555,7 +556,7 @@ body.active::after {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  /* border: 1px solid var(--clr-med-light); */
+  /* border: 1px solid var(--clr-med-lighter); */
 }
 
 .slide {
@@ -799,7 +800,7 @@ body.active::after {
 .section-container {
   width: 100%;
   height: auto;
-  border-top: 1px solid var(--clr-med-light);
+  border-top: 1px solid var(--clr-med-lighter);
 }
 
 .section-container.no-border {
@@ -838,6 +839,10 @@ body.active::after {
 
   .section-inverse a:hover {
     text-decoration: none;
+  }
+
+  .section-inverse .section-header {
+    border-bottom: solid 2px rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -926,7 +931,7 @@ body.active::after {
   margin-bottom: 0.5rem;
   color: var(--clr-header-wide);
   text-transform: uppercase;
-  border-bottom: 1px solid var(--clr-med-light);
+  border-bottom: 1px solid var(--clr-med-lighter);
 }
 
 .section-subheader {
@@ -1003,7 +1008,7 @@ body.active::after {
 /* Services section */
 .studio-image {
   margin: 1.25rem auto;
-  border: 1px solid var(--clr-med-light);
+  border: 1px solid var(--clr-med-lighter);
 }
 
 .services-list li {
@@ -1030,7 +1035,7 @@ body.active::after {
     height: 100%;
     margin: 0;
     margin-top: -2rem;
-    border: 1px solid var(--clr-med-light);
+    border: 1px solid var(--clr-med-lighter);
   }
 
   .side-by-side-text {
@@ -1049,7 +1054,7 @@ body.active::after {
     padding-bottom: 0.75rem;
     margin: 0;
     margin-bottom: 1.25rem;
-    border-bottom: 1px solid var(--clr-med-light);
+    border-bottom: 1px solid var(--clr-med-lighter);
   }
 }
 
@@ -1063,12 +1068,12 @@ body.active::after {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-top: 1px solid var(--clr-med-light);
+  border-top: 1px solid var(--clr-med-lighter);
   padding: 1.5rem 0 0;
 }
 
 .last {
-  border-bottom: 1px solid var(--clr-med-light);
+  border-bottom: 1px solid var(--clr-med-lighter);
 }
 
 @media (min-width: 1280px) {
@@ -1099,7 +1104,7 @@ ul.tier-list {
   width: 70%;
   list-style-type: none;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--clr-med-light);
+  border-bottom: 1px solid var(--clr-med-lighter);
 }
 
 /* Tier Pricing */
@@ -1109,7 +1114,7 @@ ul.tier-list {
   font-size: 1rem;
   margin-top: 0;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--clr-med-light);
+  border-bottom: 1px solid var(--clr-med-lighter);
   margin-bottom: 0.75rem;
 }
 
@@ -1263,7 +1268,7 @@ ul.tier-list {
   margin: 1rem 0;
   padding: 0.5rem;
   background-color: var(--clr-light-form);
-  border: 1px solid var(--clr-med-light);
+  border: 1px solid var(--clr-med-lighter);
 }
 
 @media (min-width: 768px) {
@@ -1274,7 +1279,7 @@ ul.tier-list {
 }
 
 input {
-  border: 1px solid var(--clr-med-light);
+  border: 1px solid var(--clr-med-lighter);
   margin-bottom: 0.5rem;
   padding: 0.825rem;
   font-family: inherit;
@@ -1282,7 +1287,7 @@ input {
 }
 
 textarea {
-  border: 1px solid var(--clr-med-light);
+  border: 1px solid var(--clr-med-lighter);
   padding: 0.75rem;
   font-family: inherit;
   font-size: inherit;
@@ -1327,7 +1332,7 @@ textarea {
   margin: 0 auto 0.75rem;
   width: 35%;
   text-align: center;
-  border-bottom: 1px solid var(--clr-med-light);
+  border-bottom: 1px solid var(--clr-med-lighter);
 }
 
 .contact-details--address {
@@ -1348,7 +1353,7 @@ textarea {
   overflow: hidden;
   padding-top: 66.66%; /* 3:2 Aspect Ratio */
   margin: 0.775rem 0 0.9rem;
-  border: 1px solid var(--clr-med-light);
+  border: 1px solid var(--clr-med-lighter);
 }
 
 .responsive-iframe {
