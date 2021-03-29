@@ -572,6 +572,7 @@ body.active::after {
   width: 85%;
   height: auto;
   margin: auto;
+  cursor: pointer;
 }
 
 .slide-image:after {
@@ -654,7 +655,7 @@ body.active::after {
   cursor: pointer;
   overflow: visible;
   z-index: 100;
-  background-color: white;
+  background: none;
   padding: 0;
   overflow: visible;
 }
@@ -701,7 +702,7 @@ body.active::after {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .dots {
     margin-top: 1.5rem;
   }
@@ -964,36 +965,37 @@ body.active::after {
 
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 65% 30%;
-    column-gap: 5%;
+    grid-template-columns: 65% 32.5%;
+    column-gap: 2.5%;
   }
 
   .slider-container {
-    padding-top: 0.5rem;
+    padding-top: 0.125rem;
   }
 
   .about-side-text {
+    padding: 0;
     padding-top: 1.5rem;
   }
 }
 
 @media (min-width: 1400px) {
   .about-side-text {
-    padding-top: 2.5rem;
-    padding-right: 2rem;
+    padding-top: 2.25rem;
+    padding-right: 2.5rem;
   }
 }
 
 @media (min-width: 2000px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 60% 35%;
+    grid-template-columns: 60% 30%;
     column-gap: 3.5%;
   }
 
   .about-side-text {
     padding-top: 5rem;
-    padding-right: 4rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -1018,7 +1020,7 @@ body.active::after {
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.325rem;
   }
 
   .studio-image {
@@ -1034,7 +1036,7 @@ body.active::after {
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
-    margin-top: 0.25rem;
+    margin-top: 0.75rem;
     padding: 1.75rem 1.75rem 1.25rem;
     border: 1px solid var(--clr-med-light);
     border-radius: 0.5rem;
@@ -1064,9 +1066,19 @@ body.active::after {
   padding: 1.5rem 0 0;
 }
 
-/* .last {
+.last {
   border-bottom: 1px solid var(--clr-med-light);
-} */
+}
+
+@media (min-width: 1280px) {
+  .last {
+    border-bottom: none;
+  }
+
+  .side-by-side-text.payment {
+    margin-top: -0.75rem;
+  }
+}
 
 .tier-subheader {
   padding: 0.275rem 0 0;
@@ -1183,7 +1195,7 @@ ul.tier-list {
 
   .tier-description {
     display: grid;
-    grid-template-columns: 7.5% 30% 1fr;
+    grid-template-columns: 7.5% 35% 1fr;
     column-gap: 5%;
     padding: 1.75rem 0 1.75rem;
     margin: 0;

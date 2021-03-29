@@ -8,8 +8,6 @@ const slider = function () {
   const btnRight = document.querySelector('.slider-btn--right');
   const dotContainer = document.querySelector('.dots');
 
-  // const slideWidth = slides[0].getBoundingClientRect().width;
-  // const slideHeight = slides[0].getBoundingClientRect().height;
   const slideImage = document.querySelectorAll('.slide-image');
 
   let curSlide = 0;
@@ -47,6 +45,13 @@ const slider = function () {
   expandIcon.addEventListener('click', () => {
     sliderContainer.classList.add('expand');
     resizeSliderHeight();
+  });
+
+  slides.forEach(slide => {
+    slide.addEventListener('click', () => {
+      sliderContainer.classList.add('expand');
+      resizeSliderHeight();
+    });
   });
 
   closeExpandedSlider.addEventListener('click', () => {
