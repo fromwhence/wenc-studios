@@ -912,9 +912,7 @@ body.active::after {
     height: auto;
   }
 
-  .about,
-  .schedule,
-  .contact {
+  .schedule {
     height: 100vh;
   }
 }
