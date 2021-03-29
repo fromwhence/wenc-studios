@@ -146,7 +146,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2.325rem 0 1.5rem;
+  padding: 2.25rem 0 1.375rem;
   margin: 0 1.625rem;
   border-bottom: 1px solid var(--clr-med-light);
 }
@@ -488,7 +488,7 @@ body.active::after {
     text-transform: capitalize;
     list-style: none;
     text-align: left;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     font-weight: var(--fw-reg);
     font-size: var(--fs-h5);
     margin: 0;
@@ -506,7 +506,7 @@ body.active::after {
   .side-nav-item:hover,
   .side-nav-item.active {
     background-color: var(--clr-header-wide-darker);
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.95);
     color: white;
     transition: all 250ms;
   }
@@ -922,7 +922,7 @@ body.active::after {
 }
 
 .section-header {
-  padding-bottom: 1rem;
+  padding-bottom: 0.75rem;
   margin-bottom: 0.5rem;
   color: var(--clr-header-wide);
   text-transform: uppercase;
@@ -941,7 +941,7 @@ body.active::after {
 @media (min-width: 1200px) {
   .section-header {
     font-size: 1.675rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.875rem;
     color: var(--clr-header-wide);
   }
 
