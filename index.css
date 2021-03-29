@@ -907,6 +907,7 @@ body.active::after {
     height: auto;
   }
 
+  .about,
   .schedule,
   .contact {
     height: 100vh;
