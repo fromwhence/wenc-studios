@@ -571,7 +571,7 @@ body.active::after {
   padding: 0.1rem 0 2rem;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
