@@ -117,17 +117,17 @@ const slider = function () {
   };
 
   // Disable scroll when clicking next slide
-  function disableScroll() {
+  const disableScroll = () => {
     let x = window.scrollX;
     let y = window.scrollY;
     window.onscroll = function () {
       window.scrollTo(x, y);
     };
-  }
+  };
 
-  function enableScrolling() {
+  const enableScroll = () => {
     window.onscroll = function () {};
-  }
+  };
 
   // Next slide
   const nextSlide = function () {
@@ -161,7 +161,7 @@ const slider = function () {
   btnRight.addEventListener('click', e => {
     nextSlide();
     disableScroll();
-    console.log('Test');
+    setTimeout(enableScroll, 200);
   });
   btnLeft.addEventListener('click', prevSlide);
 
