@@ -577,8 +577,9 @@ body.active::after {
 
 .slide-image {
   position: relative;
-  width: 85%;
+  width: 100%;
   height: auto;
+  margin: auto;
   cursor: pointer;
   object-fit: contain;
 }
