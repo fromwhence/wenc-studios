@@ -529,10 +529,6 @@ body.active::after {
   padding: 0 1.625rem 0.75rem;
 }
 
-.about-text:first-of-type {
-  padding-bottom: 0.25rem;
-}
-
 .about-text-show {
   display: none;
 }
@@ -544,6 +540,7 @@ body.active::after {
 @media (min-width: 1200px) {
   .about-header {
     display: block;
+    margin-bottom: 0;
   }
 }
 
@@ -557,10 +554,10 @@ body.active::after {
 .slider {
   display: flex;
   position: relative;
-  max-width: 1000px;
   min-height: auto;
   width: 100%;
-  margin: auto 0;
+  max-width: 800px;
+  margin: 0 auto;
   overflow: hidden;
   /* border: 1px solid var(--clr-med-lighter); */
 }
@@ -571,8 +568,8 @@ body.active::after {
   width: 100%;
   height: 100%;
   transition: transform 0.5s;
+  padding-bottom: 2rem;
   background-repeat: no-repeat;
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -585,7 +582,6 @@ body.active::after {
   height: auto;
   margin: 0 auto;
   cursor: pointer;
-  /* border: 1px solid pink; */
 }
 
 .is-invisible {
@@ -598,7 +594,7 @@ body.active::after {
   top: 50%;
   transform: translate(0, -50%);
   color: var(--clr-med-new);
-  padding: 0.5rem 0.4rem 0.3rem;
+  padding: 0.5rem 0.465rem 0.3rem;
   border: none;
   background: transparent;
   font-size: var(--fs-h2);
@@ -615,19 +611,19 @@ body.active::after {
 
 .artist-title {
   color: var(--clr-reg-new);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  font-size: var(--fs-smallest);
   display: flex;
   justify-content: center;
-  position: absolute;
-  bottom: -10rem;
-  padding: 0.325rem;
-  width: 100%;
-  font-size: var(--fs-smallest);
-  border: 1px solid red;
-  /* z-index: 99; */
+  align-items: flex-end;
 }
 
 .dots {
-  margin: 1rem auto 1.5rem;
+  margin: 1rem auto 1.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -685,16 +681,12 @@ body.active::after {
 }
 
 @media (min-width: 768px) {
-  .about-text:first-of-type {
-    padding-bottom: 0.5rem;
-  }
-
-  .slider {
-    margin: 0 auto 1rem;
-  }
+  /* .slider {
+    margin: -1rem auto 1rem;
+  } */
 
   .slide-image {
-    width: 70%;
+    width: 75%;
   }
 
   .slider-btn {

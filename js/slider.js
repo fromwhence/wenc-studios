@@ -25,12 +25,12 @@ const slider = function () {
 
   // Resize slider based on slide image height
   const resizeSliderHeight = function () {
-    if (window.innerWidth < 1200) {
+    if (window.innerWidth < 600) {
       let imageHeight = slideImage[0].height;
-      slider.style.height = `${imageHeight + 10}px`;
+      slider.style.height = `${imageHeight + 20}px`;
     } else {
       let imageHeight = slideImage[0].height;
-      slider.style.height = `${imageHeight + 32}px`;
+      slider.style.height = `${imageHeight + 20}px`;
     }
   };
 
