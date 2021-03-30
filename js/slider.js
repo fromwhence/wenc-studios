@@ -67,6 +67,7 @@ const slider = function () {
   window.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
       sliderContainer.classList.remove('expand');
+      resizeSliderHeight();
       window.scrollTo({
         top: 0,
         left: 0,
