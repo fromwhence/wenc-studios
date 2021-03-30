@@ -145,7 +145,11 @@ const slider = function () {
   };
   init();
 
-  btnRight.addEventListener('click', nextSlide);
+  btnRight.addEventListener('click', e => {
+    nextSlide();
+    console.log('Test');
+    e.preventDefault();
+  });
   btnLeft.addEventListener('click', prevSlide);
 
   document.addEventListener('keydown', function (e) {
