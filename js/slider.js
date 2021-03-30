@@ -116,6 +116,19 @@ const slider = function () {
     slides.forEach(slide => slide.classList.remove('is-invisible'));
   };
 
+  // Disable scroll when clicking next slide
+  function disableScroll() {
+    let x = window.scrollX;
+    let y = window.scrollY;
+    window.onscroll = function () {
+      window.scrollTo(x, y);
+    };
+  }
+
+  function enableScrolling() {
+    window.onscroll = function () {};
+  }
+
   // Next slide
   const nextSlide = function () {
     if (curSlide === maxSlide - 1) {
@@ -147,8 +160,8 @@ const slider = function () {
 
   btnRight.addEventListener('click', e => {
     nextSlide();
+    disableScroll();
     console.log('Test');
-    e.preventDefault();
   });
   btnLeft.addEventListener('click', prevSlide);
 
