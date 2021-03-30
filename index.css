@@ -557,7 +557,6 @@ body.active::after {
   height: 100%;
   width: 100%;
   max-width: 800px;
-  margin: auto;
   overflow: hidden;
   /* border: 1px solid var(--clr-med-lighter); */
 }
@@ -574,14 +573,12 @@ body.active::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid pink;
 }
 
 .slide-image {
   position: relative;
   width: 85%;
   height: auto;
-  margin: auto;
   cursor: pointer;
 }
 
