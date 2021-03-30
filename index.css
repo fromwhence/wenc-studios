@@ -580,6 +580,7 @@ body.active::after {
   width: 85%;
   height: auto;
   cursor: pointer;
+  object-fit: contain;
 }
 
 .is-invisible {
