@@ -623,7 +623,7 @@ body.active::after {
 }
 
 .dots {
-  margin: 1rem auto 1.25rem;
+  margin: 0.875rem auto 1.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -707,7 +707,7 @@ body.active::after {
   flex-direction: column;
   justify-content: flex-start;
   position: absolute;
-  right: 1.25rem;
+  right: 1rem;
   bottom: 0;
   cursor: pointer;
   overflow: visible;
@@ -741,7 +741,7 @@ body.active::after {
   }
 
   .dots {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
   }
 
   .dots-dot {
