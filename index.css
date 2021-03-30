@@ -557,7 +557,7 @@ body.active::after {
   height: 100%;
   width: 100%;
   max-width: 800px;
-  margin: 0.125rem auto 0;
+  margin: auto;
   overflow: hidden;
   /* border: 1px solid var(--clr-med-lighter); */
 }
@@ -568,19 +568,20 @@ body.active::after {
   width: 100%;
   height: 100%;
   transition: transform 0.5s;
-  padding-bottom: 2rem;
+  padding: 0.25rem 0 2rem;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid pink;
 }
 
 .slide-image {
   position: relative;
   width: 85%;
   height: auto;
-  /* margin: 0 auto; */
+  margin: auto;
   cursor: pointer;
 }
 
@@ -647,6 +648,10 @@ body.active::after {
 }
 
 @media (min-width: 768px) {
+  .slide {
+    padding-top: 0.5rem;
+  }
+
   .slide-image {
     width: 72.5%;
   }
@@ -671,6 +676,10 @@ body.active::after {
 }
 
 @media (min-width: 1024px) {
+  .slide {
+    padding-top: 0.25rem;
+  }
+
   .slide-image {
     width: 72.5%;
   }
