@@ -36,7 +36,6 @@ const navHamburger = document.querySelector('.nav-toggle');
 const headerHeight = document.querySelector('.header-container');
 
 const sticky = headerHeight.offsetHeight - navHamburger.offsetHeight - 10;
-console.log(sticky);
 
 const stickyNav = () => {
   if (window.pageYOffset >= sticky) {

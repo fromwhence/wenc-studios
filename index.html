@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="index.css" />
     <script src="./js/index.js" async defer></script>
     <script src="./js/slider.js" async defer></script>
+    <script src="./js/sliderSample.js" async defer></script>
     <script src="./js/intersectionNav.js" async defer></script>
     <script
       type="module"
@@ -112,64 +113,64 @@
             <div class="slider-side-text-container">
               <!-- Slider -->
               <div class="slider-container--expanded">
-              <div class="slider-container">
-                <div class="close-expanded-slider active">
-                  <ion-icon
-                    name="close-outline"
-                    class="close-icon"
-                    aria-label="close expanded image slider"
-                  ></ion-icon>
-                </div>
-                <div class="slider">
-                  <div class="slide">
-                    <img
-                      src="./images/kmwenc-latitude-ds-wencphoto.jpg"
-                      alt="abstract painting"
-                      class="slide-image"
-                    />
-                    <p class="artist-title">Artist Name, 'Artwork Title'</p>
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="./images/kmwenc-flow-ds-wencphoto.jpg"
-                      alt="abstract painting"
-                      class="slide-image"
-                    />
-                    <p class="artist-title">Artist Name, 'Artwork Title'</p>
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="./images/kmwenc-unbound-liberty-ds-wencphoto.jpg"
-                      alt="abstract painting"
-                      class="slide-image"
-                    />
-                    <p class="artist-title">Artist Name, 'Artwork Title'</p>
-                  </div>
-                  <button class="slider-btn slider-btn--left">
+                <div class="slider-container">
+                  <div class="close-expanded-slider active">
                     <ion-icon
-                      name="chevron-back-outline"
-                      aria-label="previous button"
+                      name="close-outline"
+                      class="close-icon"
+                      aria-label="close expanded image slider"
                     ></ion-icon>
-                  </button>
-                  <button class="slider-btn slider-btn--right">
-                    <ion-icon
-                      name="chevron-forward-outline"
-                      aria-label="next button"
-                    ></ion-icon>
-                  </button>
-                  <div class="expand-slider-icon">
-                    <ion-icon
-                      name="expand-outline"
-                      class="expand-outline"
-                    ></ion-icon>
-                    <p class="expand-text">Enlarge</p>
                   </div>
-                </div>
-                <div class="dots-container">
-                  <div class="dots"></div>
+                  <div class="slider">
+                    <div class="slide">
+                      <img
+                        src="./images/kmwenc-latitude-ds-wencphoto.jpg"
+                        alt="abstract painting"
+                        class="slide-image"
+                      />
+                      <p class="artist-title">Artist Name, 'Artwork Title'</p>
+                    </div>
+                    <div class="slide">
+                      <img
+                        src="./images/kmwenc-flow-ds-wencphoto.jpg"
+                        alt="abstract painting"
+                        class="slide-image"
+                      />
+                      <p class="artist-title">Artist Name, 'Artwork Title'</p>
+                    </div>
+                    <div class="slide">
+                      <img
+                        src="./images/kmwenc-unbound-liberty-ds-wencphoto.jpg"
+                        alt="abstract painting"
+                        class="slide-image"
+                      />
+                      <p class="artist-title">Artist Name, 'Artwork Title'</p>
+                    </div>
+                    <button class="slider-btn slider-btn--left">
+                      <ion-icon
+                        name="chevron-back-outline"
+                        aria-label="previous button"
+                      ></ion-icon>
+                    </button>
+                    <button class="slider-btn slider-btn--right">
+                      <ion-icon
+                        name="chevron-forward-outline"
+                        aria-label="next button"
+                      ></ion-icon>
+                    </button>
+                    <div class="expand-slider-icon">
+                      <ion-icon
+                        name="expand-outline"
+                        class="expand-outline"
+                      ></ion-icon>
+                      <p class="expand-text">Enlarge</p>
+                    </div>
+                  </div>
+                  <div class="dots-container">
+                    <div class="dots"></div>
+                  </div>
                 </div>
               </div>
-            </div>
               <!-- End of slider -->
               <div class="about-side-text">
                 <p class="about-text about-text-show section-paragraph">
@@ -302,7 +303,7 @@
                 <div class="tier-example-container--wide">
                   <div class="tier-example-artwork-content">
                     <img
-                      src="images/kmwenc-flow-crop.jpg"
+                      src="images/kmwenc-flow-crop-w-bg.jpg"
                       alt="abstract painting"
                     />
                   </div>
@@ -313,7 +314,7 @@
                 <div class="tier-example-artwork">
                   <div class="tier-example-artwork-content">
                     <img
-                      src="images/kmwenc-flow-crop.jpg"
+                      src="images/kmwenc-flow-crop-w-bg.jpg"
                       alt="abstract painting"
                     />
                   </div>
@@ -336,10 +337,14 @@
                 </ul>
                 <div class="tier-example-container--wide">
                   <div class="tier-example-artwork-content">
-                    <img
-                      src="images/kmwenc-flow-crop.jpg"
-                      alt="abstract painting"
-                    />
+                    <div class="slider-sample--container">
+                      <div class="slider-sample">
+                        <img class="slider-sample--image initial"  src="images/kmwenc-flow-ds-wencphoto.jpg" alt="abstract painting" />
+                        <img class="slider-sample--image initial"  src="images/kmwenc-flow-crop-w-bg.jpg" alt="abstract painting" />
+                        <div class="slider-sample--next-btn"></div>
+                        <div class="slider-sample--prev-btn"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -348,9 +353,9 @@
                 <div class="tier-example-artwork">
                   <div class="tier-example-artwork-content">
                     <img
-                      src="images/kmwenc-flow-crop.jpg"
-                      alt="abstract painting"
-                    />
+                    src="images/kmwenc-flow-crop-w-bg.jpg"
+                    alt="abstract painting"
+                  />
                   </div>
                 </div>
               </div>
@@ -371,7 +376,7 @@
                 <div class="tier-example-container--wide">
                   <div class="tier-example-artwork-content">
                     <img
-                      src="images/kmwenc-flow-crop.jpg"
+                      src="images/kmwenc-flow-crop-w-bg.jpg"
                       alt="abstract painting"
                     />
                   </div>
@@ -382,7 +387,7 @@
                 <div class="tier-example-artwork">
                   <div class="tier-example-artwork-content">
                     <img
-                      src="images/kmwenc-flow-crop.jpg"
+                      src="images/kmwenc-flow-crop-w-bg.jpg"
                       alt="abstract painting"
                     />
                   </div>

@@ -436,7 +436,7 @@ body.active::after {
 
   .business-name-container {
     background-color: var(--clr-business-name-bg-darker);
-    width: 285px;
+    width: 275px;
     padding: 1.475rem 1.425rem 1.425rem;
   }
 
@@ -444,8 +444,9 @@ body.active::after {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1.9rem;
     width: 100%;
-    text-align: left;
-    padding-left: 0.325rem;
+    text-align: center;
+    padding-right: 0.25rem;
+    /* padding-left: 0.325rem; */
   }
 
   .business-name-link {
@@ -458,17 +459,17 @@ body.active::after {
 
   .tagline {
     width: 100%;
-    text-align: left;
+    text-align: center;
     color: rgba(255, 255, 255, 0.9);
     padding: 0;
     padding-top: 0.15rem;
-    padding-left: 0.75rem;
+    padding-right: 0.275rem;
   }
 
   .side-nav {
     display: block;
     position: fixed;
-    width: 285px;
+    width: 275px;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -479,7 +480,7 @@ body.active::after {
   .side-nav-list {
     position: fixed;
     align-items: flex-start;
-    width: 285px;
+    width: 275px;
     top: 106px;
     padding: 0;
     margin: 0;
@@ -528,6 +529,10 @@ body.active::after {
   padding: 0 1.625rem 0.75rem;
 }
 
+.about-text:first-of-type {
+  padding-bottom: 0.25rem;
+}
+
 .about-text-show {
   display: none;
 }
@@ -548,13 +553,14 @@ body.active::after {
   }
 }
 
+/* Main slider */
 .slider {
   display: flex;
   position: relative;
-  max-width: 800px;
+  max-width: 1000px;
   min-height: auto;
   width: 100%;
-  margin: 0 auto;
+  margin: auto 0;
   overflow: hidden;
   /* border: 1px solid var(--clr-med-lighter); */
 }
@@ -563,23 +569,23 @@ body.active::after {
   position: absolute;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: transform 0.5s;
   background-repeat: no-repeat;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide-image {
   position: relative;
   width: 85%;
   height: auto;
-  margin: auto;
+  margin: 0 auto;
   cursor: pointer;
-}
-
-.slide-image:after {
-  content: 'text';
-  position: absolute;
-  bottom: 0;
+  /* border: 1px solid pink; */
 }
 
 .is-invisible {
@@ -612,10 +618,12 @@ body.active::after {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: -2rem;
+  bottom: -10rem;
   padding: 0.325rem;
   width: 100%;
   font-size: var(--fs-smallest);
+  border: 1px solid red;
+  /* z-index: 99; */
 }
 
 .dots {
@@ -642,6 +650,8 @@ body.active::after {
 .dots-dot--active {
   background-color: var(--clr-header-wide);
 }
+
+/* Sample image slider */
 
 /* Expanded slider feature */
 
@@ -753,6 +763,10 @@ body.active::after {
     width: 100%;
   }
 
+  .slider-container.expand .slide-image {
+    cursor: default;
+  }
+
   .slider-container.expand .expand-slider-icon {
     display: none;
   }
@@ -774,7 +788,7 @@ body.active::after {
   }
 
   .slider-container.expand .artist-title {
-    bottom: -1.75rem;
+    bottom: -2.5rem;
     font-size: var(--fs-small);
   }
 
@@ -1144,25 +1158,31 @@ ul.tier-list {
 
 .tier-example-artwork-content {
   width: 90%;
-  margin: 0 auto;
-  padding: 0.5rem 0 2rem;
+  margin: -0.5rem auto 0;
+  padding: 0;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
   .tier-example-artwork-content {
-    width: 75%;
+    width: 65%;
   }
 }
 
 @media (min-width: 1024px) {
   .tier-example-artwork-content {
-    width: 65%;
+    width: 100%;
   }
 }
 
 .tier-example-container--wide,
 .section-paragraph--wide {
   display: none;
+}
+
+.tier-example-container--wide .tier-example-artwork-content {
+  padding: 0;
+  margin-top: -0.75rem;
 }
 
 @media (min-width: 1280px) {
@@ -1201,7 +1221,7 @@ ul.tier-list {
     display: grid;
     grid-template-columns: 7.5% 35% 1fr;
     column-gap: 5%;
-    padding: 1.75rem 0 1.75rem;
+    padding: 1.5rem 0 1rem;
     margin: 0;
   }
 

@@ -23,14 +23,14 @@ const slider = function () {
     });
   };
 
-  // Resize carsousel based on slide image height
+  // Resize slider based on slide image height
   const resizeSliderHeight = function () {
     if (window.innerWidth < 1200) {
       let imageHeight = slideImage[0].height;
-      slider.style.height = `${imageHeight + 30}px`;
+      slider.style.height = `${imageHeight + 10}px`;
     } else {
       let imageHeight = slideImage[0].height;
-      slider.style.height = `${imageHeight + 25}px`;
+      slider.style.height = `${imageHeight + 32}px`;
     }
   };
 
