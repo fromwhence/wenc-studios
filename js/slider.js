@@ -91,6 +91,7 @@ const slider = function () {
   const goToSlide = function (slide) {
     slides.forEach(function (s, i) {
       s.style.transform = `translateX(${100 * (i - slide)}%)`;
+      s.style.opacity = 1;
     });
   };
   goToSlide(0);
@@ -145,11 +146,11 @@ const slider = function () {
   });
   btnLeft.addEventListener('click', prevSlide);
 
-  document.addEventListener('keydown', function (e) {
-    // short-ciruiting syntax
-    if (e.key === 'ArrowLeft') prevSlide();
-    if (e.key === 'ArrowRight') nextSlide();
-  });
+  // document.addEventListener('keydown', function (e) {
+  //   // short-ciruiting syntax
+  //   if (e.key === 'ArrowLeft') prevSlide();
+  //   if (e.key === 'ArrowRight') nextSlide();
+  // });
 
   // Event delegation to add click funtion to dots
   dotContainer.addEventListener('click', function (e) {

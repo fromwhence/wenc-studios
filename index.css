@@ -573,6 +573,7 @@ body.active::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.25;
 }
 
 .slide-image {
@@ -1238,6 +1239,17 @@ ul.tier--list {
   bottom: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.sample-slider--slide.current-slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
 }
 
 .sample-slider--btn {
