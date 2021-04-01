@@ -38,19 +38,6 @@ const setSlidePosition = (sampleSlide, index) => {
 };
 sampleSlides.forEach(setSlidePosition);
 
-// Disable scroll when clicking next slide
-const disableScroll = () => {
-  let x = window.scrollX;
-  let y = window.scrollY;
-  window.onscroll = function () {
-    window.scrollTo(x, y);
-  };
-};
-
-const enableScroll = () => {
-  window.onscroll = function () {};
-};
-
 const moveToSlide = (sampleSliderTrack, currentSlide, targetSlide) => {
   sampleSliderTrack.style.transform =
     'translateX(-' + targetSlide.style.left + ')';

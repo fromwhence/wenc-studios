@@ -107,9 +107,23 @@ const scrollToTop = function () {
   });
 };
 
-// window.addEventListener('load', () => {
-//   scrollToTop(), console.log('Onload event');
-// });
+// Disable scroll when clicking next slide
+const disableScroll = () => {
+  let x = window.scrollX;
+  let y = window.scrollY;
+  window.onscroll = function () {
+    window.scrollTo(x, y);
+  };
+};
+
+const enableScroll = () => {
+  window.onscroll = function () {};
+};
+
+window.addEventListener('load', e => {
+  disableScroll();
+  setTimeout(enableScroll, 200);
+});
 
 // Render scroll to top arrow if document is height is larger than 2000px
 const scrollToTopArrow = document.querySelector('.scroll-to-top');
@@ -118,10 +132,4 @@ if (document.body.offsetHeight > 2000) {
 }
 
 // Scroll to top event
-scrollToTopArrow.addEventListener('click', function () {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth',
-  });
-});
+scrollToTopArrow.addEventListener('click', scrollToTop);

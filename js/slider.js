@@ -109,19 +109,6 @@ const slider = function () {
     slides.forEach(slide => slide.classList.remove('is-invisible'));
   };
 
-  // Disable scroll when clicking next slide
-  const disableScroll = () => {
-    let x = window.scrollX;
-    let y = window.scrollY;
-    window.onscroll = function () {
-      window.scrollTo(x, y);
-    };
-  };
-
-  const enableScroll = () => {
-    window.onscroll = function () {};
-  };
-
   // Next slide
   const nextSlide = function () {
     if (curSlide === maxSlide - 1) {
