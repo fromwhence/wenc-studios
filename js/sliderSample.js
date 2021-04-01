@@ -12,6 +12,25 @@ const dotIndicators = document.querySelector('.sample-slider--nav-dots');
 const dots = Array.from(dotIndicators.children);
 
 const sampleSlideWidth = sampleSlides[0].getBoundingClientRect().width;
+const sampleSlideHeight = sampleSlides[0].getBoundingClientRect().height;
+
+// Resize slider based on image width
+const resizeSliderHeight = function () {
+  if (window.innerWidth < 800) {
+    let imageHeight = sampleSlideWidth;
+    sampleSlider.style.height = `${imageHeight + 30}px`;
+  } else {
+    let imageHeight = sampleSlideWidth;
+    sampleSlider.style.height = `${imageHeight + 40}px`;
+  }
+};
+
+window.addEventListener('load', resizeSliderHeight);
+window.addEventListener('resize', resizeSliderHeight);
+window.addEventListener('orientationchange', function () {
+  location.reload();
+  resizeSliderHeight();
+});
 
 // Arrange slides next to one another
 const setSlidePosition = (sampleSlide, index) => {
@@ -22,6 +41,7 @@ sampleSlides.forEach(setSlidePosition);
 const moveToSlide = (sampleSliderTrack, currentSlide, targetSlide) => {
   sampleSliderTrack.style.transform =
     'translateX(-' + targetSlide.style.left + ')';
+  console.log(targetSlide.style.left);
   currentSlide.classList.remove('current-slide');
   targetSlide.classList.add('current-slide');
 };
