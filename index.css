@@ -1215,7 +1215,7 @@ ul.tier--list {
 .sample-slider,
 .sample-slider-2 {
   position: relative;
-  height: 370px;
+  height: auto;
   width: 100%;
   max-width: 700px;
   overflow: hidden;

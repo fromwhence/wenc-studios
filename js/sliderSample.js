@@ -14,6 +14,12 @@ const dots = Array.from(dotIndicators.children);
 const sampleSlideWidth = sampleSlides[0].getBoundingClientRect().width;
 console.log(sampleSlideWidth);
 
+const setSampleSliderHeight = () => {
+  sampleSlider.height = sampleSlides[0].getBoundingClientRect().width;
+};
+
+setSampleSliderHeight();
+
 // Resize slider based on image width
 const resizeSampleSliderHeight = function () {
   if (window.innerWidth < 800) {
@@ -24,8 +30,6 @@ const resizeSampleSliderHeight = function () {
     sampleSlider.style.height = `${imageHeight + 25}px`;
   }
 };
-
-resizeSampleSliderHeight();
 
 window.addEventListener('load', resizeSampleSliderHeight);
 window.addEventListener('resize', resizeSampleSliderHeight);
