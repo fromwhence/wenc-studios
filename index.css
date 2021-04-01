@@ -696,8 +696,6 @@ body.active::after {
   }
 }
 
-/* Rates tier image slider */
-
 /* Expanded slider feature */
 
 .expand-slider-icon {
@@ -1165,8 +1163,8 @@ ul.file-format-list {
 }
 
 .tier--subheader {
-  padding: 0.275rem 0 0 1.625rem;
-  width: 22%;
+  padding: 0.3rem 0 0 1.625rem;
+  width: 30%;
   flex-wrap: nowrap;
 }
 
