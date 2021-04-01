@@ -18,7 +18,7 @@ const sampleSlideHeight = sampleSlides[0].getBoundingClientRect().height;
 const resizeSliderHeight = function () {
   if (window.innerWidth < 800) {
     let imageHeight = sampleSlideWidth;
-    sampleSlider.style.height = `${imageHeight + 30}px`;
+    sampleSlider.style.height = `${imageHeight + 10}px`;
   } else {
     let imageHeight = sampleSlideWidth;
     sampleSlider.style.height = `${imageHeight + 40}px`;
@@ -38,6 +38,19 @@ const setSlidePosition = (sampleSlide, index) => {
 };
 sampleSlides.forEach(setSlidePosition);
 
+// Disable scroll when clicking next slide
+const disableScroll = () => {
+  let x = window.scrollX;
+  let y = window.scrollY;
+  window.onscroll = function () {
+    window.scrollTo(x, y);
+  };
+};
+
+const enableScroll = () => {
+  window.onscroll = function () {};
+};
+
 const moveToSlide = (sampleSliderTrack, currentSlide, targetSlide) => {
   sampleSliderTrack.style.transform =
     'translateX(-' + targetSlide.style.left + ')';
@@ -48,6 +61,8 @@ const moveToSlide = (sampleSliderTrack, currentSlide, targetSlide) => {
 
 nextButton.addEventListener('click', e => {
   e.preventDefault();
+  disableScroll();
+  setTimeout(enableScroll, 200);
   const currentSlide = sampleSliderTrack.querySelector('.current-slide');
   const nextSlide = currentSlide.nextElementSibling;
 
