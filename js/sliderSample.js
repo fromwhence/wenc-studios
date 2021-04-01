@@ -18,10 +18,10 @@ const sampleSlideHeight = sampleSlides[0].getBoundingClientRect().height;
 const resizeSliderHeight = function () {
   if (window.innerWidth < 800) {
     let imageHeight = sampleSlideWidth;
-    sampleSlider.style.height = `${imageHeight + 20}px`;
+    sampleSlider.style.height = `${imageHeight + 25}px`;
   } else {
     let imageHeight = sampleSlideWidth;
-    sampleSlider.style.height = `${imageHeight + 20}px`;
+    sampleSlider.style.height = `${imageHeight + 25}px`;
   }
 };
 
@@ -40,7 +40,6 @@ sampleSlides.forEach(setSlidePosition);
 
 // Current slide and nav dot
 let currentSlide = sampleSliderTrack.querySelector('.current-slide');
-console.log(currentSlide);
 let currentDot = dotIndicators.querySelector('.current-slide');
 let targetSlide;
 let targetDot;

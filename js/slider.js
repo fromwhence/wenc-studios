@@ -38,9 +38,9 @@ const slider = function () {
   const expandIcon = document.querySelector('.expand-slider-icon');
   const closeExpandedSlider = document.querySelector('.close-expanded-slider');
   const sliderContainer = document.querySelector('.slider-container');
-  const expandedSliderContainer = document.querySelector(
-    '.slider-container--expanded'
-  );
+  // const expandedSliderContainer = document.querySelector(
+  //   '.slider-container--expanded'
+  // );
 
   expandIcon.addEventListener('click', () => {
     sliderContainer.classList.add('expand');
@@ -74,7 +74,6 @@ const slider = function () {
     location.reload();
     resizeSliderHeight();
   });
-  // window.addEventListener('load', scrollToTop);
   // End of resize
 
   const activateDot = function (slide) {
@@ -91,7 +90,6 @@ const slider = function () {
   const goToSlide = function (slide) {
     slides.forEach(function (s, i) {
       s.style.transform = `translateX(${100 * (i - slide)}%)`;
-      s.style.opacity = 1;
     });
   };
   goToSlide(0);
@@ -145,12 +143,6 @@ const slider = function () {
     setTimeout(enableScroll, 200);
   });
   btnLeft.addEventListener('click', prevSlide);
-
-  // document.addEventListener('keydown', function (e) {
-  //   // short-ciruiting syntax
-  //   if (e.key === 'ArrowLeft') prevSlide();
-  //   if (e.key === 'ArrowRight') nextSlide();
-  // });
 
   // Event delegation to add click funtion to dots
   dotContainer.addEventListener('click', function (e) {

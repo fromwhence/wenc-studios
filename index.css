@@ -568,14 +568,17 @@ body.active::after {
   top: 0;
   width: 100%;
   height: 100%;
-  transition: transform 350ms ease-out;
+  transition: transform 400ms ease-out, opacity 400ms;
   padding-bottom: 2rem;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.25;
 }
+
+/* .slide.current-slide {
+  opacity: 1;
+} */
 
 .slide-image {
   position: relative;
