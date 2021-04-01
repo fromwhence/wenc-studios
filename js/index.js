@@ -121,7 +121,13 @@ const enableScroll = () => {
 };
 
 // Restors top of page after browser refresh
-history.scrollRestoration = 'manual';
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+} else {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+}
 
 // Render scroll to top arrow if document is height is larger than 2000px
 const scrollToTopArrow = document.querySelector('.scroll-to-top');
