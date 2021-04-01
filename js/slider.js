@@ -74,7 +74,7 @@ const slider = function () {
     location.reload();
     resizeSliderHeight();
   });
-  window.addEventListener('load', scrollToTop);
+  // window.addEventListener('load', scrollToTop);
   // End of resize
 
   const activateDot = function (slide) {
