@@ -34,16 +34,6 @@ const slider = function () {
     }
   };
 
-  // const scrollToTop = function () {
-  //   window.scrollTo({
-  //     top: 0,
-  //     left: 0,
-  //     behavior: 'smooth',
-  //   });
-  // };
-
-  // window.addEventListener('load', scrollToTop);
-
   // Full screen slider
   const expandIcon = document.querySelector('.expand-slider-icon');
   const closeExpandedSlider = document.querySelector('.close-expanded-slider');
@@ -183,15 +173,5 @@ const slider = function () {
     }
   });
 };
-
-const scrollToTop = function () {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth',
-  });
-};
-
-window.addEventListener('load', scrollToTop);
 
 slider();
