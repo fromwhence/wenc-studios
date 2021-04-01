@@ -1214,7 +1214,7 @@ ul.tier--list {
   max-width: 700px;
   overflow: hidden;
   margin: 0 auto;
-  /* background-color: lightgray; */
+  background-color: lightgray;
 }
 
 .sample-slider--track {
@@ -1237,6 +1237,7 @@ ul.tier--list {
   top: 0;
   bottom: 0;
   width: 100%;
+  height: 100%;
 }
 
 .sample-slider--btn {

@@ -38,11 +38,24 @@ const setSlidePosition = (sampleSlide, index) => {
 };
 sampleSlides.forEach(setSlidePosition);
 
+// Current slide and nav dot
+let currentSlide = sampleSliderTrack.querySelector('.current-slide');
+console.log(currentSlide);
+let currentDot = dotIndicators.querySelector('.current-slide');
+let targetSlide;
+let targetDot;
+
 const moveToSlide = (sampleSliderTrack, currentSlide, targetSlide) => {
   sampleSliderTrack.style.transform =
     'translateX(-' + targetSlide.style.left + ')';
+  currentSlide = sampleSliderTrack.querySelector('.current-slide');
   currentSlide.classList.remove('current-slide');
   targetSlide.classList.add('current-slide');
+};
+
+const updateDots = (currentDot, targetDot) => {
+  currentDot.classList.remove('current-slide');
+  targetDot.classList.add('current-slide');
 };
 
 nextButton.addEventListener('click', e => {
@@ -51,16 +64,33 @@ nextButton.addEventListener('click', e => {
   setTimeout(enableScroll, 200);
   const currentSlide = sampleSliderTrack.querySelector('.current-slide');
   const nextSlide = currentSlide.nextElementSibling;
+  const currentDot = dotIndicators.querySelector('.current-slide');
+  const nextDot = currentDot.nextElementSibling;
 
   moveToSlide(sampleSliderTrack, currentSlide, nextSlide);
+  updateDots(currentDot, nextDot);
 });
 
 prevButton.addEventListener('click', e => {
-  e.preventDefault();
-  const currentSlide = sampleSliderTrack.querySelector('.current-slide');
+  currentSlide = sampleSliderTrack.querySelector('.current-slide');
   const prevSlide = currentSlide.previousElementSibling;
+  const currentDot = dotIndicators.querySelector('.current-slide');
+  const prevDot = currentDot.previousElementSibling;
 
   moveToSlide(sampleSliderTrack, currentSlide, prevSlide);
+  updateDots(currentDot, prevDot);
 });
 
-// dotIndicators.addEventListener('click', e);
+dotIndicators.addEventListener('click', e => {
+  targetDot = e.target.closest('button');
+
+  if (!targetDot) return;
+
+  currentSlide = sampleSliderTrack.querySelector('.currentSlide');
+  currentDot = dotIndicators.querySelector('.current-slide');
+  const targetIndex = dots.findIndex(dot => dot === targetDot);
+  const targetSlide = sampleSlides[targetIndex];
+
+  moveToSlide(sampleSliderTrack, currentSlide, targetSlide);
+  updateDots(currentDot, targetDot);
+});
