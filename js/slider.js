@@ -68,7 +68,7 @@ const slider = function () {
     }
   });
 
-  window.addEventListener('load', resizeSliderHeight);
+  window.addEventListener('onload', resizeSliderHeight);
   window.addEventListener('resize', resizeSliderHeight);
   window.addEventListener('orientationchange', function () {
     location.reload();

@@ -107,7 +107,7 @@ const scrollToTop = function () {
   });
 };
 
-window.addEventListener('load', scrollToTop);
+window.addEventListener('onload', scrollToTop);
 
 // Render scroll to top arrow if document is height is larger than 2000px
 const scrollToTopArrow = document.querySelector('.scroll-to-top');
