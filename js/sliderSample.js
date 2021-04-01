@@ -18,10 +18,10 @@ const sampleSlideHeight = sampleSlides[0].getBoundingClientRect().height;
 const resizeSliderHeight = function () {
   if (window.innerWidth < 800) {
     let imageHeight = sampleSlideWidth;
-    sampleSlider.style.height = `${imageHeight + 10}px`;
+    sampleSlider.style.height = `${imageHeight + 15}px`;
   } else {
     let imageHeight = sampleSlideWidth;
-    sampleSlider.style.height = `${imageHeight + 35}px`;
+    sampleSlider.style.height = `${imageHeight + 20}px`;
   }
 };
 
