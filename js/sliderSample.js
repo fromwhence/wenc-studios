@@ -57,6 +57,19 @@ const updateDots = (currentDot, targetDot) => {
   targetDot.classList.add('current-slide');
 };
 
+const hideShowArrows = (sampleSlides, prevButton, nextButton, targetIndex) => {
+  if (targetIndex === 0) {
+    prevButton.classList.add('is-hidden');
+    nextButton.classList.remove('is-hidden');
+  } else if (targetIndex === sampleSlides.length - 1) {
+    prevButton.classList.remove('is-hidden');
+    nextButton.classList.add('is-hidden');
+  } else {
+    prevButton.classList.remove('is-hidden');
+    nextButton.classList.remove('is-hidden');
+  }
+};
+
 const nextSampleButton = () => {
   nextButton.addEventListener('click', e => {
     e.preventDefault();
@@ -66,9 +79,13 @@ const nextSampleButton = () => {
     const nextSlide = currentSlide.nextElementSibling;
     const currentDot = dotIndicators.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
+    const nextIndex = sampleSlides.findIndex(
+      sampleSlide => sampleSlide === nextSlide
+    );
 
     moveToSlide(sampleSliderTrack, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
+    hideShowArrows(sampleSlides, prevButton, nextButton, nextIndex);
   });
 };
 
@@ -78,25 +95,33 @@ const prevSampleButton = () => {
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = dotIndicators.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
+    const prevIndex = sampleSlides.findIndex(
+      sampleSlide => sampleSlide === prevSlide
+    );
 
     moveToSlide(sampleSliderTrack, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
+    hideShowArrows(sampleSlides, prevButton, nextButton, prevIndex);
   });
 };
 
-dotIndicators.addEventListener('click', e => {
-  targetDot = e.target.closest('button');
+const dotIndicatorsTracking = () => {
+  dotIndicators.addEventListener('click', e => {
+    targetDot = e.target.closest('button');
 
-  if (!targetDot) return;
+    if (!targetDot) return;
 
-  currentSlide = sampleSliderTrack.querySelector('.current-slide');
-  currentDot = dotIndicators.querySelector('.current-slide');
-  const targetIndex = dots.findIndex(dot => dot === targetDot);
-  const targetSlide = sampleSlides[targetIndex];
+    currentSlide = sampleSliderTrack.querySelector('.current-slide');
+    currentDot = dotIndicators.querySelector('.current-slide');
+    const targetIndex = dots.findIndex(dot => dot === targetDot);
+    const targetSlide = sampleSlides[targetIndex];
 
-  moveToSlide(sampleSliderTrack, currentSlide, targetSlide);
-  updateDots(currentDot, targetDot);
-});
+    moveToSlide(sampleSliderTrack, currentSlide, targetSlide);
+    updateDots(currentDot, targetDot);
+    hideShowArrows(sampleSlides, prevButton, nextButton, targetIndex);
+  });
+};
 
+dotIndicatorsTracking();
 nextSampleButton();
 prevSampleButton();

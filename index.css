@@ -588,10 +588,6 @@ body.active::after {
   object-fit: contain;
 }
 
-.is-invisible {
-  opacity: 0;
-}
-
 .slider-btn {
   cursor: pointer;
   position: absolute;
@@ -624,6 +620,10 @@ body.active::after {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.is-hidden {
+  opacity: 0;
 }
 
 .dots {
@@ -1264,7 +1264,7 @@ ul.tier--list {
 .sample-slider--btn,
 .sample-slider--btn-2 {
   position: absolute;
-  top: 50%;
+  top: 47.5%;
   transform: translateY(-50%);
   cursor: pointer;
   color: var(--clr-med-new);

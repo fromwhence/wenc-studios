@@ -57,6 +57,24 @@ const updateDots2 = (currentDot2, targetDot2) => {
   targetDot2.classList.add('current-slide-2');
 };
 
+const hideShowArrows2 = (
+  sampleSlides2,
+  prevButton2,
+  nextButton2,
+  targetIndex2
+) => {
+  if (targetIndex2 === 0) {
+    prevButton2.classList.add('is-hidden');
+    nextButton2.classList.remove('is-hidden');
+  } else if (targetIndex2 === sampleSlides2.length - 1) {
+    prevButton2.classList.remove('is-hidden');
+    nextButton2.classList.add('is-hidden');
+  } else {
+    prevButton2.classList.remove('is-hidden');
+    nextButton2.classList.remove('is-hidden');
+  }
+};
+
 const nextSampleButton2 = () => {
   nextButton2.addEventListener('click', e => {
     e.preventDefault();
@@ -66,9 +84,13 @@ const nextSampleButton2 = () => {
     const nextSlide2 = currentSlide2.nextElementSibling;
     const currentDot2 = dotIndicators2.querySelector('.current-slide-2');
     const nextDot2 = currentDot2.nextElementSibling;
+    const nextIndex2 = sampleSlides2.findIndex(
+      sampleSlide2 => sampleSlide2 === nextSlide2
+    );
 
     moveToSlide2(sampleSliderTrack2, currentSlide2, nextSlide2);
     updateDots2(currentDot2, nextDot2);
+    hideShowArrows2(sampleSlides2, prevButton2, nextButton2, nextIndex2);
   });
 };
 
@@ -78,25 +100,33 @@ const prevSampleButton2 = () => {
     const prevSlide2 = currentSlide2.previousElementSibling;
     const currentDot2 = dotIndicators2.querySelector('.current-slide-2');
     const prevDot2 = currentDot2.previousElementSibling;
+    const prevIndex2 = sampleSlides2.findIndex(
+      sampleSlide2 => sampleSlide2 === prevSlide2
+    );
 
     moveToSlide2(sampleSliderTrack2, currentSlide2, prevSlide2);
     updateDots2(currentDot2, prevDot2);
+    hideShowArrows2(sampleSlides2, prevButton2, nextButton2, prevIndex2);
   });
 };
 
-dotIndicators2.addEventListener('click', e => {
-  targetDot2 = e.target.closest('button');
+const dotIndicatorsTracking2 = () => {
+  dotIndicators2.addEventListener('click', e => {
+    targetDot2 = e.target.closest('button');
 
-  if (!targetDot) return;
+    if (!targetDot) return;
 
-  currentSlide2 = sampleSliderTrack2.querySelector('.current-slide-2');
-  currentDot2 = dotIndicators2.querySelector('.current-slide-2');
-  const targetIndex2 = dots2.findIndex(dot => dot === targetDot2);
-  const targetSlide2 = sampleSlides2[targetIndex2];
+    currentSlide2 = sampleSliderTrack2.querySelector('.current-slide-2');
+    currentDot2 = dotIndicators2.querySelector('.current-slide-2');
+    const targetIndex2 = dots2.findIndex(dot => dot === targetDot2);
+    const targetSlide2 = sampleSlides2[targetIndex2];
 
-  moveToSlide2(sampleSliderTrack2, currentSlide2, targetSlide2);
-  updateDots2(currentDot2, targetDot2);
-});
+    moveToSlide2(sampleSliderTrack2, currentSlide2, targetSlide2);
+    updateDots2(currentDot2, targetDot2);
+    hideShowArrows2(sampleSlides2, prevButton2, nextButton2, targetIndex2);
+  });
+};
 
+dotIndicatorsTracking2();
 nextSampleButton2();
 prevSampleButton2();
