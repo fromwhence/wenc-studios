@@ -120,10 +120,8 @@ const enableScroll = () => {
   window.onscroll = function () {};
 };
 
-window.addEventListener('load', e => {
-  disableScroll();
-  setTimeout(enableScroll, 200);
-});
+// Restors top of page after browser refresh
+history.scrollRestoration = 'manual';
 
 // Render scroll to top arrow if document is height is larger than 2000px
 const scrollToTopArrow = document.querySelector('.scroll-to-top');
