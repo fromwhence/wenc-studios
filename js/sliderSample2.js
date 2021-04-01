@@ -25,6 +25,8 @@ const resizeSampleSliderHeight2 = function () {
   }
 };
 
+resizeSampleSliderHeight2();
+
 window.addEventListener('load', resizeSampleSliderHeight2);
 window.addEventListener('resize', resizeSampleSliderHeight2);
 window.addEventListener('orientationchange', function () {
