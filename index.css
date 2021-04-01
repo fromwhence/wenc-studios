@@ -521,7 +521,7 @@ body.active::after {
 
 /* About and Rates sections and sliders */
 .about {
-  padding-top: 1.275rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
 }
 
@@ -988,7 +988,7 @@ body.active::after {
 }
 
 .section-subheader {
-  padding: 1.125rem 0;
+  padding: 1.125rem 0 1rem;
   color: var(--clr-header-wide);
 }
 
@@ -1121,7 +1121,7 @@ body.active::after {
 
 /* Rates section and tier pricing */
 .section-header--rates {
-  margin-bottom: 1.125rem;
+  margin-bottom: 1rem;
 }
 
 .section-subheader--rates {
@@ -1130,7 +1130,7 @@ body.active::after {
 }
 
 .section-header--rates {
-  padding: 2.275rem 1.625rem;
+  padding: 2.275rem 1.625rem 1rem;
 }
 
 .section-paragraph--rates {
@@ -1390,7 +1390,6 @@ ul.tier--list {
 }
 
 /* Contact section */
-
 .contact-details {
   font-style: inherit;
   line-height: 1.75;
@@ -1478,8 +1477,8 @@ textarea {
 
 .contact-sub-header {
   display: block;
-  padding: 1rem 0 0.75rem;
-  margin: 0 auto 0.75rem;
+  padding: 0.75rem 0 0.75rem;
+  margin: 0 auto 0.5rem;
   width: 35%;
   text-align: center;
   border-bottom: 1px solid var(--clr-med-lighter);
@@ -1494,7 +1493,7 @@ textarea {
 }
 
 .contact-details-sub-container:last-of-type {
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.325rem;
 }
 
 .google-map--responsive {
