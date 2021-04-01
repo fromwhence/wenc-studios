@@ -12,16 +12,16 @@ const dotIndicators = document.querySelector('.sample-slider--nav-dots');
 const dots = Array.from(dotIndicators.children);
 
 const sampleSlideWidth = sampleSlides[0].getBoundingClientRect().width;
-const sampleSlideHeight = sampleSlides[0].getBoundingClientRect().height;
+console.log(sampleSlideWidth);
 
 // Resize slider based on image width
 const resizeSampleSliderHeight = function () {
   if (window.innerWidth < 800) {
     let imageHeight = sampleSlideWidth;
-    sampleSlider.style.height = `${imageHeight}px`;
+    sampleSlider.style.height = `${imageHeight + 25}px`;
   } else {
     let imageHeight = sampleSlideWidth;
-    sampleSlider.style.height = `${imageHeight}px`;
+    sampleSlider.style.height = `${imageHeight + 25}px`;
   }
 };
 
