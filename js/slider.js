@@ -34,15 +34,15 @@ const slider = function () {
     }
   };
 
-  const scrollToTop = function () {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
-  };
+  // const scrollToTop = function () {
+  //   window.scrollTo({
+  //     top: 0,
+  //     left: 0,
+  //     behavior: 'smooth',
+  //   });
+  // };
 
-  window.addEventListener('load', scrollToTop);
+  // window.addEventListener('load', scrollToTop);
 
   // Full screen slider
   const expandIcon = document.querySelector('.expand-slider-icon');

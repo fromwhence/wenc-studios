@@ -98,15 +98,25 @@ sideNavLinks.forEach(sideNavLink => {
 //   });
 // });
 
-// Scroll to top
+// Scroll to top when page is reloaded
+const scrollToTop = function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
+};
+
+window.addEventListener('load', scrollToTop);
+
 // Render scroll to top arrow if document is height is larger than 2000px
-const scrollToTop = document.querySelector('.scroll-to-top');
+const scrollToTopArrow = document.querySelector('.scroll-to-top');
 if (document.body.offsetHeight > 2000) {
-  scrollToTop.classList.add('active');
+  scrollToTopArrow.classList.add('active');
 }
 
 // Scroll to top event
-scrollToTop.addEventListener('click', function () {
+scrollToTopArrow.addEventListener('click', function () {
   window.scrollTo({
     top: 0,
     left: 0,
