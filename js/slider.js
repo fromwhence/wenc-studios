@@ -34,6 +34,16 @@ const slider = function () {
     }
   };
 
+  const scrollToTop = function () {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  window.addEventListener('load', scrollToTop);
+
   // Full screen slider
   const expandIcon = document.querySelector('.expand-slider-icon');
   const closeExpandedSlider = document.querySelector('.close-expanded-slider');
@@ -57,22 +67,14 @@ const slider = function () {
   closeExpandedSlider.addEventListener('click', () => {
     sliderContainer.classList.remove('expand');
     resizeSliderHeight();
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
+    scrollToTop();
   });
 
   window.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
       sliderContainer.classList.remove('expand');
       resizeSliderHeight();
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-      });
+      scrollToTop();
     }
   });
 
