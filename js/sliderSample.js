@@ -54,7 +54,6 @@ const enableScroll = () => {
 const moveToSlide = (sampleSliderTrack, currentSlide, targetSlide) => {
   sampleSliderTrack.style.transform =
     'translateX(-' + targetSlide.style.left + ')';
-  console.log(targetSlide.style.left);
   currentSlide.classList.remove('current-slide');
   targetSlide.classList.add('current-slide');
 };

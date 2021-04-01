@@ -68,12 +68,13 @@ const slider = function () {
     }
   });
 
-  window.addEventListener('onload', resizeSliderHeight);
+  window.addEventListener('load', resizeSliderHeight);
   window.addEventListener('resize', resizeSliderHeight);
   window.addEventListener('orientationchange', function () {
     location.reload();
     resizeSliderHeight();
   });
+  window.addEventListener('load', scrollToTop);
   // End of resize
 
   const activateDot = function (slide) {
