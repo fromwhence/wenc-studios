@@ -1223,7 +1223,7 @@ ul.tier--list {
   height: auto;
   width: 100%;
   position: relative;
-  transition: transform 350ms ease-out;
+  transition: transform 400ms ease-out;
 }
 
 .sample-slider--image {
