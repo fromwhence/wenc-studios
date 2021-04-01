@@ -1212,7 +1212,8 @@ ul.tier--list {
 }
 
 /* Rates sample sliders */
-.sample-slider {
+.sample-slider,
+.sample-slider-2 {
   position: relative;
   height: 370px;
   width: 100%;
@@ -1222,7 +1223,8 @@ ul.tier--list {
   /* background-color: lightgray; */
 }
 
-.sample-slider--track {
+.sample-slider--track,
+.sample-slider--track-2 {
   list-style-type: none;
   height: auto;
   width: 100%;
@@ -1230,14 +1232,16 @@ ul.tier--list {
   transition: transform 400ms ease-out;
 }
 
-.sample-slider--image {
+.sample-slider--image,
+.sample-slider--image-2 {
   width: 85%;
   height: auto;
   margin: auto;
   object-fit: contain;
 }
 
-.sample-slider--slide {
+.sample-slider--slide,
+.sample-slider--slide-2 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1247,7 +1251,8 @@ ul.tier--list {
   transition: opacity 400ms;
 }
 
-.sample-slider--slide.current-slide {
+.sample-slider--slide.current-slide,
+.sample-slider--slide-2.current-slide-2 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1256,7 +1261,8 @@ ul.tier--list {
   opacity: 1;
 }
 
-.sample-slider--btn {
+.sample-slider--btn,
+.sample-slider--btn-2 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1269,21 +1275,25 @@ ul.tier--list {
   transition: 250ms;
 }
 
-.sample-slider--btn:hover {
+.sample-slider--btn:hover,
+.sample-slider--btn-2:hover {
   color: var(--clr-header-wide);
 }
 
-.sample-slider--btn-right {
+.sample-slider--btn-right,
+.sample-slider--btn-right-2 {
   position: absolute;
   right: 0;
 }
 
-.sample-slider--btn-left {
+.sample-slider--btn-left,
+.sample-slider--btn-left-2 {
   position: absolute;
   left: 0;
 }
 
-.sample-slider--title {
+.sample-slider--title,
+.sample-slider--title-2 {
   color: var(--clr-reg-new);
   position: absolute;
   bottom: 0;
@@ -1296,7 +1306,8 @@ ul.tier--list {
   align-items: flex-end;
 }
 
-.sample-slider--nav-dots {
+.sample-slider--nav-dots,
+.sample-slider--nav-dots-2 {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -1307,7 +1318,8 @@ ul.tier--list {
   overflow: visible;
 }
 
-.sample-slider--nav-dot {
+.sample-slider--nav-dot,
+.sample-slider--nav-dot-2 {
   border: none;
   height: 1em;
   width: 1em;
@@ -1319,7 +1331,8 @@ ul.tier--list {
   transition: all 250ms;
 }
 
-.sample-slider--nav-dot.current-slide {
+.sample-slider--nav-dot.current-slide,
+.sample-slider--nav-dot-2.current-slide-2 {
   background-color: var(--clr-header-wide);
 }
 

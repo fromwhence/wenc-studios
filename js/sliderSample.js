@@ -89,7 +89,7 @@ dotIndicators.addEventListener('click', e => {
 
   if (!targetDot) return;
 
-  currentSlide = sampleSliderTrack.querySelector('.currentSlide');
+  currentSlide = sampleSliderTrack.querySelector('.current-slide');
   currentDot = dotIndicators.querySelector('.current-slide');
   const targetIndex = dots.findIndex(dot => dot === targetDot);
   const targetSlide = sampleSlides[targetIndex];
