@@ -15,7 +15,7 @@ const sampleSlideWidth = sampleSlides[0].getBoundingClientRect().width;
 const sampleSlideHeight = sampleSlides[0].getBoundingClientRect().height;
 
 // Resize slider based on image width
-const resizeSliderHeight = function () {
+const resizeSampleSliderHeight = function () {
   if (window.innerWidth < 800) {
     let imageHeight = sampleSlideWidth;
     sampleSlider.style.height = `${imageHeight + 25}px`;
@@ -25,11 +25,11 @@ const resizeSliderHeight = function () {
   }
 };
 
-window.addEventListener('load', resizeSliderHeight);
-window.addEventListener('resize', resizeSliderHeight);
+window.addEventListener('load', resizeSampleSliderHeight);
+window.addEventListener('resize', resizeSampleSliderHeight);
 window.addEventListener('orientationchange', function () {
   location.reload();
-  resizeSliderHeight();
+  resizeSampleSliderHeight();
 });
 
 // Arrange slides next to one another
