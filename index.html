@@ -20,14 +20,14 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
     ></script>
   </head>
-  <body id="top">
+  <body id="home">
     <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
     </button>
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="#top" class="nav-link">home</a>
+          <a href="#home" class="nav-link">home</a>
         </li>
         <li class="nav-item">
           <a href="#services" class="nav-link">services</a>
@@ -47,13 +47,13 @@
       <div class="side-nav-container">
         <nav class="side-nav">
           <div class="business-name-container">
-            <a href="#top" class="business-name-link">
+            <a href="home" class="business-name-link">
               <h1 class="business-name"><strong>wenc</strong> photo</h1>
               <p class="tagline">fine art documentation</p>
             </a>
           </div>
           <ul class="side-nav-list">
-            <a href="#top" class="side-nav-item aboutNavItem">
+            <a href="#home" class="side-nav-item aboutNavItem">
               <li>about</li>
             </a>
             <a
@@ -303,10 +303,11 @@
                 </ul>
               </div>
               <div class="tier--example-container">
-                <div class="tier--example-artwork--static">
+                <div class="tier--example-artwork tier--example-artwork--static">
                   <img
                     src="images/kmwenc-flow-crop-w-bg.jpg"
                     alt="abstract painting"
+                    class="sample-slider--image"
                   />
                 </div>
               </div>
@@ -328,22 +329,22 @@
               <div class="tier--example-container">
                 <div class="tier--example-artwork">
                   <div class="sample-slider">
-                    <ul class="sample-slider--track">
-                      <li class="sample-slider--slide current-slide">
+                    <div class="sample-slider--track">
+                      <div class="sample-slider--slide current-slide">
                         <img
                           src="images/kmwenc-flow-ds.jpg"
                           alt="abstract painting"
                           class="sample-slider--image"
                         />
-                      </li>
-                      <li class="sample-slider--slide">
+                      </div>
+                      <div class="sample-slider--slide">
                         <img
                           src="images/kmwenc-flow-crop-w-bg.jpg"
                           alt="abstract painting"
                           class="sample-slider--image"
                         />
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                     <button class="sample-slider--btn sample-slider--btn-left is-hidden">
                       <ion-icon
                       name="chevron-back-outline"
@@ -381,29 +382,29 @@
               <div class="tier--example-container">
                 <div class="tier--example-artwork">
                   <div class="sample-slider-2">
-                    <ul class="sample-slider--track-2">
-                      <li class="sample-slider--slide-2 current-slide-2">
+                    <div class="sample-slider--track-2">
+                      <div class="sample-slider--slide-2 current-slide-2">
                         <img
                           src="images/kmwenc-flow-ds.jpg"
                           alt="abstract painting"
                           class="sample-slider--image-2"
                         />
-                      </li>
-                      <li class="sample-slider--slide-2">
+                      </div>
+                      <div class="sample-slider--slide-2">
                         <img
                           src="images/kmwenc-flow-ds.jpg"
                           alt="abstract painting"
                           class="sample-slider--image-2"
                         />
-                      </li>
-                      <li class="sample-slider--slide-2">
+                      </div>
+                      <div class="sample-slider--slide-2">
                         <img
                           src="images/kmwenc-flow-crop-w-bg.jpg"
                           alt="abstract painting"
                           class="sample-slider--image-2"
                         />
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                     <button class="sample-slider--btn-2 sample-slider--btn-left-2 is-hidden">
                       <ion-icon
                       name="chevron-back-outline"

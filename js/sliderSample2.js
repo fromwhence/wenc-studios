@@ -14,10 +14,10 @@ const dots2 = Array.from(dotIndicators2.children);
 const sampleSlideWidth2 = sampleSlides2[0].getBoundingClientRect().width;
 console.log(sampleSlideWidth2);
 
-// const setSampleSliderHeight2 = () => {
-//   sampleSlider2.style.height = sampleSlideWidth2 + 'px';
-// };
-// setSampleSliderHeight2();
+const setSampleSliderHeight2 = () => {
+  sampleSlider2.style.height = sampleSlideWidth2 + 'px';
+};
+setSampleSliderHeight2();
 
 // Resize slider based on image width
 const resizeSampleSliderHeight2 = function () {
