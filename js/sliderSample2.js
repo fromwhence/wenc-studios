@@ -15,7 +15,7 @@ const sampleSlideWidth2 = sampleSlides2[0].getBoundingClientRect().width;
 console.log(sampleSlideWidth2);
 
 const setSampleSliderHeight2 = () => {
-  sampleSlider2.height = sampleSlides2[0].getBoundingClientRect().width;
+  sampleSlider2.style.height = sampleSlideWidth2 + 'px';
 };
 setSampleSliderHeight2();
 
