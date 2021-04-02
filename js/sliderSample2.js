@@ -17,7 +17,6 @@ console.log(sampleSlideWidth2);
 const setSampleSliderHeight2 = () => {
   sampleSlider2.height = sampleSlides2[0].getBoundingClientRect().width;
 };
-
 setSampleSliderHeight2();
 
 // Resize slider based on image width
@@ -30,8 +29,6 @@ const resizeSampleSliderHeight2 = function () {
     sampleSlider2.style.height = `${imageHeight + 25}px`;
   }
 };
-
-resizeSampleSliderHeight2();
 
 window.addEventListener('load', resizeSampleSliderHeight2);
 window.addEventListener('resize', resizeSampleSliderHeight2);
