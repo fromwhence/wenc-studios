@@ -32,7 +32,7 @@ const resizeSampleSliderHeight = function () {
 
 resizeSampleSliderHeight();
 
-window.addEventListener('load', resizeSampleSliderHeight);
+// window.addEventListener('load', resizeSampleSliderHeight);
 window.addEventListener('resize', resizeSampleSliderHeight);
 window.addEventListener('orientationchange', function () {
   location.reload();
