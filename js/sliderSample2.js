@@ -15,16 +15,18 @@ let sampleSlideWidth2 = sampleSlides2[0].clientWidth;
 let sampleSlideHeight2 = sampleSlideWidth2;
 
 // Resize slider based on image width
+
 const resizeSampleSliderHeight2 = function () {
   if (window.innerWidth < 800) {
-    sampleSlider2.style.height = `${sampleSlideHeight2 - 15}px`;
+    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.85}px`;
+    console.log(sampleSlider2.style.height);
   } else {
-    sampleSlider2.style.height = `${sampleSlideHeight2 - 15}px`;
+    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.7}px`;
+    console.log(sampleSlider2.style.height);
   }
 };
 
 resizeSampleSliderHeight2();
-console.log(sampleSlideWidth2, sampleSlideHeight2);
 
 // window.addEventListener('load', resizeSampleSliderHeight2);
 window.addEventListener('resize', resizeSampleSliderHeight2);
