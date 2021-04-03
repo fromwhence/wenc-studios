@@ -1268,7 +1268,7 @@ ul.tier--list {
 .sample-slider--btn,
 .sample-slider--btn-2 {
   position: absolute;
-  top: 47.5%;
+  top: 46.5%;
   transform: translateY(-50%);
   cursor: pointer;
   color: var(--clr-med-new);
@@ -1344,10 +1344,32 @@ ul.tier--list {
 }
 
 @media (min-width: 768px) {
-  .tier--example-artwork {
-    width: 75%;
-    height: auto;
-    margin: auto;
+  .tier--example-container {
+    padding-top: 0.25rem;
+  }
+
+  .tier--example-artwork--static,
+  .sample-slider--image,
+  .sample-slider--image-2 {
+    width: 70%;
+  }
+
+  .slider-btn {
+    font-size: 2.25rem;
+    padding: 0.5rem;
+  }
+
+  .slider-btn--right {
+    margin-right: 1.25rem;
+  }
+
+  .slider-btn--left {
+    margin-left: 1.25rem;
+  }
+
+  .artist-title {
+    bottom: 0rem;
+    font-size: var(--fs-smaller);
   }
 }
 
@@ -1391,7 +1413,7 @@ ul.tier--list {
     display: block;
   }
 
-  .tier-example-container {
+  .tier--example-container {
     display: none;
   }
 

@@ -14,16 +14,16 @@ let sampleSlideHeight = sampleSlideWidth;
 
 // Resize slider based on image width
 const resizeSampleSliderHeight = function () {
-  if (window.innerWidth < 800) {
-    sampleSlider.style.height = `${sampleSlideHeight * 0.9325}px`;
-    console.log(sampleSlider.style.height);
+  if (window.innerWidth < 768) {
+    sampleSlider.style.height = `${sampleSlideHeight * 0.95}px`;
+    // console.log(sampleSlider.style.height);
   } else {
-    sampleSlider.style.height = `${sampleSlideHeight * 0.9325}px`;
-    console.log(sampleSlider.style.height);
+    sampleSlider.style.height = `${sampleSlideHeight * 0.725}px`;
+    // console.log(sampleSlider.style.height);
   }
 };
 
-resizeSampleSliderHeight();
+// resizeSampleSliderHeight();
 
 window.addEventListener('load', resizeSampleSliderHeight);
 window.addEventListener('resize', resizeSampleSliderHeight);
