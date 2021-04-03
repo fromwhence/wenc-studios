@@ -18,17 +18,17 @@ let sampleSlideHeight2 = sampleSlideWidth2;
 
 const resizeSampleSliderHeight2 = function () {
   if (window.innerWidth < 800) {
-    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.9}px`;
+    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.95}px`;
     console.log(sampleSlider2.style.height);
   } else {
-    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.9}px`;
+    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.95}px`;
     console.log(sampleSlider2.style.height);
   }
 };
 
 resizeSampleSliderHeight2();
 
-// window.addEventListener('load', resizeSampleSliderHeight2);
+window.addEventListener('load', resizeSampleSliderHeight2);
 window.addEventListener('resize', resizeSampleSliderHeight2);
 window.addEventListener('orientationchange', function () {
   location.reload();
