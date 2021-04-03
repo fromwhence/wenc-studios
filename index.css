@@ -1202,9 +1202,11 @@ ul.tier--list {
 }
 
 .tier--example-artwork--static {
+  position: relative;
   width: 85%;
   height: auto;
   margin: auto;
+  object-fit: contain;
 }
 
 .last {
@@ -1217,10 +1219,11 @@ ul.tier--list {
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 100%;
+  width: 100%;
+  max-width: 700px;
   overflow: hidden;
   margin: 0 auto;
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 
 .sample-slider--track,
@@ -1255,6 +1258,7 @@ ul.tier--list {
 
 .sample-slider--image,
 .sample-slider--image-2 {
+  position: relative;
   width: 85%;
   height: auto;
   margin: auto;
@@ -1317,6 +1321,10 @@ ul.tier--list {
   padding: 0.5rem;
   overflow: visible;
 }
+
+/* .sample-slider--nav-dot-2 {
+  bottom: 2rem;
+} */
 
 .sample-slider--nav-dot,
 .sample-slider--nav-dot-2 {

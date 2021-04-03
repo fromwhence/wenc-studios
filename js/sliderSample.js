@@ -2,37 +2,29 @@
 const sampleSlider = document.querySelector('.sample-slider');
 const sampleSliderTrack = document.querySelector('.sample-slider--track');
 const sampleSlides = Array.from(sampleSliderTrack.children);
-const sampleSliderImages = Array.from(
-  document.querySelectorAll('.sample-slider--image')
-);
+const sampleSliderImages = document.querySelectorAll('.sample-slider--image');
 
 const nextButton = document.querySelector('.sample-slider--btn-right');
 const prevButton = document.querySelector('.sample-slider--btn-left');
 const dotIndicators = document.querySelector('.sample-slider--nav-dots');
 const dots = Array.from(dotIndicators.children);
 
-const sampleSlideWidth = sampleSlides[0].getBoundingClientRect().width;
-console.log(sampleSlideWidth);
-
-const setSampleSliderHeight = () => {
-  sampleSlider.style.height = sampleSlideWidth + 'px';
-};
-setSampleSliderHeight();
+let sampleSlideWidth = sampleSlides[0].clientWidth;
+let sampleSlideHeight = sampleSlideWidth;
 
 // Resize slider based on image width
 const resizeSampleSliderHeight = function () {
   if (window.innerWidth < 800) {
-    let imageHeight = sampleSlideWidth;
-    sampleSlider.style.height = `${imageHeight}px`;
+    sampleSlider.style.height = `${sampleSlideHeight - 15}px`;
   } else {
-    let imageHeight = sampleSlideWidth;
-    sampleSlider.style.height = `${imageHeight}px`;
+    sampleSlider.style.height = `${sampleSlideHeight - 25}px`;
   }
 };
 
 resizeSampleSliderHeight();
+console.log(sampleSlideWidth, sampleSlideHeight);
 
-// window.addEventListener('load', resizeSampleSliderHeight);
+window.addEventListener('load', resizeSampleSliderHeight);
 window.addEventListener('resize', resizeSampleSliderHeight);
 window.addEventListener('orientationchange', function () {
   location.reload();
