@@ -23,7 +23,7 @@ const resizeSampleSliderHeight = function () {
   }
 };
 
-resizeSampleSliderHeight();
+// resizeSampleSliderHeight();
 
 window.addEventListener('load', resizeSampleSliderHeight);
 window.addEventListener('resize', resizeSampleSliderHeight);
