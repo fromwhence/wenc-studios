@@ -18,10 +18,10 @@ let sampleSlideHeight2 = sampleSlideWidth2;
 
 const resizeSampleSliderHeight2 = function () {
   if (window.innerWidth < 800) {
-    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.94}px`;
+    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.935}px`;
     console.log(sampleSlider2.style.height);
   } else {
-    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.94}px`;
+    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.935}px`;
     console.log(sampleSlider2.style.height);
   }
 };
