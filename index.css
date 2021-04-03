@@ -1207,6 +1207,7 @@ ul.tier--list {
   height: auto;
   margin: auto;
   object-fit: contain;
+  max-width: 560px;
 }
 
 @media (min-width: 768px) {
@@ -1216,9 +1217,6 @@ ul.tier--list {
 }
 
 @media (min-width: 1024px) {
-  .sample-slider--image-static {
-    width: 60%;
-  }
 }
 
 .last {
