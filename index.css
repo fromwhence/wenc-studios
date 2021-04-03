@@ -1314,14 +1314,13 @@ ul.tier--list {
 .sample-slider--nav-dots-2 {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 0.175rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
   overflow: visible;
 }
-
 /* .sample-slider--nav-dot-2 {
   bottom: 2rem;
 } */

@@ -120,7 +120,7 @@ const enableScroll = () => {
   window.onscroll = function () {};
 };
 
-// Restors top of page after browser refresh
+// Restore top of page after browser refresh
 if (history.scrollRestoration) {
   history.scrollRestoration = 'manual';
 } else {
