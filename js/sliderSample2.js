@@ -12,17 +12,12 @@ const dotIndicators2 = document.querySelector('.sample-slider--nav-dots-2');
 const dots2 = Array.from(dotIndicators2.children);
 
 let sampleSlideWidth2 = sampleSlides2[0].clientWidth;
-console.log(sampleSlideWidth2);
 let sampleSlideHeight2 = sampleSlideWidth2;
-
-const staticSampleImage = document.querySelector(
-  '.sample-slider--image-static'
-);
 
 // Resize slider based on image width
 const resizeSampleSliderHeight2 = function () {
   if (window.innerWidth < 768) {
-    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.95}px`;
+    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.9375}px`;
     console.log(sampleSlider2.style.height);
   } else {
     sampleSlider2.style.height = `${sampleSlideHeight2 * 0.725}px`;
@@ -30,7 +25,7 @@ const resizeSampleSliderHeight2 = function () {
   }
 };
 
-// resizeSampleSliderHeight2();
+resizeSampleSliderHeight2();
 
 window.addEventListener('load', resizeSampleSliderHeight2);
 window.addEventListener('resize', resizeSampleSliderHeight2);
