@@ -15,10 +15,10 @@ let sampleSlideHeight = sampleSlideWidth;
 // Resize slider based on image width
 const resizeSampleSliderHeight = function () {
   if (window.innerWidth < 800) {
-    sampleSlider.style.height = `${sampleSlideHeight * 0.935}px`;
+    sampleSlider.style.height = `${sampleSlideHeight * 0.94}px`;
     console.log(sampleSlider.style.height);
   } else {
-    sampleSlider.style.height = `${sampleSlideHeight * 0.935}px`;
+    sampleSlider.style.height = `${sampleSlideHeight * 0.94}px`;
     console.log(sampleSlider.style.height);
   }
 };
