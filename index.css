@@ -1201,12 +1201,24 @@ ul.tier--list {
   /* border-bottom: 1px solid var(--clr-med-lighter); */
 }
 
-.tier--example-artwork--static {
+.sample-slider--image-static {
   position: relative;
   width: 85%;
   height: auto;
   margin: auto;
   object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .sample-slider--image-static {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sample-slider--image-static {
+    width: 60%;
+  }
 }
 
 .last {
@@ -1268,7 +1280,7 @@ ul.tier--list {
 .sample-slider--btn,
 .sample-slider--btn-2 {
   position: absolute;
-  top: 46.5%;
+  top: 48.5%;
   transform: translateY(-50%);
   cursor: pointer;
   color: var(--clr-med-new);
@@ -1321,9 +1333,6 @@ ul.tier--list {
   padding: 0.5rem;
   overflow: visible;
 }
-/* .sample-slider--nav-dot-2 {
-  bottom: 2rem;
-} */
 
 .sample-slider--nav-dot,
 .sample-slider--nav-dot-2 {
@@ -1348,7 +1357,6 @@ ul.tier--list {
     padding-top: 0.25rem;
   }
 
-  .tier--example-artwork--static,
   .sample-slider--image,
   .sample-slider--image-2 {
     width: 70%;
@@ -1360,24 +1368,23 @@ ul.tier--list {
     padding: 0.5rem;
   }
 
-  .sample-slider-btn--right-2 {
+  .sample-slider--btn-right,
+  .sample-slider--btn-right-2 {
+    position: absolute;
     right: 1.5rem;
   }
 
-  .sample-slider-btn--left {
+  .sample-slider--btn-left,
+  .sample-slider--btn-left-2 {
+    position: absolute;
     left: 1.5rem;
   }
-
-  /* .artist-title {
-    bottom: 0rem;
-    font-size: var(--fs-smaller);
-  } */
 }
 
 @media (min-width: 1024px) {
-  .tier--example-artwork {
-    width: 100%;
-    height: auto;
+  .sample-slider--image,
+  .sample-slider--image-2 {
+    width: 70%;
   }
 }
 
@@ -1443,11 +1450,6 @@ ul.tier--list {
     padding: 0;
     margin: 0;
     border-bottom: none;
-  }
-
-  .tier--example-artwork {
-    width: 70%;
-    margin: auto;
   }
 }
 
@@ -1755,38 +1757,3 @@ textarea {
     background-color: none;
   }
 }
-
-/* Accordion styling TBD */
-
-/* .tier-example-link {
-  position: relative;
-  color: var(--clr-reg-new);
-  padding: 0.875rem 0;
-  cursor: pointer;
-  margin-left: 30%;
-} */
-
-/* .tier-example-link::after {
-  content: '\002B';
-  font-size: 1.325rem;
-  position: absolute;
-  left: 4.25rem;
-  top: 0.5rem;
-} */
-
-/* .tier-example-link.active::after {
-  content: '\2212';
-} */
-
-/* .tier--example-artwork {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 300ms ease-out;
-}
-
-.tier--example-artwork {
-  width: 100%;
-  margin: auto;
-  padding: 0;
-  padding-bottom: 1rem;
-} */
