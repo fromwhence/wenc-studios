@@ -9,17 +9,21 @@ const prevButton = document.querySelector('.sample-slider--btn-left');
 const dotIndicators = document.querySelector('.sample-slider--nav-dots');
 const dots = Array.from(dotIndicators.children);
 
-let sampleSlideWidth = sampleSlides[0].clientWidth;
+let sampleSlideWidth = sampleSlides[0].offsetWidth;
 let sampleSlideHeight = sampleSlideWidth;
 
-// Resize slider based on image width
+console.log(sampleSliderImages);
+
+// Resize slider based on slide image height
 const resizeSampleSliderHeight = function () {
   if (window.innerWidth < 768) {
-    sampleSlider.style.height = `${sampleSlideHeight * 0.9375}px`;
-    console.log(sampleSlider.style.height);
+    let sampleImageHeight = sampleSliderImages[0].height;
+    console.log(sampleImageHeight);
+    sampleSlider.style.height = `${sampleImageHeight + 30}px`;
   } else {
-    sampleSlider.style.height = `${sampleSlideHeight * 0.725}px`;
-    console.log(sampleSlider.style.height);
+    let sampleImageHeight = sampleSliderImages[0].height;
+    console.log(sampleImageHeight);
+    sampleSlider.style.height = `${sampleImageHeight + 30}px`;
   }
 };
 

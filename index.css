@@ -1220,7 +1220,7 @@ ul.tier--list {
   height: auto;
   width: 100%;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   overflow: hidden;
   margin: 0 auto;
   /* background-color: lightgray; */
@@ -1354,23 +1354,24 @@ ul.tier--list {
     width: 70%;
   }
 
-  .slider-btn {
+  .sample-slider--btn,
+  .sample-slider--btn-2 {
     font-size: 2.25rem;
     padding: 0.5rem;
   }
 
-  .slider-btn--right {
-    margin-right: 1.25rem;
+  .sample-slider-btn--right-2 {
+    right: 1.5rem;
   }
 
-  .slider-btn--left {
-    margin-left: 1.25rem;
+  .sample-slider-btn--left {
+    left: 1.5rem;
   }
 
-  .artist-title {
+  /* .artist-title {
     bottom: 0rem;
     font-size: var(--fs-smaller);
-  }
+  } */
 }
 
 @media (min-width: 1024px) {

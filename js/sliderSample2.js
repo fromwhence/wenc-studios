@@ -11,17 +11,19 @@ const prevButton2 = document.querySelector('.sample-slider--btn-left-2');
 const dotIndicators2 = document.querySelector('.sample-slider--nav-dots-2');
 const dots2 = Array.from(dotIndicators2.children);
 
-let sampleSlideWidth2 = sampleSlides2[0].clientWidth;
+let sampleSlideWidth2 = sampleSlides2[0].offsetWidth;
 let sampleSlideHeight2 = sampleSlideWidth2;
 
-// Resize slider based on image width
+// Resize slider based on slide image height
 const resizeSampleSliderHeight2 = function () {
   if (window.innerWidth < 768) {
-    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.9375}px`;
-    console.log(sampleSlider2.style.height);
+    let sampleImageHeight2 = sampleSliderImages2[0].height;
+    console.log(sampleImageHeight2);
+    sampleSlider2.style.height = `${sampleImageHeight2 + 30}px`;
   } else {
-    sampleSlider2.style.height = `${sampleSlideHeight2 * 0.725}px`;
-    console.log(sampleSlider2.style.height);
+    let sampleImageHeight2 = sampleSliderImages2[0].height;
+    console.log(sampleImageHeight2);
+    sampleSlider2.style.height = `${sampleImageHeight2 + 30}px`;
   }
 };
 
