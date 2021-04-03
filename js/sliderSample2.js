@@ -19,7 +19,7 @@ const resizeSampleSliderHeight2 = function () {
   if (window.innerWidth < 800) {
     sampleSlider2.style.height = `${sampleSlideHeight2 - 15}px`;
   } else {
-    sampleSlider2.style.height = `${sampleSlideHeight2 - 25}px`;
+    sampleSlider2.style.height = `${sampleSlideHeight2 - 15}px`;
   }
 };
 
