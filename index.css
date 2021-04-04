@@ -19,7 +19,7 @@ ol[class] {
   --clr-med-new: #c9c9c9;
   --clr-med-lighter: #d3d8d8;
   --clr-med-light: #cccfcf;
-  --clr-header-med: #8b9799;
+  --clr-header-med: #8b9999;
   --clr-header-wide-lighter: #747d7e;
   --clr-header-wide: #6c7475;
   --clr-header-wide-darker: #5d6869;
@@ -647,7 +647,7 @@ body.active::after {
 }
 
 .dots-dot--active {
-  background-color: var(--clr-header-wide);
+  background-color: var(--clr-header-med);
 }
 
 @media (min-width: 768px) {
@@ -1414,7 +1414,7 @@ ul.tier--list {
 
 .sample-slider--nav-dot.current-slide,
 .sample-slider--nav-dot-2.current-slide-2 {
-  background-color: var(--clr-header-wide);
+  background-color: var(--clr-header-med);
 }
 
 .section-subheader--rates {

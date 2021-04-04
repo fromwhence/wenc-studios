@@ -18,16 +18,12 @@ let sampleSlideHeight2 = sampleSlideWidth2;
 const resizeSampleSliderHeight2 = function () {
   if (window.innerWidth < 768) {
     let sampleImageHeight2 = sampleSliderImages2[0].height;
-    console.log(sampleImageHeight2);
     sampleSlider2.style.height = `${sampleImageHeight2 + 30}px`;
   } else {
     let sampleImageHeight2 = sampleSliderImages2[0].height;
-    console.log(sampleImageHeight2);
     sampleSlider2.style.height = `${sampleImageHeight2 + 30}px`;
   }
 };
-
-// resizeSampleSliderHeight2();
 
 window.addEventListener('load', resizeSampleSliderHeight2);
 window.addEventListener('resize', resizeSampleSliderHeight2);
