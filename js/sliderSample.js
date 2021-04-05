@@ -9,6 +9,9 @@ const prevButton = document.querySelector('.sample-slider--btn-left');
 const dotIndicators = document.querySelector('.sample-slider--nav-dots');
 const dots = Array.from(dotIndicators.children);
 
+const staticSlide = document.querySelector('.tier--example-container-static');
+console.log(staticSlide);
+
 let sampleSlideWidth = sampleSlides[0].offsetWidth;
 let sampleSlideHeight = sampleSlideWidth;
 
@@ -17,9 +20,11 @@ const resizeSampleSliderHeight = function () {
   if (window.innerWidth < 768) {
     let sampleImageHeight = sampleSliderImages[0].height;
     sampleSlider.style.height = `${sampleImageHeight + 30}px`;
+    staticSlide.style.height = `${sampleImageHeight + 25}px`;
   } else {
     let sampleImageHeight = sampleSliderImages[0].height;
     sampleSlider.style.height = `${sampleImageHeight + 30}px`;
+    staticSlide.style.height = `${sampleImageHeight + 20}px`;
   }
 };
 
