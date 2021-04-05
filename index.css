@@ -26,7 +26,7 @@ ol[class] {
   --clr-reg-new: #383838;
   --clr-reg-dark: #2c2c2c;
   --clr-business-name-bg: #495252;
-  --clr-business-name-bg-darker: #373d3d;
+  --clr-business-name-bg-darker: #303636;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
@@ -455,7 +455,7 @@ body.active::after {
   }
 
   strong {
-    color: white;
+    color: rgba(255, 255, 255, 0.95);
   }
 
   .tagline {
@@ -464,7 +464,7 @@ body.active::after {
     color: rgba(255, 255, 255, 0.9);
     padding: 0;
     padding-top: 0.15rem;
-    padding-right: 0.275rem;
+    padding-right: 0.425rem;
   }
 
   .side-nav {
@@ -1164,8 +1164,13 @@ body.active::after {
 }
 
 .section-subheader--rates {
+  margin-top: 0.5rem;
   margin-right: 1.625rem;
   margin-left: 1.625rem;
+}
+
+.section-subheader--rates:first-of-type {
+  margin-top: 0;
 }
 
 .section-paragraph--rates {
@@ -1188,6 +1193,10 @@ ul.file-format-list {
   .section-paragraph--rates {
     margin-right: 3.5rem;
     margin-left: 3.5rem;
+  }
+
+  .section-subheader--rates:first-of-type {
+    margin-top: 0.5rem;
   }
 
   .section-paragraph--rates,
@@ -1255,7 +1264,7 @@ ul.tier--list {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 0.75rem 0;
+  padding: 0.875rem 0 1rem;
   position: relative;
 }
 
@@ -1271,10 +1280,6 @@ ul.tier--list {
 @media (min-width: 768px) {
   .tier--example-container {
     padding-top: 0.5rem;
-  }
-
-  .sample-slider--image-static {
-    width: 70%;
   }
 
   .tier--description {
@@ -1449,10 +1454,10 @@ ul.tier--list {
 }
 
 @media (min-width: 768px) {
-  .sample-slider--image-static,
   .sample-slider--image,
-  .sample-slider--image-2 {
-    width: 70%;
+  .sample-slider--image-2,
+  .sample-slider--image-static {
+    width: 60%;
   }
 
   .sample-slider--btn,
@@ -1479,8 +1484,9 @@ ul.tier--list {
 
 @media (min-width: 1024px) {
   .sample-slider--image,
-  .sample-slider--image-2 {
-    width: 70%;
+  .sample-slider--image-2,
+  .sample-slider--image-static {
+    width: 50%;
   }
 }
 
@@ -1521,7 +1527,7 @@ ul.tier--list {
   .sample-slider--image-static,
   .sample-slider--image,
   .sample-slider--image-2 {
-    width: 65%;
+    width: 60%;
   }
 
   .sample-slider--btn-right,
@@ -1587,7 +1593,6 @@ ul.tier--list {
   .section-subheader--rates,
   .section-subheader--side {
     border-top: none;
-    margin: 0;
     margin-bottom: 0.75rem;
     padding: 0;
     padding-bottom: 0.75rem;
