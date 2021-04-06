@@ -304,17 +304,19 @@
               </div>
               <div class="tier--example-container tier--example-container-static">
                 <div class="tier--example-artwork tier--example-artwork--static">
-                  <img
-                    src="images/kmwenc-flow-crop-w-bg.jpg"
-                    alt="abstract painting"
-                    class="sample-slider--image-static"
-                  />
+                  <div class="sample-slider--static current-slide--static">
+                    <img
+                      src="images/kmwenc-flow-crop-w-bg.jpg"
+                      alt="abstract painting"
+                      class="sample-slider--image-static"
+                    />
+                  <div class="expand-slider-icon-sample">
+                    <ion-icon
+                      name="expand-outline"
+                      class="expand-outline"
+                    ></ion-icon>
+                  </div>
                 </div>
-                <div class="expand-slider-icon-sample">
-                  <ion-icon
-                    name="expand-outline"
-                    class="expand-outline static"
-                  ></ion-icon>
                 </div>
               </div>
             </div>
@@ -334,45 +336,54 @@
               </div>
               <div class="tier--example-container">
                 <div class="tier--example-artwork">
-                  <div class="sample-slider">
-                    <div class="sample-slider--track">
-                      <div class="sample-slider--slide current-slide">
-                        <img
-                          src="images/kmwenc-flow-ds.jpg"
-                          alt="abstract painting"
-                          class="sample-slider--image"
-                        />
-                      </div>
-                      <div class="sample-slider--slide">
-                        <img
-                          src="images/kmwenc-flow-crop-w-bg.jpg"
-                          alt="abstract painting"
-                          class="sample-slider--image"
-                        />
-                      </div>
-                    </div>
-                    <button class="sample-slider--btn sample-slider--btn-left is-hidden">
+                  <div class="sample-slider-container">
+                    <div class="close-expanded-sample-slider">
                       <ion-icon
-                      name="chevron-back-outline"
-                        aria-label="previous button"
-                      ></ion-icon>  
-                    </button>
-                    <button class="sample-slider--btn sample-slider--btn-right">
-                      <ion-icon
-                        name="chevron-forward-outline"
-                        aria-label="next button"
-                      ></ion-icon>  
-                    </button>
-                    <div class="sample-slider--nav-dots">
-                      <button class="sample-slider--nav-dot current-slide"></button>
-                      <button class="sample-slider--nav-dot">
-                      </button>
-                    </div>
-                    <div class="expand-slider-icon-sample">
-                      <ion-icon
-                        name="expand-outline"
-                        class="expand-outline"
+                        name="close-outline"
+                        class="close-icon sample-close-icon"
+                        aria-label="close expanded image slider"
                       ></ion-icon>
+                    </div>
+                    <div class="sample-slider">
+                      <div class="sample-slider--track">
+                        <div class="sample-slider--slide current-slide">
+                          <img
+                            src="images/kmwenc-flow-ds.jpg"
+                            alt="abstract painting"
+                            class="sample-slider--image"
+                          />
+                        </div>
+                        <div class="sample-slider--slide">
+                          <img
+                            src="images/kmwenc-flow-crop-w-bg.jpg"
+                            alt="abstract painting"
+                            class="sample-slider--image"
+                          />
+                        </div>
+                      </div>
+                      <button class="sample-slider--btn sample-slider--btn-left is-hidden">
+                        <ion-icon
+                        name="chevron-back-outline"
+                          aria-label="previous button"
+                        ></ion-icon>  
+                      </button>
+                      <button class="sample-slider--btn sample-slider--btn-right">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          aria-label="next button"
+                        ></ion-icon>  
+                      </button>
+                      <div class="sample-slider--nav-dots">
+                        <button class="sample-slider--nav-dot current-slide"></button>
+                        <button class="sample-slider--nav-dot">
+                        </button>
+                      </div>
+                      <div class="expand-slider-icon-sample">
+                        <ion-icon
+                          name="expand-outline"
+                          class="expand-outline sample-expand-icon"
+                        ></ion-icon>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -448,7 +459,7 @@
             </div>
             <div class="side-by-side-text">
               <div class="text-container">
-                <h3 class="section-subheader section-subheader--side">
+                <h3 class="section-subheader section-subheader--side top">
                   Payment
                 </h3>
                 <p class="section-paragraph section-paragraph--rates">
@@ -456,10 +467,10 @@
                   for all services rendered. State and local sales taxes are added to the net total. After payment is received, all imagess will be
                   available for download on Dropbox.
                 </p>
-                <h3 class="section-subheader section-subheader--side section-subheader--payment-methods">
+                <h3 class="section-subheader section-subheader--side payment-methods">
                   Payment Methods
                 </h3>
-                  <p class="section-paragraph section-paragraph--rates payment-methods">All major credit
+                  <p class="section-paragraph section-paragraph--rates">All major credit
                   cards, Cash App, and Venmo.
                 </p>
               </div>

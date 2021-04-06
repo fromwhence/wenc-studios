@@ -10,7 +10,6 @@ const dotIndicators = document.querySelector('.sample-slider--nav-dots');
 const dots = Array.from(dotIndicators.children);
 
 const staticSlide = document.querySelector('.tier--example-container-static');
-console.log(staticSlide);
 
 let sampleSlideWidth = sampleSlides[0].offsetWidth;
 let sampleSlideHeight = sampleSlideWidth;
@@ -20,11 +19,11 @@ const resizeSampleSliderHeight = function () {
   if (window.innerWidth < 768) {
     let sampleImageHeight = sampleSliderImages[0].height;
     sampleSlider.style.height = `${sampleImageHeight + 30}px`;
-    staticSlide.style.height = `${sampleImageHeight + 30}px`;
+    staticSlide.style.height = `${sampleImageHeight + 15}px`;
   } else {
     let sampleImageHeight = sampleSliderImages[0].height;
     sampleSlider.style.height = `${sampleImageHeight + 30}px`;
-    staticSlide.style.height = `${sampleImageHeight + 30}px`;
+    staticSlide.style.height = `${sampleImageHeight + 20}px`;
   }
 };
 
@@ -128,3 +127,19 @@ const dotIndicatorsTracking = () => {
 dotIndicatorsTracking();
 nextSampleButton();
 prevSampleButton();
+
+// Fullscreen sample slider view
+const expandIcon = document.querySelector('.sample-expand-icon');
+const closeFullScreenIcon = document.querySelector('.sample-close-icon');
+console.log(expandIcon, closeFullScreenIcon);
+
+expandIcon.addEventListener('click', () => {
+  closeFullScreenIcon.classList.add('active');
+  expandIcon.style.display = 'none';
+  console.log('icon clicked');
+});
+
+closeFullScreenIcon.addEventListener('click', () => {
+  closeFullScreenIcon.classList.remove('active');
+  expandIcon.style.display = 'inline-block';
+});
