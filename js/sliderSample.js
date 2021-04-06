@@ -142,7 +142,6 @@ expandIcon.addEventListener('click', () => {
   expandIcon.style.display = 'none';
   sampleSliderContainerExpanded.classList.add('expand');
   resizeSampleSliderHeight();
-  console.log('icon clicked');
 });
 
 closeFullScreenIcon.addEventListener('click', () => {

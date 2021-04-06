@@ -130,3 +130,24 @@ const dotIndicatorsTracking2 = () => {
 dotIndicatorsTracking2();
 nextSampleButton2();
 prevSampleButton2();
+
+// Fullscreen sample slider view
+const expandIcon2 = document.querySelector('.sample-expand-icon-2');
+const closeFullScreenIcon2 = document.querySelector('.sample-close-icon-2');
+const sampleSliderContainerExpanded2 = document.querySelector(
+  '.sample-slider-container-2'
+);
+
+expandIcon2.addEventListener('click', () => {
+  closeFullScreenIcon2.classList.add('active');
+  expandIcon2.style.display = 'none';
+  sampleSliderContainerExpanded2.classList.add('expand');
+  resizeSampleSliderHeight2();
+});
+
+closeFullScreenIcon2.addEventListener('click', () => {
+  closeFullScreenIcon2.classList.remove('active');
+  expandIcon2.style.display = 'inline-block';
+  sampleSliderContainerExpanded2.classList.remove('expand');
+  resizeSampleSliderHeight2();
+});
