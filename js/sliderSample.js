@@ -131,15 +131,23 @@ prevSampleButton();
 // Fullscreen sample slider view
 const expandIcon = document.querySelector('.sample-expand-icon');
 const closeFullScreenIcon = document.querySelector('.sample-close-icon');
-console.log(expandIcon, closeFullScreenIcon);
+const sampleSliderContainerExpanded = document.querySelector(
+  '.sample-slider-container'
+);
+
+console.log(sampleSliderContainerExpanded);
 
 expandIcon.addEventListener('click', () => {
   closeFullScreenIcon.classList.add('active');
   expandIcon.style.display = 'none';
+  sampleSliderContainerExpanded.classList.add('expand');
+  resizeSampleSliderHeight();
   console.log('icon clicked');
 });
 
 closeFullScreenIcon.addEventListener('click', () => {
   closeFullScreenIcon.classList.remove('active');
   expandIcon.style.display = 'inline-block';
+  sampleSliderContainerExpanded.classList.remove('expand');
+  resizeSampleSliderHeight();
 });
