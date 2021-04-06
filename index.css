@@ -718,7 +718,7 @@ body.active::after {
 /* Expanded slider feature */
 
 .expand-slider-icon {
-  color: var(--clr-header-wide);
+  color: var(--clr-med-new);
   display: none;
   flex-direction: column;
   justify-content: flex-start;
@@ -733,9 +733,9 @@ body.active::after {
   overflow: visible;
 }
 
-.expand-outline {
+.expand-slider-icon .expand-outline {
   align-self: flex-end;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .expand-text {
@@ -743,7 +743,7 @@ body.active::after {
 }
 
 .expand-slider-icon:hover {
-  color: var(--clr-reg-new);
+  color: var(--clr-header-wide);
 }
 
 /* Expanded slider */
@@ -1140,7 +1140,6 @@ body.active::after {
     margin-top: 1.75rem;
     padding: 1.75rem 1.75rem 1.25rem;
     border: 1px solid var(--clr-med-light);
-    border-radius: 0.5rem;
     background-color: var(--clr-light-form);
   }
 
@@ -1917,7 +1916,6 @@ textarea {
 
   .submit-button {
     padding: 1.25rem 3.25rem;
-    border-radius: 0.5rem;
   }
 }
 
