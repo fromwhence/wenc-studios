@@ -22,11 +22,11 @@ ol[class] {
   --clr-header-med: #8b9999;
   --clr-header-wide-lighter: #747d7e;
   --clr-header-wide: #6c7475;
-  --clr-header-wide-darker: #5d6869;
+  --clr-header-wide-darker: #5b6364;
   --clr-reg-new: #383838;
   --clr-reg-dark: #2c2c2c;
   --clr-business-name-bg: #495252;
-  --clr-business-name-bg-darker: #303636;
+  --clr-business-name-bg-darker: #393e3f;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
@@ -1032,7 +1032,7 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .section-header {
-    font-size: 1.675rem;
+    font-size: 1.625rem;
     padding-bottom: 0.875rem;
     color: var(--clr-header-wide);
   }
