@@ -1435,6 +1435,7 @@ ul.tier--list {
   background-color: var(--clr-header-med);
 }
 
+.static-close-icon,
 .sample-close-icon,
 .sample-close-icon-2 {
   display: none;
@@ -1512,6 +1513,7 @@ ul.tier--list {
     opacity: 1;
   }
 
+  .static-close-icon,
   .sample-close-icon,
   .sample-close-icon-2 {
     display: none;
@@ -1525,11 +1527,13 @@ ul.tier--list {
     transition: color 250ms;
   }
 
+  .static-close-icon.active,
   .sample-close-icon.active,
   .sample-close-icon-2.active {
     display: block;
   }
 
+  .static-close-icon.active:hover,
   .sample-close-icon.active:hover,
   .sample-close-icon.active-2:hover {
     color: var(--clr-header-wide);
@@ -1540,7 +1544,6 @@ ul.tier--list {
     position: fixed;
     z-index: 1000;
     width: 100%;
-    max-width: 100%;
     height: 100%;
     top: 0;
     left: 0;
@@ -1553,10 +1556,11 @@ ul.tier--list {
 
   .sample-slider-container.expand .sample-slider,
   .sample-slider-container-2.expand .sample-slider-2 {
+    position: relative;
     height: auto;
     width: 100%;
     width: 100%;
-    max-width: 900px;
+    max-width: 925px;
     overflow: hidden;
     margin: 0 auto;
   }
@@ -1568,7 +1572,8 @@ ul.tier--list {
     height: auto;
   }
 
-  .sample-slider-container.expand .sample-slider--slide {
+  .sample-slider-container.expand .sample-slider--slide,
+  .sample-slider-container-2.expand .sample-slider--slide-2 {
     position: absolute;
     top: 0;
     bottom: 0;

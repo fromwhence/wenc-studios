@@ -125,18 +125,12 @@ const dotIndicatorsTracking = () => {
   });
 };
 
-dotIndicatorsTracking();
-nextSampleButton();
-prevSampleButton();
-
 // Fullscreen sample slider view
 const expandIcon = document.querySelector('.sample-expand-icon');
 const closeFullScreenIcon = document.querySelector('.sample-close-icon');
 const sampleSliderContainerExpanded = document.querySelector(
   '.sample-slider-container'
 );
-
-console.log(sampleSliderContainerExpanded);
 
 expandIcon.addEventListener('click', () => {
   closeFullScreenIcon.classList.add('active');
@@ -151,3 +145,16 @@ closeFullScreenIcon.addEventListener('click', () => {
   sampleSliderContainerExpanded.classList.remove('expand');
   resizeSampleSliderHeight();
 });
+
+// Fullscreen tier 1 sample view
+const expandIconStatic = document.querySelector('.sample-expand-icon-static');
+const closeFullScreenIconStatic = document.querySelector(
+  '.sample-close-icon-static'
+);
+const sampleSliderContainerExpandedStatic = document.querySelector(
+  '.sample-slider-container-static'
+);
+
+dotIndicatorsTracking();
+nextSampleButton();
+prevSampleButton();
