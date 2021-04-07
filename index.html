@@ -511,17 +511,17 @@
           <section id="schedule" class="schedule">
             <h2 class="section-header section-header--get-started">Get Started</h2>
             <p class="section-paragraph">Please use the following form to begin the photoshoot scheduling process.</p>
+            <p class="section-paragraph">If you prefer to contact us directly, we welcome your emails and phone calls. See the <a href="#contact">contact section</a> for details.</p>
             <div class="get-started--form-container">
               <form class="get-started-form" action="getstartedform.php" method="POST">
   
-                  <p>Name</p> <input type="text" name="name" required>
-                  <p>Email</p> <input type="text" name="email" required>
-                  <p>Phone</p> <input type="text" name="phone" required>
-                  <p>Art Media</p> <input type="text" name="media" required>
-                  <p>Artwork quantity</p> <input type="number" name="quantity" required>
+                <p>Name</p> <input type="text" name="name" required>
+                <p>Email</p> <input type="text" name="email" required>
+                <p>Phone</p> <input type="text" name="phone" required>
+                <p>Art media</p> <input type="text" name="media" required>
+                <p>Artwork quantity</p> <input type="number" name="quantity" min="1" required>
                   <!-- <p>Artist website</p> <input type="text" name="website"> -->
-
-                <p>Photoshoot location preference:</p>
+                <p class="photoshoot-text">Photoshoot location preference:</p>
                 <div class="photoshoot-location-container">
                   <label for="wenc-studio">Wenc Photo studio
                   <input id="wenc-studio" type="radio" name="photoshoot-location" value="shared" checked>
@@ -540,8 +540,6 @@
                 <button class="get-started-submit-button" type="submit" name="submit">Submit</button>
               </form>
             </div>
-
-
           </section>
         </div>
         <div class="section-container">
