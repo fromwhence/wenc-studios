@@ -113,15 +113,12 @@ const prevSampleButton2 = () => {
 
 const dotIndicatorsTracking2 = () => {
   dotIndicators2.addEventListener('click', e => {
-    targetDot2 = e.target.closest('button');
-
-    if (!targetDot) return;
-
+    targetDot2 = e.target.closest('.sample-slider--nav-dot-2');
+    // if (!targetDot) return;
     currentSlide2 = sampleSliderTrack2.querySelector('.current-slide-2');
     currentDot2 = dotIndicators2.querySelector('.current-slide-2');
     const targetIndex2 = dots2.findIndex(dot => dot === targetDot2);
     const targetSlide2 = sampleSlides2[targetIndex2];
-
     moveToSlide2(sampleSliderTrack2, currentSlide2, targetSlide2);
     updateDots2(currentDot2, targetDot2);
     hideShowArrows2(sampleSlides2, prevButton2, nextButton2, targetIndex2);
@@ -138,6 +135,15 @@ const closeFullScreenIcon2 = document.querySelector('.sample-close-icon-2');
 const sampleSliderContainerExpanded2 = document.querySelector(
   '.sample-slider-container-2'
 );
+
+sampleSliderImages2.forEach(sampleSlide2 => {
+  sampleSlide2.addEventListener('click', () => {
+    sampleSliderContainerExpanded2.classList.add('expand');
+    closeFullScreenIcon2.classList.add('active');
+    expandIcon2.style.display = 'none';
+    resizeSampleSliderHeight2();
+  });
+});
 
 expandIcon2.addEventListener('click', () => {
   closeFullScreenIcon2.classList.add('active');

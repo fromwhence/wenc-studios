@@ -110,7 +110,7 @@ const prevSampleButton = () => {
 
 const dotIndicatorsTracking = () => {
   dotIndicators.addEventListener('click', e => {
-    targetDot = e.target.closest('button');
+    targetDot = e.target.closest('.sample-slider--nav-dot');
 
     if (!targetDot) return;
 
@@ -125,12 +125,56 @@ const dotIndicatorsTracking = () => {
   });
 };
 
-// Fullscreen sample slider view
+nextSampleButton();
+prevSampleButton();
+dotIndicatorsTracking();
+
+// Fullscreen tier 1 view
+const expandIconStatic = document.querySelector('.static-expand-icon');
+const closeFullScreenIconStatic = document.querySelector('.static-close-icon');
+const sampleStaticContainer = document.querySelector(
+  '.sample-static-container'
+);
+const sampleStaticImage = document.querySelector(
+  '.sample-slider--image-static'
+);
+
+sampleStaticImage.addEventListener('click', () => {
+  closeFullScreenIconStatic.classList.add('active');
+  expandIconStatic.style.display = 'none';
+  sampleStaticContainer.classList.add('expand');
+  resizeSampleSliderHeight();
+});
+
+expandIconStatic.addEventListener('click', () => {
+  closeFullScreenIconStatic.classList.add('active');
+  expandIconStatic.style.display = 'none';
+  sampleStaticContainer.classList.add('expand');
+  resizeSampleSliderHeight();
+});
+
+closeFullScreenIconStatic.addEventListener('click', () => {
+  closeFullScreenIconStatic.classList.remove('active');
+  expandIconStatic.style.display = 'inline-block';
+  sampleStaticContainer.classList.remove('expand');
+  resizeSampleSliderHeight();
+});
+
+// Fullscreen tier 2 slider view
 const expandIcon = document.querySelector('.sample-expand-icon');
 const closeFullScreenIcon = document.querySelector('.sample-close-icon');
 const sampleSliderContainerExpanded = document.querySelector(
   '.sample-slider-container'
 );
+
+sampleSliderImages.forEach(sampleSlide => {
+  sampleSlide.addEventListener('click', () => {
+    sampleSliderContainerExpanded.classList.add('expand');
+    closeFullScreenIcon.classList.add('active');
+    expandIcon.style.display = 'none';
+    resizeSampleSliderHeight();
+  });
+});
 
 expandIcon.addEventListener('click', () => {
   closeFullScreenIcon.classList.add('active');
@@ -145,16 +189,3 @@ closeFullScreenIcon.addEventListener('click', () => {
   sampleSliderContainerExpanded.classList.remove('expand');
   resizeSampleSliderHeight();
 });
-
-// Fullscreen tier 1 sample view
-const expandIconStatic = document.querySelector('.sample-expand-icon-static');
-const closeFullScreenIconStatic = document.querySelector(
-  '.sample-close-icon-static'
-);
-const sampleSliderContainerExpandedStatic = document.querySelector(
-  '.sample-slider-container-static'
-);
-
-dotIndicatorsTracking();
-nextSampleButton();
-prevSampleButton();

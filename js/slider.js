@@ -38,9 +38,6 @@ const slider = function () {
   const expandIcon = document.querySelector('.expand-slider-icon');
   const closeExpandedSlider = document.querySelector('.close-expanded-slider');
   const sliderContainer = document.querySelector('.slider-container');
-  // const expandedSliderContainer = document.querySelector(
-  //   '.slider-container--expanded'
-  // );
 
   expandIcon.addEventListener('click', () => {
     sliderContainer.classList.add('expand');

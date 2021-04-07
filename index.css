@@ -26,7 +26,7 @@ ol[class] {
   --clr-reg-new: #383838;
   --clr-reg-dark: #2c2c2c;
   --clr-business-name-bg: #495252;
-  --clr-business-name-bg-darker: #393e3f;
+  --clr-business-name-bg-darker: #36393a;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
@@ -598,7 +598,6 @@ body.active::after {
   border: none;
   background: transparent;
   font-size: var(--fs-h2);
-  transition: 250ms;
 }
 
 .slider-btn:hover {
@@ -1358,6 +1357,7 @@ ul.tier--list {
   height: auto;
   margin: 0 auto;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .sample-slider--btn,
@@ -1508,6 +1508,7 @@ ul.tier--list {
   }
 
   /* Fullscreen sample view */
+  .sample-static-container.expand .is-invisible,
   .sample-slider-container.expand .is-invisible,
   .sample-slider-container-2.expand .is-invisible {
     opacity: 1;
@@ -1519,7 +1520,7 @@ ul.tier--list {
     display: none;
     position: absolute;
     color: var(--clr-med-new);
-    font-size: 3.75rem;
+    font-size: 3.5rem;
     cursor: pointer;
     z-index: 100;
     right: 1rem;
@@ -1539,6 +1540,7 @@ ul.tier--list {
     color: var(--clr-header-wide);
   }
 
+  .sample-static-container.expand,
   .sample-slider-container.expand,
   .sample-slider-container-2.expand {
     position: fixed;
@@ -1554,15 +1556,23 @@ ul.tier--list {
     align-items: center;
   }
 
+  .sample-static-container.expand .sample-slider--image-static {
+    width: 93.5%;
+    height: auto;
+    max-width: 900px;
+    margin-top: -1.75rem;
+    cursor: auto;
+  }
+
   .sample-slider-container.expand .sample-slider,
   .sample-slider-container-2.expand .sample-slider-2 {
     position: relative;
     height: auto;
     width: 100%;
     width: 100%;
-    max-width: 925px;
+    max-width: 900px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .sample-slider-container.expand .sample-slider--track,
@@ -1585,11 +1595,11 @@ ul.tier--list {
   .sample-slider-container.expand .sample-slider--image,
   .sample-slider-container-2.expand .sample-slider--image-2 {
     width: 100%;
-    max-width: 95%;
+    max-width: 93.5%;
     height: auto;
     cursor: default;
     opacity: 1;
-    margin-top: -1rem;
+    margin-top: -0.75rem;
   }
 
   .sample-slider-container.expand .artist-title,
@@ -1601,7 +1611,7 @@ ul.tier--list {
   .sample-slider-container.expand .sample-slider--nav-dots,
   .sample-slider-container-2.expand .sample-slider--nav-dots-2 {
     height: 4rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
     margin: 0 auto;
   }
 
