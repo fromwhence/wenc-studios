@@ -1787,11 +1787,16 @@ ul.tier--list {
 }
 
 /* Get started section */
+.section-header--get-started {
+  margin-bottom: 1rem;
+}
 .get-started--form-container {
   width: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 .get-started-form {
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .get-started-form input,
@@ -1815,7 +1820,7 @@ ul.tier--list {
 }
 
 .get-started-form textarea {
-  margin-top: 0.5rem;
+  margin: 1rem 0 0.5rem;
 }
 
 /* Custom radio button */
@@ -1884,7 +1889,7 @@ ul.tier--list {
   justify-content: center;
   align-items: center;
   margin: 0.5rem auto 0;
-  padding: 1rem 2.75rem;
+  padding: 1.25rem 3rem;
   text-align: center;
   background-color: var(--clr-business-name-bg-darker);
   color: rgba(255, 255, 255, 0.95);
