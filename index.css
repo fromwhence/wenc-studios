@@ -905,7 +905,7 @@ body.active::after {
 }
 
 .services,
-.schedule,
+.get-started,
 .contact {
   padding: 2.275rem 1.625rem;
 }
@@ -936,7 +936,7 @@ body.active::after {
 
 @media (min-width: 768px) {
   .services,
-  .schedule,
+  .get-started,
   .contact {
     padding: 2.75rem 3.5rem;
   }
@@ -945,7 +945,7 @@ body.active::after {
 @media (min-width: 1200px) {
   .about,
   .services,
-  .schedule,
+  .get-started,
   .contact {
     padding: 2.25rem 3.25rem 2.75rem;
     width: 100%;
@@ -975,14 +975,14 @@ body.active::after {
   .about,
   .services,
   .rates,
-  .schedule,
+  .get-started,
   .contact {
     padding: 2.25rem 3rem 3rem;
     width: 100%;
     height: auto;
   }
 
-  .schedule {
+  .get-started {
     height: 100vh;
   }
 }
@@ -991,14 +991,14 @@ body.active::after {
   .about,
   .services,
   .rates,
-  .schedule,
+  .get-started,
   .contact {
     padding: 2.25rem 3.5rem 3rem;
     width: 100%;
     height: auto;
   }
 
-  .schedule {
+  .get-started {
     height: 100vh;
   }
 }
@@ -1072,7 +1072,7 @@ body.active::after {
 @media (min-width: 1400px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 60% 30%;
+    grid-template-columns: 65% 30%;
     column-gap: 5%;
   }
 
@@ -1085,7 +1085,7 @@ body.active::after {
 @media (min-width: 1600px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 56% 35%;
+    grid-template-columns: 57.5% 35%;
     column-gap: 5%;
   }
 
@@ -1785,6 +1785,25 @@ ul.tier--list {
     right: 15%;
   }
 }
+
+/* Get started section */
+.get-started--form {
+  margin-bottom: 1rem;
+}
+.get-started--form input,
+.get-started--form textarea {
+  width: 100%;
+  background-color: var(--clr-light-form);
+}
+
+.get-started--form label {
+  color: white;
+  opacity: 0.9;
+}
+
+/* .form-container--get-started p {
+  color: white;
+} */
 
 /* Contact section */
 .contact-details {

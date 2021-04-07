@@ -36,7 +36,7 @@
           <a href="#rates" class="nav-link">rates</a>
         </li>
         <li class="nav-item">
-          <a href="#schedule" class="nav-link">get started</a>
+          <a href="#get-started" class="nav-link">get started</a>
         </li>
         <li class="nav-item">
           <a href="#contact" class="nav-link">contact</a>
@@ -66,7 +66,7 @@
               <li>rates</li>
             </a>
             <a
-              href="#schedule"
+              href="#get-started"
               class="side-nav-item scheduleNavItem"
             >
               <li>get started</li>
@@ -508,10 +508,32 @@
           </section>
         </div>
         <div class="section-container section-inverse">
-          <section id="schedule" class="schedule">
-            <h2 class="section-header">Get Started</h2>
-            <br />
-            <p class="section-paragraph">Insert text here</p>
+          <section id="get-started" class="get-started">
+            <h2 class="section-header section-header--get-started">Get Started</h2>
+            <p class="section-paragraph">Please use the following form to begin the photoshoot scheduling process.</p>
+            <div class="get-started--form">
+              <form action="mail.php" method="POST">
+                <p>Name</p> <input type="text" name="name" required>
+                <p>Email</p> <input type="text" name="email" required>
+                <p>Phone</p> <input type="text" name="phone" required>
+                <p>Art Media</p> <input type="text" name="art media" required>
+                <p>Artwork quantity</p> <input type="number" name="artwork quantity" required>
+                <p>Artist website</p> <input type="text" name="website">
+
+                <p>Photoshoot location preference:</p>
+                <input id="wenc-studio" type="radio" name="photoshoot-location" value="shared">
+                <label for="wenc-studio">Wenc Photo studio</label>
+
+                <input id="artists-studio" type="radio" name="photoshoot-location" value="artists-studio">
+                <label for="artists-studio">Artist's studio</label>
+
+                <textarea name="message" rows="6" cols="25" placeholder="Optional message for additional information or requests."></textarea><br />
+                <input type="submit" value="Submit" />
+                <!-- <input type="reset" value="Clear"> -->
+                </form>
+            </div>
+
+
           </section>
         </div>
         <div class="section-container">
@@ -549,7 +571,7 @@
                   <p class="section-paragraph section-paragraph--contact">
                     Please use the following form to contact us with general
                     questions. If you are ready to schedule a photoshoot, please
-                    use the schedule form. We also welcome phone calls and
+                    use the get started form. We also welcome phone calls and
                     text messages if your prefer to contact us directy. We look
                     forward to hearing from you.
                   </p>
