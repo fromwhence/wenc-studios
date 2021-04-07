@@ -1601,8 +1601,7 @@ ul.tier--list {
   .sample-slider-container.expand .sample-slider--nav-dots,
   .sample-slider-container-2.expand .sample-slider--nav-dots-2 {
     height: 4rem;
-    padding: 1rem;
-    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     margin: 0 auto;
   }
 
