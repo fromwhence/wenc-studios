@@ -677,7 +677,7 @@ body.active::after {
   }
 
   .dots-dot {
-    padding: 0.4rem;
+    padding: 0.375rem;
   }
 }
 
@@ -1471,7 +1471,7 @@ ul.tier--list {
 
   .sample-slider--nav-dot,
   .sample-slider--nav-dot-2 {
-    padding: 0.4rem;
+    padding: 0.375rem;
   }
 }
 
