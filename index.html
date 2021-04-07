@@ -36,7 +36,7 @@
           <a href="#rates" class="nav-link">rates</a>
         </li>
         <li class="nav-item">
-          <a href="#get-started" class="nav-link">get started</a>
+          <a href="#schedule" class="nav-link">get started</a>
         </li>
         <li class="nav-item">
           <a href="#contact" class="nav-link">contact</a>
@@ -66,7 +66,7 @@
               <li>rates</li>
             </a>
             <a
-              href="#get-started"
+              href="#schedule"
               class="side-nav-item scheduleNavItem"
             >
               <li>get started</li>
@@ -508,29 +508,38 @@
           </section>
         </div>
         <div class="section-container section-inverse">
-          <section id="get-started" class="get-started">
+          <section id="schedule" class="schedule">
             <h2 class="section-header section-header--get-started">Get Started</h2>
             <p class="section-paragraph">Please use the following form to begin the photoshoot scheduling process.</p>
             <div class="get-started--form">
               <form action="mail.php" method="POST">
-                <p>Name</p> <input type="text" name="name" required>
-                <p>Email</p> <input type="text" name="email" required>
-                <p>Phone</p> <input type="text" name="phone" required>
-                <p>Art Media</p> <input type="text" name="art media" required>
-                <p>Artwork quantity</p> <input type="number" name="artwork quantity" required>
-                <p>Artist website</p> <input type="text" name="website">
+                <div class="form-wide">
+                  <p>Name</p> <input type="text" name="name" required>
+                  <p>Email</p> <input type="text" name="email" required>
+                  <p>Phone</p> <input type="text" name="phone" required>
+                  <p>Art Media</p> <input type="text" name="art media" required>
+                  <p>Artwork quantity</p> <input type="number" name="artwork quantity" required>
+                  <!-- <p>Artist website</p> <input type="text" name="website"> -->
+                </div>
 
                 <p>Photoshoot location preference:</p>
-                <input id="wenc-studio" type="radio" name="photoshoot-location" value="shared">
-                <label for="wenc-studio">Wenc Photo studio</label>
-
-                <input id="artists-studio" type="radio" name="photoshoot-location" value="artists-studio">
-                <label for="artists-studio">Artist's studio</label>
+                <div class="photoshoot-location-container">
+                  <label for="wenc-studio">Wenc Photo studio
+                  <input id="wenc-studio" type="radio" name="photoshoot-location" value="shared" checked>
+                  <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="photoshoot-location-container">
+                  <label for="artists-studio">Artist's studio<input id="artists-studio" type="radio" name="photoshoot-location" value="artists-studio">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- $host_plan = $_POST['radio_group_1'];-->
 
                 <textarea name="message" rows="6" cols="25" placeholder="Optional message for additional information or requests."></textarea><br />
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" class="get-started-form-button"/>
                 <!-- <input type="reset" value="Clear"> -->
-                </form>
+              </form>
             </div>
 
 
