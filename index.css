@@ -64,7 +64,7 @@ img {
 
 a {
   color: var(--clr-reg-new);
-  font-size: var(--fs-small);
+  font-size: inherit;
 }
 
 a:hover {
