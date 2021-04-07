@@ -511,16 +511,15 @@
           <section id="schedule" class="schedule">
             <h2 class="section-header section-header--get-started">Get Started</h2>
             <p class="section-paragraph">Please use the following form to begin the photoshoot scheduling process.</p>
-            <div class="get-started--form">
-              <form action="mail.php" method="POST">
-                <div class="form-wide">
+            <div class="get-started--form-container">
+              <form class="get-started-form" action="getstartedform.php" method="POST">
+  
                   <p>Name</p> <input type="text" name="name" required>
                   <p>Email</p> <input type="text" name="email" required>
                   <p>Phone</p> <input type="text" name="phone" required>
-                  <p>Art Media</p> <input type="text" name="art media" required>
-                  <p>Artwork quantity</p> <input type="number" name="artwork quantity" required>
+                  <p>Art Media</p> <input type="text" name="media" required>
+                  <p>Artwork quantity</p> <input type="number" name="quantity" required>
                   <!-- <p>Artist website</p> <input type="text" name="website"> -->
-                </div>
 
                 <p>Photoshoot location preference:</p>
                 <div class="photoshoot-location-container">
@@ -537,8 +536,8 @@
                 <!-- $host_plan = $_POST['radio_group_1'];-->
 
                 <textarea name="message" rows="6" cols="25" placeholder="Optional message for additional information or requests."></textarea><br />
-                <input type="submit" value="Submit" class="get-started-form-button"/>
-                <!-- <input type="reset" value="Clear"> -->
+                
+                <button class="get-started-submit-button" type="submit" name="submit">Submit</button>
               </form>
             </div>
 
