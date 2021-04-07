@@ -1,4 +1,5 @@
 'use strict';
+
 const sampleSlider2 = document.querySelector('.sample-slider-2');
 const sampleSliderTrack2 = document.querySelector('.sample-slider--track-2');
 const sampleSlides2 = Array.from(sampleSliderTrack2.children);
