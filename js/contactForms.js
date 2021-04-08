@@ -16,6 +16,9 @@ async function handleSubmit(event) {
     .then(response => {
       status.classList.add('success');
       status.innerHTML = 'Success! We look forward to connecting with you.';
+      status.addEventListener('click', () => {
+        status.classList.remove('success');
+      });
       setTimeout(() => {
         status.classList.remove('success');
       }, 4000);
@@ -25,6 +28,12 @@ async function handleSubmit(event) {
       status.classList.add('error');
       status.innerHTML =
         'Oops! There was a problem submitting your form. Pleaes try again.';
+      status.addEventListener('click', () => {
+        status.classList.remove('error');
+      });
+      setTimeout(() => {
+        status.classList.remove('error');
+      }, 4000);
     });
 }
 form.addEventListener('submit', handleSubmit);
