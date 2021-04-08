@@ -97,12 +97,13 @@ const enableScroll = () => {
   window.onscroll = function () {};
 };
 
-// Restore top of page after browser refresh
+// Restore top of page and root href dafter browser refresh
 if (history.scrollRestoration) {
   history.scrollRestoration = 'manual';
 } else {
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
+    window.location.href = 'https://www.wencphoto.com';
   };
 }
 
