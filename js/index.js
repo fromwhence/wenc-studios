@@ -100,6 +100,7 @@ const enableScroll = () => {
 // Restore top of page and root href dafter browser refresh
 if (history.scrollRestoration) {
   history.scrollRestoration = 'manual';
+  window.location.href = 'https://www.wencphoto.com';
 } else {
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
