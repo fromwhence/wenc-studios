@@ -2115,15 +2115,16 @@ input {
   font-size: 1.2rem;
   right: 0.5rem;
   top: 0.325rem;
+  line-height: 1.6rem;
   color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
 #status.success {
   display: block;
-  color: rgb(35, 48, 54);
-  background-color: rgb(178, 232, 253);
-  border: 1px solid rgb(118, 165, 168);
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #abdafe;
+  border: 1px solid #495c6b;
   animation: status 4s ease forwards;
 }
 
