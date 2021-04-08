@@ -875,6 +875,7 @@ body.active::after {
 @media (max-width: 1199px) {
   .section-inverse {
     background-color: var(--clr-header-wide-darker);
+    background-color: var(--clr-header-wide-lighter);
   }
 
   .section-inverse h2,
@@ -884,7 +885,7 @@ body.active::after {
   .section-inverse p,
   .section-inverse a {
     color: white;
-    opacity: 0.9;
+    opacity: 0.95;
   }
 
   .section-inverse h3 {
@@ -1837,11 +1838,23 @@ input {
 .section-header--get-started {
   margin-bottom: 1rem;
 }
+
 .get-started--form-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 550px;
   margin: auto;
 }
+
+@media (min-width: 768px) {
+  .get-started--form-container {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: var(--clr-header-wide-lighter);
+    background-color: var(--clr-header-wide-darker);
+    padding: 1.75rem 4rem;
+    margin-top: 0.5rem;
+  }
+}
+
 .get-started-form {
   margin-bottom: 0rem;
 }
