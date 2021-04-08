@@ -2053,9 +2053,20 @@ input {
   margin: 0.125rem 0;
 }
 
+.form-group input {
+  background-color: white;
+}
+
 .form-group textarea {
   margin: 0;
   margin-bottom: 0.75rem;
+  background-color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background-color: white;
+  border: 1px solid var(--clr-header-wide-lighter-new);
 }
 
 .contact-submit-button {
