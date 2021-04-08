@@ -559,7 +559,7 @@ body.active::after {
   width: 100%;
   max-width: 1000px;
   overflow: hidden;
-  margin: 0.25rem auto 0;
+  margin: 0.125rem auto 0;
   /* border: 1px solid var(--clr-med-lighter); */
 }
 
@@ -575,10 +575,6 @@ body.active::after {
   justify-content: center;
   align-items: center;
 }
-
-/* .slide.current-slide {
-  opacity: 1;
-} */
 
 .slide-image {
   position: relative;
@@ -705,12 +701,20 @@ body.active::after {
 }
 
 @media (min-width: 1280px) {
+  .slide {
+    padding-top: 0;
+  }
+
+  .slider-btn {
+    top: 43.5%;
+  }
+
   .slider-btn--right {
-    margin: 0;
+    margin-right: -0.625rem;
   }
 
   .slider-btn--left {
-    margin: 0;
+    margin-left: -0.625rem;
   }
 }
 
@@ -828,29 +832,30 @@ body.active::after {
   }
 
   .slider-container.expand .artist-title {
-    bottom: -1rem;
+    bottom: -0.25rem;
     font-size: var(--fs-small);
   }
 
   .slider-container.expand .dots {
     height: 3rem;
     padding: 0;
-    margin: 0.875rem auto 2rem;
+    padding-bottom: 0.125rem;
+    margin: 0rem auto 2rem;
   }
 
   .slider-container.expand .slider-btn {
     position: fixed;
     font-size: 2.75rem;
-    top: 46.5%;
+    top: 43.5%;
     transform: translate(0, -50%);
   }
 
   .slider-container.expand .slider-btn--left {
-    left: 20%;
+    left: 19.5%;
   }
 
   .slider-container.expand .slider-btn--right {
-    right: 20%;
+    right: 19.5%;
   }
 }
 
@@ -993,7 +998,7 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2.25rem 3.5rem 3rem;
+    padding: 2.125rem 3.5rem 3rem;
     width: 100%;
     height: auto;
   }
@@ -1011,7 +1016,7 @@ body.active::after {
 }
 
 .section-header {
-  padding-bottom: 1rem;
+  padding-bottom: 1.125rem;
   margin-bottom: 0.5rem;
   color: var(--clr-header-wide);
   text-transform: uppercase;
@@ -1085,7 +1090,7 @@ body.active::after {
 @media (min-width: 1600px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 57.5% 35%;
+    grid-template-columns: 58.5% 30%;
     column-gap: 5%;
   }
 

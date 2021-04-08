@@ -1,24 +1,30 @@
 <?php
 
-echo "<pre>";
 
 if (isset($_POST['submit'])) {
   $name = $_POST['name'];
   $email = $_POST['email'];
   $phone = $_POST['phone'];
   $media = $_POST['media'];
-  $quanity = $_POST['quantity'];
-  $location = $_POST['locaiton'];
-
+  $quantity = $_POST['quantity'];
+  $location = $_POST['location'];
   $message = $_POST['message'];
 
-  $mailTo = "wencphoto@gmail.com";
-  $headers = "From: ".$email;
-  $txt = "You have received an email from Wenc Photo, from ".$name.".\n\n".
+  $to = "wencphoto@gmail.com";
+  $subject = "Wenc Photo Get Started Submission";
+  $body = "";
 
-  mail($mailTo, $txt, $headers);
+  $body .= "From: ".$name. "\r\n";
+  $body .= "Email: ".$email. "\r\n";
+  $body .= "Phone: ".$phone. "\r\n";
+  $body .= "Media: ".$media. "\r\n";
+  $body .= "Quantity: ".$quantity. "\r\n";
+  $body .= "Location: ".$location."\r\n";
+  $body .= "Message: ".$message."\r\n";
+
+
+  mail($to,$subject,$body);
   header("Location: index.php?mailsend");
 }
 
-echo "</pre>";
 ?>
