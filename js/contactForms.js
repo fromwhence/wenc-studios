@@ -18,7 +18,7 @@ async function handleSubmit(event) {
       status.innerHTML = 'Success! We look forward to connecting with you.';
       setTimeout(() => {
         status.classList.remove('success');
-      }, 3000);
+      }, 4000);
       form.reset();
     })
     .catch(error => {

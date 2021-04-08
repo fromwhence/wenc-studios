@@ -1811,6 +1811,7 @@ textarea {
 
 input {
   border: 1px solid var(--clr-med-lighter);
+  background-color: var(--clr-light-form);
   margin-bottom: 0.5rem;
   padding: 0.675rem;
   font-family: inherit;
@@ -1865,13 +1866,13 @@ input {
 .get-started-form textarea {
   width: 100%;
   background-color: var(--clr-light-form);
-  border: none;
+  border: 1px solid var(--clr-header-wide-lighter-new);
 }
 
 .get-started-form input:focus,
 .get-started-form textarea:focus {
   background-color: white;
-  border: none;
+  border: 1px solid var(--clr-header-wide);
 }
 
 .get-started-form p {
@@ -2042,9 +2043,9 @@ input {
 .text-contact-form-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--clr-light-form);
   justify-content: flex-start;
   align-items: center;
+  /* border: 1px solid var(--clr-light-form); */
 }
 
 .section-paragraph--contact {
@@ -2086,9 +2087,7 @@ input {
 }
 
 .form-group input:focus,
-.form-group textarea:focus,
-.form-group input:active,
-.form-group textarea:active {
+.form-group textarea:focus {
   background-color: white;
   border: 1px solid var(--clr-header-wide-lighter-new);
 }
@@ -2099,16 +2098,16 @@ input {
   max-width: 500px;
   height: auto;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   margin: 0 auto;
   font-weight: var(--fw-reg);
 }
 
 #status.success {
   display: block;
-  color: rgb(47, 54, 35);
-  background-color: rgb(211, 250, 153);
-  border: 1px solid rgb(148, 168, 118);
+  color: rgb(35, 54, 52);
+  background-color: rgb(167, 247, 253);
+  border: 1px solid rgb(118, 168, 164);
   animation: status 4s ease forwards;
 }
 
@@ -2120,7 +2119,7 @@ input {
   animation: status 4s ease forwards;
 }
 
-@keyframes status {
+/* @keyframes status {
   0% {
     opacity: 1;
     pointer-events: all;
@@ -2133,7 +2132,7 @@ input {
     opacity: 0;
     pointer-events: none;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .contact-form-container {
