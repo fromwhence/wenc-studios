@@ -106,6 +106,11 @@ if (history.scrollRestoration) {
   };
 }
 
+// Reset href after page refresh
+window.addEventListener('load', e => {
+  window.location.href = 'https://www.wencphoto.com';
+});
+
 // Render scroll to top arrow if document is height is larger than 2000px
 const scrollToTopArrow = document.querySelector('.scroll-to-top');
 if (document.body.offsetHeight > 2000) {
