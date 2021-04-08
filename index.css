@@ -21,9 +21,9 @@ ol[class] {
   --clr-med-light: #cccfcf;
   --clr-header-med: #8b9999;
   --clr-header-wide-lighter: #747d7e;
-  --clr-header-wide: #6c7475;
+  --clr-header-wide: #5f6566;
   --clr-header-wide-darker: #5b6364;
-  --clr-reg-new: #383838;
+  --clr-reg-new: #2c2c2c;
   --clr-reg-dark: #2c2c2c;
   --clr-business-name-bg: #495252;
   --clr-business-name-bg-darker: #36393a;
@@ -502,7 +502,7 @@ body.active::after {
     display: block;
     width: 100%;
     text-decoration: none;
-    padding: 1.625rem 0 0.425rem 2rem;
+    padding: 1.625rem 0 0.375rem 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
