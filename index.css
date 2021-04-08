@@ -1498,14 +1498,19 @@ ul.tier--list {
     left: 5.5rem;
   }
 
-  .expand-slider-icon-sample .expand-outline {
+  .expand-slider-icon-sample .expand-outline,
+  .expand-slider-icon-sample .static-expand-icon {
     visibility: visible;
-    font-size: 1.675rem;
+    font-size: 1.65rem;
     position: absolute;
     color: var(--clr-med-new);
     bottom: 0.5rem;
-    right: 6.5rem;
+    right: 8rem;
     cursor: pointer;
+  }
+
+  .expand-slider-icon-sample .static-expand-icon {
+    bottom: 0rem;
   }
 
   .expand-slider-icon-sample .expand-outline:hover {
@@ -1700,7 +1705,7 @@ ul.tier--list {
   }
 
   .expand-slider-icon-sample .expand-outline {
-    right: 3.75rem;
+    right: 4.25rem;
   }
 
   .sample-slider--nav-dot,
@@ -1777,7 +1782,7 @@ ul.tier--list {
   }
 
   .expand-slider-icon-sample .expand-outline {
-    right: 4.75rem;
+    right: 5.875rem;
   }
   /* Expanded sample images */
   .sample-slider-container.expand .sample-slider--btn-left,
@@ -1792,6 +1797,41 @@ ul.tier--list {
 }
 
 /* Get started section */
+/* General form styles */
+textarea {
+  border: 1px solid var(--clr-med-lighter);
+  padding: 0.75rem;
+  font-family: inherit;
+  font-size: var(--fs-smaller);
+  height: 175px;
+  line-height: 1.4rem;
+  resize: none;
+  margin: 0.75rem 0 1rem;
+}
+
+input {
+  border: 1px solid var(--clr-med-lighter);
+  margin-bottom: 0.5rem;
+  padding: 0.725rem;
+  font-family: inherit;
+  font-size: var(--fs-small);
+}
+
+.form-submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.125rem 3.125rem;
+  text-align: center;
+  background-color: var(--clr-business-name-bg-darker);
+  color: rgba(255, 255, 255, 0.95);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 .section-header--get-started {
   margin-bottom: 1rem;
 }
@@ -1810,22 +1850,17 @@ ul.tier--list {
   background-color: var(--clr-light-form);
 }
 
-.get-started-form label {
-  color: white;
-  opacity: 0.9;
+.get-started-form p {
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.25rem;
 }
 
 .form-wide input {
   width: 100%;
-  margin-bottom: 1rem;
 }
 
 .photoshoot-text {
   margin: 0.5rem 0 0.375rem;
-}
-
-.get-started-form textarea {
-  margin: 1rem 0 0.5rem;
 }
 
 /* Custom radio button */
@@ -1855,14 +1890,14 @@ ul.tier--list {
   left: 0;
   height: 1.25rem;
   width: 1.25rem;
-  background-color: var(--clr-header-wide);
+  background-color: var(--clr-header-wide-lighter);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   transition: 250ms;
 }
 
 .photoshoot-location-container:hover input ~ .checkmark {
-  background-color: var(--clr-med-lighter);
+  background-color: var(--clr-business-name-bg-darker);
 }
 
 .photoshoot-location-container input:checked ~ .checkmark {
@@ -1889,27 +1924,8 @@ ul.tier--list {
   background: white;
 }
 
-.get-started-submit-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5rem auto 0;
-  padding: 1.25rem 3rem;
-  text-align: center;
-  background-color: var(--clr-business-name-bg-darker);
-  color: rgba(255, 255, 255, 0.95);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
 .get-started--form textarea {
   width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
-  font-size: var(--fs-smaller);
-  line-height: 1.4rem;
 }
 
 /* Contact section */
@@ -1953,20 +1969,9 @@ ul.tier--list {
 input {
   border: 1px solid var(--clr-med-lighter);
   margin-bottom: 0.5rem;
-  padding: 0.825rem;
+  padding: 0.725rem;
   font-family: inherit;
   font-size: var(--fs-small);
-}
-
-textarea {
-  border: 1px solid var(--clr-med-lighter);
-  padding: 0.75rem;
-  font-family: inherit;
-  font-size: inherit;
-  height: 5rem;
-  /* width: auto; */
-  height: 165px;
-  resize: none;
 }
 
 .submit-button,
