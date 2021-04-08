@@ -97,7 +97,7 @@ const enableScroll = () => {
   window.onscroll = function () {};
 };
 
-// Restore top of page and root href dafter browser refresh
+// Restore top of page and root href after browser refresh
 if (history.scrollRestoration) {
   history.scrollRestoration = 'manual';
 } else {
