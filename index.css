@@ -1805,16 +1805,17 @@ textarea {
   font-size: var(--fs-smaller);
   height: 175px;
   line-height: 1.4rem;
-  resize: none;
   margin: 0.75rem 0 1rem;
+  resize: none;
 }
 
 input {
   border: 1px solid var(--clr-med-lighter);
   margin-bottom: 0.5rem;
-  padding: 0.725rem;
+  padding: 0.75rem;
   font-family: inherit;
-  font-size: var(--fs-small);
+  font-size: var(--fs-smaller);
+  border-radius: 0;
 }
 
 .form-submit-button {
