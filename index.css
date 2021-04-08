@@ -1865,6 +1865,13 @@ input {
 .get-started-form textarea {
   width: 100%;
   background-color: var(--clr-light-form);
+  border: none;
+}
+
+.get-started-form input:focus,
+.get-started-form textarea:focus {
+  background-color: white;
+  border: none;
 }
 
 .get-started-form p {
@@ -2064,7 +2071,9 @@ input {
 }
 
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.form-group input:active,
+.form-group textarea:active {
   background-color: white;
   border: 1px solid var(--clr-header-wide-lighter-new);
 }
