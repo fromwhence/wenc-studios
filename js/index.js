@@ -113,4 +113,7 @@ if (document.body.offsetHeight > 2000) {
 }
 
 // Scroll to top event
-scrollToTopArrow.addEventListener('click', scrollToTop);
+scrollToTopArrow.addEventListener('click', () => {
+  scrollToTop();
+  window.location.href = 'https://www.wencphoto.com';
+});
