@@ -2106,7 +2106,7 @@ input {
 #status.success {
   display: block;
   color: rgb(35, 54, 52);
-  background-color: rgb(167, 247, 253);
+  background-color: rgb(161, 238, 243);
   border: 1px solid rgb(118, 168, 164);
   animation: status 4s ease forwards;
 }
