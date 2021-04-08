@@ -2264,7 +2264,7 @@ input {
   .contact-container {
     display: grid;
     grid-template-columns: 45% 45%;
-    column-gap: 10%;
+    column-gap: 6.5%;
     margin-bottom: 2rem;
   }
 
