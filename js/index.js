@@ -30,7 +30,7 @@
 const defaultUrl = 'https://wencphoto.com/';
 console.log(defaultUrl);
 
-// history.replaceState(null, null, ' ');
+history.replaceState(null, null, ' ');
 
 // Sticky hamburger nav
 window.onscroll = () => {
