@@ -20,7 +20,7 @@ ol[class] {
   --clr-med-lighter: #d3d8d8;
   --clr-med-light: #cccfcf;
   --clr-header-med: #939e9e;
-  --clr-header-wide-lighter: #6f7474;
+  --clr-header-wide-lighter: #626666;
   --clr-header-wide-lighter-new: #717777;
   --clr-header-wide: #5b5f5f;
   --clr-header-wide-darker: #6a6e6e;
@@ -892,16 +892,16 @@ body.active::after {
   }
 
   .section-inverse h2,
-  .section-inverse h3,
+  .section-inverse h3 {
+    color: white;
+    opacity: 0.95;
+  }
+
   .section-inverse ul,
   .section-inverse li::marker,
   .section-inverse p,
   .section-inverse a {
     color: white;
-    opacity: 0.95;
-  }
-
-  .section-inverse h3 {
     opacity: 0.9;
   }
 
