@@ -1983,7 +1983,7 @@ input {
 }
 
 .contact {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .contact-details-container {
@@ -2060,10 +2060,10 @@ input {
 .contact-form-container {
   width: 100%;
   max-width: 500px;
-  margin: 0.5rem auto;
-  padding: 1rem 0.75rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.625rem 1.75rem;
   background-color: var(--clr-light-form);
-  border: 1px solid var(--clr-med-lighter);
+  border-top: 1px solid var(--clr-med-lighter);
 }
 
 .form-group {
@@ -2072,11 +2072,16 @@ input {
 }
 
 .form-group label {
+  display: block;
+  color: var(--clr-header-wide);
   font-size: var(--fs-small);
   font-weight: var(--fw-med);
-  font-size: var(--fs-smaller);
-  color: var(--clr-header-wide);
+  font-size: var(--fs-small);
   margin: 0.2rem 0;
+}
+
+.extra-small {
+  font-size: var(--fs-smaller);
 }
 
 .form-group input {
@@ -2113,8 +2118,8 @@ input {
   position: absolute;
   content: '\2715';
   font-size: 1.2rem;
-  right: 0.5rem;
-  top: 0.125rem;
+  right: 0.725rem;
+  top: 0.25rem;
   line-height: 2rem;
   color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -2123,16 +2128,15 @@ input {
 #status.success {
   display: block;
   color: rgba(0, 0, 0, 0.8);
-  background-color: #b0d7ff;
-  border: 1px solid #49606b;
+  background-color: #b8dbfd;
   animation: status 4s ease forwards;
+  border-top: 1px solid var(--clr-header-wide-lighter-new);
 }
 
 #status.error {
   display: block;
   color: white;
   background-color: rgb(231, 46, 46);
-  border: 1px solid rgb(80, 12, 12);
   animation: status 4s ease forwards;
 }
 
