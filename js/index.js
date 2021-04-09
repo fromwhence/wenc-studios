@@ -30,7 +30,7 @@
 const defaultUrl = 'https://wencphoto.com/';
 console.log(defaultUrl);
 
-history.replaceState(null, null, ' ');
+// history.replaceState(null, null, ' ');
 
 // Sticky hamburger nav
 window.onscroll = () => {
@@ -104,13 +104,13 @@ const enableScroll = () => {
 };
 
 // Restore top of page and root href after browser refresh
-// if (history.scrollRestoration) {
-//   history.scrollRestoration = 'manual';
-// } else {
-//   window.onbeforeunload = function () {
-//     window.scrollTo(0, 0);
-//   };
-// }
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+} else {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+}
 
 // Render scroll to top arrow if document is height is larger than 2000px
 const scrollToTopArrow = document.querySelector('.scroll-to-top');
