@@ -385,7 +385,7 @@ body.active::after {
 @media (min-width: 768px) {
   .nav-toggle {
     right: 1.5rem;
-    top: 1.25rem;
+    top: 1.125rem;
   }
 
   .hamburger,
@@ -411,7 +411,7 @@ body.active::after {
   }
 
   .sticky {
-    top: 1.5rem;
+    top: 1.275rem;
   }
   .nav-open .nav-toggle {
     top: 1.5rem;
