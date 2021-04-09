@@ -2013,7 +2013,7 @@ input {
   display: block;
   padding: 0.75rem 0 0.75rem;
   margin: 0 auto 0.5rem;
-  width: 30%;
+  width: 40%;
   text-align: center;
   border-bottom: 1px solid var(--clr-med-lighter);
 }
@@ -2068,13 +2068,7 @@ input {
 }
 
 .text-contact-form-container .contact-sub-header {
-  display: block;
-  padding: 0.75rem 0 0.75rem;
   margin: 0 auto 1rem;
-  width: 87.5%;
-  max-width: 450px;
-  text-align: center;
-  border-bottom: 1px solid var(--clr-med-lighter);
 }
 
 .section-paragraph--contact {
@@ -2214,6 +2208,14 @@ input {
   .contact .section-header {
     margin-right: 0rem;
     margin-left: 0rem;
+  }
+
+  .google-map--responsive {
+    width: 85%;
+  }
+
+  .contact-sub-header {
+    width: 27.5%;
   }
 
   .contact-form-container {
