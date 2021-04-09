@@ -173,7 +173,8 @@ button {
   }
 
   .header {
-    padding: 1.5rem 2rem 1.375rem;
+    padding: 1.325rem 2rem 1.125rem;
+    border: none;
     margin: 0;
   }
 
