@@ -510,16 +510,17 @@ body.active::after {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
-  .side-nav-item a:hover,
-  .side-nav-item a:active {
-    background-color: var(--clr-header-wide);
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  .side-nav-item a:hover {
+    background-color: var(--clr-business-name-bg);
+    border-bottom-color: rgba(255, 255, 255, 1);
     color: white;
     transition: all 300ms;
   }
 
-  .side-nav-item a:hover {
+  .side-nav-item.active {
     background-color: var(--clr-business-name-bg);
+    color: white;
+    transition: all 300ms;
   }
 
   .main-content {
@@ -938,6 +939,12 @@ body.active::after {
 }
 
 @media (min-width: 768px) {
+  .services,
+  .schedule,
+  .contact {
+    padding: 2.75rem 3.5rem;
+  }
+
   .about {
     padding-top: 1.5rem;
   }
@@ -954,14 +961,6 @@ body.active::after {
 @media (min-width: 1024px) {
   .about-text:first-of-type {
     padding-bottom: 1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .services,
-  .schedule,
-  .contact {
-    padding: 2.75rem 3.5rem;
   }
 }
 
@@ -2074,11 +2073,17 @@ input {
 /* Basic contact form */
 .contact-form-container {
   width: 100%;
-  max-width: 500px;
+  max-width: 480px;
   margin: 0.5rem auto 0;
   padding: 1.25rem 1.625rem 2rem;
   background-color: var(--clr-light-form);
   border-top: 1px solid var(--clr-med-lighter);
+}
+
+@media (min-width: 480px) {
+  .contact-form-container {
+    border: 1px solid var(--clr-med-lighter);
+  }
 }
 
 .form-group {

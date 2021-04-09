@@ -12,6 +12,8 @@ const sections = [
   selectElementByClass('contact'),
 ];
 
+console.log(sections);
+
 const navItems = {
   about: selectElementByClass('aboutNavItem'),
   services: selectElementByClass('servicesNavItem'),
@@ -19,6 +21,8 @@ const navItems = {
   schedule: selectElementByClass('scheduleNavItem'),
   contact: selectElementByClass('contactNavItem'),
 };
+
+console.log(navItems);
 
 // intersection observer setup
 const observerOptions = {
