@@ -173,7 +173,7 @@ button {
   }
 
   .header {
-    padding: 1.6rem 2rem 1.5rem;
+    padding: 1.5rem 2rem 1.375rem;
     margin: 0;
   }
 
@@ -1987,10 +1987,6 @@ input {
   text-decoration: underline;
 }
 
-.contact {
-  padding-bottom: 1rem;
-}
-
 .contact-details-container {
   text-align: center;
 }
@@ -2065,10 +2061,10 @@ input {
 .contact-form-container {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
-  padding: 1.5rem 1.625rem 2rem;
+  margin: 0.5rem auto 0;
+  padding: 1.5rem 0.75rem;
   background-color: var(--clr-light-form);
-  border-top: 1px solid var(--clr-med-lighter);
+  border: 1px solid var(--clr-med-lighter);
 }
 
 .form-group {
@@ -2132,6 +2128,8 @@ input {
   font-size: inherit;
   font-weight: var(--fw-reg);
   cursor: pointer;
+  border: 1px solid var(--clr-med-lighter);
+  border-top: none;
 }
 
 #status::after {
