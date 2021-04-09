@@ -19,10 +19,10 @@ ol[class] {
   --clr-med-new: #c9c9c9;
   --clr-med-lighter: #d3d7d8;
   --clr-med-light: #cccfcf;
-  --clr-header-med: #82898a;
+  --clr-header-med: #787f80;
   --clr-header-wide-lighter: #626666;
   --clr-header-wide-lighter-new: #717677;
-  --clr-header-wide: #5b5f5f;
+  --clr-header-wide: #626868;
   --clr-header-wide-darker: #6a6e6e;
   --clr-reg-dark: #2c2c2c;
   --clr-business-name-bg: #4b4d4e;
@@ -125,7 +125,7 @@ strong {
 }
 
 .bold-text {
-  color: var(--clr-header-wide);
+  color: var(--clr-business-name-bg);
 }
 
 @media (min-width: 768px) {
@@ -2186,7 +2186,7 @@ input {
 #status.success {
   display: block;
   color: rgba(0, 0, 0, 0.8);
-  background-color: #bde9fd;
+  background-color: #cdf5ff;
   animation: status 4s ease forwards;
   /* border-top: 1px solid var(--clr-header-wide-lighter-new); */
 }
@@ -2247,7 +2247,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0.25rem auto 0;
   padding: 1.125rem 3.125rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
