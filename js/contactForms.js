@@ -1,6 +1,17 @@
 'use strict';
 
 const form = document.getElementById('contact-form');
+const phoneNumber = document.getElementById('phone');
+
+// Adds hypens to phone input
+phoneNumber.addEventListener('keyup', e => {
+  if (
+    e.key != 'Backspace' &&
+    (phoneNumber.value.length === 3 || phoneNumber.value.length === 7)
+  ) {
+    phoneNumber.value += '-';
+  }
+});
 
 async function handleSubmit(event) {
   event.preventDefault();

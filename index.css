@@ -1823,15 +1823,6 @@ input {
   border-radius: 0;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 60px #fafafa inset !important;
-  background-color: #fafafa !important;
-  background-clip: content-box !important;
-}
-
 .get-started-submit-button {
   display: flex;
   justify-content: center;
@@ -2107,6 +2098,21 @@ input:-webkit-autofill:active {
 .form-group textarea:focus {
   background-color: white;
   border: 1px solid var(--clr-header-wide-lighter-new);
+}
+
+.form-group input:-webkit-autofill {
+  border: 1px solid var(--clr-header-wide-darker);
+  background-color: white;
+}
+.form-group input:autofill {
+  border: 1px solid var(--clr-header-wide-darker);
+  background-color: white;
+}
+
+.form-group input:-webkit-autofill,
+.form-group input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #333;
 }
 
 #status {
