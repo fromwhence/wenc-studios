@@ -82,13 +82,13 @@ sideNavLinks.forEach(sideNavLink => {
 });
 
 // Scroll to top when page is reloaded
-const scrollToTop = function () {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth',
-  });
-};
+// const scrollToTop = function () {
+//   window.scrollTo({
+//     top: 0,
+//     left: 0,
+//     behavior: 'smooth',
+//   });
+// };
 
 // Disable scroll when clicking next slide
 const disableScroll = () => {
