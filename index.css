@@ -599,7 +599,7 @@ body.active::after {
 .slider-btn {
   cursor: pointer;
   position: absolute;
-  top: 47.5%;
+  top: 46.5%;
   transform: translate(0, -50%);
   color: var(--clr-med-new);
   padding: 0.5rem 0.325rem 0.3rem;
@@ -2227,6 +2227,12 @@ input {
     width: 27.5%;
   }
 
+  /* .contact-info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid red;
+  } */
+
   .contact-form-container {
     padding: 1.25rem 1rem;
     margin-top: 0.5rem;
@@ -2259,7 +2265,7 @@ input {
 }
 
 .contact-submit-button:hover {
-  background-color: var(--clr-header-wide);
+  background-color: var(--clr-business-name-bg);
   color: white;
   opacity: rgba(255, 255, 255, 1);
 }
