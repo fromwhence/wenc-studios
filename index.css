@@ -2098,6 +2098,29 @@ input {
   }
 }
 
+/* Removes browser form defaults */
+.form-group input:-webkit-autofill {
+  border: 1px solid var(--clr-header-wide-darker);
+  background-color: white;
+}
+.form-group input:autofill {
+  border: 1px solid var(--clr-header-wide-darker);
+  background-color: white;
+}
+
+.form-group input:-webkit-autofill,
+.form-group input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #333;
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='password'],
+.form-group textarea {
+  -webkit-appearance: none;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -2130,21 +2153,6 @@ input {
 .form-group textarea:focus {
   background-color: white;
   border: 1px solid var(--clr-header-wide-lighter-new);
-}
-
-.form-group input:-webkit-autofill {
-  border: 1px solid var(--clr-header-wide-darker);
-  background-color: white;
-}
-.form-group input:autofill {
-  border: 1px solid var(--clr-header-wide-darker);
-  background-color: white;
-}
-
-.form-group input:-webkit-autofill,
-.form-group input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 1000px white inset;
-  -webkit-text-fill-color: #333;
 }
 
 #status {
