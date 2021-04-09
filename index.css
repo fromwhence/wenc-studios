@@ -21,7 +21,7 @@ ol[class] {
   --clr-med-light: #cccfcf;
   --clr-header-med: #939e9e;
   --clr-header-wide-lighter: #6f7474;
-  --clr-header-wide-lighter-new: #7a8080;
+  --clr-header-wide-lighter-new: #717777;
   --clr-header-wide: #5b5f5f;
   --clr-header-wide-darker: #6a6e6e;
   --clr-reg-new: #2c2c2c;
@@ -2017,10 +2017,11 @@ input {
 }
 
 .contact-details--address {
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.25rem;
 }
 
 .contact-details-sub-container--hours {
+  padding-top: 1rem;
   padding-bottom: 0.75rem;
 }
 
@@ -2033,7 +2034,7 @@ input {
   width: 90%;
   overflow: hidden;
   padding-top: 66.66%; /* 3:2 Aspect Ratio */
-  margin: 1rem auto;
+  margin: 0 auto;
   border: 1px solid var(--clr-med-lighter);
 }
 
