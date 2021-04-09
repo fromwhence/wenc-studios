@@ -2070,7 +2070,7 @@ input {
 .text-contact-form-container .contact-sub-header {
   display: block;
   padding: 0.75rem 0 0.75rem;
-  margin: 0 auto 0.75rem;
+  margin: 0 auto 1rem;
   width: 87.5%;
   max-width: 450px;
   text-align: center;
