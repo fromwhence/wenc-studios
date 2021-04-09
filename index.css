@@ -577,7 +577,7 @@ body.active::after {
   top: 0;
   width: 100%;
   height: 100%;
-  transition: transform 500ms, opacity 500ms;
+  transition: transform 750ms, opacity 600ms;
   padding-bottom: 2rem;
   background-repeat: no-repeat;
   display: flex;
@@ -1342,7 +1342,7 @@ ul.tier--list {
   position: absolute;
   height: 100%;
   width: 100%;
-  transition: transform 1s ease-in;
+  transition: transform 850ms;
 }
 
 .sample-slider--slide,
@@ -1353,7 +1353,7 @@ ul.tier--list {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 400ms ease-in;
+  transition: opacity 500ms;
 }
 
 .sample-slider--slide.current-slide,
