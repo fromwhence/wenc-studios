@@ -22,12 +22,12 @@ ol[class] {
   --clr-header-med: #939e9e;
   --clr-header-wide-lighter: #6f7474;
   --clr-header-wide-lighter-new: #7a8080;
-  --clr-header-wide: #626768;
+  --clr-header-wide: #5b5f5f;
   --clr-header-wide-darker: #6a6e6e;
   --clr-reg-new: #2c2c2c;
   --clr-reg-dark: #2c2c2c;
-  --clr-business-name-bg: #505353;
-  --clr-business-name-bg-darker: #383b3b;
+  --clr-business-name-bg: #4b4e4e;
+  --clr-business-name-bg-darker: #363838;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
@@ -36,7 +36,7 @@ ol[class] {
   --fs-h2: 1.75rem;
   --fs-h3: 1.575rem;
   --fs-h4: 1.1625rem;
-  --fs-h5: 1.175em;
+  --fs-h5: 1.15em;
   --fs-reg: 1rem;
   --fs-small: 0.95rem;
   --fs-smaller: 0.9rem;
@@ -495,6 +495,7 @@ body.active::after {
     color: rgba(255, 255, 255, 0.95);
     font-weight: var(--fw-reg);
     font-size: var(--fs-h5);
+    font-size: 1.125rem;
     margin: 0;
     padding: 0;
   }
@@ -503,7 +504,7 @@ body.active::after {
     display: block;
     width: 100%;
     text-decoration: none;
-    padding: 1.625rem 0 0.375rem 2rem;
+    padding: 1.75rem 0 0.25rem 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
@@ -513,6 +514,10 @@ body.active::after {
     border-bottom: 1px solid rgba(255, 255, 255, 0.95);
     color: white;
     transition: all 250ms;
+  }
+
+  .side-nav-item:hover {
+    background-color: var(--clr-business-name-bg);
   }
 
   .main-content {
