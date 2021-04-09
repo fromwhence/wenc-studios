@@ -1330,7 +1330,6 @@ ul.tier--list {
   position: relative;
   height: auto;
   width: 100%;
-  width: 100%;
   max-width: 900px;
   overflow: hidden;
   margin: 0 auto;
@@ -1352,8 +1351,8 @@ ul.tier--list {
   bottom: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  transition: opacity 500ms;
+  opacity: 1;
+  /* transition: opacity 500ms; */
 }
 
 .sample-slider--slide.current-slide,
@@ -1364,6 +1363,7 @@ ul.tier--list {
   width: 100%;
   height: auto;
   opacity: 1;
+  /* border: 1px solid red; */
 }
 
 .sample-slider--image-static,
