@@ -5,9 +5,9 @@
   if (!document || !window) {
     return;
   }
-  var styleText =
+  const styleText =
     '::-moz-focus-inner{border:0 !important;}:focus{outline: none !important;';
-  var unfocus_style = document.createElement('STYLE');
+  const unfocus_style = document.createElement('STYLE');
 
   window.unfocus = function () {
     document.getElementsByTagName('HEAD')[0].appendChild(unfocus_style);

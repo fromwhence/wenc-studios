@@ -306,6 +306,7 @@ body.active::after {
 
 .sticky {
   position: fixed;
+  padding: 1.25rem 0.625rem;
   top: 1rem;
   opacity: 0.75;
   background: white;
@@ -2181,6 +2182,10 @@ input {
 
   .form-group textarea {
     margin-bottom: 1rem;
+  }
+
+  #status {
+    padding: 1.75rem 2rem;
   }
 }
 
