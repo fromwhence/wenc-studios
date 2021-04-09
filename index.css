@@ -1343,7 +1343,7 @@ ul.tier--list {
   height: 100%;
   width: 100%;
   position: relative;
-  transition: transform 400ms ease-in;
+  /* transition: transform 400ms ease-in; */
 }
 
 .sample-slider--slide,
@@ -1354,7 +1354,7 @@ ul.tier--list {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 400ms ease-in;
+  transition: opacity 500ms ease-in;
 }
 
 .sample-slider--slide.current-slide,
