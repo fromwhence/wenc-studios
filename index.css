@@ -2114,8 +2114,8 @@ input {
   content: '\2715';
   font-size: 1.2rem;
   right: 0.5rem;
-  top: 0.325rem;
-  line-height: 1.6rem;
+  top: 0.125rem;
+  line-height: 2rem;
   color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -2123,8 +2123,8 @@ input {
 #status.success {
   display: block;
   color: rgba(0, 0, 0, 0.8);
-  background-color: #abdafe;
-  border: 1px solid #495c6b;
+  background-color: #b0d7ff;
+  border: 1px solid #49606b;
   animation: status 4s ease forwards;
 }
 
