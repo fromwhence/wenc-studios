@@ -658,11 +658,11 @@ body.active::after {
 
 @media (min-width: 768px) {
   .slide {
-    padding-top: 0.25rem;
+    padding-top: 0rem;
   }
 
   .slide-image {
-    width: 70%;
+    width: 67.5%;
   }
 
   .slider-btn {
@@ -1283,7 +1283,7 @@ ul.tier--list {
   }
 
   .tier--description {
-    grid-template-columns: 20% 75%;
+    grid-template-columns: 15% 1fr;
     margin-right: 3.5rem;
     margin-left: 3.5rem;
   }
