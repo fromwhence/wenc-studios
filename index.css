@@ -1823,6 +1823,15 @@ input {
   border-radius: 0;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 60px #fafafa inset !important;
+  background-color: #fafafa !important;
+  background-clip: content-box !important;
+}
+
 .get-started-submit-button {
   display: flex;
   justify-content: center;
@@ -2061,7 +2070,7 @@ input {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
-  padding: 1.5rem 1.625rem 1.75rem;
+  padding: 1.5rem 1.625rem 2rem;
   background-color: var(--clr-light-form);
   border-top: 1px solid var(--clr-med-lighter);
 }
@@ -2128,9 +2137,9 @@ input {
 #status.success {
   display: block;
   color: rgba(0, 0, 0, 0.8);
-  background-color: #b8dbfd;
+  background-color: #bde9fd;
   animation: status 4s ease forwards;
-  border-top: 1px solid var(--clr-header-wide-lighter-new);
+  /* border-top: 1px solid var(--clr-header-wide-lighter-new); */
 }
 
 #status.error {

@@ -15,7 +15,7 @@ async function handleSubmit(event) {
   })
     .then(response => {
       status.classList.add('success');
-      status.innerHTML = 'Success! We look forward to connecting with you.';
+      status.innerHTML = 'Thank you! We look forward to connecting with you.';
       status.addEventListener('click', () => {
         status.classList.remove('success');
       });
