@@ -506,7 +506,7 @@ body.active::after {
     color: rgba(255, 255, 255, 0.9);
     width: 100%;
     text-decoration: none;
-    padding: 1.75rem 0 0.25rem 2rem;
+    padding: 1.75rem 0 0.275rem 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
@@ -2013,7 +2013,7 @@ input {
   display: block;
   padding: 0.75rem 0 0.75rem;
   margin: 0 auto 0.5rem;
-  width: 35%;
+  width: 30%;
   text-align: center;
   border-bottom: 1px solid var(--clr-med-lighter);
 }
@@ -2067,8 +2067,18 @@ input {
   align-items: center;
 }
 
+.text-contact-form-container .contact-sub-header {
+  display: block;
+  padding: 0.75rem 0 0.75rem;
+  margin: 0 auto 0.75rem;
+  width: 87.5%;
+  max-width: 450px;
+  text-align: center;
+  border-bottom: 1px solid var(--clr-med-lighter);
+}
+
 .section-paragraph--contact {
-  max-width: 500px;
+  max-width: 450px;
   margin: 0 auto;
   padding: 0 1.625rem 1rem;
 }
@@ -2076,16 +2086,22 @@ input {
 /* Basic contact form */
 .contact-form-container {
   width: 100%;
-  max-width: 480px;
+  max-width: 450px;
   margin: 0.5rem auto 0;
   padding: 1.25rem 1.625rem 2rem;
   background-color: var(--clr-light-form);
   border-top: 1px solid var(--clr-med-lighter);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 450px) {
   .contact-form-container {
     border: 1px solid var(--clr-med-lighter);
+  }
+
+  .section-paragraph--contact {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 0 1rem;
   }
 }
 
@@ -2100,7 +2116,7 @@ input {
   font-size: var(--fs-small);
   font-weight: var(--fw-med);
   font-size: var(--fs-small);
-  margin: 0.2rem 0;
+  margin: 0 0 0.2rem;
 }
 
 .extra-small {
@@ -2142,7 +2158,7 @@ input {
   position: relative;
   display: none;
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   height: auto;
   text-align: center;
   padding: 1.5rem 2rem;
@@ -2195,6 +2211,11 @@ input {
 }
 
 @media (min-width: 768px) {
+  .contact .section-header {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+
   .contact-form-container {
     padding: 1.25rem 1rem;
     margin-top: 0.5rem;
@@ -2237,6 +2258,11 @@ input {
     column-gap: 10%;
   }
 
+  .google-map--responsive {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .contact-details {
     font-size: var(--fs-reg);
   }
@@ -2257,7 +2283,7 @@ input {
   }
 
   .section-paragraph--contact {
-    padding-top: 1.25rem;
+    padding-top: 1.5rem;
   }
 
   .contact-form-container {
@@ -2317,7 +2343,7 @@ input {
   }
 
   .section-paragraph--contact {
-    padding-top: 1.325rem;
+    padding-top: 1.5rem;
   }
 }
 
