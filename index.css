@@ -440,7 +440,7 @@ body.active::after {
   .business-name-container {
     background-color: var(--clr-business-name-bg-darker);
     width: 275px;
-    padding: 1.475rem 1.425rem 1.425rem;
+    padding: 1.5rem 1.425rem 1.425rem;
   }
 
   .business-name {
@@ -448,8 +448,7 @@ body.active::after {
     font-size: 1.9rem;
     width: 100%;
     text-align: center;
-    padding-right: 0.25rem;
-    /* padding-left: 0.325rem; */
+    padding-right: 0.265rem;
   }
 
   .business-name-link {
@@ -466,7 +465,7 @@ body.active::after {
     color: rgba(255, 255, 255, 0.9);
     padding: 0;
     padding-top: 0.15rem;
-    padding-right: 0.425rem;
+    padding-right: 0.435rem;
   }
 
   .side-nav {
@@ -493,7 +492,6 @@ body.active::after {
     text-transform: capitalize;
     list-style: none;
     text-align: left;
-    color: rgba(255, 255, 255, 0.95);
     font-weight: var(--fw-reg);
     font-size: var(--fs-h5);
     font-size: 1.125rem;
@@ -501,23 +499,24 @@ body.active::after {
     padding: 0;
   }
 
-  .side-nav-item {
+  .side-nav-item a {
     display: block;
+    color: rgba(255, 255, 255, 0.9);
     width: 100%;
     text-decoration: none;
     padding: 1.75rem 0 0.25rem 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
-  .side-nav-item:hover,
-  .side-nav-item.active {
+  .side-nav-item a:hover,
+  .side-nav-item a:active {
     background-color: var(--clr-header-wide);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
     color: white;
     transition: all 250ms;
   }
 
-  .side-nav-item:hover {
+  .side-nav-item a:hover {
     background-color: var(--clr-business-name-bg);
   }
 
