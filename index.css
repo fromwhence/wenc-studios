@@ -25,7 +25,7 @@ ol[class] {
   --clr-header-wide: #5b5f5f;
   --clr-header-wide-darker: #6a6e6e;
   --clr-reg-dark: #2c2c2c;
-  --clr-business-name-bg: #4b4e4e;
+  --clr-business-name-bg: #4b4d4e;
   --clr-business-name-bg-darker: #363838;
   --fw-light: 300;
   --fw-reg: 400;
@@ -1288,6 +1288,7 @@ ul.tier--list {
 
   .tier--description {
     grid-template-columns: 15% 1fr;
+    column-gap: 5%;
     margin-right: 3.5rem;
     margin-left: 3.5rem;
   }
