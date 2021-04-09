@@ -926,7 +926,7 @@ body.active::after {
 .services,
 .schedule,
 .contact {
-  padding: 2.275rem 1.625rem;
+  padding: 2.125rem 1.625rem;
 }
 
 .rates {
@@ -1978,6 +1978,11 @@ input {
 }
 
 /* Contact section */
+.contact .section-header {
+  margin-right: 1.625rem;
+  margin-left: 1.625rem;
+}
+
 .contact-details {
   font-style: inherit;
   line-height: 1.75;
@@ -2025,10 +2030,10 @@ input {
 
 .google-map--responsive {
   position: relative;
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   padding-top: 66.66%; /* 3:2 Aspect Ratio */
-  margin: 0.775rem 0 0.9rem;
+  margin: 0 auto 1rem;
   border: 1px solid var(--clr-med-lighter);
 }
 
@@ -2072,7 +2077,7 @@ input {
   margin: 0.5rem auto 0;
   padding: 1.25rem 1.625rem 2rem;
   background-color: var(--clr-light-form);
-  border: 1px solid var(--clr-med-lighter);
+  border-top: 1px solid var(--clr-med-lighter);
 }
 
 .form-group {
@@ -2136,8 +2141,7 @@ input {
   font-size: inherit;
   font-weight: var(--fw-reg);
   cursor: pointer;
-  border: 1px solid var(--clr-med-lighter);
-  border-top: none;
+  border-top: 1px solid var(--clr-med-lighter);
 }
 
 #status::after {
