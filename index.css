@@ -19,13 +19,13 @@ ol[class] {
   --clr-med-new: #c9c9c9;
   --clr-med-lighter: #d3d7d8;
   --clr-med-light: #cccfcf;
-  --clr-header-med: #939c9e;
-  --clr-header-wide-lighter: #626566;
+  --clr-header-med: #939d9e;
+  --clr-header-wide-lighter: #626666;
   --clr-header-wide-lighter-new: #717677;
-  --clr-header-wide: #5b5e5f;
-  --clr-header-wide-darker: #6a6d6e;
+  --clr-header-wide: #5b5f5f;
+  --clr-header-wide-darker: #6a6e6e;
   --clr-reg-dark: #2c2c2c;
-  --clr-business-name-bg: #4b4d4e;
+  --clr-business-name-bg: #4b4e4e;
   --clr-business-name-bg-darker: #363838;
   --fw-light: 300;
   --fw-reg: 400;
@@ -331,7 +331,7 @@ body.active::after {
   width: 2.5em;
   height: 3px;
   border-radius: 1em;
-  transition: transform 300ms;
+  transition: transform 250ms;
 }
 
 .hamburger::before,
@@ -395,7 +395,7 @@ body.active::after {
     width: 3em;
     height: 3px;
     border-radius: 1.25em;
-    transition: transform 300ms;
+    transition: transform 250ms;
   }
 
   .hamburger::before {
