@@ -2111,6 +2111,17 @@ input {
     background-color: var(--clr-header-wide-lighter-new);
     border: 1px solid var(--clr-header-med);
   }
+
+  .form-submit-button.get-started {
+    background-color: var(--clr-header-wide-lighter-new);
+    border: 1px solid var(--clr-header-wide-lighter-new);
+  }
+
+  .form-submit-button.get-started:hover,
+  .form-submit-button.get-started:focus {
+    background-color: var(--clr-business-name-bg);
+    color: white;
+  }
 }
 
 /* End of forms  */
