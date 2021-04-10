@@ -1141,6 +1141,7 @@ body.active::after {
 @media (min-width: 1280px) {
   .section-subheader--services {
     padding-top: 1.125rem;
+    padding-bottom: 1.25rem;
   }
 
   .text-side-image-container {
@@ -1173,7 +1174,7 @@ body.active::after {
     padding: 0;
     padding-bottom: 0.75rem;
     margin-top: 0;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.875rem;
     border-bottom: 1px solid var(--clr-med-lighter);
   }
 }
@@ -1810,18 +1811,18 @@ ul.tier--list {
     border-top: none;
     margin-top: 0;
     margin-right: 0;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.875rem;
     margin-left: 0;
     padding: 0;
     padding-bottom: 0.75rem;
   }
 
   .section-subheader.payment-methods {
-    margin-top: 0.375rem;
+    margin-top: 0.5rem;
   }
 
   .rates .side-by-side-text {
-    margin-top: 1rem;
+    margin-top: 1.125rem;
   }
 }
 
@@ -2078,6 +2079,10 @@ input {
 }
 
 @media (min-width: 1200px) {
+  .section-paragraph.get-started {
+    margin-top: 0.75rem;
+  }
+
   .get-started--form-container {
     border: 1px solid var(--clr-med-lighter);
     background-color: var(--clr-light-form);
@@ -2424,8 +2429,8 @@ input {
 @media (min-width: 1200px) {
   .contact-container {
     display: grid;
-    grid-template-columns: 45% 1fr;
-    column-gap: 5%;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
   }
 
   .contact-details-container {
@@ -2453,6 +2458,11 @@ input {
 
   .contact-details-container {
     padding-left: 0rem;
+  }
+
+  .contact-sub-header {
+    padding-top: 0rem;
+    padding-bottom: 1rem;
   }
 }
 
