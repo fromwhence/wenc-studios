@@ -27,13 +27,13 @@
       sizes="16x16"
       href="./images/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
     <script src="./js/index.js" async defer></script>
     <script src="./js/slider.js" async defer></script>
     <script src="./js/sliderSample.js" async defer></script>
     <script src="./js/sliderSample2.js" async defer></script>
     <script src="./js/intersectionNav.js" async defer></script>
-    <script src="./js/contactForms.js" async defer></script>
+    <script src="./js/contactForm.js" async defer></script>
+    <script src="./js/getStartedForm.js" async defer></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -528,7 +528,7 @@
             <h2 class="section-header section-header--get-started">
               Get Started
             </h2>
-            <p class="section-paragraph">
+            <p class="section-paragraph get-started">
               Please use the following form to begin the photoshoot scheduling
               process. If you prefer to contact us directly, we welcome your
               emails and phone calls. See the
@@ -536,68 +536,73 @@
             </p>
             <div class="get-started--form-container">
               <form
+                id="get-started-form"
                 class="get-started-form"
-                action="getstartedform.php"
+                action="https://formspree.io/f/xwkakyke"
                 method="POST"
               >
-                <p>Full Name</p>
-                <input type="text" name="name" required />
-                <p>Email Address</p>
-                <input type="text" name="email" required />
-                <p>Phone Number</p>
-                <input type="text" name="phone" required />
-                <p>Art Media</p>
-                <input
-                  type="text"
-                  name="media"
-                  placeholder="acrylic on canvas, oil on panel, etc."
-                  required
-                />
-                <p>Artwork Quantity</p>
-                <input type="number" name="quantity" min="1" required />
-                <p class="photoshoot-text">Photoshoot location preference:</p>
-                <div class="photoshoot-location-container">
-                  <label for="wenc-studio"
-                    >Wenc Photo studio
-                    <input
-                      id="wenc-studio"
-                      type="radio"
-                      name="location"
-                      value="shared"
-                      checked
-                    />
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-                <div class="photoshoot-location-container">
-                  <label for="artists-studio"
-                    >Artist's studio<input
-                      id="artists-studio"
-                      type="radio"
-                      name="location"
-                      value="artists-studio"
-                    />
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-                <textarea
-                  name="message"
-                  rows="6"
-                  cols="25"
-                  placeholder="Optional message for additional information or requests."
-                ></textarea
-                ><br />
-
-                <button
-                  class="get-started-submit-button"
-                  type="submit"
-                  name="submit"
-                >
-                  Submit
-                </button>
+                <p class="form-group get-started">
+                  <label for="name">First and Last Name</label>
+                  <input type="text" id="name" name="name" required />
+                </p>
+                <p class="form-group get-started">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </p>
+                <p class="form-group get-started">
+                  <label for="email">Phone Number</label>
+                  <input type="tel" class="phone--get-started" name="phone" maxlength="12" required />
+                </p>
+                <p class="form-group get-started">
+                  <label for="media">Art Media</label>
+                  <input type="text" class="media" name="media" placeholder="acrylic on canvas, oil on panel, etc." required/>
+                </p>
+                <p class="form-group get-started">
+                  <label for="quantity">Artwork Quantity</label>
+                  <input type="number" min="1" class="media" name="quantity" required/>
+                </p>
+                <p class="form-group get-started">
+                  <p class="photoshoot-text">Photoshoot location preference:</p>
+                  <div class="photoshoot-location-container">
+                    <label for="wenc-studio"
+                      >Wenc Photo studio
+                      <input
+                        id="wenc-studio"
+                        type="radio"
+                        name="location"
+                        value="wenc-studio"
+                        checked
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="photoshoot-location-container">
+                    <label for="artists-studio"
+                      >Artist's studio<input
+                        id="artists-studio"
+                        type="radio"
+                        name="location"
+                        value="artists-studio"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </p>
+                <p class="form-group get-started">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Optional message for questions or requests."></textarea>
+                </p>
+                <p class="form-group get-started">
+                  <button type="submit" class="form-submit-button get-started">
+                    Submit
+                  </button>
+                </p>
               </form>
             </div>
+            <p class="status--get-started"></p>
           </section>
+          
+          
         </div>
         <div class="section-container">
           <section id="contact" class="contact">
@@ -678,7 +683,12 @@
                       >Phone Number
                       <span class="extra-small">(optional)</span></label
                     >
-                    <input type="tel" id="phone" name="phone" maxlength="12" />
+                    <input
+                      type="tel"
+                      class="phone--contact"
+                      name="phone"
+                      maxlength="12"
+                    />
                   </p>
 
                   <p class="form-group">
@@ -687,12 +697,12 @@
                   </p>
 
                   <p class="form-group">
-                    <button type="submit" class="contact-submit-button">
+                    <button type="submit" class="form-submit-button">
                       Submit
                     </button>
                   </p>
                 </form>
-                <p id="status"></p>
+                <p class="status--contact"></p>
               </div>
             </div>
           </section>

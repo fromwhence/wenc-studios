@@ -28,8 +28,6 @@
 
 // Removes section portion of url when pate is refreshed
 const defaultUrl = 'https://wencphoto.com/';
-console.log(defaultUrl);
-
 history.replaceState(null, null, ' ');
 
 // Sticky hamburger nav
