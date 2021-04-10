@@ -2191,13 +2191,15 @@ input {
 }
 
 .status--get-started {
-  margin-top: 0.75rem;
+  margin-top: 0.875rem;
   max-width: 500px;
+  border: 1px solid var(--clr-header-wide);
 }
 
 @media (min-width: 600px) {
   .status--get-started {
     margin-top: 0;
+    border-top: none;
     max-width: 500px;
   }
 }
