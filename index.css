@@ -672,11 +672,11 @@ body.active::after {
   }
 
   .slider-btn--right {
-    margin: 1.625rem;
+    margin: 2rem;
   }
 
   .slider-btn--left {
-    margin: 1.625rem;
+    margin: 2rem;
   }
 
   .artist-title {
@@ -953,11 +953,11 @@ body.active::after {
   }
 
   .about-text:first-of-type {
-    padding-bottom: 0;
+    padding-bottom: 0.25rem;
   }
 
   .contact {
-    padding-bottom: 3.875rem;
+    padding-bottom: 3.75rem;
   }
 }
 
@@ -1383,7 +1383,7 @@ ul.tier--list {
 .sample-slider--image,
 .sample-slider--image-2 {
   position: relative;
-  width: 85%;
+  width: 83.5%;
   max-width: 480px;
   height: auto;
   margin: 0 auto;
@@ -1413,13 +1413,13 @@ ul.tier--list {
 .sample-slider--btn-right,
 .sample-slider--btn-right-2 {
   position: absolute;
-  right: 0;
+  right: 0.05rem;
 }
 
 .sample-slider--btn-left,
 .sample-slider--btn-left-2 {
   position: absolute;
-  left: 0;
+  left: 0.05rem;
 }
 
 .sample-slider--title,
@@ -1506,6 +1506,18 @@ ul.tier--list {
   }
 }
 
+@media (min-width: 1024px) {
+  .sample-slider--btn-right,
+  .sample-slider--btn-right-2 {
+    right: 6.5rem;
+  }
+
+  .sample-slider--btn-left,
+  .sample-slider--btn-left-2 {
+    left: 6.5rem;
+  }
+}
+
 @media (min-width: 1200px) {
   .sample-slider--image-static,
   .sample-slider--image,
@@ -1531,7 +1543,7 @@ ul.tier--list {
     position: absolute;
     color: var(--clr-med-new);
     bottom: 0.5rem;
-    right: 8rem;
+    right: 9rem;
     cursor: pointer;
   }
 
