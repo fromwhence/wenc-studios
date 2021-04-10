@@ -598,7 +598,7 @@ body.active::after {
 .slider-btn {
   cursor: pointer;
   position: absolute;
-  top: 46.5%;
+  top: 45.5%;
   transform: translate(0, -50%);
   color: var(--clr-med-new);
   padding: 0.5rem 0.325rem 0.3rem;
@@ -2099,12 +2099,12 @@ input {
   }
 
   .checkmark {
-    background-color: var(--clr-med-new);
+    background-color: var(--clr-med-lighter);
     border: 1px solid var(--clr-header-med);
   }
 
   .photoshoot-location-container:hover input ~ .checkmark {
-    background-color: var(--clr-header-wide-lighter-new);
+    background-color: var(--clr-med-light);
   }
 
   .photoshoot-location-container input:checked ~ .checkmark {
