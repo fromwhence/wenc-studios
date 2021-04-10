@@ -528,78 +528,82 @@
             <h2 class="section-header section-header--get-started">
               Get Started
             </h2>
-            <p class="section-paragraph get-started">
-              Please use the following form to begin the photoshoot scheduling
-              process. If you prefer to contact us directly, we welcome your
-              emails and phone calls. See the
-              <a href="#contact">contact section</a> for details.
-            </p>
-            <div class="get-started--form-container">
-              <form
-                id="get-started-form"
-                class="get-started-form"
-                action="https://formspree.io/f/xwkakyke"
-                method="POST"
-              >
-                <p class="form-group get-started">
-                  <label for="name">First and Last Name</label>
-                  <input type="text" id="name" name="name" required />
-                </p>
-                <p class="form-group get-started">
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" required />
-                </p>
-                <p class="form-group get-started">
-                  <label for="email">Phone Number</label>
-                  <input type="tel" class="phone--get-started" name="phone" maxlength="12" required />
-                </p>
-                <p class="form-group get-started">
-                  <label for="media">Art Media</label>
-                  <input type="text" class="media" name="media" placeholder="acrylic on canvas, oil on panel, etc." required/>
-                </p>
-                <p class="form-group get-started">
-                  <label for="quantity">Artwork Quantity</label>
-                  <input type="number" min="1" class="quantity" name="quantity" required/>
-                </p>
-                <p class="form-group get-started">
-                  <p class="photoshoot-text">Photoshoot location preference:</p>
-                  <div class="photoshoot-location-container">
-                    <label for="wenc-studio"
-                      >Wenc Photo studio
-                      <input
-                        id="wenc-studio"
-                        type="radio"
-                        name="location"
-                        value="wenc-studio"
-                        checked
-                      />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                  <div class="photoshoot-location-container">
-                    <label for="artists-studio"
-                      >Artist's studio<input
-                        id="artists-studio"
-                        type="radio"
-                        name="location"
-                        value="artists-studio"
-                      />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                </p>
-                <p class="form-group get-started">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" placeholder="Optional message for questions or requests."></textarea>
-                </p>
-                <p class="form-group get-started">
-                  <button type="submit" class="form-submit-button get-started">
-                    Submit
-                  </button>
-                </p>
-              </form>
-            </div>
+            <div class="get-started-faq-container">
+              <div class="get-started-text-form-container">
+              <p class="section-paragraph get-started">
+                Please use the following form to begin the photoshoot scheduling
+                process. If you prefer to contact us directly, we welcome your
+                emails and phone calls. See the
+                <a href="#contact">contact section</a> for details.
+              </p>
+              <div class="get-started--form-container">
+                <form
+                  id="get-started-form"
+                  class="get-started-form"
+                  action="https://formspree.io/f/xwkakyke"
+                  method="POST"
+                >
+                  <p class="form-group get-started">
+                    <label for="name">First and Last Name</label>
+                    <input type="text" id="name" name="name" required />
+                  </p>
+                  <p class="form-group get-started">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required />
+                  </p>
+                  <p class="form-group get-started">
+                    <label for="email">Phone Number</label>
+                    <input type="tel" autocomplete="tel" class="phone--get-started" name="phone" maxlength="12" required />
+                  </p>
+                  <p class="form-group get-started">
+                    <label for="media">Art Media</label>
+                    <input type="text" class="media" name="media" placeholder="acrylic on canvas, oil on panel, etc." required/>
+                  </p>
+                  <p class="form-group get-started">
+                    <label for="quantity">Artwork Quantity</label>
+                    <input type="number" id="quantity" name="quantity" pattern="[0-9]*" inputmode="numeric" min="1" required />
+                  </p>
+                  <p class="form-group get-started">
+                    <p class="photoshoot-text">Photoshoot location preference:</p>
+                    <div class="photoshoot-location-container">
+                      <label for="wenc-studio"
+                        >Wenc Photo studio
+                        <input
+                          id="wenc-studio"
+                          type="radio"
+                          name="location"
+                          value="wenc-studio"
+                          checked
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="photoshoot-location-container">
+                      <label for="artists-studio"
+                        >Artist's studio<input
+                          id="artists-studio"
+                          type="radio"
+                          name="location"
+                          value="artists-studio"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </p>
+                  <p class="form-group get-started">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Optional message for questions or requests."></textarea>
+                  </p>
+                  <p class="form-group get-started">
+                    <button type="submit" class="form-submit-button get-started">
+                      Submit
+                    </button>
+                  </p>
+                </form>
+              </div>
             <p class="status--get-started"></p>
+            </div>
+          </div>
           </section>
           
           
@@ -687,6 +691,7 @@
                       type="tel"
                       class="phone--contact"
                       name="phone"
+                      autocomplete="tel"
                       maxlength="12"
                     />
                   </p>

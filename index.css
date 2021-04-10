@@ -54,7 +54,6 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--clr-reg-new);
-  background: white;
 }
 
 img {
@@ -976,7 +975,7 @@ body.active::after {
   .services,
   .schedule,
   .contact {
-    padding: 2.25rem 3.25rem 2.75rem;
+    padding: 2.325rem 3.25rem 2.75rem;
     width: 100%;
     height: auto;
   }
@@ -1023,7 +1022,7 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2rem 3.5rem 3rem;
+    padding: 2.275rem 3.5rem 3rem;
     width: 100%;
     height: auto;
   }
@@ -1829,18 +1828,18 @@ ul.tier--list {
 @media (min-width: 1400px) {
   .sample-slider--btn-right,
   .sample-slider--btn-right-2 {
-    right: 3.5rem;
+    right: 3.25rem;
     font-size: 1.875rem;
   }
 
   .sample-slider--btn-left,
   .sample-slider--btn-left-2 {
-    left: 3.5rem;
+    left: 3.25rem;
     font-size: 1.875rem;
   }
 
   .expand-slider-icon-sample .expand-outline {
-    right: 6.5rem;
+    right: 5.5rem;
   }
 
   /* Expanded sample images */
@@ -1958,7 +1957,7 @@ input {
 .form-group input:focus,
 .form-group textarea:focus {
   background-color: white;
-  border: 1px solid var(--clr-header-wide-lighter-new);
+  border: 1px solid var(--clr-header-wide-darker);
 }
 
 .form-wide input {
@@ -2064,6 +2063,54 @@ input {
 .form-submit-button.get-started:focus {
   background-color: var(--clr-business-name-bg);
   border: 1px solid var(--clr-business-name-bg-darker);
+}
+
+@media (min-width: 1024px) {
+  .get-started-faq-container {
+    display: grid;
+    grid-template-columns: 50% 45%;
+    column-gap: 5%;
+  }
+
+  .get-started-text-form-container {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .get-started--form-container {
+    border: 1px solid var(--clr-med-lighter);
+    background-color: var(--clr-light-form);
+    color: var(--clr-reg-dark);
+    padding: 2rem 1.5rem 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 500px;
+  }
+
+  .form-group.get-started label {
+    color: var(--clr-header-wide);
+  }
+
+  .photoshoot-text,
+  .photoshoot-location-container label {
+    color: var(--clr-header-wide);
+  }
+
+  .checkmark {
+    background-color: var(--clr-med-new);
+    border: 1px solid var(--clr-header-med);
+  }
+
+  .photoshoot-location-container:hover input ~ .checkmark {
+    background-color: var(--clr-header-wide-lighter-new);
+  }
+
+  .photoshoot-location-container input:checked ~ .checkmark {
+    background-color: var(--clr-header-wide-lighter-new);
+    border: 1px solid var(--clr-header-med);
+  }
 }
 
 /* End of forms  */
