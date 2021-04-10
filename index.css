@@ -2042,12 +2042,12 @@ input {
   margin: 0.25rem auto 0;
   padding: 1.125rem 3.125rem;
   text-align: center;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   font-family: inherit;
   font-weight: 500;
   font-size: 1.1rem;
   background-color: var(--clr-header-wide-lighter-new);
-  border: 1px solid var(--clr-business-name-bg);
+  border: 1px solid var(--clr-header-wide-lighter-new);
 }
 
 .form-submit-button:hover {
