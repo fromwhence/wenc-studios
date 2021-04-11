@@ -246,6 +246,7 @@ body.active::after {
   width: 50%;
   text-align: center;
   border-bottom: 2px solid white;
+  transition: border-bottom 400ms;
 }
 
 .nav-item:hover,
