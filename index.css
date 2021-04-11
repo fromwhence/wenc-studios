@@ -241,8 +241,8 @@ body.active::after {
 
 .nav-item {
   margin-top: 2.75rem;
-  padding: 1rem 0;
-  width: 92.5%;
+  padding: 1.25rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -251,7 +251,8 @@ body.active::after {
 .nav-item.active {
   color: black;
   background-color: var(--clr-light-form);
-  border: 1px solid var(--clr-med-lighter);
+  border-top: 1px solid var(--clr-med-lighter);
+  border-bottom: 1px solid var(--clr-med-lighter);
 }
 
 .nav-link {
