@@ -90,7 +90,8 @@ h4 {
   margin: 0;
 }
 
-p {
+p,
+address {
   font-size: var(--fs-small);
   line-height: 1.65;
   -webkit-text-size-adjust: none;
@@ -109,9 +110,10 @@ li {
   padding-left: 0rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   p,
-  li {
+  li,
+  a {
     font-size: var(--fs-reg);
   }
 }
@@ -510,7 +512,7 @@ body.active::after {
     text-align: left;
     font-weight: var(--fw-reg);
     font-size: var(--fs-h5);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 0;
     padding: 0;
   }
@@ -526,7 +528,7 @@ body.active::after {
 
   .side-nav-item a:hover {
     background-color: var(--clr-business-name-bg);
-    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 0.85);
     color: white;
     transition: all 300ms;
   }
@@ -2156,7 +2158,7 @@ input {
 
 .contact-details {
   font-style: inherit;
-  line-height: 1.75;
+  line-height: 1.65;
   font-size: var(--fs-small);
   color: var(--clr-reg-dark);
 }
@@ -2332,6 +2334,10 @@ input {
   .contact .section-header {
     margin-right: 0rem;
     margin-left: 0rem;
+  }
+
+  .contact-details {
+    font-size: var(--fs-reg);
   }
 
   .google-map--responsive {
