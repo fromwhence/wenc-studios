@@ -234,28 +234,28 @@ body.active::after {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 3rem 0 0;
+  margin: 3.5rem 0 0;
   padding: 0;
   z-index: 100;
 }
 
 .nav-item {
-  margin-top: 1.75em;
-  padding: 1.375rem;
-  width: 92.5%;
+  margin-top: 1.75rem;
+  padding: 0.625rem;
+  width: 90%;
   text-align: center;
 }
 
 .nav-item:hover,
 .nav-item:focus,
 .nav-item.active {
-  background-color: var(--clr-light-form-darker);
+  background-color: var(--clr-light-form);
 }
 
 .nav-link {
-  color: var(--clr-business-name-bg);
+  color: var(--clr-header-med);
   font-weight: var(--fw-med);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: none;
   text-transform: capitalize;
   padding: 0.275rem 0.5rem;
@@ -282,6 +282,7 @@ body.active::after {
 
   .nav-item {
     margin-top: 3rem;
+    width: 80%;
   }
 
   .nav-link {
