@@ -249,7 +249,7 @@ body.active::after {
 .nav-item:hover,
 .nav-item:focus,
 .nav-item.active {
-  background-color: var(--clr-light-form);
+  background-color: var(--clr-light-form-darker);
 }
 
 .nav-link {
@@ -262,7 +262,7 @@ body.active::after {
 }
 
 .nav-item.active .nav-link {
-  color: var(--clr-reg-dark);
+  color: var(--clr-business-name-bg-darker);
 }
 
 @media (min-width: 600px) {
@@ -281,8 +281,9 @@ body.active::after {
   }
 
   .nav-item {
-    margin-top: 3rem;
-    width: 80%;
+    margin-top: 2.75rem;
+    width: 85%;
+    padding: 0.825rem;
   }
 
   .nav-link {
