@@ -234,25 +234,24 @@ body.active::after {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 2.625rem 0 0;
+  margin: 3rem 0 0;
   padding: 0;
   z-index: 100;
 }
 
 .nav-item {
-  margin-top: 2.75rem;
-  padding: 1.25rem;
-  width: 100%;
+  margin-top: 1.75em;
+  padding: 1.375rem;
+  width: 90%;
   text-align: center;
 }
 
 .nav-item:hover,
 .nav-item:focus,
 .nav-item.active {
-  color: black;
-  background-color: var(--clr-light-form);
-  border-top: 1px solid var(--clr-med-lighter);
-  border-bottom: 1px solid var(--clr-med-lighter);
+  background-color: var(--clr-light-form-darker);
+  /* border-top: 1px solid var(--clr-med-lighter);
+  border-bottom: 1px solid var(--clr-med-lighter); */
 }
 
 .nav-link {
@@ -277,11 +276,11 @@ body.active::after {
   }
 
   .nav-list {
-    margin-top: 3.25rem;
+    margin-top: 3.5rem;
   }
 
   .nav-item {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   .nav-link {
