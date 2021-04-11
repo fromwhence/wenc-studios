@@ -27,6 +27,7 @@ ol[class] {
   --clr-reg-dark: #2c2c2c;
   --clr-business-name-bg: #4b4d4e;
   --clr-business-name-bg-darker: #363838;
+  --clr-business-name-bg-darkest: #2f3131;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
@@ -53,7 +54,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: var(--clr-reg-new);
+  color: var(--clr-reg-dark);
 }
 
 img {
@@ -62,7 +63,7 @@ img {
 }
 
 a {
-  color: var(--clr-reg-new);
+  color: var(--clr-reg-dark);
   font-size: inherit;
 }
 
@@ -201,20 +202,21 @@ body.active::after {
   width: 100%;
   height: 100%;
   background-color: var(--clr-header-wide-darker);
-  opacity: 0.75;
+  opacity: 0.5;
+  /* backdrop-filter: blur(2px); */
   pointer-events: none;
 }
 
 @media (min-width: 1024px) {
   body.active::after {
-    background-color: var(--clr-reg-new);
+    background-color: var(--clr-reg-dark);
     opacity: 0.7;
   }
 }
 
 .nav {
   position: fixed;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   top: 0;
   bottom: 0;
   left: 32.5%;
@@ -238,10 +240,21 @@ body.active::after {
 
 .nav-item {
   margin-top: 2.75rem;
+  padding: 1rem 0;
+  width: 90%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.nav-item.active {
+  color: black;
+  background-color: var(--clr-light-form);
+  border-top: 1px solid var(--clr-med-lighter);
+  border-bottom: 1px solid var(--clr-med-lighter);
 }
 
 .nav-link {
-  color: var(--clr-reg-new);
+  color: var(--clr-reg-dark);
   color: var(--clr-business-name-bg);
   font-weight: var(--fw-med);
   font-size: 1.2rem;
@@ -440,17 +453,16 @@ body.active::after {
   }
 
   .business-name-container {
-    background-color: var(--clr-business-name-bg-darker);
-    width: 275px;
-    padding: 1.5rem 1.425rem 1.425rem;
+    background-color: var(--clr-business-name-bg-darkest);
+    width: 260px;
+    padding: 1.3rem 1.25rem 1.25rem;
   }
 
   .business-name {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 1.9rem;
+    font-size: 1.85rem;
     width: 100%;
     text-align: center;
-    padding-right: 0.265rem;
   }
 
   .business-name-link {
@@ -465,15 +477,13 @@ body.active::after {
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.9);
-    padding: 0;
-    padding-top: 0.15rem;
-    padding-right: 0.435rem;
+    padding-right: 0.2rem;
   }
 
   .side-nav {
     display: block;
     position: fixed;
-    width: 275px;
+    width: 260px;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -484,8 +494,8 @@ body.active::after {
   .side-nav-list {
     position: fixed;
     align-items: flex-start;
-    width: 275px;
-    top: 106px;
+    width: 260px;
+    top: 98px;
     padding: 0;
     margin: 0;
   }
@@ -496,7 +506,7 @@ body.active::after {
     text-align: left;
     font-weight: var(--fw-reg);
     font-size: var(--fs-h5);
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     margin: 0;
     padding: 0;
   }
@@ -618,7 +628,7 @@ body.active::after {
 }
 
 .artist-title {
-  color: var(--clr-reg-new);
+  color: var(--clr-reg-dark);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -993,7 +1003,7 @@ body.active::after {
   .section-container {
     width: 100%;
     height: auto;
-    padding-left: 275px;
+    padding-left: 260px;
   }
 
   .section-container.bg {
@@ -1275,7 +1285,7 @@ ul.tier--list {
 
 .tier--price {
   font-weight: 500;
-  color: var(--clr-reg-new);
+  color: var(--clr-reg-dark);
   font-size: 1rem;
   margin-top: 0;
   padding-right: 1.625rem;
@@ -1426,7 +1436,7 @@ ul.tier--list {
 
 .sample-slider--title,
 .sample-slider--title-2 {
-  color: var(--clr-reg-new);
+  color: var(--clr-reg-dark);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -1920,7 +1930,7 @@ input {
   .get-started--form-container {
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.175);
-    padding: 2rem 1.5rem 1.5rem;
+    padding: 1.75rem 1.5rem 1.275rem;
     margin-top: 0.5rem;
   }
 }
@@ -2144,7 +2154,7 @@ input {
   font-style: inherit;
   line-height: 1.75;
   font-size: var(--fs-small);
-  color: var(--clr-reg-new);
+  color: var(--clr-reg-dark);
 }
 
 .contact-details a {
@@ -2406,7 +2416,7 @@ input {
   }
 
   .text-contact-form-container {
-    display: grid;
+    /* display: grid; */
     margin-top: 0.875rem;
   }
 
@@ -2465,6 +2475,11 @@ input {
     padding-top: 0rem;
     padding-bottom: 1rem;
   }
+
+  .contact-form-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -2475,9 +2490,9 @@ input {
   }
 
   .section-paragraph--contact {
-    padding: 0;
-    margin: 0;
-    margin-top: -2rem;
+    /* padding: 0; */
+    margin-left: 0;
+    margin-top: 0rem;
     width: 100%;
   }
 
