@@ -16,6 +16,7 @@ ol[class] {
 
 :root {
   --clr-light-form: #f3f3f3;
+  --clr-light-form-darker: #eeeded;
   --clr-med-new: #c9c9c9;
   --clr-med-lighter: #d3d7d8;
   --clr-med-light: #b0b4b4;
@@ -243,14 +244,14 @@ body.active::after {
   padding: 1rem 0;
   width: 90%;
   text-align: center;
-  border-radius: 15px;
 }
 
+.nav-item:hover,
+.nav-item:focus,
 .nav-item.active {
   color: black;
   background-color: var(--clr-light-form);
-  border-top: 1px solid var(--clr-med-lighter);
-  border-bottom: 1px solid var(--clr-med-lighter);
+  border: 1px solid var(--clr-light-form-darker);
 }
 
 .nav-link {
