@@ -234,7 +234,7 @@ body.active::after {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 3rem 0 0;
+  margin: 2.5rem 0 0;
   padding: 0;
   z-index: 100;
 }
