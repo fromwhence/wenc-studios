@@ -307,9 +307,9 @@ body.active::after {
   padding: 1rem 0.5rem;
   top: 0.875rem;
   right: 0.9rem;
-  opacity: 0.6;
+  opacity: 0.5;
   background: white;
-  border: 1px solid var(--clr-med-lighter);
+  /* border: 1px solid var(--clr-med-lighter); */
   border-radius: 0;
 }
 
@@ -2056,13 +2056,14 @@ input {
 }
 
 .form-submit-button.get-started {
-  background-color: var(--clr-business-name-bg-darker);
+  background-color: var(--clr-business-name-bg);
+  border: 1px solid var(--clr-business-name-bg-darker);
   color: white;
 }
 
 .form-submit-button.get-started:hover,
 .form-submit-button.get-started:focus {
-  background-color: var(--clr-business-name-bg);
+  background-color: var(--clr-business-name-bg-darker);
   border: 1px solid var(--clr-business-name-bg-darker);
 }
 
@@ -2202,7 +2203,7 @@ input {
 /* Contact message and contact form */
 .text-contact-form-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
