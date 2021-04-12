@@ -761,7 +761,7 @@ body.active::after {
   .slider-btn {
     font-size: 2.375rem;
     padding: 0.25rem;
-    top: 48%;
+    top: 48.5%;
   }
 
   .slider-btn--right {
@@ -850,7 +850,7 @@ body.active::after {
   }
 
   .slider-btn {
-    top: 45%;
+    top: 49.5%;
   }
 
   .slider-btn--right {
