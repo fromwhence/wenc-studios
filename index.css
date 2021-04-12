@@ -1064,6 +1064,7 @@ body.active::after {
 
   .about {
     padding-left: 2rem;
+    padding-bottom: 2.75rem;
   }
 
   .about-text {
