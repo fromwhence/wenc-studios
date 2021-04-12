@@ -39,7 +39,7 @@ ol[class] {
   --fs-h4: 1.1625rem;
   --fs-h5: 1.15em;
   --fs-reg: 1rem;
-  --fs-small: 0.95rem;
+  --fs-small: 0.975rem;
   --fs-smaller: 0.9rem;
   --fs-smallest: 0.8rem;
 }
@@ -553,7 +553,7 @@ body.active::after {
 
 /* About and Rates sections and sliders */
 .about {
-  padding-top: 1rem;
+  padding-top: 1.125rem;
   padding-bottom: 2rem;
 }
 
@@ -1310,7 +1310,7 @@ ul.tier--list {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 0.325rem 0 0.75rem;
+  padding: 0.325rem 0 0.875rem;
   position: relative;
 }
 
