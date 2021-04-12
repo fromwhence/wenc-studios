@@ -35,9 +35,9 @@ ol[class] {
   --fw-bold: 600;
   --fs-h1: 2rem;
   --fs-h2: 1.75rem;
-  --fs-h3: 1.575rem;
-  --fs-h4: 1.1625rem;
-  --fs-h5: 1.15em;
+  --fs-h3: 1.175rem;
+  --fs-h4: 1.125rem;
+  --fs-h5: 1.1em;
   --fs-reg: 1rem;
   --fs-small: 0.975rem;
   --fs-smaller: 0.9rem;
@@ -647,7 +647,7 @@ body.active::after {
 .slider-btn {
   cursor: pointer;
   position: absolute;
-  top: 45.5%;
+  top: 46.5%;
   transform: translate(0, -50%);
   color: var(--clr-med-new);
   padding: 0.5rem 0.325rem 0.3rem;
@@ -705,6 +705,12 @@ body.active::after {
   background-color: var(--clr-header-med);
 }
 
+@media (min-width: 600px) {
+  .slider-btn {
+    font-size: 2.125rem;
+  }
+}
+
 @media (min-width: 768px) {
   .slide {
     padding-top: 0rem;
@@ -715,8 +721,9 @@ body.active::after {
   }
 
   .slider-btn {
-    font-size: 2.25rem;
     padding: 0.5rem;
+    font-size: 2.25rem;
+    top: 43.5%;
   }
 
   .slider-btn--right {
@@ -766,7 +773,7 @@ body.active::after {
   }
 
   .slider-btn {
-    top: 43.5%;
+    top: 45%;
   }
 
   .slider-btn--right {
@@ -974,11 +981,11 @@ body.active::after {
 .services,
 .schedule,
 .contact {
-  padding: 2.125rem 1.625rem;
+  padding: 2.125rem 1.625rem 2.25rem;
 }
 
 .rates {
-  padding-bottom: 2.275rem;
+  padding-bottom: 2.25rem;
 }
 
 .contact {
@@ -1010,12 +1017,27 @@ body.active::after {
 }
 
 @media (min-width: 1024px) {
+  .services,
+  .schedule,
+  .contact {
+    padding: 2.875rem 5rem 2.75rem;
+  }
+
+  .about-text {
+    padding: 0rem 5rem 0.75rem;
+  }
+
   .about-text:first-of-type {
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
   }
 
   .contact {
     padding-bottom: 3.5rem;
+  }
+
+  li {
+    max-width: 625px;
   }
 }
 
@@ -1097,6 +1119,7 @@ body.active::after {
 }
 
 .section-subheader {
+  font-size: var(--fs-h3);
   padding: 1.125rem 0 1rem;
   color: var(--clr-header-wide);
 }
@@ -1280,6 +1303,23 @@ ul.file-format-list {
   }
 }
 
+@media (min-width: 1024px) {
+  .section-header--rates,
+  .section-paragraph--rates,
+  .rates .section-subheader {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
+  .section-paragraph--rates {
+    padding-left: 0;
+  }
+
+  ul.file-format-list {
+    margin: 0 5rem 0.375rem;
+  }
+}
+
 @media (min-width: 1280px) {
   .section-header--rates {
     margin-right: 0;
@@ -1310,6 +1350,7 @@ ul.file-format-list {
 }
 
 .tier--subheader {
+  font-size: var(--fs-h3);
   padding-top: 0.325rem;
   color: var(--clr-header-wide);
   flex-wrap: nowrap;
@@ -1323,7 +1364,7 @@ ul.tier--list {
 .tier--price {
   font-weight: 500;
   color: var(--clr-reg-dark);
-  font-size: 1rem;
+  font-size: var(--fs-h5);
   margin-top: 0;
   padding-right: 1.625rem;
   padding-bottom: 0.5rem;
@@ -1372,6 +1413,8 @@ ul.tier--list {
 @media (min-width: 1024px) {
   .tier--description {
     grid-template-columns: 15% 80%;
+    margin-right: 5rem;
+    margin-left: 5rem;
   }
 }
 
@@ -1541,12 +1584,12 @@ ul.tier--list {
 
   .sample-slider--btn-right,
   .sample-slider--btn-right-2 {
-    right: 4.5rem;
+    right: 5rem;
   }
 
   .sample-slider--btn-left,
   .sample-slider--btn-left-2 {
-    left: 4.5rem;
+    left: 5rem;
   }
 
   .sample-slider--nav-dot,
@@ -2259,7 +2302,7 @@ input {
 
 .section-paragraph--contact {
   max-width: 450px;
-  margin: 0 auto;
+  margin: 0.5rem auto 0;
   padding: 0 1.625rem 1rem;
 }
 

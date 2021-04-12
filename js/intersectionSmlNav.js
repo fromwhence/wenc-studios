@@ -21,6 +21,7 @@ const navItemsSmall = {
 };
 
 let thresholdValue = window.innerWidth < 768 ? 0 : 0.25;
+
 console.log(thresholdValue);
 // intersection observer setup
 const observerOptionsSmall = {
