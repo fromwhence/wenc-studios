@@ -20,14 +20,14 @@ const navItemsSmall = {
   contact: selectElementByClass('contactNavItemSmall'),
 };
 
-let thresholdValue = window.innerWidth < 768 ? 0 : 0.25;
+// let thresholdValue = window.innerWidth < 768 ? 0 : 0.25;
 
-console.log(thresholdValue);
+// console.log(thresholdValue);
 // intersection observer setup
 const observerOptionsSmall = {
   root: null,
   rootMargin: '0px',
-  threshold: thresholdValue,
+  threshold: window.innerWidth < 768 ? 0 : 0.25,
 };
 
 function observerCallbackSmall(entries, observerSmall) {

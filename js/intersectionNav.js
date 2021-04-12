@@ -24,7 +24,7 @@ const navItems = {
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.375,
+  threshold: 0.35,
 };
 
 function observerCallback(entries, observer) {
