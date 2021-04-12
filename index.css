@@ -747,7 +747,7 @@ body.active::after {
 
 @media (min-width: 1024px) {
   .slider {
-    margin-top: -1rem;
+    margin-top: -1.5rem;
   }
 
   .slide {
