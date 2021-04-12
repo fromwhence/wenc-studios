@@ -553,6 +553,7 @@ body.active::after {
 
 /* About and Rates sections and sliders */
 .about {
+  height: 100vh;
   padding-top: 1.125rem;
   padding-bottom: 2rem;
 }
