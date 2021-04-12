@@ -517,14 +517,14 @@ body.active::after {
     list-style: none;
     text-align: left;
     font-weight: var(--fw-reg);
-    font-size: var(--fs-h5);
     margin: 0;
     padding: 0;
   }
 
   .side-nav-item a {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: var(--fw-med);
     color: rgba(255, 255, 255, 0.9);
     width: 100%;
     text-decoration: none;
