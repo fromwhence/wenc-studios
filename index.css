@@ -244,8 +244,8 @@ body.active::after {
 .nav-item {
   margin-top: 2.75rem;
   padding: 0;
-  padding-bottom: 0.575rem;
-  width: 43.5%;
+  padding-bottom: 0.625rem;
+  width: 45%;
   text-align: center;
   border-bottom: 2px solid white;
   transition: border-bottom 300ms;
@@ -550,6 +550,12 @@ body.active::after {
   .main-content {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .side-nav-item a {
+    font-size: 1.1rem;
   }
 }
 
@@ -1341,7 +1347,7 @@ body.active::after {
   .services .side-by-side-text {
     margin-top: 0.75rem;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 9px;
+    border-bottom-width: 2px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1.75rem;
   }
@@ -1360,6 +1366,7 @@ body.active::after {
     margin-top: 2rem;
     padding: 1.875rem 1.875rem 1.75rem;
     border: 1px solid var(--clr-med-lighter);
+    border-bottom-width: 2px;
     background-color: var(--clr-light-form);
   }
 
@@ -1884,7 +1891,7 @@ li.tier--price {
     padding-bottom: 1.325rem;
     background-color: var(--clr-light-form);
     border: 1px solid var(--clr-med-lighter);
-    border-radius: 9px;
+    border-bottom-width: 2px;
   }
 
   .section-paragraph--rates {
@@ -2192,7 +2199,7 @@ input {
 @media (min-width: 600px) {
   .get-started--form-container {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 9px;
+    border-bottom-width: 2px;
     background-color: rgba(255, 255, 255, 0.175);
     padding: 1.75rem 1.5rem 1.275rem;
     margin-top: 0.5rem;
@@ -2324,7 +2331,6 @@ input {
   font-size: 1.1rem;
   background-color: var(--clr-header-wide-lighter-new);
   border: 1px solid var(--clr-header-wide-lighter-new);
-  border-radius: 9px;
 }
 
 .form-submit-button:hover {
@@ -2363,6 +2369,7 @@ input {
 
   .get-started--form-container {
     border: 1px solid var(--clr-med-lighter);
+    border-bottom-width: 2px;
     background-color: var(--clr-light-form);
     color: var(--clr-reg-dark);
     padding: 2rem 1.5rem 1.5rem;
@@ -2504,7 +2511,6 @@ input {
 @media (min-width: 450px) {
   .contact-form-container {
     border: 1px solid var(--clr-med-lighter);
-    /* border-radius: 9px; */
   }
 
   .section-paragraph--contact {
@@ -2630,7 +2636,7 @@ input {
   .contact-form-container {
     padding: 1.5rem 1rem;
     margin-top: 0.5rem;
-    border-radius: 9px;
+    border-bottom-width: 2px;
   }
 
   .form-group textarea {
