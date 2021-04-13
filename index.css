@@ -1306,7 +1306,7 @@ body.active::after {
   margin: 1.25rem auto;
   border: 1px solid var(--clr-med-lighter);
   width: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 .services-list li {
@@ -1331,7 +1331,7 @@ body.active::after {
   .studio-image {
     object-fit: cover;
     width: 100%;
-    height: 85%;
+    height: auto;
     margin: 0;
     margin-top: -2.275rem;
     border: 1px solid var(--clr-med-lighter);
@@ -1793,12 +1793,12 @@ li.tier--price {
 
   .sample-slider--btn-right,
   .sample-slider--btn-right-2 {
-    right: 5rem;
+    right: 4rem;
   }
 
   .sample-slider--btn-left,
   .sample-slider--btn-left-2 {
-    left: 5rem;
+    left: 4rem;
   }
 
   .sample-slider--nav-dot,
@@ -2510,8 +2510,8 @@ input {
 
 @media (min-width: 450px) {
   .contact-form-container {
-    /* border: 1px solid var(--clr-med-lighter); */
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 3px;
+    border: 1px solid var(--clr-med-lighter);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
   .section-paragraph--contact {
