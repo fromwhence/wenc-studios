@@ -15,7 +15,7 @@ ol[class] {
 }
 
 :root {
-  --clr-light-form: #f3f3f3;
+  --clr-light-form: #f8f8f8;
   --clr-light-form-darker: #e6e4e4;
   --clr-med-new: #c9c9c9;
   --clr-med-lightest: #e4e7e7;
@@ -1036,7 +1036,7 @@ body.active::after {
   padding: 2.275rem 0 0;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .contact {
     padding-bottom: 3rem;
   }
@@ -2510,8 +2510,8 @@ input {
 
 @media (min-width: 450px) {
   .contact-form-container {
-    border: 1px solid var(--clr-med-lighter);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    /* border: 1px solid var(--clr-med-lighter); */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 3px;
   }
 
   .section-paragraph--contact {
@@ -2546,6 +2546,7 @@ input {
     margin-top: 0;
     border-top: none;
     max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 3px;
   }
 }
 
@@ -2567,6 +2568,7 @@ input {
   color: rgba(0, 0, 0, 0.8);
   background-color: #cdf5ff;
   animation: status 4s ease forwards;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 3px;
   /* border-top: 1px solid var(--clr-header-wide-lighter-new); */
 }
 
@@ -2576,6 +2578,7 @@ input {
   color: white;
   background-color: rgb(240, 69, 69);
   animation: status 4s ease forwards;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 3px;
 }
 
 .status--get-started.error::after {
