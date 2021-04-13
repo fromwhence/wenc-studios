@@ -1332,7 +1332,7 @@ body.active::after {
     object-fit: cover;
     width: 100%;
     height: auto;
-    margin: 0;
+    /* height: 500px; */
     margin-top: -2.275rem;
     border: 1px solid var(--clr-med-lighter);
   }
