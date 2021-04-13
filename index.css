@@ -18,7 +18,8 @@ ol[class] {
   --clr-light-form: #f3f3f3;
   --clr-light-form-darker: #e6e4e4;
   --clr-med-new: #c9c9c9;
-  --clr-med-lighter: #d3d7d8;
+  --clr-med-lightest: #e4e7e7;
+  --clr-med-lighter: #d8dcdd;
   --clr-med-light: #b0b4b4;
   --clr-header-med: #787f80;
   --clr-header-wide-lighter: #626666;
@@ -301,11 +302,11 @@ body.active::after {
   }
 
   .nav-list {
-    margin-top: 3.5rem;
+    margin-top: 3rem;
   }
 
   .nav-item {
-    margin-top: 4rem;
+    margin-top: 4.5rem;
   }
 
   .nav-link {
@@ -1347,9 +1348,9 @@ body.active::after {
   .services .side-by-side-text {
     margin-top: 0.75rem;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    border-bottom-width: 2px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1.75rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
   .section-subheader--side {
@@ -1365,8 +1366,7 @@ body.active::after {
   .services .side-by-side-text {
     margin-top: 2rem;
     padding: 1.875rem 1.875rem 1.75rem;
-    border: 1px solid var(--clr-med-lighter);
-    border-bottom-width: 2px;
+    border: 1px solid var(--clr-med-lightest);
     background-color: var(--clr-light-form);
   }
 
@@ -1890,8 +1890,8 @@ li.tier--price {
     padding: 1.875rem;
     padding-bottom: 1.325rem;
     background-color: var(--clr-light-form);
-    border: 1px solid var(--clr-med-lighter);
-    border-bottom-width: 2px;
+    border: 1px solid var(--clr-med-lightest);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
   .section-paragraph--rates {
@@ -2199,10 +2199,10 @@ input {
 @media (min-width: 600px) {
   .get-started--form-container {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom-width: 2px;
     background-color: rgba(255, 255, 255, 0.175);
     padding: 1.75rem 1.5rem 1.275rem;
     margin-top: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 }
 
@@ -2368,8 +2368,7 @@ input {
   }
 
   .get-started--form-container {
-    border: 1px solid var(--clr-med-lighter);
-    border-bottom-width: 2px;
+    border: 1px solid var(--clr-med-lightest);
     background-color: var(--clr-light-form);
     color: var(--clr-reg-dark);
     padding: 2rem 1.5rem 1.5rem;
@@ -2377,6 +2376,7 @@ input {
     margin-left: 0;
     margin-right: 0;
     max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
   .form-group.get-started label {
@@ -2510,7 +2510,8 @@ input {
 
 @media (min-width: 450px) {
   .contact-form-container {
-    border: 1px solid var(--clr-med-lighter);
+    border: 1px solid var(--clr-med-lightest);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
   .section-paragraph--contact {
@@ -2636,7 +2637,6 @@ input {
   .contact-form-container {
     padding: 1.5rem 1rem;
     margin-top: 0.5rem;
-    border-bottom-width: 2px;
   }
 
   .form-group textarea {
