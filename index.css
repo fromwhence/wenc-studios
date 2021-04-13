@@ -1200,7 +1200,7 @@ body.active::after {
   .slider-side-text-container {
     display: grid;
     grid-template-columns: 65% 30%;
-    column-gap: 5%;
+    column-gap: 3.5%;
   }
 
   .slider-container {
@@ -1209,7 +1209,7 @@ body.active::after {
 
   .about-side-text {
     padding: 0;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1270,7 +1270,7 @@ body.active::after {
   }
 
   .about-side-text {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     padding-right: 2rem;
   }
 }
@@ -1283,7 +1283,7 @@ body.active::after {
   }
 
   .about-side-text {
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     padding-right: 2.5rem;
   }
 }
@@ -1302,7 +1302,7 @@ body.active::after {
 }
 
 /* Services text to left, image to right at wider screens */
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .section-subheader--services {
     padding-top: 1.125rem;
     padding-bottom: 1.25rem;
@@ -1320,7 +1320,7 @@ body.active::after {
     width: 100%;
     height: 100%;
     margin: 0;
-    margin-top: -2rem;
+    margin-top: -2.275rem;
     border: 1px solid var(--clr-med-lighter);
   }
 
@@ -1328,7 +1328,22 @@ body.active::after {
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
-    margin-top: 1.75rem;
+    margin-top: 0rem;
+    padding: 1rem 0 0;
+  }
+
+  .section-subheader--side {
+    padding: 0;
+    padding-bottom: 0.75rem;
+    margin-top: 0;
+    margin-bottom: 0.875rem;
+    border-bottom: 1px solid var(--clr-med-lighter);
+  }
+}
+
+@media (min-width: 1200px) {
+  .side-by-side-text {
+    margin-top: 2rem;
     padding: 1.75rem 1.75rem 1.25rem;
     border: 1px solid var(--clr-med-lighter);
     background-color: var(--clr-light-form);
@@ -1396,14 +1411,13 @@ ul.file-format-list {
 }
 
 @media (min-width: 1024px) {
-  .section-header--rates,
+  /* .section-header--rates,
   .section-paragraph--rates,
   .rates .section-subheader {
     margin-right: 3.25rem;
     margin-left: 3.25rem;
-  }
-
-  .section-paragraph--rates {
+  } */
+  .file .section-paragraph--rates {
     padding-left: 0;
   }
 
@@ -1425,10 +1439,7 @@ ul.file-format-list {
 }
 
 .tier--container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
+  padding-bottom: 0.5rem;
 }
 
 .tier--description {
@@ -1453,11 +1464,14 @@ ul.tier--list {
   /* border-bottom: 1px solid var(--clr-med-lighter); */
 }
 
-.tier--price {
+.tier--list li {
+  font-size: var(--fs-small);
+}
+
+li.tier--price {
   font-weight: 500;
   color: var(--clr-reg-dark);
-  font-size: 1rem;
-  margin-top: 0;
+  font-size: 17px;
   padding-right: 1.625rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--clr-med-lighter);
@@ -1468,7 +1482,7 @@ ul.tier--list {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 0.325rem 0 0.25rem;
+  padding: 0.325rem 0 0;
   position: relative;
 }
 
@@ -1504,9 +1518,36 @@ ul.tier--list {
 
 @media (min-width: 1024px) {
   .tier--description {
-    grid-template-columns: 15% 80%;
+    grid-template-columns: 15% 72.5%;
+    column-gap: 7.5%;
     margin-right: 3.25rem;
     margin-left: 3.25rem;
+  }
+
+  .file-format-text-container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    padding: 0.25rem 0 0.5rem;
+    margin: 0 3.25rem;
+  }
+
+  ul.file-format-list {
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-paragraph--rates {
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .section-paragraph--hide {
+    display: none;
+  }
+
+  .section-paragraph--wide {
+    display: block;
   }
 }
 
@@ -1560,7 +1601,6 @@ ul.tier--list {
   width: 100%;
   height: auto;
   opacity: 1;
-  /* border: 1px solid red; */
 }
 
 .sample-slider--image-static,
@@ -1604,6 +1644,24 @@ ul.tier--list {
 .sample-slider--btn-left-2 {
   position: absolute;
   left: 0.05rem;
+}
+
+@media (min-width: 600px) {
+  .sample-slider--btn,
+  .sample-slider--btn-2 {
+    font-size: 2.125rem;
+  }
+
+  .sample-slider--btn-right,
+  .sample-slider--btn-right-2 {
+    right: 1rem;
+  }
+
+  .sample-slider--btn-left,
+  .sample-slider--btn-left-2 {
+    position: absolute;
+    left: 1rem;
+  }
 }
 
 .sample-slider--title,
@@ -1691,14 +1749,100 @@ ul.tier--list {
 }
 
 @media (min-width: 1024px) {
+  .tier--container {
+    display: grid;
+    grid-template-columns: 40% 45%;
+    column-gap: 5%;
+    border-top: 1px solid var(--clr-med-lighter);
+    padding-top: 0.75rem;
+    padding-bottom: 0;
+    margin: 0 3.25rem;
+  }
+
+  .sample-slider--image-static {
+    margin-bottom: 0rem;
+  }
+
+  .sample-slider--image-static,
+  .sample-slider--image,
+  .sample-slider--image-2 {
+    width: 75%;
+  }
+
   .sample-slider--btn-right,
   .sample-slider--btn-right-2 {
-    right: 6.5rem;
+    right: 0;
+    font-size: 1.875rem;
   }
 
   .sample-slider--btn-left,
   .sample-slider--btn-left-2 {
-    left: 6.5rem;
+    left: 0;
+    font-size: 1.875rem;
+  }
+
+  .sample-slider--nav-dot,
+  .sample-slider--nav-dot-2 {
+    padding: 0.325rem;
+    margin: 0 0.75rem;
+  }
+
+  /* Expanded sample images */
+  .sample-slider-container.expand .sample-slider--btn-left,
+  .sample-slider-container-2.expand .sample-slider--btn-left-2 {
+    left: 7.5%;
+  }
+
+  .sample-slider-container.expand .sample-slider--btn-right,
+  .sample-slider-container-2.expand .sample-slider--btn-right-2 {
+    right: 7.5%;
+  }
+
+  .tier--description {
+    margin: 0;
+    border: none;
+  }
+
+  .tier--subheader {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .tier--price {
+    margin-top: -0.325rem;
+  }
+
+  ul.tier--list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+  }
+
+  .rates .section-subheader--side {
+    border-top: none;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0.875rem;
+    margin-left: 0;
+    padding: 0;
+    padding-bottom: 0.75rem;
+  }
+
+  .section-subheader.payment-methods {
+    margin-top: 0.5rem;
+  }
+
+  .rates .side-by-side-text {
+    margin-top: 1.125rem;
+    padding: 0 3.25rem;
+  }
+
+  .section-paragraph--rates {
+    margin-left: 0;
   }
 }
 
@@ -1893,120 +2037,6 @@ ul.tier--list {
   .expand-slider-icon-sample .expand-outline {
     right: 4.75rem;
     font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .file-format-text-container {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    column-gap: 10%;
-    width: 100%;
-    padding: 0.25rem 0 0.5rem;
-    margin: 0;
-  }
-
-  ul.file-format-list {
-    padding: 0;
-    margin: 0;
-  }
-
-  .section-paragraph--hide {
-    display: none;
-  }
-
-  .section-paragraph--wide {
-    display: block;
-  }
-
-  .tier--container {
-    display: grid;
-    grid-template-columns: 40% 1fr;
-    column-gap: 2.5%;
-    border-top: 1px solid var(--clr-med-lighter);
-    padding-top: 0.75rem;
-    padding-bottom: 0;
-  }
-
-  .sample-slider--image-static {
-    margin-bottom: 0rem;
-  }
-
-  .sample-slider--image-static,
-  .sample-slider--image,
-  .sample-slider--image-2 {
-    width: 60%;
-  }
-
-  .sample-slider--btn-right,
-  .sample-slider--btn-right-2 {
-    right: 3rem;
-    font-size: 1.875rem;
-  }
-
-  .sample-slider--btn-left,
-  .sample-slider--btn-left-2 {
-    left: 3rem;
-    font-size: 1.875rem;
-  }
-
-  .sample-slider--nav-dot,
-  .sample-slider--nav-dot-2 {
-    padding: 0.325rem;
-    margin: 0 0.75rem;
-  }
-
-  /* Expanded sample images */
-  .sample-slider-container.expand .sample-slider--btn-left,
-  .sample-slider-container-2.expand .sample-slider--btn-left-2 {
-    left: 7.5%;
-  }
-
-  .sample-slider-container.expand .sample-slider--btn-right,
-  .sample-slider-container-2.expand .sample-slider--btn-right-2 {
-    right: 7.5%;
-  }
-
-  .tier--description {
-    margin: 0;
-    border: none;
-  }
-
-  .tier--subheader {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    flex-wrap: nowrap;
-  }
-
-  .tier--price {
-    margin-top: -0.325rem;
-  }
-
-  ul.tier--list {
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    border-bottom: none;
-  }
-
-  .rates .section-subheader--side {
-    border-top: none;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0.875rem;
-    margin-left: 0;
-    padding: 0;
-    padding-bottom: 0.75rem;
-  }
-
-  .section-subheader.payment-methods {
-    margin-top: 0.5rem;
-  }
-
-  .rates .side-by-side-text {
-    margin-top: 1.125rem;
   }
 }
 
@@ -2666,7 +2696,6 @@ input {
   }
 
   .section-paragraph--contact {
-    /* padding: 0; */
     margin-left: 0;
     margin-top: 0rem;
     width: 100%;
@@ -2676,7 +2705,7 @@ input {
     grid-template-columns: 42.5% 42.5%;
     margin: 1.75rem auto 0.75rem;
     column-gap: 15%;
-    margin-top: 2.75rem;
+    margin-top: 2.275rem;
   }
 
   .contact-details-sub-container {
