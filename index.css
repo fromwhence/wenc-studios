@@ -15,7 +15,7 @@ ol[class] {
 }
 
 :root {
-  --clr-light-form: #f2f2f2;
+  --clr-light-form: #f7f7f7;
   --clr-light-form-darker: #e4e6e6;
   --clr-med-new: #c9c9c9;
   --clr-med-lightest: #e4e7e7;
@@ -445,7 +445,7 @@ body.active::after {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .nav-toggle,
   .header,
   .nav {
@@ -454,7 +454,7 @@ body.active::after {
 }
 
 /* Side nav for screens >= 1200px */
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .large-screen-container {
     width: 100%;
     height: auto;
@@ -779,7 +779,7 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .slider {
-    margin-top: 1.25rem;
+    margin-top: 0;
   }
 
   .slide {
@@ -842,7 +842,7 @@ body.active::after {
 
 @media (min-width: 1280px) {
   .slider {
-    margin-top: 0.25rem;
+    margin-top: 0;
   }
 
   .slide {
@@ -1018,6 +1018,15 @@ body.active::after {
   }
 }
 
+/* Light bg for alternation sectiion of wide screens */
+@media (min-width: 1200px) {
+  .light-bg {
+    background-color: var(--clr-light-form);
+    border-top: 1px solid var(--clr-light-form-darker);
+    border-bottom: 1px solid var(--clr-light-form-darker);
+  }
+}
+
 .services,
 .schedule,
 .contact {
@@ -1108,10 +1117,14 @@ body.active::after {
     padding: 1.25rem 0 0.75rem;
   }
 
+  .about {
+    padding-top: 1rem;
+    padding-left: 2.75rem;
+  }
+
   .section-container {
     width: 100%;
     height: auto;
-    padding-left: 260px;
   }
 
   .section-container.bg {
@@ -1120,6 +1133,12 @@ body.active::after {
 }
 
 @media (min-width: 1280px) {
+  .section-container {
+    width: 100%;
+    height: auto;
+    padding-left: 260px;
+  }
+
   .about,
   .services,
   .rates,
@@ -1131,7 +1150,8 @@ body.active::after {
   }
 
   .about {
-    padding-top: 1.75rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
     padding-left: 2.5rem;
   }
 
@@ -1146,13 +1166,14 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2.25rem 4rem 3.5rem 3.75rem;
+    padding: 2.875rem 4rem 3.5rem 3.75rem;
     width: 100%;
     height: auto;
   }
 
   .about {
-    padding-top: 1.75rem;
+    padding-top: 1rem;
+    padding-right: 3rem;
     padding-left: 3rem;
   }
 }
@@ -1231,16 +1252,16 @@ body.active::after {
 
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 70% 25%;
+    grid-template-columns: 65% 30%;
     column-gap: 5%;
   }
 
-  .slider-container {
+  /* .slider-container {
     padding-top: 0.125rem;
-  }
+  } */
 
   .about-side-text {
-    padding-top: 0.75rem;
+    padding-top: 2.5rem;
   }
 }
 
@@ -1289,12 +1310,12 @@ body.active::after {
 @media (min-width: 1600px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 58.5% 30%;
+    grid-template-columns: 62.5% 32.5%;
     column-gap: 5%;
   }
 
   .about-side-text {
-    padding-top: 3.5rem;
+    padding-top: 4rem;
     padding-right: 2.5rem;
   }
 }
@@ -1366,7 +1387,7 @@ body.active::after {
     margin-top: 2rem;
     padding: 1.875rem;
     border: 1px solid var(--clr-med-lighter);
-    background-color: var(--clr-light-form);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .section-subheader--side {
