@@ -16,7 +16,7 @@ ol[class] {
 
 :root {
   --clr-light-form: #f8f8f8;
-  --clr-light-form-darker: #e6e4e4;
+  --clr-light-form-darker: #e4e6e6;
   --clr-med-new: #c9c9c9;
   --clr-med-lightest: #e4e7e7;
   --clr-med-lighter: #d8dcdd;
@@ -280,7 +280,7 @@ body.active::after {
   }
 
   .nav-list {
-    margin-top: 3.25rem;
+    margin-top: 3rem;
   }
 
   .nav-item {
@@ -302,11 +302,11 @@ body.active::after {
   }
 
   .nav-list {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .nav-item {
-    margin-top: 4.5rem;
+    margin-top: 4rem;
   }
 
   .nav-link {
@@ -647,7 +647,7 @@ body.active::after {
 
 .slide-image {
   position: relative;
-  width: 85%;
+  width: 83.5%;
   height: auto;
   cursor: pointer;
   object-fit: contain;
@@ -669,8 +669,12 @@ body.active::after {
   color: var(--clr-header-wide);
 }
 
+.slider-btn--left {
+  left: 0.1rem;
+}
+
 .slider-btn--right {
-  right: 0;
+  right: 0.1rem;
 }
 
 .artist-title {
@@ -1213,7 +1217,7 @@ body.active::after {
   .slider-side-text-container {
     display: grid;
     grid-template-columns: 65% 30%;
-    column-gap: 3.5%;
+    column-gap: 5%;
   }
 
   .slider-container {
@@ -1307,6 +1311,7 @@ body.active::after {
   border: 1px solid var(--clr-med-lighter);
   width: 100%;
   height: auto;
+  margin: 0.75 auto 0.5rem;
   object-fit: contain;
 }
 
@@ -1326,15 +1331,15 @@ body.active::after {
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
-    margin-bottom: 1.325rem;
+    margin-bottom: 1.75rem;
   }
 
   .studio-image {
     object-fit: cover;
     width: 100%;
-    height: 95%;
+    height: 100%;
     /* height: 500px; */
-    margin-top: -2.275rem;
+    margin-top: -2rem;
     border: 1px solid var(--clr-med-lighter);
   }
 
@@ -1343,15 +1348,14 @@ body.active::after {
     grid-template-columns: 45% 45%;
     column-gap: 10%;
     margin-top: 0rem;
-    padding: 1rem 0 0;
+    /* padding: 1rem 0 0; */
   }
 
   .services .side-by-side-text {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.4);
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1.75rem;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
   .section-subheader--side {
@@ -1366,7 +1370,7 @@ body.active::after {
 @media (min-width: 1200px) {
   .services .side-by-side-text {
     margin-top: 2rem;
-    padding: 1.875rem 1.875rem 1.75rem;
+    padding: 1.875rem;
     border: 1px solid var(--clr-med-lighter);
     background-color: var(--clr-light-form);
   }
@@ -1503,6 +1507,10 @@ li.tier--price {
 }
 
 @media (min-width: 768px) {
+  .tier--container {
+    padding-bottom: 0.25rem;
+  }
+
   .tier--example-container {
     padding: 0.125rem 0 0.625rem;
   }
@@ -1889,10 +1897,8 @@ li.tier--price {
   .rates .side-by-side-text {
     margin: 1.125rem 3.25rem 0;
     padding: 1.875rem;
-    padding-bottom: 1.325rem;
     background-color: var(--clr-light-form);
     border: 1px solid var(--clr-med-lighter);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
   .section-paragraph--rates {
@@ -2156,6 +2162,7 @@ input:autofill {
 input[type='text'],
 input[type='email'],
 input[type='tel'],
+input[type='number'],
 textarea {
   -webkit-appearance: none;
 }
@@ -2174,7 +2181,7 @@ textarea {
   padding: 0.75rem;
   font-family: inherit;
   font-size: 16px;
-  height: 150px;
+  height: 160px;
   line-height: 1.4rem;
   margin: 0.75rem 0;
   border-radius: 0;
@@ -2203,7 +2210,6 @@ input {
     background-color: rgba(255, 255, 255, 0.175);
     padding: 1.75rem 1.5rem 1.275rem;
     margin-top: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 }
 
@@ -2377,7 +2383,6 @@ input {
     margin-left: 0;
     margin-right: 0;
     max-width: 500px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
   .form-group.get-started label {
@@ -2505,14 +2510,14 @@ input {
   max-width: 450px;
   margin: 0.5rem auto 0;
   padding: 1.375rem 1.625rem 2rem;
-  background-color: var(--clr-light-form);
+  background-color: var(--clr-light-form-darker);
   border-top: 1px solid var(--clr-med-lighter);
 }
 
 @media (min-width: 450px) {
   .contact-form-container {
     border: 1px solid var(--clr-med-lighter);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: #f1f1f1;
   }
 
   .section-paragraph--contact {
@@ -2547,7 +2552,6 @@ input {
     margin-top: 0;
     border-top: none;
     max-width: 500px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 3px;
   }
 }
 
@@ -2569,8 +2573,7 @@ input {
   color: rgba(0, 0, 0, 0.8);
   background-color: #cdf5ff;
   animation: status 4s ease forwards;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 3px;
-  /* border-top: 1px solid var(--clr-header-wide-lighter-new); */
+  border-top: 1px solid var(--clr-header-wide-lighter-new);
 }
 
 .status--contact.error,
@@ -2579,7 +2582,6 @@ input {
   color: white;
   background-color: rgb(240, 69, 69);
   animation: status 4s ease forwards;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 3px;
 }
 
 .status--get-started.error::after {
