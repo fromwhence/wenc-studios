@@ -572,7 +572,7 @@ body.active::after {
 
 @media (min-width: 1200px) {
   h2.about-header {
-    display: block;
+    display: none;
     margin-bottom: 0;
   }
 }
@@ -662,11 +662,11 @@ body.active::after {
 }
 
 .slider-btn--left {
-  left: 0.1rem;
+  left: 0;
 }
 
 .slider-btn--right {
-  right: 0.1rem;
+  right: 0;
 }
 
 .artist-title {
@@ -972,7 +972,7 @@ body.active::after {
 .section-container {
   width: 100%;
   height: auto;
-  border-top: 1px solid var(--clr-med-lighter);
+  /* border-top: 1px solid var(--clr-med-lighter); */
 }
 
 .section-container.no-border {
@@ -1130,6 +1130,11 @@ body.active::after {
     height: auto;
   }
 
+  .about {
+    padding-top: 1.75rem;
+    padding-left: 2.5rem;
+  }
+
   .contact {
     padding-bottom: 3.5rem;
   }
@@ -1147,7 +1152,8 @@ body.active::after {
   }
 
   .about {
-    padding-top: 2rem;
+    padding-top: 1.75rem;
+    padding-left: 3rem;
   }
 }
 
@@ -1225,7 +1231,7 @@ body.active::after {
 
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 65% 30%;
+    grid-template-columns: 70% 25%;
     column-gap: 5%;
   }
 
@@ -1253,8 +1259,8 @@ body.active::after {
 
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 65% 32%;
-    column-gap: 3%;
+    grid-template-columns: 70% 25%;
+    column-gap: 5%;
   }
 
   .slider-container {
@@ -1270,13 +1276,13 @@ body.active::after {
 @media (min-width: 1400px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 62.5% 35%;
-    column-gap: 5%;
+    grid-template-columns: 75% 25%;
+    column-gap: 0%;
   }
 
   .about-side-text {
     padding-top: 2rem;
-    padding-right: 2rem;
+    padding-right: 0rem;
   }
 }
 
