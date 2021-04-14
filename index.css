@@ -36,7 +36,7 @@ ol[class] {
   --fw-bold: 600;
   --fs-h1: 2rem;
   --fs-h2: 1.875rem;
-  --fs-h3: 1.5rem;
+  --fs-h3: 1.2rem;
   --fs-h4: 1.125rem;
   --fs-h5: 1.1em;
   --fs-reg: 1rem;
@@ -237,7 +237,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0.675rem 1.25rem;
+    padding: 0.625rem 1.25rem;
   }
 
   .business-name-container--sml .business-name {
@@ -273,15 +273,17 @@ button {
     display: inline-block;
     text-transform: capitalize;
     text-decoration: none;
+    text-align: center;
     color: rgba(255, 255, 255, 0.85);
-    padding: 0.825rem 1.875rem 0.75rem;
+    width: 120px;
+    padding: 0.8rem 0rem 0.7rem;
     margin: 0;
     transition: all 350ms;
   }
 
-  .top-nav-item:last-of-type a {
+  /* .top-nav-item:last-of-type a {
     padding-right: 2.25rem;
-  }
+  } */
 
   .top-nav-item a:hover {
     background-color: black;
@@ -296,11 +298,7 @@ button {
 
 @media (min-width: 1400px) {
   .top-nav-item a {
-    padding: 0.875rem 2.25rem 0.75rem;
-  }
-
-  .top-nav-item:last-of-type a {
-    padding-right: 3rem;
+    width: 130px;
   }
 }
 
@@ -409,7 +407,7 @@ body.active::after {
 
 @media (min-width: 1024px) {
   .nav {
-    left: 60%;
+    left: 70%;
   }
 
   .nav-list {
@@ -422,12 +420,6 @@ body.active::after {
 
   .nav-link {
     font-size: 1.425rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .nav {
-    left: 70%;
   }
 }
 
@@ -1080,7 +1072,7 @@ body.active::after {
 
 @media (min-width: 1400px) {
   .slide-image {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -1264,7 +1256,6 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.5rem;
     padding-right: 2rem;
     padding-left: 2.5rem;
   }
@@ -1278,7 +1269,7 @@ body.active::after {
   .section-content-container {
     max-width: 1280px;
     margin: 0 auto;
-    border: 1px solid var(--clr-med-lighter);
+    /* border: 1px solid var(--clr-med-lighter); */
   }
 
   .about,
@@ -1292,7 +1283,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.5rem;
+    padding-top: 4.75rem;
     padding-right: 3rem;
     padding-left: 3.5rem;
   }
@@ -2991,14 +2982,14 @@ input {
 }
 
 .footer-icon {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1.75rem;
   padding: 0;
   padding-top: 0.2rem;
 }
 
 .scroll-arrow {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 2.875rem;
 }
 
@@ -3012,8 +3003,26 @@ input {
 @media (min-width: 768px) {
   .footer {
     font-size: var(--fs-smaller);
-    padding: 1.675rem 2.125rem 1.675rem 2rem;
+    padding: 1.5rem 2rem 2rem;
   }
+
+  .footer-content-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    margin-top: -0.625rem;
+    margin-left: 1rem;
+    opacity: 0.9;
+  }
+
+  .scroll-to-top {
+    justify-self: flex-end;
+    /* align-self: flex-end; */
+  }
+
   .scroll-arrow {
     font-size: 3rem;
   }
