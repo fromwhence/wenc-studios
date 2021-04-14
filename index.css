@@ -15,7 +15,8 @@ ol[class] {
 }
 
 :root {
-  --clr-light-form: #f8f8f8;
+  --clr-light-form: #ececec;
+  --clr-light-form-lighter: #f3f3f3;
   --clr-light-form-darker: #e4e6e6;
   --clr-med-new: #c9c9c9;
   --clr-med-lightest: #e4e7e7;
@@ -801,15 +802,15 @@ body.active::after {
   .slider-btn {
     font-size: 2.375rem;
     padding: 0.25rem;
-    top: 48%;
+    top: 49.5%;
   }
 
   .slider-btn--right {
-    margin: -0.5rem;
+    margin: -0.75rem;
   }
 
   .slider-btn--left {
-    margin: -0.5rem;
+    margin: -0.75rem;
   }
 }
 
@@ -862,7 +863,7 @@ body.active::after {
   }
 
   .slider-btn {
-    top: 49.5%;
+    top: 50%;
   }
 
   .slider-btn--right {
@@ -1157,10 +1158,6 @@ body.active::after {
   .about {
     padding-top: 2.125rem;
   }
-
-  .contact {
-    padding-bottom: 4.5rem;
-  }
 }
 
 /* Max-width for desktop and large monitors */
@@ -1372,7 +1369,7 @@ body.active::after {
     margin-top: 2rem;
     padding: 1.875rem;
     border: 1px solid var(--clr-med-lighter);
-    background-color: var(--clr-light-form);
+    background-color: var(--clr-light-form-lighter);
   }
 
   .section-subheader--side {
@@ -1895,9 +1892,9 @@ li.tier--price {
   }
 
   .rates .side-by-side-text {
-    margin: 1.125rem 3.25rem 0;
+    margin: 0.75rem 3.25rem 0;
     padding: 1.875rem;
-    background-color: var(--clr-light-form);
+    background-color: var(--clr-light-form-lighter);
     border: 1px solid var(--clr-med-lighter);
   }
 
@@ -2178,6 +2175,7 @@ input:-webkit-autofill:active {
 /* General form styles */
 textarea {
   border: 1px solid var(--clr-med-lighter);
+  border-bottom-color: var(--clr-med-light);
   padding: 0.75rem;
   font-family: inherit;
   font-size: 16px;
@@ -2190,12 +2188,12 @@ textarea {
 
 input {
   border: 1px solid var(--clr-med-lighter);
+  border-bottom-color: var(--clr-med-light);
   background-color: var(--clr-light-form);
   margin-bottom: 0.5rem;
   padding: 0.675rem;
   font-family: inherit;
   font-size: 16px;
-  border-radius: 0;
 }
 
 .get-started--form-container {
@@ -2229,6 +2227,10 @@ input {
 
 .form-group.get-started label {
   color: rgba(255, 255, 255, 1);
+}
+
+.form-group.message {
+  margin-top: 1.125rem;
 }
 
 .extra-small {
@@ -2375,7 +2377,7 @@ input {
   }
 
   .get-started--form-container {
-    border: 1px solid var(--clr-med-lighter);
+    border: 1px solid var(--clr-light-form-darker);
     background-color: var(--clr-light-form);
     color: var(--clr-reg-dark);
     padding: 2rem 1.5rem 1.5rem;
@@ -2510,14 +2512,13 @@ input {
   max-width: 450px;
   margin: 0.5rem auto 0;
   padding: 1.375rem 1.625rem 2rem;
-  background-color: var(--clr-light-form-darker);
+  background-color: var(--clr-light-form);
   border-top: 1px solid var(--clr-med-lighter);
 }
 
 @media (min-width: 450px) {
   .contact-form-container {
-    border: 1px solid var(--clr-med-lighter);
-    background-color: #f1f1f1;
+    border: 1px solid var(--clr-light-form-darker);
   }
 
   .section-paragraph--contact {
@@ -2641,7 +2642,7 @@ input {
   }
 
   .contact-form-container {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.25rem;
     margin-top: 0.5rem;
   }
 
