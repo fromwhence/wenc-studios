@@ -1349,10 +1349,6 @@ body.active::after {
     column-gap: 5%;
   }
 
-  .slider-container {
-    padding-top: 0.125rem;
-  }
-
   .about-side-text {
     padding: 0;
     margin-top: 1.5rem;
@@ -1388,10 +1384,6 @@ body.active::after {
     display: grid;
     grid-template-columns: 70% 28%;
     column-gap: 2%;
-  }
-
-  .slider-container {
-    padding-top: 0.125rem;
   }
 
   .about-side-text {
