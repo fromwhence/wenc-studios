@@ -28,7 +28,7 @@ ol[class] {
   --clr-header-wide-darker: #6a6e6e;
   --clr-reg-dark: #1c1c1c;
   --clr-business-name-bg: #4b4e4e;
-  --clr-business-name-bg-dark: #474949;
+  --clr-business-name-bg-dark: #484b4b;
   --clr-business-name-bg-darker: #3b3d3d;
   --clr-business-name-bg-darkest: #2f3131;
   --fw-light: 300;
@@ -57,7 +57,7 @@ html {
 
 @media (min-width: 1200px) {
   .anchor {
-    scroll-margin-top: 47px;
+    scroll-margin-top: 45px;
   }
 }
 
@@ -242,7 +242,7 @@ button {
   .header {
     display: fixed;
     top: 0;
-    height: 47px;
+    height: 45px;
     border-bottom: none;
   }
 
@@ -291,7 +291,7 @@ button {
     text-align: center;
     color: rgba(255, 255, 255, 0.85);
     width: 115px;
-    padding: 0.65rem 0rem 0.5rem;
+    padding: 0.625rem 0rem 0.5rem;
     margin: 0;
     transition: all 350ms;
   }
@@ -697,6 +697,12 @@ body.active::after {
 @media (min-width: 1280px) {
   .slider {
     height: 775px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .slider {
+    height: 770px;
   }
 }
 
@@ -1218,6 +1224,7 @@ body.active::after {
   .about {
     padding-top: 5rem;
     padding-right: 3.25rem;
+    height: 100vh;
   }
 
   .section-container {
@@ -1275,13 +1282,13 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.5rem;
+    padding-top: 4.25rem;
   }
 }
 
 @media (min-width: 1500px) {
   .about {
-    padding-top: 4.25rem;
+    padding-top: 4.125rem;
   }
 }
 
@@ -1421,7 +1428,7 @@ body.active::after {
   }
 
   .about-side-text {
-    margin-top: 4.5rem;
+    margin-top: 4.875rem;
   }
 }
 
