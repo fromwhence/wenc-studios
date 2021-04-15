@@ -194,7 +194,7 @@ button {
   }
 
   .business-name-container {
-    padding: 1.125rem 1rem 1rem 1.5rem;
+    padding: 1rem 1rem 0.875rem 1.5rem;
   }
 
   .business-name {
@@ -829,10 +829,6 @@ body.active::after {
     bottom: 0rem;
     font-size: var(--fs-smaller);
   }
-
-  .dots-dot {
-    padding: 0.375rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -874,7 +870,7 @@ body.active::after {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .slider {
     margin-top: 0;
   }
@@ -884,21 +880,35 @@ body.active::after {
   }
 
   .slide-image {
-    width: 77.5%;
+    width: 68.5%;
   }
 
   .slider-btn {
     font-size: 2.375rem;
     padding: 0.25rem;
-    top: 49.5%;
+    top: 45.5%;
   }
 
   .slider-btn--right {
-    margin: -0.4rem;
+    margin: 1.5rem;
   }
 
   .slider-btn--left {
-    margin: -0.4rem;
+    margin: 1.5rem;
+  }
+
+  .artist-title {
+    bottom: 0.25rem;
+    height: 2rem;
+    font-size: var(--fs-smaller);
+  }
+
+  .dots {
+    margin: 0.675rem auto 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
   }
 
   .slider-container--expanded .expand {
@@ -960,7 +970,7 @@ body.active::after {
 
   .slider-container.expand .artist-title {
     bottom: -0.25rem;
-    font-size: var(--fs-small);
+    /* font-size: var(--fs-small); */
   }
 
   .slider-container.expand .dots {
@@ -1014,7 +1024,7 @@ body.active::after {
   }
 }
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .slider {
     margin-top: 0;
   }
@@ -1024,7 +1034,7 @@ body.active::after {
   }
 
   .slide-image {
-    width: 70%;
+    width: 65%;
   }
 
   .slider-btn {
@@ -1051,7 +1061,7 @@ body.active::after {
     right: 5.25rem;
     bottom: -0.25rem;
   }
-}
+} */
 
 @media (min-width: 1325px) {
   .slide-image {
@@ -1212,32 +1222,6 @@ body.active::after {
   }
 }
 
-@media (min-width: 1200px) {
-  .about,
-  .services,
-  .schedule,
-  .contact {
-    padding: 2rem 3.25rem 2.75rem;
-    width: 100%;
-    height: auto;
-  }
-
-  .about {
-    padding-top: 5rem;
-    padding-right: 3.25rem;
-    height: 100vh;
-  }
-
-  .section-container {
-    width: 100%;
-    height: auto;
-  }
-
-  .section-container.bg {
-    background-color: white;
-  }
-}
-
 @media (min-width: 1280px) {
   .section-container {
     width: 100%;
@@ -1255,9 +1239,9 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.5rem;
-    padding-right: 3.25rem;
-    padding-left: 1.75rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    padding-left: 2rem;
   }
 
   .contact {
@@ -1356,20 +1340,10 @@ body.active::after {
   }
 }
 
-@media (min-width: 1200px) {
-  .about-text-show {
-    display: block;
-  }
-
-  .slider-side-text-container {
-    display: grid;
-    grid-template-columns: 65% 30%;
-    column-gap: 5%;
-  }
-
-  .about-side-text {
-    margin-top: 3.5rem;
-  }
+@media (min-width: 1280px) {
+  /* .about-text-hide {
+    display: none;
+  } */
 }
 
 @media (min-width: 1280px) {
@@ -1383,19 +1357,13 @@ body.active::after {
 
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 70% 28%;
-    column-gap: 2%;
+    grid-template-columns: 65% 30%;
+    column-gap: 5%;
   }
 
   .about-side-text {
     padding: 0;
     margin-top: 4rem;
-  }
-
-  .artist-title {
-    bottom: 0;
-    height: 2rem;
-    font-size: var(--fs-small);
   }
 }
 
@@ -2188,7 +2156,7 @@ li.tier--price {
   .sample-slider-container.expand .artist-title,
   .sample-slider-container-2.expand .artist-title-2 {
     bottom: -1rem;
-    font-size: var(--fs-small);
+    font-size: var(--fs-smaller);
   }
 
   .sample-slider-container.expand .sample-slider--nav-dots,
