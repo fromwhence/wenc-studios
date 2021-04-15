@@ -57,7 +57,7 @@ html {
 
 @media (min-width: 1200px) {
   .anchor {
-    scroll-margin-top: 45px;
+    scroll-margin-top: 50px;
   }
 }
 
@@ -164,6 +164,7 @@ button {
   justify-content: space-between;
   padding: 1.675rem 0 0;
   margin: 0 1.625rem;
+  border-bottom: 1px solid var(--clr-med-lighter);
 }
 
 .business-name {
@@ -184,7 +185,7 @@ button {
 @media (min-width: 768px) {
   .header-container {
     background-color: var(--clr-business-name-bg-dark);
-    border-bottom: 1px solid var(--clr-business-name-bg-darker);
+    border-bottom: none;
     cursor: default;
   }
 
@@ -242,7 +243,7 @@ button {
   .header {
     display: fixed;
     top: 0;
-    height: 45px;
+    height: 50px;
     border-bottom: none;
   }
 
@@ -252,6 +253,7 @@ button {
     justify-content: center;
     align-items: center;
     padding: 0;
+    padding-bottom: 2px;
     margin-left: 1rem;
   }
 
@@ -261,7 +263,7 @@ button {
   }
 
   .business-name-container--sml .tagline {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     vertical-align: center;
     color: rgba(255, 255, 255, 0.95);
   }
@@ -291,7 +293,7 @@ button {
     text-align: center;
     color: rgba(255, 255, 255, 0.85);
     width: 115px;
-    padding: 0.625rem 0rem 0.5rem;
+    padding: 0.725rem 0rem 0.625rem;
     margin: 0;
     transition: all 350ms;
   }
@@ -911,6 +913,21 @@ body.active::after {
     overflow: visible;
   }
 
+  /* Expanded slider feature */
+  .expand-slider-icon {
+    color: var(--clr-med-new);
+    display: flex;
+    position: absolute;
+    font-size: 2rem;
+    right: 5rem;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 100;
+    background: white;
+    padding: 0;
+    overflow: visible;
+  }
+
   .slider-container--expanded .expand {
     position: fixed;
     z-index: 3000;
@@ -993,21 +1010,6 @@ body.active::after {
 
   .slider-container.expand .slider-btn--right {
     right: 12.5%;
-  }
-
-  /* Expanded slider feature */
-  .expand-slider-icon {
-    color: var(--clr-med-new);
-    display: flex;
-    position: absolute;
-    font-size: 2rem;
-    right: 2.25rem;
-    bottom: -0.25rem;
-    cursor: pointer;
-    z-index: 100;
-    background: white;
-    padding: 0;
-    overflow: visible;
   }
 
   .expand-text {
@@ -1239,7 +1241,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4rem;
+    padding-top: 4.25rem;
     padding-right: 4rem;
     padding-left: 2rem;
   }
@@ -1337,10 +1339,11 @@ body.active::after {
   .about-side-text {
     padding: 0;
     margin-top: 1rem;
+    margin-right: 0.5rem;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   /* .about-text-hide {
     display: none;
   } */
@@ -1364,6 +1367,7 @@ body.active::after {
   .about-side-text {
     padding: 0;
     margin-top: 4rem;
+    margin-right: 1rem;
   }
 }
 
