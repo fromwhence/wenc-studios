@@ -372,13 +372,11 @@ body.active::after {
 .nav-item:hover a,
 .nav-item:focus a,
 .nav-item.active a {
-  color: var(--clr-reg-dark);
-  /* background-color: var(--clr-light-form-darker); */
-  /* border-bottom: 2px solid var(--clr-light-form-darker); */
+  color: black;
 }
 
 .nav-link {
-  color: var(--clr-header-wide-darker);
+  color: var(--clr-header-wide-lighter);
   font-weight: var(--fw-med);
   font-size: 1.1rem;
   text-decoration: none;
