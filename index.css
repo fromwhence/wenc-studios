@@ -254,7 +254,7 @@ button {
     align-items: center;
     padding: 0;
     padding-bottom: 2px;
-    margin-left: 1rem;
+    margin-left: 1.025rem;
   }
 
   .business-name-container--sml .business-name {
@@ -1241,7 +1241,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.25rem;
+    padding-top: 4.325rem;
     padding-right: 4rem;
     padding-left: 2rem;
   }
