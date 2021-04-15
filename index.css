@@ -228,7 +228,7 @@ button {
     width: 100%;
     position: fixed;
     z-index: 100;
-    transition: all 200ms;
+    transition: all 100ms;
   }
 
   .scroll-shadow {
@@ -256,12 +256,12 @@ button {
   }
 
   .business-name-container--sml .business-name {
-    font-size: 1.625rem;
+    font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.85);
   }
 
   .business-name-container--sml .tagline {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     vertical-align: center;
     color: rgba(255, 255, 255, 0.95);
   }
@@ -429,7 +429,7 @@ body.active::after {
   }
 
   .nav-link {
-    font-size: 1.425rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -837,7 +837,8 @@ body.active::after {
 
 @media (min-width: 1024px) {
   .slider {
-    margin-top: -1.5rem;
+    margin: 0;
+    padding: 0;
   }
 
   .slide {
@@ -845,7 +846,7 @@ body.active::after {
   }
 
   .slide-image {
-    width: 82.5%;
+    width: 75%;
   }
 
   .slider-btn {
@@ -855,11 +856,11 @@ body.active::after {
   }
 
   .slider-btn--right {
-    margin: -0.625rem;
+    margin: 0;
   }
 
   .slider-btn--left {
-    margin: -0.625rem;
+    margin: 0;
   }
 }
 
@@ -1190,8 +1191,8 @@ body.active::after {
   }
 
   .about {
+    padding-top: 1.25rem;
     padding-left: 2rem;
-    padding-bottom: 2.75rem;
   }
 
   .about-text {
@@ -1351,7 +1352,7 @@ body.active::after {
 
   .about-side-text {
     padding: 0;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
 }
 
