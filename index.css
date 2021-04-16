@@ -420,7 +420,7 @@ body.active::after {
 
   .nav-item {
     width: 40%;
-    margin-top: 3.75rem;
+    margin-top: 3.5rem;
     padding: 0;
     padding-bottom: 0.675rem;
   }
@@ -437,11 +437,11 @@ body.active::after {
   }
 
   .nav-list {
-    margin-top: 2rem;
+    margin-top: 1.75rem;
   }
 
   .nav-item {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
   }
 
   .nav-link {
