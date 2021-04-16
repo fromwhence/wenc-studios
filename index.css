@@ -633,8 +633,13 @@ body.active::after {
 
 @media (min-width: 1024px) {
   .nav-toggle {
-    right: 1.125rem;
-    top: 0.35rem;
+    right: 0.875rem;
+    top: 0.4rem;
+  }
+
+  .sticky {
+    top: 0.875rem;
+    right: 0.875rem;
   }
 }
 
@@ -1232,11 +1237,18 @@ body.active::after {
 .section-container {
   width: 100%;
   height: auto;
+  margin: 0 auto;
   /* border-top: 1px solid var(--clr-med-lighter); */
 }
 
 .section-container.no-border {
   border-top: none;
+}
+
+.section-container--about,
+.section-container--rates,
+.section-container--contact {
+  background-color: white;
 }
 
 /* Inverse color for smaller screens */
@@ -1357,6 +1369,7 @@ body.active::after {
   .section-container {
     width: 100%;
     height: auto;
+    margin: 0 auto;
   }
 
   .about,
@@ -1410,9 +1423,9 @@ body.active::after {
 
 /* Max-width for desktop and large monitors */
 @media (min-width: 2050px) {
-  .section-container {
+  /* .section-container {
     max-width: 1950px;
-  }
+  } */
 }
 
 .section-header {
