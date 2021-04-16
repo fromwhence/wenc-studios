@@ -240,9 +240,6 @@ button {
 
   .header-container {
     width: 100%;
-    /* position: fixed;
-    z-index: 100;
-    transition: all 100ms; */
   }
 
   .header {
@@ -255,9 +252,9 @@ button {
     justify-content: center;
     align-items: center;
     padding: 0;
-    padding-bottom: 2px;
+    padding-bottom: 1.75px;
     margin-left: 1.025rem;
-    height: 60px;
+    height: 50px;
   }
 
   .business-name-container--sml .business-name {
@@ -269,7 +266,7 @@ button {
     font-size: 1.1rem;
     vertical-align: center;
     color: rgba(255, 255, 255, 0.95);
-    padding-top: 0.125rem;
+    padding-top: 0.15rem;
   }
 
   .light {
@@ -637,7 +634,7 @@ body.active::after {
 @media (min-width: 1024px) {
   .nav-toggle {
     right: 1.125rem;
-    top: 0.675rem;
+    top: 0.35rem;
   }
 }
 
@@ -935,6 +932,11 @@ body.active::after {
 
   .slider-btn--left {
     margin: 0;
+  }
+
+  .dots {
+    margin: 0.5rem auto 1.5rem;
+    height: 1rem;
   }
 }
 
@@ -1316,7 +1318,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 1.25rem;
+    padding-top: 1.125rem;
     padding-left: 2rem;
   }
 
@@ -1451,7 +1453,7 @@ body.active::after {
 
   .about-side-text {
     padding: 0;
-    margin-top: 1.25rem;
+    margin-top: 1.325rem;
     margin-right: 0.5rem;
   }
 }
