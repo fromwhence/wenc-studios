@@ -929,7 +929,7 @@ body.active::after {
   }
 
   .slide-image {
-    width: 75%;
+    width: 73.5%;
   }
 
   .slider-btn {
@@ -1454,13 +1454,13 @@ body.active::after {
 
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 65% 30%;
-    column-gap: 5%;
+    grid-template-columns: 67.5% 30%;
+    column-gap: 2.5%;
   }
 
   .about-side-text {
     padding: 0;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-right: 0.5rem;
   }
 }
