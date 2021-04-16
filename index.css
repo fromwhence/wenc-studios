@@ -257,7 +257,7 @@ button {
     padding: 0;
     padding-bottom: 2px;
     margin-left: 1.025rem;
-    height: 65px;
+    height: 60px;
   }
 
   .business-name-container--sml .business-name {
@@ -637,7 +637,7 @@ body.active::after {
 @media (min-width: 1024px) {
   .nav-toggle {
     right: 1.125rem;
-    top: 0.85rem;
+    top: 0.675rem;
   }
 }
 
