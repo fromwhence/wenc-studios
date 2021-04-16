@@ -848,7 +848,7 @@ body.active::after {
 }
 
 .dots {
-  margin: 0.875rem auto 1.25rem;
+  margin: 0.75rem auto 1.375rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -884,6 +884,7 @@ body.active::after {
 
   .slide-image {
     width: 67.5%;
+    margin-top: 0.275rem;
   }
 
   .slider-btn {
@@ -903,6 +904,11 @@ body.active::after {
   .artist-title {
     bottom: 0rem;
     font-size: var(--fs-smaller);
+  }
+
+  .dots {
+    margin: 0.5rem auto 1.625rem;
+    height: 1rem;
   }
 }
 
@@ -932,11 +938,6 @@ body.active::after {
 
   .slider-btn--left {
     margin: 0;
-  }
-
-  .dots {
-    margin: 0.5rem auto 1.5rem;
-    height: 1rem;
   }
 }
 
