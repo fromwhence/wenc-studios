@@ -16,7 +16,7 @@ ol[class] {
 
 :root {
   --clr-light-form: #f1f1f1;
-  --clr-light-form-darker: #eceeee;
+  --clr-light-form-darker: #e7e9e9;
   --clr-med-new: #c9c9c9;
   --clr-med-lightest: #e4e7e7;
   --clr-med-lighter: #d8dcdd;
@@ -127,7 +127,7 @@ li {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   p,
   li,
   a {
@@ -207,7 +207,7 @@ button {
     padding: 0;
     margin: 0;
     background-color: var(--clr-business-name-bg-dark);
-    /* border-bottom: none; */
+    border-bottom: none;
   }
 
   .business-name-container {
@@ -226,6 +226,14 @@ button {
     margin: 0;
     margin-top: -0.1rem;
     padding-right: 0.12rem;
+  }
+
+  .menu-text {
+    position: absolute;
+    right: 5.125rem;
+    top: 1.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--fs-small);
   }
 }
 
@@ -258,18 +266,18 @@ button {
     justify-content: center;
     align-items: center;
     padding: 0;
-    padding-bottom: 1.75px;
     margin-left: 1.025rem;
     height: 50px;
   }
 
   .business-name-container--sml .business-name {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.8);
+    vertical-align: center;
   }
 
   .business-name-container--sml .tagline {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     vertical-align: center;
     color: rgba(255, 255, 255, 0.95);
     padding-top: 0.15rem;
@@ -279,9 +287,21 @@ button {
     color: rgba(255, 255, 255, 0.9);
     /* font-size: 1.5rem; */
   }
+
+  .menu-text {
+    position: absolute;
+    right: 4.575rem;
+    top: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--fs-small);
+  }
 }
 
 @media (min-width: 1200px) {
+  .menu-text {
+    display: none;
+  }
+
   /* Adjustment for fixed header */
   .business-name-container {
     display: none;
@@ -377,12 +397,12 @@ button {
   }
 
   .top-nav-item a:hover {
-    background-color: var(--clr-med-lighter);
+    background-color: var(--clr-med-new);
     color: black;
   }
 
   .top-nav-item.active a {
-    background-color: var(--clr-light-form-darker);
+    background-color: var(--clr-light-form);
     color: black;
   }
 }
@@ -1406,13 +1426,13 @@ body.active::after {
   .services,
   .schedule,
   .contact {
-    padding: 2rem 3.25rem 3.25rem;
+    padding: 2.25rem 3.25rem 3.25rem;
     width: 100%;
     height: auto;
   }
 
   .about {
-    padding-top: 4rem;
+    padding-top: 4.25rem;
   }
 }
 
@@ -1482,7 +1502,7 @@ body.active::after {
 .section-header {
   padding-bottom: 1.125rem;
   margin-bottom: 0.5rem;
-  color: var(--clr-header-wide);
+  color: var(--clr-header-med);
   text-transform: uppercase;
   border-bottom: 1px solid var(--clr-med-lighter);
 }
@@ -1490,7 +1510,7 @@ body.active::after {
 .section-subheader {
   font-size: var(--fs-h3);
   padding: 1rem 0;
-  color: var(--clr-header-wide);
+  color: var(--clr-header-wide-lighter-new);
 }
 
 .section-paragraph {
@@ -1501,7 +1521,7 @@ body.active::after {
   .section-header {
     font-size: 1.65rem;
     padding-bottom: 0.875rem;
-    color: var(--clr-header-wide);
+    color: var(--clr-header-med);
   }
 
   .section-paragraph.extra-bottom-padding {
@@ -1539,7 +1559,7 @@ body.active::after {
 @media (min-width: 1200px) {
   .about-side-text {
     padding: 0;
-    margin-top: 3rem;
+    margin-top: 3.25rem;
     margin-right: 0.5rem;
   }
 }
@@ -1768,7 +1788,7 @@ ul.file-format-list {
 .tier--subheader {
   font-size: var(--fs-h3);
   padding-top: 0.35rem;
-  color: var(--clr-header-wide);
+  color: var(--clr-header-med);
   flex-wrap: nowrap;
 }
 
