@@ -37,7 +37,8 @@ window.onscroll = () => {
 
 // Sticky nav hamburger and nav bar
 const navHamburger = document.querySelector('.nav-toggle');
-const headerHeight = document.querySelector('.header-container');
+const headerHeight = document.querySelector('.business-name-container');
+console.log(headerHeight.offsetHeight);
 
 const sticky = headerHeight.offsetHeight - navHamburger.offsetHeight - 10;
 
