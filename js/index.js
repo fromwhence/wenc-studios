@@ -40,7 +40,7 @@ const navHamburger = document.querySelector('.nav-toggle');
 const headerHeight = document.querySelector('.business-name-container');
 console.log(headerHeight.offsetHeight);
 
-const sticky = headerHeight.offsetHeight - navHamburger.offsetHeight - 10;
+const sticky = headerHeight.offsetHeight - navHamburger.offsetHeight;
 
 const stickyNav = () => {
   if (window.pageYOffset >= sticky) {

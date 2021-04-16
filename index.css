@@ -617,10 +617,11 @@ body.active::after {
   .nav-toggle.sticky .hamburger::before,
   .nav-toggle.sticky .hamburger::after {
     background: var(--clr-med-light);
+    color: red;
   }
 
   .sticky {
-    top: 1.125rem;
+    top: 1.325rem;
     opacity: 0.8;
     background: rgba(255, 255, 255, 0.7);
   }
