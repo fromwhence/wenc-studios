@@ -53,6 +53,7 @@ ol[class] {
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--clr-business-name-bg-dark);
 }
 
 @media (min-width: 1200px) {
@@ -193,8 +194,6 @@ button {
 @media (min-width: 768px) {
   .header-container {
     background-color: var(--clr-business-name-bg-dark);
-    /* background-color: var(--clr-light-form-darker);
-    /* background-color: white; */
     cursor: default;
   }
 
@@ -705,6 +704,13 @@ body.active::after {
     width: 100%;
     height: auto;
   }
+}
+
+/* Section background color */
+.about,
+.rates,
+.contact {
+  background-color: white;
 }
 
 /* About and Rates sections and sliders */
@@ -1454,7 +1460,7 @@ body.active::after {
 
   .about-side-text {
     padding: 0;
-    margin-top: 1.325rem;
+    margin-top: 2rem;
     margin-right: 0.5rem;
   }
 }
