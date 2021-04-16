@@ -166,6 +166,11 @@ button {
   display: none;
 }
 
+.header-container {
+  margin: 0 auto;
+  background-color: white;
+}
+
 .header {
   height: auto;
   display: flex;
@@ -173,6 +178,7 @@ button {
   justify-content: space-between;
   padding: 1.675rem 0 0;
   margin: 0 1.625rem;
+  background-color: white;
   border-bottom: 1px solid var(--clr-med-lighter);
 }
 
@@ -200,6 +206,7 @@ button {
   .header {
     padding: 0;
     margin: 0;
+    background-color: var(--clr-business-name-bg-dark);
     /* border-bottom: none; */
   }
 
