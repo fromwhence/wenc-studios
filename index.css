@@ -1332,7 +1332,7 @@ body.active::after {
 
   .about {
     padding-top: 1.125rem;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     padding-bottom: 2.75rem;
   }
 
@@ -1461,13 +1461,13 @@ body.active::after {
 
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 67.5% 30%;
-    column-gap: 2.5%;
+    grid-template-columns: 67% 30%;
+    column-gap: 3%;
   }
 
   .about-side-text {
     padding: 0;
-    margin-top: 1.5rem;
+    margin-top: 1.625rem;
     margin-right: 0.5rem;
   }
 }
