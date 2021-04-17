@@ -32,7 +32,7 @@ history.replaceState(null, null, ' ');
 
 // Sticky hamburger nav
 window.onscroll = () => {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 1024) {
     stickyNav();
   }
 };

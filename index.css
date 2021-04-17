@@ -647,6 +647,15 @@ body.active::after {
     opacity: 1;
   }
 
+  .sticky {
+    position: fixed;
+    padding: 1rem 0.5rem;
+    top: 0.825rem;
+    right: 0.925rem;
+    opacity: 0.75;
+    background: rgba(255, 255, 255, 0.75);
+  }
+
   .hamburger,
   .hamburger::before,
   .hamburger::after {
@@ -669,10 +678,6 @@ body.active::after {
     transform: rotate(90deg) translateX(-9px);
   }
 
-  .sticky {
-    padding: 1.125rem 0.6rem;
-  }
-
   .nav-open .nav-toggle {
     top: 1.5rem;
   }
@@ -680,8 +685,17 @@ body.active::after {
 
 @media (min-width: 1024px) {
   .nav-toggle {
-    right: 0.875rem;
-    top: 0.475rem;
+    right: 0.8rem;
+    top: 0.45rem;
+  }
+
+  .sticky {
+    position: fixed;
+    padding: 1rem 0.5rem;
+    top: 0.8rem;
+    right: 0.9rem;
+    opacity: 0.75;
+    background: rgba(255, 255, 255, 0.75);
   }
 }
 
