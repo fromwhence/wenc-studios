@@ -53,7 +53,7 @@ ol[class] {
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--clr-business-name-bg-dark);
+  background-color: white;
 }
 
 @media (min-width: 1200px) {
@@ -141,7 +141,7 @@ li::marker {
 
 strong {
   color: var(--clr-header-med);
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 .bold-text {
@@ -492,19 +492,19 @@ body.active::after {
   transition: border-bottom 300ms;
 }
 
-.nav-item:hover a,
-.nav-item:focus a,
-.nav-item.active a {
-  color: black;
-}
-
-.nav-link {
-  color: var(--clr-header-wide-lighter);
+.nav-item a {
+  color: var(--clr-header-med);
   font-weight: var(--fw-med);
   font-size: 1.125rem;
   text-decoration: none;
   text-transform: capitalize;
   padding: 0.75rem 0;
+}
+
+.nav-item:hover a,
+.nav-item:focus a,
+.nav-item.active a {
+  color: var(--clr-reg-dark);
 }
 
 @media (min-width: 600px) {
@@ -563,23 +563,22 @@ body.active::after {
   top: 0.75rem;
   z-index: 1000;
   opacity: 1;
-  border: 1px solid transparent;
+  opacity: 0.75;
   transition: opacity 400ms;
 }
 
 .sticky {
   position: fixed;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.6rem;
   top: 0.875rem;
   right: 0.9rem;
-  opacity: 0.8;
-  background: rgba(255, 255, 255, 0.6);
+  opacity: 0.75;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .nav-open .nav-toggle {
   top: 1.325rem;
   opacity: 1;
-  border: 1px solid transparent;
 }
 
 .nav-open .nav {
@@ -589,7 +588,7 @@ body.active::after {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-med-light);
+  background: var(--clr-header-med);
   width: 2.5em;
   height: 3px;
   border-radius: 3em;
@@ -898,7 +897,7 @@ body.active::after {
 }
 
 .artist-title {
-  color: var(--clr-business-name-bg-darkest);
+  color: var(--clr-reg-dark);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -1330,7 +1329,7 @@ body.active::after {
 /* Inverse color for smaller screens */
 
 .section-inverse {
-  background-color: var(--clr-header-wide-lighter);
+  background-color: var(--clr-header-wide-lighter-new);
 }
 
 .section-inverse h2,
@@ -2708,8 +2707,8 @@ input {
   font-family: inherit;
   font-weight: 500;
   font-size: 1.1rem;
-  background-color: var(--clr-header-wide-lighter-new);
-  border: 1px solid var(--clr-header-wide-lighter-new);
+  background-color: var(--clr-header-med);
+  border: 1px solid var(--clr-header-med));
 }
 
 .form-submit-button:hover {
