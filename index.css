@@ -538,15 +538,11 @@ body.active::after {
   }
 
   .nav-list {
-    margin-top: 1.925rem;
+    margin-top: 3rem;
   }
 
   .nav-item {
-    margin-top: 3.5rem;
-  }
-
-  .nav-item a {
-    font-size: 1.35rem;
+    margin-top: 3.275rem;
   }
 }
 
