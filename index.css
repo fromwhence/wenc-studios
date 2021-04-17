@@ -669,12 +669,6 @@ body.active::after {
     transform: rotate(90deg) translateX(-9px);
   }
 
-  /* .nav-toggle.sticky .hamburger,
-  .nav-toggle.sticky .hamburger::before,
-  .nav-toggle.sticky .hamburger::after {
-    background: var(--clr-med-light);
-  } */
-
   .sticky {
     padding: 1.125rem 0.6rem;
   }
@@ -691,8 +685,8 @@ body.active::after {
   }
 
   .sticky {
-    top: 0.875rem;
-    right: 0.875rem;
+    top: 0.8rem;
+    right: 0.85rem;
   }
 }
 
