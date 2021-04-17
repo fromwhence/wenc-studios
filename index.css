@@ -576,9 +576,9 @@ body.active::after {
 
 .sticky {
   position: fixed;
-  padding: 1rem 0.6rem;
-  top: 0.875rem;
-  right: 0.9rem;
+  padding: 1rem 0.5rem;
+  top: 0.825rem;
+  right: 0.925rem;
   opacity: 0.75;
   background: rgba(255, 255, 255, 0.75);
 }
@@ -654,6 +654,7 @@ body.active::after {
   .nav-toggle {
     right: 1.5rem;
     top: 1.125rem;
+    opacity: 1;
   }
 
   .hamburger,
@@ -682,13 +683,11 @@ body.active::after {
   .nav-toggle.sticky .hamburger::before,
   .nav-toggle.sticky .hamburger::after {
     background: var(--clr-med-light);
-    color: red;
+    opacity: 1;
   }
 
   .sticky {
-    top: 1.325rem;
-    opacity: 0.8;
-    background: rgba(255, 255, 255, 0.7);
+    padding: 1.125rem 0.6rem;
   }
 
   .nav-open .nav-toggle {
