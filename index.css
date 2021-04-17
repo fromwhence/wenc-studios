@@ -538,7 +538,7 @@ body.active::after {
   }
 
   .nav-list {
-    margin-top: 1.875rem;
+    margin-top: 1.925rem;
   }
 
   .nav-item {
@@ -546,7 +546,7 @@ body.active::after {
   }
 
   .nav-item a {
-    font-size: 1.375rem;
+    font-size: 1.35rem;
   }
 }
 
