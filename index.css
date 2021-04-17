@@ -56,6 +56,13 @@ html {
   background-color: white;
 }
 
+@media (min-width: 768px) {
+  html {
+    background-color: var(--clr-business-name-bg-darker);
+  }
+  
+}
+
 @media (min-width: 1200px) {
   .anchor {
     scroll-margin-top: 45px;
@@ -203,14 +210,14 @@ button {
 
 @media (min-width: 768px) {
   .header-container {
-    background-color: var(--clr-business-name-bg-dark);
+    background-color: var(--clr-business-name-bg-darker);
     cursor: default;
   }
 
   .header {
     padding: 0;
     margin: 0;
-    background-color: var(--clr-business-name-bg-dark);
+    background-color: var(--clr-business-name-bg-darker);
     border-bottom: none;
   }
 
@@ -563,7 +570,7 @@ body.active::after {
   top: 0.75rem;
   z-index: 1000;
   opacity: 1;
-  opacity: 0.75;
+  opacity: 0.85;
   transition: opacity 400ms;
 }
 
@@ -1829,7 +1836,7 @@ ul.tier--list {
 li.tier--price {
   font-weight: 500;
   color: var(--clr-business-name-bg);
-  font-size: 16px;
+  font-size: 17px;
   padding-right: 1.625rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--clr-med-lighter);
