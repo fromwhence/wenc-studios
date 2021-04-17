@@ -538,11 +538,11 @@ body.active::after {
   }
 
   .nav-list {
-    margin-top: 3rem;
+    margin-top: 2.825rem;
   }
 
   .nav-item {
-    margin-top: 3.275rem;
+    margin-top: 3.25rem;
   }
 }
 
