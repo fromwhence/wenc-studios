@@ -197,6 +197,10 @@ button {
   text-transform: capitalize;
 }
 
+.menu-text {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .header-container {
     background-color: var(--clr-business-name-bg-dark);
@@ -228,13 +232,14 @@ button {
     padding-right: 0.12rem;
   }
 
-  .menu-text {
+  /* .menu-text {
+    display: inline-block;
     position: absolute;
     right: 5.125rem;
     top: 1.6rem;
     color: rgba(255, 255, 255, 0.8);
     font-size: var(--fs-small);
-  }
+  } */
 }
 
 /* Top nav for screens > 1200px */
@@ -288,13 +293,13 @@ button {
     /* font-size: 1.5rem; */
   }
 
-  .menu-text {
+  /* .menu-text {
     position: absolute;
     right: 4.575rem;
     top: 0.95rem;
     color: rgba(255, 255, 255, 0.8);
     font-size: var(--fs-small);
-  }
+  } */
 }
 
 @media (min-width: 1200px) {
@@ -407,6 +412,21 @@ button {
   }
 }
 
+@media (min-width: 1280px) {
+  /* .top-nav-item {
+    border-left: 1px solid var(--clr-med-lighter);
+  } */
+
+  .business-name-container--sml {
+    padding-top: 0;
+    height: 55px;
+  }
+
+  .top-nav-item a {
+    padding: 0.9rem 0rem 0.8rem;
+  }
+}
+
 @media (min-width: 1400px) {
   .top-nav-item a {
     width: 120px;
@@ -425,7 +445,7 @@ body.active::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--clr-header-wide-darker);
+  background-color: var(--clr-reg-dark);
   opacity: 0.5;
   /* backdrop-filter: blur(2px); */
   pointer-events: none;
@@ -434,7 +454,7 @@ body.active::after {
 @media (min-width: 1024px) {
   body.active::after {
     background-color: var(--clr-reg-dark);
-    opacity: 0.7;
+    opacity: 0.5;
   }
 }
 
