@@ -436,7 +436,7 @@ button {
   }
 } */
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .business-name-container--sml {
     height: 55px;
   }
@@ -765,7 +765,7 @@ body.active::after {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   h2.about-header {
     margin-bottom: 0;
   }
@@ -1450,7 +1450,7 @@ body.active::after {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .section-content-container {
     max-width: 1280px;
     margin: 0 auto;
@@ -1572,7 +1572,7 @@ body.active::after {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .slider-side-text-container {
     display: grid;
     grid-template-columns: 72.5% 27.5%;
@@ -2441,7 +2441,7 @@ li.tier--price {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .sample-slider--image-static,
   .sample-slider--image,
   .sample-slider--image-2 {
@@ -3161,7 +3161,7 @@ input {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .contact-container {
     display: grid;
     grid-template-columns: 45% 45%;
