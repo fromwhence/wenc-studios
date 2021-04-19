@@ -1133,7 +1133,7 @@ body.active::after {
   }
 
   .slide-image {
-    width: 67.5%;
+    width: 66%;
   }
 
   .slider-btn {
@@ -1434,13 +1434,13 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2.25rem 3.25rem 3.25rem;
+    padding: 2.2rem 3.25rem 3.25rem;
     width: 100%;
     height: auto;
   }
 
   .about {
-    padding-top: 4.25rem;
+    padding-top: 4.2rem;
     padding-right: 4rem;
     padding-left: 2rem;
   }
