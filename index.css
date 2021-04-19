@@ -1412,7 +1412,7 @@ body.active::after {
   .services,
   .schedule,
   .contact {
-    padding: 2.25rem 3.25rem 3.25rem;
+    padding: 2.2rem 3.25rem 3.25rem;
     width: 100%;
     height: auto;
   }
@@ -1434,7 +1434,7 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2.325rem 3.25rem 3.25rem;
+    padding: 2.25rem 3.25rem 3.25rem;
     width: 100%;
     height: auto;
   }
