@@ -438,12 +438,12 @@ button {
 
 @media (min-width: 1366px) {
   .business-name-container--sml {
-    height: 55px;
+    height: 50px;
   }
 
   .top-nav-item {
     width: 120px;
-    height: 55px;
+    height: 50px;
   }
 }
 
@@ -982,7 +982,6 @@ body.active::after {
 @media (min-width: 1200px) {
   .slide-image {
     width: 67.5%;
-    margin-top: 0;
   }
 
   .slider-btn {
@@ -1163,16 +1162,8 @@ body.active::after {
 }
 
 @media (min-width: 1366px) {
-  .slider {
-    margin-top: 0;
-  }
-
-  .slide {
-    padding-top: 0;
-  }
-
   .slide-image {
-    width: 68.5%;
+    width: 62.5%;
   }
 
   .slider-btn {
@@ -1182,11 +1173,11 @@ body.active::after {
   }
 
   .slider-btn--right {
-    margin: 1.5rem;
+    margin: 0.75rem;
   }
 
   .slider-btn--left {
-    margin: 1.5rem;
+    margin: 0.75rem;
   }
 
   .artist-title {
@@ -1196,7 +1187,7 @@ body.active::after {
   }
 
   .dots {
-    margin: 0 auto 1.5rem;
+    margin: 0.25rem auto 1.5rem;
     height: 1rem;
   }
 }
@@ -1462,13 +1453,13 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2rem 4rem 3.5rem 3.75rem;
+    padding: 2rem 3.25rem 3.5rem 3.25rem;
     width: 100%;
     height: auto;
   }
 
   .about {
-    padding-top: 4.25rem;
+    padding-top: 4.125rem;
   }
 }
 
@@ -1550,37 +1541,16 @@ body.active::after {
   }
 }
 
-@media (min-width: 1280px) {
-  .about-text-hide {
-    display: none;
-  }
-
-  .about-text-show {
-    display: block;
-  }
-
-  .slider-side-text-container {
-    display: grid;
-    grid-template-columns: 65% 30%;
-    column-gap: 5%;
-  }
-
-  .about-side-text {
-    padding: 0;
-    margin-top: 4rem;
-    margin-right: 1rem;
-  }
-}
-
 @media (min-width: 1366px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 72.5% 27.5%;
-    column-gap: 5%;
+    grid-template-columns: 60% 36.5%;
+    column-gap: 3.5%;
   }
 
   .about-side-text {
     margin: 0;
+    margin-right: 2rem;
     padding: 0;
     margin-top: 4rem;
   }
