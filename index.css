@@ -1051,9 +1051,9 @@ body.active::after {
 
   .slider-container.expand .slide-image {
     height: auto;
-    max-height: 85%;
+    max-height: 82.5%;
     width: 100%;
-    margin-top: -5.5%;
+    margin-top: -4.75%;
     cursor: default;
     object-fit: contain;
   }
