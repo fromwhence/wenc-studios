@@ -993,16 +993,6 @@ body.active::after {
   }
 }
 
-/* Expanded slider feature */
-/* Hide expand button on screens less than 1200px wide */
-.expand-slider-icon {
-  display: none;
-}
-/* Hide expanded slider close button */
-.close-expanded-slider {
-  display: none;
-}
-
 @media (min-width: 1200px) {
   .expand-slider-icon {
     color: var(--clr-med-new);
@@ -1975,13 +1965,19 @@ li.tier--price {
   }
 
   .tier--container {
-    padding-top: 0;
     grid-template-columns: 47.5% 47.5%;
     column-gap: 5%;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  .tier--container.first {
+    padding-bottom: 0;
+    margin-bottom: -0.5rem;
   }
 
   .tier--container.last {
-    padding-bottom: 1.5rem;
+    padding-bottom: 0;
     margin-bottom: 0;
   }
 
@@ -2173,9 +2169,10 @@ li.tier--price {
   display: none;
 }
 
-.expand-slider-icon-sample,
-.expand-slider-icon-sample {
-  visibility: hidden;
+.static-expand-icon,
+.sample-expand-icon,
+.sample-expand-icon-2 {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -2333,9 +2330,10 @@ li.tier--price {
     bottom: -0.5rem;
   }
 
-  .expand-slider-icon-sample .expand-outline,
-  .expand-slider-icon-sample .static-expand-icon {
-    visibility: visible;
+  .static-expand-icon,
+  .sample-expand-icon,
+  .sample-expand-icon-2 {
+    display: block;
     font-size: 1.65rem;
     position: absolute;
     color: var(--clr-med-new);
@@ -2344,11 +2342,13 @@ li.tier--price {
     cursor: pointer;
   }
 
-  .expand-slider-icon-sample .static-expand-icon {
-    bottom: 0rem;
+  .sample-expand-icon-2 {
+    bottom: -0.125rem;
   }
 
-  .expand-slider-icon-sample .expand-outline:hover {
+  .static-expand-icon:hover,
+  .sample-expand-icon:hover,
+  .sample-expand-icon-2:hover {
     color: var(--clr-header-wide);
   }
 
@@ -2386,7 +2386,7 @@ li.tier--price {
   }
 
   .rates .side-by-side-text {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
   }
 
   .sample-static-container.expand,
@@ -2532,15 +2532,9 @@ li.tier--price {
     left: 0.5rem;
   }
 
-  .expand-slider-icon-sample .expand-outline {
-    right: 2.75rem;
-    font-size: 1.625rem;
-    bottom: 0.2rem;
-  }
-
   .rates .side-by-side-text {
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   /* Expanded */
@@ -2579,16 +2573,6 @@ li.tier--price {
   .sample-slider--btn-left-2 {
     left: 0;
     font-size: 2.125rem;
-  }
-
-  .expand-slider-icon-sample .expand-outline {
-    right: 2.75rem;
-    bottom: -0.125rem;
-  }
-
-  .sample-slider--nav-dots,
-  .sample-slider--nav-dots-2 {
-    bottom: -0.325rem;
   }
 
   /* Expanded sample images */
