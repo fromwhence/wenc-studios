@@ -23,8 +23,8 @@ const resizeSampleSliderHeight = function () {
     staticSlide.style.height = `${sampleImageHeight + 15}px`;
   } else {
     let sampleImageHeight = sampleSliderImages[0].height;
-    sampleSlider.style.height = `${sampleImageHeight + 30}px`;
-    staticSlide.style.height = `${sampleImageHeight + 20}px`;
+    sampleSlider.style.height = `${sampleImageHeight + 40}px`;
+    staticSlide.style.height = `${sampleImageHeight + 40}px`;
   }
 };
 
