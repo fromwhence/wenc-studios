@@ -74,11 +74,11 @@ html {
   }
 }
 
-/* @media (min-width: 1600px) {
+@media (min-width: 1600px) {
   .anchor {
-    scroll-margin-top: 53px;
+    scroll-margin-top: 52px;
   }
-} */
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -432,16 +432,24 @@ button {
   }
 }
 
-/* @media (min-width: 1600px) {
+@media (min-width: 1600px) {
+  .business-name-container--sml .business-name {
+    font-size: 1.65rem;
+  }
+
+  .business-name-container--sml .tagline {
+    font-size: 1.15rem;
+  }
+
   .business-name-container--sml {
-    height: 53px;
+    height: 52px;
   }
 
   .top-nav-item {
-    width: 125px;
-    height: 53px;
+    width: 130px;
+    height: 52px;
   }
-} */
+}
 
 
 
