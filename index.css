@@ -2920,13 +2920,17 @@ input {
   }
 
   .get-started-text-form-container {
-    max-width: 500px;
+    max-width: 450px;
   }
 }
 
 @media (min-width: 1200px) {
   .section-paragraph.get-started {
     margin-top: 0.75rem;
+  }
+
+  .get-started-text-form-container {
+    max-width: 500px;
   }
 
   .get-started--form-container {
@@ -3078,7 +3082,6 @@ input {
 
 .status--get-started {
   margin-top: 0.875rem;
-  max-width: 500px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-top: none;
 }
@@ -3088,7 +3091,12 @@ input {
   .status--get-started {
     margin-top: 0;
     border-top: none;
-    max-width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .status--get-started {
+    max-width: 500px;
   }
 }
 
