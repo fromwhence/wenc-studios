@@ -1210,6 +1210,14 @@ body.active::after {
     top: 48.25%;
   }
 
+  .slider-btn--right {
+    right: 1rem;
+  }
+
+  .slider-btn--left {
+    left: 1rem;
+  }
+
   .artist-title {
     bottom: 0;
     height: 2rem;
@@ -2979,12 +2987,6 @@ input {
 }
 
 @media (min-width: 1024px) {
-  /* .section-subheader--get-started {
-    border-bottom: solid 1px rgba(255, 255, 255, 0.4);
-    margin-top: 0.125rem;
-    margin-bottom: 1rem;
-  } */
-
   .get-started--guidelines-content {
     margin-top: 0;
     padding-bottom: 0.25rem;
