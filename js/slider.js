@@ -28,9 +28,11 @@ const slider = function () {
     if (window.innerWidth < 768) {
       let imageHeight = slideImage[0].height;
       slider.style.height = `${imageHeight + 20}px`;
+      console.log('Resize under 768px');
     } else {
       let imageHeight = slideImage[0].height;
       slider.style.height = `${imageHeight + 20}px`;
+      console.log('Resize over 768px');
     }
   };
 
@@ -66,11 +68,8 @@ const slider = function () {
   });
 
   window.addEventListener('load', resizeSliderHeight);
+  window.addEventListener('orientationchange', resizeSliderHeight);
   window.addEventListener('resize', resizeSliderHeight);
-  window.addEventListener('orientationchange', function () {
-    resizeSliderHeight();
-  });
-  // End of resize
 
   const activateDot = function (slide) {
     document
