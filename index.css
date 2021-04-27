@@ -996,7 +996,7 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .slide-image {
-    width: 62.5%;
+    width: 60%;
   }
 
   .slider-btn {
@@ -1201,7 +1201,7 @@ body.active::after {
 
 @media (min-width: 1366px) {
   .slide-image {
-    width: 68.5%;
+    width: 62.5%;
   }
 
   .slider-btn {
@@ -1245,7 +1245,7 @@ body.active::after {
 
 @media (min-width: 1440px) {
   .slide-image {
-    width: 69.5%;
+    width: 68.5%;
   }
 
   .slider-btn {
@@ -1303,7 +1303,7 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide-image {
-    width: 74.5%;
+    width: 70%;
   }
 
   .slider-btn {
@@ -1499,7 +1499,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.2rem;
+    padding-top: 4.325rem;
     padding-right: 4rem;
     padding-left: 2rem;
   }
@@ -1527,7 +1527,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.125rem;
+    padding-top: 4.25rem;
     padding-left: 1.5rem;
   }
 }
@@ -1544,7 +1544,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4rem;
+    padding-top: 4.125rem;
   }
 }
 
@@ -1555,7 +1555,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4rem;
+    padding-top: 4.25rem;
   }
 }
 
@@ -1647,7 +1647,7 @@ body.active::after {
     margin: 0;
     margin-right: 2rem;
     padding: 0;
-    margin-top: 3.25rem;
+    margin-top: 2.75rem;
   }
 }
 
@@ -1662,7 +1662,7 @@ body.active::after {
     margin: 0;
     margin-right: 1.75rem;
     padding: 0;
-    margin-top: 3.5rem;
+    margin-top: 3.25rem;
   }
 }
 
@@ -1674,7 +1674,7 @@ body.active::after {
   }
 
   .about-side-text {
-    margin-top: 4.5rem;
+    margin-top: 4.25rem;
     margin-right: 0;
   }
 }
