@@ -74,11 +74,11 @@ html {
   }
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .anchor {
     scroll-margin-top: 50px;
   }
-}
+} */
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -441,12 +441,12 @@ button {
   }
 
   .business-name-container--sml {
-    height: 50px;
+    /* height: 50px; */
   }
 
   .top-nav-item {
-    width: 130px;
-    height: 50px;
+    width: 125px;
+    /* height: 50px; */
   }
 }
 
@@ -1526,7 +1526,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 3.75rem;
+    padding-top: 4rem;
     padding-left: 1.5rem;
   }
 }
@@ -1543,7 +1543,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4rem;
+    padding-top: 4.25rem;
   }
 }
 
