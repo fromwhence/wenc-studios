@@ -1499,7 +1499,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.325rem;
+    padding-top: 4.25rem;
     padding-right: 4rem;
     padding-left: 2rem;
   }
@@ -1527,7 +1527,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.25rem;
+    padding-top: 4rem;
     padding-left: 1.5rem;
   }
 }
@@ -1544,7 +1544,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.125rem;
+    padding-top: 4rem;
   }
 }
 
