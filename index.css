@@ -41,7 +41,7 @@ ol[class] {
   --fs-h4: 1.125rem;
   --fs-h5: 1.1em;
   --fs-reg: 1rem;
-  --fs-small: 0.95rem;
+  --fs-small: 0.925rem;
   --fs-smaller: 0.875rem;
   --fs-smallest: 0.8rem;
 }
@@ -966,7 +966,7 @@ body.active::after {
   }
 
   .slide-image {
-    width: 72.5%;
+    width: 70%;
     margin-top: 0;
   }
 
@@ -996,7 +996,7 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .slide-image {
-    width: 65%;
+    width: 62.5%;
   }
 
   .slider-btn {
@@ -1444,7 +1444,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 1.1rem;
+    padding-top: 1.5rem;
     padding-left: 1.5rem;
     padding-bottom: 2.75rem;
   }
