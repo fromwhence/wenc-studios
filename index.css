@@ -1278,7 +1278,7 @@ body.active::after {
 
   /* Expanded slider */
   .slider-container.expand .slide-image {
-    max-height: 84%;
+    max-height: 85%;
     margin-top: -5%;
   }
 
