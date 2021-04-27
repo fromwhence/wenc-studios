@@ -677,7 +677,7 @@ body.active::after {
   .hamburger::before,
   .hamburger::after {
     background: var(--clr-med-light);
-    width: 3em;
+    width: 2.75em;
     height: 3px;
     border-radius: 1.25em;
     transition: transform 250ms;
@@ -703,7 +703,7 @@ body.active::after {
 @media (min-width: 1024px) {
   .nav-toggle {
     right: 0.8rem;
-    top: 0.45rem;
+    top: 0.4675rem;
   }
 
   .sticky {
