@@ -1201,7 +1201,7 @@ body.active::after {
 
 @media (min-width: 1366px) {
   .slide-image {
-    width: 62.5%;
+    width: 62%;
   }
 
   .slider-btn {
@@ -1245,7 +1245,7 @@ body.active::after {
 
 @media (min-width: 1440px) {
   .slide-image {
-    width: 68.5%;
+    width: 67.5%;
   }
 
   .slider-btn {
@@ -1303,7 +1303,7 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide-image {
-    width: 70%;
+    width: 72.5%;
   }
 
   .slider-btn {
