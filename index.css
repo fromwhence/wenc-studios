@@ -1288,7 +1288,7 @@ body.active::after {
   }
 
   .slider-container.expand .dots {
-    bottom: 4.5%;
+    bottom: 4%;
   }
 
   .slider-container.expand .slider-btn--left {
