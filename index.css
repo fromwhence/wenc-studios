@@ -1166,7 +1166,6 @@ body.active::after {
   }
 
   /* Expanded view */
-
   .slider-container.expand .slide-image {
     max-height: 83%;
     margin-top: -6%;
@@ -1344,7 +1343,6 @@ body.active::after {
 }
 
 /* Inverse color for smaller screens */
-
 .section-inverse {
   background-color: var(--clr-header-wide-lighter-new);
 }
@@ -1504,7 +1502,6 @@ body.active::after {
   .section-content-container {
     max-width: 1280px;
     margin: 0 auto;
-    /* border: 1px solid var(--clr-med-lighter); */
   }
 
   .about,
@@ -1709,7 +1706,6 @@ body.active::after {
     grid-template-columns: 45% 45%;
     column-gap: 10%;
     margin-top: 0rem;
-    /* padding: 1rem 0 0; */
   }
 
   .services .side-by-side-text {
@@ -2536,7 +2532,6 @@ li.tier--price {
   .sample-slider-container-2.expand .sample-slider--nav-dots-2 {
     position: absolute;
     bottom: 6%;
-    /* background-color: lightgoldenrodyellow; */
   }
 
   .sample-slider-container.expand .sample-slider--btn,
@@ -2676,7 +2671,7 @@ textarea {
   -webkit-appearance: none;
 }
 
-/* Change the white to any color ;) */
+/* Change the white to any color */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
