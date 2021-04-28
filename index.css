@@ -2882,13 +2882,13 @@ input {
 .form-submit-button.get-started {
   background-color: var(--clr-business-name-bg-darker);
   border: 1px solid var(--clr-business-name-bg-darker);
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .form-submit-button.get-started:hover,
 .form-submit-button.get-started:focus {
-  background-color: var(--clr-business-name-bg-darker);
-  border: 1px solid var(--clr-business-name-bg-darker);
+  background-color: var(--clr-business-name-bg-darkest);
+  color: white;
 }
 
 @media (min-width: 768px) {
