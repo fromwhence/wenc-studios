@@ -702,12 +702,8 @@ body.active::after {
   }
 
   .sticky {
-    position: fixed;
-    padding: 1rem 0.5rem;
     top: 0.8rem;
     right: 0.9rem;
-    opacity: 0.75;
-    background: rgba(255, 255, 255, 0.75);
   }
 }
 
