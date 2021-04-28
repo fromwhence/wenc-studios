@@ -2866,7 +2866,7 @@ input {
   margin: 0.25rem auto 0;
   padding: 1.125rem 3.125rem;
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   font-family: inherit;
   font-weight: 500;
   font-size: 1.1rem;
@@ -2875,7 +2875,7 @@ input {
 }
 
 .form-submit-button:hover {
-  background-color: var(--clr-business-name-bg);
+  background-color: var(--clr-header-wide);
   color: white;
 }
 
