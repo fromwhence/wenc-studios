@@ -16,9 +16,7 @@ ol[class] {
 
 :root {
   --clr-light-form: #f0f0f0;
-  --clr-light-form-darker: #e7e9e9;
   --clr-med-new: #cccccc;
-  --clr-med-lightest: #e4e7e7;
   --clr-med-lighter: #d8dcdd;
   --clr-med-light: #b0b4b4;
   --clr-header-med: #787f80;
@@ -407,11 +405,12 @@ button {
     color: var(--clr-business-name-bg-darker);
     height: 100%;
     width: 100%;
+    padding-top: 1px;
     transition: all 350ms;
   }
 
   .top-nav-item a:hover {
-    background-color: var(--clr-med-new);
+    background-color: var(--clr-med-lighter);
     color: black;
   }
 
