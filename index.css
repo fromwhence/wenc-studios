@@ -699,6 +699,18 @@ body.active::after {
     top: 0.4675rem;
   }
 
+  .hamburger::before {
+    top: 7px;
+  }
+
+  .hamburger::after {
+    bottom: 7px;
+  }
+
+  .nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-7px);
+  }
+
   .sticky {
     top: 0.8rem;
     right: 0.9rem;
