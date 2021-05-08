@@ -2465,7 +2465,7 @@ li.tier--price {
     height: auto;
     max-width: 1200px;
     margin: auto;
-    margin-top: -1rem;
+    margin-top: -1.5rem;
     cursor: auto;
     overflow: visible;
     display: flex;
@@ -2491,7 +2491,6 @@ li.tier--price {
     max-width: 1100px;
     overflow: hidden;
     margin: auto;
-    padding: 5.5rem 5rem 5rem;
     background-color: white;
     display: flex;
     justify-content: center;
