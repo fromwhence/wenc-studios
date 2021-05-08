@@ -2082,7 +2082,7 @@ li.tier--price {
   position: absolute;
   height: 100%;
   width: 100%;
-  transition: transform 850ms;
+  transition: transform 750ms;
 }
 
 .sample-slider--slide,
@@ -2092,8 +2092,8 @@ li.tier--price {
   bottom: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  transition: opacity 850ms;
+  opacity: 1;
+  /* transition: opacity 750ms; */
 }
 
 .sample-slider--slide.current-slide,
@@ -2439,33 +2439,33 @@ li.tier--price {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
   }
 
   /* Tier 1 expanded */
   .sample-static-container.expand .sample-slider--static {
     position: relative;
     height: auto;
-    width: 100%;
-    max-width: 1000px;
+    width: 75%;
+    max-width: 1100px;
     overflow: hidden;
     margin: auto;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: white;
   }
 
   .sample-static-container.expand .sample-slider--image-static {
-    width: 62%;
+    width: 65%;
     height: auto;
     max-width: 1200px;
     margin: auto;
-    margin-top: -2rem;
+    margin-top: -1rem;
     cursor: auto;
     overflow: visible;
     display: flex;
@@ -2475,7 +2475,7 @@ li.tier--price {
     width: 100%;
     height: 2.5rem;
     margin: auto;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2488,10 +2488,11 @@ li.tier--price {
     position: relative;
     height: auto;
     width: 100%;
-    max-width: 1000px;
-    overflow: visible;
+    max-width: 1100px;
+    overflow: hidden;
     margin: auto;
-    padding: 0;
+    padding: 5.5rem 5rem 5rem;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2502,7 +2503,7 @@ li.tier--price {
   .sample-slider-container-2.expand .sample-slider--track-2 {
     width: 100%;
     height: 100%;
-    margin-top: -2rem;
+    margin-top: -1rem;
   }
 
   .sample-slider-container.expand .sample-slider--slide,
@@ -2512,18 +2513,20 @@ li.tier--price {
     bottom: 0;
     width: 100%;
     height: auto;
-    transition: opacity 350ms;
+    /* transition: opacity 350ms; */
   }
 
   .sample-slider-container.expand .sample-slider--image,
   .sample-slider-container-2.expand .sample-slider--image-2 {
-    width: 62%;
+    width: 65%;
     height: auto;
     max-width: 1200px;
     margin: auto;
+    margin-top: -1.5rem;
     cursor: auto;
     overflow: visible;
     display: flex;
+    overflow: hidden;
   }
 
   .sample-slider-container.expand .image-description,
@@ -2531,7 +2534,8 @@ li.tier--price {
     width: 100%;
     height: 2.5rem;
     margin: auto;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
+    overflow: visible;
     display: flex;
     justify-content: center;
     align-items: center;

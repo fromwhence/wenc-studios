@@ -167,14 +167,14 @@ const sampleSliderContainerExpanded = document.querySelector(
   '.sample-slider-container'
 );
 
-sampleSliderImages.forEach(sampleSlide => {
-  sampleSlide.addEventListener('click', () => {
-    sampleSliderContainerExpanded.classList.add('expand');
-    closeFullScreenIcon.classList.add('active');
-    expandIcon.style.display = 'none';
-    resizeSampleSliderHeight();
-  });
-});
+// sampleSliderImages.forEach(sampleSlide => {
+//   sampleSlide.addEventListener('click', () => {
+//     sampleSliderContainerExpanded.classList.add('expand');
+//     closeFullScreenIcon.classList.add('active');
+//     expandIcon.style.display = 'none';
+//     resizeSampleSliderHeight();
+//   });
+// });
 
 expandIcon.addEventListener('click', () => {
   closeFullScreenIcon.classList.add('active');
