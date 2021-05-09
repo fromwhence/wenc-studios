@@ -46,12 +46,12 @@ const slider = function () {
     resizeSliderHeight();
   });
 
-  // slides.forEach(slide => {
-  //   slide.addEventListener('click', () => {
-  //     sliderContainer.classList.add('expand');
-  //     resizeSliderHeight();
-  //   });
-  // });
+  slides.forEach(slide => {
+    slide.addEventListener('click', () => {
+      sliderContainer.classList.add('expand');
+      resizeSliderHeight();
+    });
+  });
 
   closeExpandedSlider.addEventListener('click', () => {
     sliderContainer.classList.remove('expand');
