@@ -2374,7 +2374,7 @@ li.tier--price {
     font-size: 1.65rem;
     position: absolute;
     color: var(--clr-med-new);
-    bottom: 0.25rem;
+    bottom: 0.275rem;
     right: 2.25rem;
     cursor: pointer;
   }
