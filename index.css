@@ -72,12 +72,6 @@ html {
   }
 }
 
-/* @media (min-width: 1600px) {
-  .anchor {
-    scroll-margin-top: 50px;
-  }
-} */
-
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--clr-reg-dark);
@@ -131,7 +125,7 @@ ul {
 li {
   font-size: var(--fs-small);
   line-height: 1.75;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.6rem;
   padding-left: 0rem;
 }
 
@@ -1886,6 +1880,12 @@ ul.tier--list {
   }
 }
 
+@media (min-width: 1280px) {
+  .tier--list li {
+    font-size: var(--fs-reg);
+  }
+}
+
 li.tier--price {
   font-weight: 500;
   color: var(--clr-business-name-bg);
@@ -2931,6 +2931,7 @@ input {
 @media (min-width: 1200px) {
   .section-paragraph.get-started {
     margin-top: 0.75rem;
+    padding-bottom: 1rem;
   }
 
   .get-started-text-form-container {
