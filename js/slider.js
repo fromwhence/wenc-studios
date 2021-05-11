@@ -41,6 +41,14 @@ const slider = function () {
   const closeExpandedSlider = document.querySelector('.close-expanded-slider');
   const sliderContainer = document.querySelector('.slider-container');
 
+  // Reset nav when closing slider
+  const navReset = function () {
+    const activeHome = document.querySelector('.aboutNavItem');
+    const servicesRemoveActive = document.querySelector('.servicesNavItem');
+    activeHome.classList.add('active');
+    servicesRemoveActive.classList.remove('active');
+  };
+
   expandIcon.addEventListener('click', () => {
     sliderContainer.classList.add('expand');
     resizeSliderHeight();
@@ -57,6 +65,7 @@ const slider = function () {
     sliderContainer.classList.remove('expand');
     resizeSliderHeight();
     scrollToTop();
+    navReset();
   });
 
   window.addEventListener('keydown', function (event) {
@@ -64,6 +73,7 @@ const slider = function () {
       sliderContainer.classList.remove('expand');
       resizeSliderHeight();
       scrollToTop();
+      navReset();
     }
   });
 
