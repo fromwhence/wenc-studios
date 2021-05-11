@@ -1295,7 +1295,7 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide-image {
-    width: 72.5%;
+    width: 70%;
   }
 
   .slider-btn {
@@ -1709,7 +1709,7 @@ body.active::after {
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
-    margin-bottom: 1.75rem;
+    margin-bottom: 2.25rem;
   }
 
   .studio-image {
@@ -3330,7 +3330,7 @@ input {
   }
 
   .section-paragraph--contact {
-    padding-bottom: 1rem;
+    padding-bottom: 1.325rem;
   }
 
   .contact-form-container {
