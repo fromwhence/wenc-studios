@@ -31,7 +31,7 @@ const slider = function () {
       console.log('Resize under 768px');
     } else {
       let imageHeight = slideImage[0].height;
-      slider.style.height = `${imageHeight + 20}px`;
+      slider.style.height = `${imageHeight + 25}px`;
       console.log('Resize over 768px');
     }
   };
