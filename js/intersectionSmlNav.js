@@ -27,7 +27,8 @@ const navItemsSmall = {
 const observerOptionsSmall = {
   root: null,
   rootMargin: '0px',
-  threshold: window.innerWidth < 768 ? 0 : 0.25,
+  // threshold: window.innerWidth < 768 ? 0 : 0.25,
+  threshold: 0.25,
 };
 
 function observerCallbackSmall(entries, observerSmall) {
