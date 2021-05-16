@@ -94,17 +94,27 @@ const scrollToTop = function () {
 const wideNavBar = document.querySelector('.header-container');
 // Setup isScrolling variable
 let isScrolling;
+
 // Listen for scroll events
 window.addEventListener(
   'scroll',
   function (event) {
-    // Clear our timeout throughout the scroll
+    // Clear timeout throughout the scroll
     window.clearTimeout(isScrolling);
+    wideNavBar.classList.add('scroll-border');
     wideNavBar.classList.add('scroll-shadow');
     // Set a timeout to run after scrolling ends
     isScrolling = setTimeout(function () {
       wideNavBar.classList.remove('scroll-shadow');
-    }, 66);
+    }, 50);
+
+    let pagePosition = window.scrollY;
+    console.log(pagePosition);
+    if (pagePosition > 0) {
+      wideNavBar.classList.add('scroll-border');
+    } else {
+      wideNavBar.classList.remove('scroll-border');
+    }
   },
   false
 );

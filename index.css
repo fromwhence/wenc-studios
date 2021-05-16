@@ -72,6 +72,12 @@ html {
   }
 }
 
+@media (min-width: 1366px) {
+  .anchor {
+    scroll-margin-top: 60px;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--clr-reg-dark);
@@ -311,6 +317,9 @@ button {
     z-index: 100;
     transition: all 100ms;
     background-color: white;
+  }
+
+  .scroll-border {
     border-bottom: 1px solid var(--clr-med-lighter);
   }
 
@@ -334,10 +343,8 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    padding-top: 0;
     margin-left: 1.1rem;
-    height: 47px;
+    height: auto;
   }
 
   strong {
@@ -374,52 +381,53 @@ button {
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-right: 1rem;
   }
 
   .top-nav-item {
-    padding-bottom: 0;
-    width: 115px;
-    height: 47px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
+  li.top-nav-item {
+    padding-bottom: 0.625rem;
+  }
+
   .top-nav-item a {
     display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
     text-align: center;
     vertical-align: center;
-    font-size: var(--fs-smallest);
-    color: var(--clr-business-name-bg-darker);
-    height: 100%;
+    font-size: var(--fs-reg);
+    color: var(--clr-header-med);
+    font-weight: var(--fw-med);
+    padding: 1.125rem 0.5rem 0.275rem;
+    margin: 0 1rem;
+    border-bottom: 3px solid #fff;
     width: 100%;
-    padding-top: 1px;
     transition: all 100ms;
   }
 
   .top-nav-item a:hover {
-    background-color: var(--clr-med-lighter);
-    color: black;
+    color: var(--clr-business-name-bg);
+    border-bottom: 3px solid var(--clr-med-lighter);
   }
 
   .top-nav-item.active a {
-    background-color: var(--clr-light-form);
-    color: black;
+    color: var(--clr-business-name-bg);
+    border-bottom: 3px solid var(--clr-med-lighter);
   }
 }
 
 @media (min-width: 1366px) {
-  .top-nav-item {
-    width: 120px;
-  }
-
   .top-nav-item a {
-    font-size: 0.85rem;
+    margin: 0 1.25rem;
   }
 }
 
@@ -430,11 +438,6 @@ button {
 
   .business-name-container--sml .tagline {
     font-size: 1.15rem;
-  }
-
-  .top-nav-item {
-    width: 125px;
-    /* height: 50px; */
   }
 }
 
@@ -1021,7 +1024,7 @@ body.active::after {
     right: 4.5rem;
     bottom: 0;
     cursor: pointer;
-    z-index: 100;
+    z-index: 10;
     background: white;
     padding: 0;
     overflow: visible;
