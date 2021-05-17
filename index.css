@@ -38,7 +38,7 @@ ol[class] {
   --fs-h2: 1.75rem;
   --fs-h3: 1.175rem;
   --fs-h4: 1.125rem;
-  --fs-h5: 1.1em;
+  --fs-h5: 1.05rem;
   --fs-reg: 1rem;
   --fs-small: 0.925rem;
   --fs-smaller: 0.875rem;
@@ -75,7 +75,7 @@ html {
 
 @media (min-width: 1366px) {
   .anchor {
-    scroll-margin-top: 65px;
+    scroll-margin-top: 63px;
   }
 }
 
@@ -443,13 +443,13 @@ button {
   .contactNavItem.active a {
     background-color: #fff;
     color: var(--clr-business-name-bg-darkest);
-    border-color: var(--clr-header-med);
+    border-color: var(--clr-med-light);
   }
 }
 
 @media (min-width: 1366px) {
   .top-nav-item a {
-    margin: 0 1.125rem;
+    margin: 0 1rem;
   }
 }
 
@@ -460,6 +460,10 @@ button {
 
   .business-name-container--sml .tagline {
     font-size: 1.15rem;
+  }
+
+  .top-nav-item a {
+    margin: 0 1.125rem;
   }
 }
 
@@ -567,11 +571,11 @@ body.active::after {
 
 @media (min-width: 1024px) {
   .nav {
-    left: 68.5%;
+    left: 60%;
   }
 
   .nav-list {
-    margin-top: 2.825rem;
+    margin-top: 3rem;
   }
 
   .nav-item {
@@ -2902,6 +2906,7 @@ input {
   font-weight: 500;
   font-size: 1.1rem;
   background-color: var(--clr-header-wide);
+  border-radius: 4px;
 }
 
 .form-submit-button:hover {
