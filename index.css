@@ -426,7 +426,7 @@ button {
 
   .contactNavItem a {
     padding: 0.5rem 1.325rem;
-    background-color: var(--clr-med-darker);
+    background-color: var(--clr-header-med);
     color: #fff;
     border: 1px solid var(--clr-med-light);
     border-radius: 4px;
@@ -434,9 +434,10 @@ button {
   }
 
   .contactNavItem a:hover {
-    background-color: var(--clr-light-form);
+    background-color: #fff;
     border: 1px solid var(--clr-header-med);
     color: var(--clr-business-name-bg-darkest);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   }
 
   .contactNavItem.active a {
@@ -448,7 +449,7 @@ button {
 
 @media (min-width: 1366px) {
   .top-nav-item a {
-    margin: 0 1.25rem;
+    margin: 0 1.125rem;
   }
 }
 
