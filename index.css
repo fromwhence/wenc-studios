@@ -19,6 +19,7 @@ ol[class] {
   --clr-med-new: #cccccc;
   --clr-med-lighter: #d8dcdd;
   --clr-med-light: #b0b4b4;
+  --clr-med-darker: #858b8b;
   --clr-header-med: #787f80;
   --clr-header-wide-lighter: #6d7070;
   --clr-header-wide-lighter-new: #717677;
@@ -68,13 +69,13 @@ html {
 
 @media (min-width: 1200px) {
   .anchor {
-    scroll-margin-top: 47px;
+    scroll-margin-top: 63px;
   }
 }
 
 @media (min-width: 1366px) {
   .anchor {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 65px;
   }
 }
 
@@ -380,8 +381,9 @@ button {
     justify-content: center;
     align-items: center;
     margin: 0;
+    margin-top: 0.5rem;
     padding: 0;
-    margin-right: 1rem;
+    margin-right: 0.25rem;
   }
 
   .top-nav-item {
@@ -392,7 +394,7 @@ button {
   }
 
   li.top-nav-item {
-    padding-bottom: 0.625rem;
+    padding-bottom: 0.5rem;
   }
 
   .top-nav-item a {
@@ -404,24 +406,43 @@ button {
     text-decoration: none;
     text-align: center;
     vertical-align: center;
-    font-size: var(--fs-reg);
+    font-size: var(--fs-h5);
     color: var(--clr-header-med);
     font-weight: var(--fw-med);
-    padding: 1.125rem 0.5rem 0.275rem;
-    margin: 0 1rem;
-    border-bottom: 2px solid #fff;
+    padding: 0.6rem 0.5rem 0.6rem;
+    margin: 0 0.5rem;
     width: 100%;
+    cursor: pointer;
     transition: all 100ms;
   }
 
   .top-nav-item a:hover {
-    color: var(--clr-business-name-bg);
-    border-bottom: 2px solid var(--clr-med-lighter);
+    color: var(--clr-business-name-bg-darkest);
   }
 
   .top-nav-item.active a {
-    color: var(--clr-business-name-bg);
-    border-bottom: 2px solid var(--clr-med-lighter);
+    color: var(--clr-business-name-bg-darkest);
+  }
+
+  .contactNavItem a {
+    padding: 0.5rem 1.325rem;
+    background-color: var(--clr-med-darker);
+    color: #fff;
+    border: 1px solid var(--clr-med-light);
+    border-radius: 4px;
+    transition: all 100ms;
+  }
+
+  .contactNavItem a:hover {
+    background-color: var(--clr-light-form);
+    border: 1px solid var(--clr-header-med);
+    color: var(--clr-business-name-bg-darkest);
+  }
+
+  .contactNavItem.active a {
+    background-color: #fff;
+    color: var(--clr-business-name-bg-darkest);
+    border-color: var(--clr-header-med);
   }
 }
 
@@ -3399,6 +3420,10 @@ input {
 
   .contact-details-sub-container {
     margin-left: 0;
+  }
+
+  .contact-details-sub-container:last-of-type {
+    margin-top: 1rem;
   }
 }
 
