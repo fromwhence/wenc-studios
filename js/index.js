@@ -110,7 +110,7 @@ window.addEventListener(
 
     let pagePosition = window.scrollY;
     console.log(pagePosition);
-    if (pagePosition > 0) {
+    if (pagePosition > 5) {
       wideNavBar.classList.add('scroll-border');
     } else {
       wideNavBar.classList.remove('scroll-border');

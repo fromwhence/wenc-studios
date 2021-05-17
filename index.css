@@ -409,19 +409,19 @@ button {
     font-weight: var(--fw-med);
     padding: 1.125rem 0.5rem 0.275rem;
     margin: 0 1rem;
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
     width: 100%;
     transition: all 100ms;
   }
 
   .top-nav-item a:hover {
     color: var(--clr-business-name-bg);
-    border-bottom: 3px solid var(--clr-med-lighter);
+    border-bottom: 2px solid var(--clr-med-lighter);
   }
 
   .top-nav-item.active a {
     color: var(--clr-business-name-bg);
-    border-bottom: 3px solid var(--clr-med-lighter);
+    border-bottom: 2px solid var(--clr-med-lighter);
   }
 }
 
@@ -1425,7 +1425,8 @@ body.active::after {
   .about,
   .services,
   .schedule,
-  .contact {
+  .contact,
+  .footer-container {
     padding: 2.5rem 3.25rem 3.25rem;
     width: 100%;
     height: auto;
@@ -1459,7 +1460,8 @@ body.active::after {
   .about,
   .services,
   .schedule,
-  .contact {
+  .contact,
+  .footer-container {
     padding: 2.2rem 3.25rem 3.25rem;
     width: 100%;
     height: auto;
@@ -1484,7 +1486,8 @@ body.active::after {
   .services,
   .rates,
   .schedule,
-  .contact {
+  .contact,
+  .footer-container {
     padding: 2.2rem 3.25rem 3.25rem;
     width: 100%;
     height: auto;
@@ -1510,7 +1513,8 @@ body.active::after {
   .services,
   .rates,
   .schedule,
-  .contact {
+  .contact,
+  .footer-container {
     padding: 2rem 3.25rem 3.5rem 3.25rem;
     width: 100%;
     height: auto;
@@ -1530,7 +1534,8 @@ body.active::after {
   .services,
   .rates,
   .schedule,
-  .contact {
+  .contact,
+  .footer-container {
     padding-top: 2.325rem;
     width: 100%;
     height: auto;
@@ -3426,7 +3431,8 @@ input {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.75rem;
   padding: 0;
-  padding-top: 0.2rem;
+  padding-top: 0.125rem;
+  margin-right: 0.325rem;
 }
 
 .scroll-arrow {
@@ -3455,8 +3461,9 @@ input {
   }
 
   .social-icons {
-    margin-top: -0.6rem;
-    margin-left: 1rem;
+    /* margin-top: -0.6rem; */
+    display: flex;
+    margin-left: -0.1rem;
     opacity: 0.9;
   }
 
@@ -3473,7 +3480,7 @@ input {
 @media (min-width: 1024px) {
   .footer-container {
     font-size: var(--fs-smaller);
-    padding: 1.5rem 2rem 2.125rem;
+    /* padding: 1.5rem 2rem 2.125rem; */
   }
 
   .scroll-arrow {
@@ -3481,3 +3488,22 @@ input {
     margin-bottom: -0.275rem;
   }
 }
+
+@media (min-width: 1366px) {
+  .footer-container {
+    font-size: var(--fs-smaller);
+    padding-right: 3.25rem;
+    padding-left: 3.25rem;
+  }
+
+  .scroll-arrow {
+    margin-right: 2.5rem;
+  }
+}
+
+/* @media (min-width: 1600px) {
+  .footer-container {
+    padding-right: 3.25rem;
+    padding-left: 3.25rem;
+  }
+} */
