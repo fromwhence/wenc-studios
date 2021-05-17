@@ -69,13 +69,13 @@ html {
 
 @media (min-width: 1200px) {
   .anchor {
-    scroll-margin-top: 63px;
+    scroll-margin-top: 61px;
   }
 }
 
 @media (min-width: 1366px) {
   .anchor {
-    scroll-margin-top: 63px;
+    scroll-margin-top: 61px;
   }
 }
 
@@ -409,7 +409,7 @@ button {
     font-size: var(--fs-h5);
     color: var(--clr-header-med);
     font-weight: var(--fw-med);
-    padding: 0.6rem 0.5rem 0.6rem;
+    padding: 0.5rem;
     margin: 0 0.5rem;
     width: 100%;
     cursor: pointer;
@@ -425,7 +425,7 @@ button {
   }
 
   .contactNavItem a {
-    padding: 0.5rem 1.325rem;
+    padding: 0.425rem 1.325rem;
     background-color: var(--clr-header-med);
     color: #fff;
     border: 1px solid var(--clr-med-light);
