@@ -3466,6 +3466,10 @@ input {
   margin-right: 0.325rem;
 }
 
+.social-icons {
+  display: flex;
+}
+
 .scroll-arrow {
   color: rgba(255, 255, 255, 0.8);
   font-size: 2.875rem;
