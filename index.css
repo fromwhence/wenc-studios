@@ -686,7 +686,7 @@ body.active::after {
   .hamburger,
   .hamburger::before,
   .hamburger::after {
-    background: var(--clr-med-light);
+    background: var(--clr-header-med-light);
     width: 2.75em;
     height: 3px;
     border-radius: 1.25em;
@@ -3435,7 +3435,7 @@ input {
   font-size: var(--fs-smallest);
   color: rgba(255, 255, 255, 0.9);
   background-color: var(--clr-business-name-bg-darker);
-  padding: 1.25rem 1.625rem 1.125rem;
+  padding: 1.625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3460,6 +3460,7 @@ input {
 
 .social-icons {
   display: flex;
+  margin-top: 0.25rem;
 }
 
 .scroll-arrow {
