@@ -15,7 +15,7 @@ ol[class] {
 }
 
 :root {
-  --clr-light-form: #f8f9fa;
+  --clr-light-form: #f1f1f1;
   --clr-med-new: #cccccc;
   --clr-med-lighter: #d8dcdd;
   --clr-header-med-light: #979c9c;
@@ -3454,7 +3454,7 @@ input {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.75rem;
   padding: 0;
-  padding-top: 0.125rem;
+  /* padding-top: 0.125rem; */
   margin-right: 0.325rem;
 }
 
