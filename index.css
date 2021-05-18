@@ -15,7 +15,7 @@ ol[class] {
 }
 
 :root {
-  --clr-light-form: #f0f0f0;
+  --clr-light-form: #f8f9fa;
   --clr-med-new: #cccccc;
   --clr-med-lighter: #d8dcdd;
   --clr-header-med-light: #979c9c;
@@ -1527,7 +1527,7 @@ body.active::after {
 
 @media (min-width: 1366px) {
   .section-content-container {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -1570,12 +1570,12 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .section-content-container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
   .section-content-container--about {
-    max-width: 1350px;
+    max-width: 1250px;
   }
 
   .about {
@@ -1750,13 +1750,13 @@ body.active::after {
     grid-template-columns: 45% 45%;
     column-gap: 10%;
     margin-top: 0rem;
+    padding: 2rem;
   }
 
   .services .side-by-side-text {
     margin-top: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.4);
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 1.75rem;
   }
 
   .section-subheader--side {
@@ -1771,7 +1771,6 @@ body.active::after {
 @media (min-width: 1200px) {
   .services .side-by-side-text {
     margin-top: 2rem;
-    padding: 1.875rem;
   }
 
   .section-subheader--side {
@@ -2112,7 +2111,7 @@ li.tier--price {
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -2360,7 +2359,6 @@ li.tier--price {
 
   .rates .side-by-side-text {
     margin: 0.75rem 3.25rem 0;
-    padding: 1.875rem;
     background-color: var(--clr-light-form);
     border: 1px solid var(--clr-med-lighter);
   }
@@ -2528,7 +2526,7 @@ li.tier--price {
     position: relative;
     height: auto;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     overflow: hidden;
     margin: auto;
     background-color: white;
