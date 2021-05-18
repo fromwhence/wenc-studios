@@ -100,6 +100,7 @@ a:hover {
 :focus {
   outline: 2px solid var(--clr-header-wide);
   outline-offset: -2px;
+  border-radius: 5px;
 }
 
 .hide {
@@ -1549,6 +1550,10 @@ body.active::after {
 
     /* padding-left: 1.5rem; */
   }
+
+  .foooter-container {
+    padding-bottom: 3.25rem;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -2810,6 +2815,7 @@ input {
 .form-group textarea:focus {
   background-color: white;
   border: 1px solid var(--clr-header-wide-darker);
+  border-radius: 5px;
 }
 
 .form-wide input {
@@ -2915,6 +2921,7 @@ input {
 .form-submit-button.get-started:focus {
   background-color: var(--clr-business-name-bg-darkest);
   color: white;
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
@@ -3043,18 +3050,18 @@ input {
 }
 
 .contact-details-sub-container {
-  margin: 0.325rem auto;
+  margin: 0.325rem auto 0.5rem;
   padding-bottom: 0.75rem;
 }
 
-.contact-details-sub-container.first {
-  margin-bottom: 0.625rem;
+.contact-details-sub-container:first-of-type {
+  margin-bottom: 0.675rem;
 }
 
 .contact-sub-header {
   display: block;
   padding: 0.75rem 0 0.75rem;
-  margin: 0 auto 0.5rem;
+  margin: 0 auto 0.75rem;
   width: 40%;
   text-align: center;
   border-bottom: 1px solid var(--clr-med-lighter);
@@ -3112,7 +3119,7 @@ input {
 .section-paragraph--contact {
   max-width: 450px;
   margin: 0.5rem auto 0;
-  padding: 0 1.625rem 1rem;
+  padding: 0 1.625rem 1.5rem;
 }
 
 /* Basic contact form */
@@ -3522,10 +3529,11 @@ input {
     font-size: var(--fs-smaller);
     padding-right: 3.25rem;
     padding-left: 3.25rem;
+    padding-bottom: 3.5rem;
   }
 
   .scroll-arrow {
-    margin-right: 2.5rem;
+    margin-right: 1rem;
   }
 }
 
