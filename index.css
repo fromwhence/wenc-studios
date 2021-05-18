@@ -18,6 +18,7 @@ ol[class] {
   --clr-light-form: #f0f0f0;
   --clr-med-new: #cccccc;
   --clr-med-lighter: #d8dcdd;
+  --clr-header-med-light: #979c9c;
   --clr-header-med: #787f80;
   --clr-header-wide-lighter: #6d7070;
   --clr-header-wide-lighter-new: #717677;
@@ -67,13 +68,13 @@ html {
 
 @media (min-width: 1200px) {
   .anchor {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 59px;
   }
 }
 
 @media (min-width: 1366px) {
   .anchor {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 59px;
   }
 }
 
@@ -379,7 +380,7 @@ button {
     justify-content: center;
     align-items: center;
     margin: 0;
-    margin-top: 0.5rem;
+    margin-top: 0.475rem;
     padding: 0;
     margin-right: 0.25rem;
   }
@@ -405,46 +406,41 @@ button {
     text-align: center;
     vertical-align: center;
     color: var(--clr-header-med);
-    font-size: var(--fs-h5);
+    font-size: var(--fs-reg);
     font-weight: var(--fw-med);
     padding: 0.425rem;
     margin: 0 0.5rem;
     width: 100%;
     cursor: pointer;
-    /* border-bottom: 2px solid #fff; */
     transition: all 200ms;
   }
 
   .top-nav-item a:hover {
     color: var(--clr-business-name-bg-darkest);
-    /* border-bottom: 2px solid var(--clr-med-new); */
   }
 
   .top-nav-item.active a {
     color: var(--clr-business-name-bg-darkest);
-    /* border-bottom: 2px solid var(--clr-med-new); */
   }
 
   .contactNavItem a {
-    padding: 0.425rem 1.325rem 0.4rem;
-    background-color: var(--clr-header-med);
-    color: #fff;
-    border: 1px solid var(--clr-header-med);
-    border-radius: 4px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: var(--clr-header-med);
+    border: 1px solid var(--clr-header-med-light);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    padding: 0.425rem 1.325rem;
+    border-radius: 5px;
     transition: all 100ms;
   }
 
   .contactNavItem a:hover {
-    background-color: #fff;
-    color: var(--clr-business-name-bg-darkest);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   }
 
   .contactNavItem.active a {
-    background-color: #fff;
-    color: var(--clr-business-name-bg-darkest);
-    border-color: var(--clr-med-new);
+    color: #fff;
+    background-color: var(--clr-header-med);
+    border-color: var(--clr-header-med);
     box-shadow: none;
   }
 }
@@ -465,7 +461,7 @@ button {
   }
 
   .top-nav-item a {
-    margin: 0 1.25rem;
+    margin: 0 1.275rem;
   }
 }
 
@@ -2747,13 +2743,13 @@ textarea {
   height: 170px;
   line-height: 1.4rem;
   margin: 0.75rem 0;
-  border-radius: 4px;
+  border-radius: 5px;
   resize: none;
 }
 
 input {
   border: 1px solid var(--clr-med-lighter);
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: var(--clr-light-form);
   margin-bottom: 0.5rem;
   padding: 0.75rem;
@@ -2906,7 +2902,7 @@ input {
   font-weight: 500;
   font-size: 1.1rem;
   background-color: var(--clr-header-wide);
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .form-submit-button:hover {
