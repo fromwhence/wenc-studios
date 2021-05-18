@@ -438,9 +438,7 @@ button {
   }
 
   .contactNavItem.active a {
-    color: #fff;
-    background-color: var(--clr-header-med);
-    border-color: var(--clr-header-med);
+    border: 1px solid var(--clr-header-med-light);
     box-shadow: none;
   }
 }
