@@ -21,7 +21,7 @@ ol[class] {
   --clr-header-med-light: #979c9c;
   --clr-header-med: #787f80;
   --clr-header-wide-lighter: #6d7070;
-  --clr-header-wide-lighter-new: #717677;
+  --clr-header-wide-lighter-new: #707575;
   --clr-header-wide: #626868;
   --clr-header-wide-darker: #6a6e6e;
   --clr-reg-dark: #1c1c1c;
@@ -2765,7 +2765,7 @@ input {
 
 @media (min-width: 600px) {
   .get-started--form-container {
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1.75rem 1.5rem 1.275rem;
     margin-top: 0.5rem;
