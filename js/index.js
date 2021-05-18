@@ -109,7 +109,6 @@ window.addEventListener(
     }, 50);
 
     let pagePosition = window.scrollY;
-    console.log(pagePosition);
     if (pagePosition > 5) {
       wideNavBar.classList.add('scroll-border');
     } else {
