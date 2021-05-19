@@ -3529,17 +3529,9 @@ input {
     font-size: var(--fs-smaller);
     padding-right: 3.25rem;
     padding-left: 3.25rem;
-    padding-bottom: 3.5rem;
   }
 
   .scroll-arrow {
     margin-right: 1rem;
   }
 }
-
-/* @media (min-width: 1600px) {
-  .footer-container {
-    padding-right: 3.25rem;
-    padding-left: 3.25rem;
-  }
-} */
