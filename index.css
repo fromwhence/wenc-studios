@@ -1646,7 +1646,7 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .section-header {
-    font-size: 1.65rem;
+    font-size: 1.675rem;
     padding-bottom: 0.875rem;
     color: var(--clr-header-med);
   }
