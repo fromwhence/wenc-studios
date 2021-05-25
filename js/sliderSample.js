@@ -139,12 +139,12 @@ const sampleStaticImage = document.querySelector(
   '.sample-slider--image-static'
 );
 
-sampleStaticImage.addEventListener('click', () => {
-  closeFullScreenIconStatic.classList.add('active');
-  expandIconStatic.style.display = 'none';
-  sampleStaticContainer.classList.add('expand');
-  resizeSampleSliderHeight();
-});
+// sampleStaticImage.addEventListener('click', () => {
+//   closeFullScreenIconStatic.classList.add('active');
+//   expandIconStatic.style.display = 'none';
+//   sampleStaticContainer.classList.add('expand');
+//   resizeSampleSliderHeight();
+// });
 
 expandIconStatic.addEventListener('click', () => {
   closeFullScreenIconStatic.classList.add('active');

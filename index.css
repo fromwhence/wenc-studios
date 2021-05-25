@@ -833,39 +833,39 @@ body.active::after {
 /* Default slider heights on page load */
 @media (min-width: 768px) {
   .slider {
-    height: 675px;
+    height: 700px;
   }
 }
 
 @media (min-width: 1024px) {
   .slider {
-    height: 615px;
+    height: 600px;
   }
 }
 
 @media (min-width: 1200px) {
   .slider {
-    height: 650px;
+    height: 615px;
   }
 }
 
 @media (min-width: 1336px) {
   .slider {
-    height: 635px;
+    height: 575px;
   }
 }
 
 @media (min-width: 1440px) {
   .slider {
-    height: 770px;
+    height: 700px;
   }
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .slider {
-    height: 775px;
+    height: 700px;
   }
-}
+} */
 
 .slide {
   position: absolute;
@@ -887,9 +887,9 @@ body.active::after {
 
 .slide-image {
   position: relative;
-  width: 83.5%;
+  width: 100%;
   height: auto;
-  /* cursor: pointer; */
+  cursor: pointer;
   object-fit: contain;
 }
 
@@ -1094,7 +1094,8 @@ body.active::after {
 
   .slider-container.expand .slider {
     position: static;
-    top: 0%;
+    top: 0;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1110,10 +1111,10 @@ body.active::after {
   }
 
   .slider-container.expand .slide-image {
-    height: auto;
-    max-height: 83.5%;
     width: 100%;
-    margin-top: -5.5%;
+    height: auto;
+    max-height: 80%;
+    margin-top: -6.5%;
     cursor: default;
   }
 
@@ -1138,13 +1139,13 @@ body.active::after {
   }
 
   .slider-container.expand .artist-title {
-    bottom: 8%;
+    bottom: 10%;
     font-size: var(--fs-smaller);
   }
 
   .slider-container.expand .dots {
     position: absolute;
-    bottom: 1%;
+    bottom: 3.5%;
     height: 2rem;
     left: 50%;
     transform: translate(-50%, 0);
@@ -1219,12 +1220,7 @@ body.active::after {
 
   /* Expanded view */
   .slider-container.expand .artist-title {
-    bottom: 9.5%;
     font-size: var(--fs-smaller);
-  }
-
-  .slider-container.expand .dots {
-    bottom: 2.5%;
   }
 
   .slider-container.expand .slider-btn--left {
@@ -1281,8 +1277,10 @@ body.active::after {
 }
 
 @media (min-width: 1440px) {
-  .slide-image {
-    width: 65.5%;
+  .slider-container.expand .slide-image {
+    max-height: 83%;
+    margin-top: -5.5%;
+    cursor: default;
   }
 
   .slider-btn {
@@ -2522,7 +2520,7 @@ li.tier--price {
   .sample-static-container.expand .sample-slider--static {
     position: relative;
     height: auto;
-    width: 75%;
+    width: 100%;
     max-width: 1100px;
     overflow: hidden;
     margin: auto;
@@ -2534,7 +2532,7 @@ li.tier--price {
   }
 
   .sample-static-container.expand .sample-slider--image-static {
-    width: 65%;
+    width: 70.5%;
     height: auto;
     max-width: 1200px;
     margin: auto;
@@ -2606,7 +2604,7 @@ li.tier--price {
     width: 100%;
     height: 2.5rem;
     margin: auto;
-    margin-top: -0.5rem;
+    margin-top: -1rem;
     overflow: visible;
     display: flex;
     justify-content: center;
@@ -2617,7 +2615,7 @@ li.tier--price {
   .sample-slider-container.expand .sample-slider--nav-dots,
   .sample-slider-container-2.expand .sample-slider--nav-dots-2 {
     position: absolute;
-    bottom: 6%;
+    bottom: 5.5%;
   }
 
   .sample-slider-container.expand .sample-slider--btn,
