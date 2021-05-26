@@ -1559,7 +1559,7 @@ body.active::after {
   .schedule,
   .contact,
   .footer-container {
-    padding: 2rem 3.25rem 3.5rem 3.25rem;
+    padding: 2rem 3.25rem 4rem 3.25rem;
     width: 100%;
     height: auto;
   }
@@ -1581,7 +1581,7 @@ body.active::after {
   .schedule,
   .contact,
   .footer-container {
-    padding-top: 2.325rem;
+    padding-top: 2.675rem;
     width: 100%;
     height: auto;
   }
