@@ -889,7 +889,7 @@ body.active::after {
 
 .slide-image {
   position: relative;
-  width: 100%;
+  width: 85%;
   height: auto;
   cursor: pointer;
   object-fit: contain;
@@ -1895,12 +1895,12 @@ ul.file-format-list {
 
 /* Rates */
 .tier--container {
-  padding-bottom: 0.75rem;
+  padding-bottom: 1rem;
 }
 
 .tier--container.first {
-  margin-top: 0.375rem;
-  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.75rem;
 }
 
 .tier--description {
@@ -2177,7 +2177,7 @@ li.tier--price {
   width: 83.5%;
   max-width: 480px;
   height: auto;
-  margin: 0.25rem auto 0.375rem;
+  margin: 0.5rem auto 0.75rem;
   object-fit: contain;
   /* cursor: pointer; */
 }
