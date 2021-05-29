@@ -1182,6 +1182,21 @@ body.active::after {
   }
 }
 
+@media (min-width: 1024px) and (orientation: portrait) {
+  .slider-container.expand .slide-image {
+    max-width: 82.5%;
+    margin-top: -8%;
+  }
+
+  .slider-container.expand .slider-btn--left {
+    left: 3%;
+  }
+
+  .slider-container.expand .slider-btn--right {
+    right: 3%;
+  }
+}
+
 @media (min-width: 1280px) {
   .slider {
     margin-top: 0;
@@ -1471,7 +1486,7 @@ body.active::after {
   .schedule,
   .contact,
   .footer-container {
-    padding: 2.5rem 3.25rem 3.5rem;
+    padding: 2.75rem 3.5rem 3.5rem;
     width: 100%;
     height: auto;
   }
