@@ -890,7 +890,7 @@ body.active::after {
 
 .slide-image {
   position: relative;
-  width: 83.5%;
+  width: 83%;
   height: auto;
   cursor: pointer;
   object-fit: contain;
@@ -900,7 +900,7 @@ body.active::after {
 .slider-btn {
   cursor: pointer;
   position: absolute;
-  top: 45.5%;
+  top: 47%;
   transform: translate(0, -50%);
   color: var(--clr-med-new);
   padding: 0.5rem 0.325rem 0.3rem;
@@ -2190,7 +2190,7 @@ li.tier--price {
 .sample-slider--image,
 .sample-slider--image-2 {
   position: relative;
-  width: 83.5%;
+  width: 83%;
   max-width: 480px;
   height: auto;
   margin: 0.75rem auto;
@@ -2201,7 +2201,7 @@ li.tier--price {
 .sample-slider--btn,
 .sample-slider--btn-2 {
   position: absolute;
-  top: 46%;
+  top: 49%;
   transform: translateY(-50%);
   cursor: pointer;
   color: var(--clr-med-new);
