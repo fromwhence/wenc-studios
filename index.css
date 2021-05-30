@@ -875,7 +875,7 @@ body.active::after {
   width: 100%;
   height: 100%;
   transition: transform 750ms, opacity 600ms;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   padding-bottom: 3.5rem;
   background-repeat: no-repeat;
   display: flex;
