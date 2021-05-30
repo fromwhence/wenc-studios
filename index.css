@@ -875,7 +875,8 @@ body.active::after {
   width: 100%;
   height: 100%;
   transition: transform 750ms, opacity 600ms;
-  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3.5rem;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -889,7 +890,7 @@ body.active::after {
 
 .slide-image {
   position: relative;
-  width: 85%;
+  width: 83.5%;
   height: auto;
   cursor: pointer;
   object-fit: contain;
@@ -899,7 +900,7 @@ body.active::after {
 .slider-btn {
   cursor: pointer;
   position: absolute;
-  top: 46.5%;
+  top: 45.5%;
   transform: translate(0, -50%);
   color: var(--clr-med-new);
   padding: 0.5rem 0.325rem 0.3rem;
@@ -968,13 +969,9 @@ body.active::after {
 }
 
 @media (min-width: 768px) {
-  .slide {
-    padding-top: 0rem;
-  }
-
   .slide-image {
     width: 67.5%;
-    margin-top: 0.25rem;
+    /* margin-top: 0.25rem; */
   }
 
   .slider-btn {
@@ -1008,13 +1005,13 @@ body.active::after {
     padding: 0;
   }
 
-  .slide {
-    padding-top: 0;
-  }
+  /* .slide {
+    padding-top: 1.5rem;
+  } */
 
   .slide-image {
     width: 70%;
-    margin-top: 0;
+    /* margin-top: 0; */
   }
 
   .slider-btn {
@@ -1914,7 +1911,7 @@ ul.file-format-list {
 
 /* Rates */
 .tier--container {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .tier--container.first {
@@ -2267,7 +2264,7 @@ li.tier--price {
 .sample-slider--nav-dots-2 {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -0.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
