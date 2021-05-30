@@ -969,6 +969,10 @@ body.active::after {
 }
 
 @media (min-width: 768px) {
+  .slide {
+    padding-top: 2rem;
+  }
+
   .slide-image {
     width: 67.5%;
     /* margin-top: 0.25rem; */
@@ -1979,13 +1983,13 @@ li.tier--price {
     padding-bottom: 0;
   }
 
-  .tier--container {
-    padding-bottom: 1rem;
-  }
-
-  .tier--container.last {
+  /* .tier--container {
     padding-bottom: 1.5rem;
-  }
+  } */
+
+  /* .tier--container.last {
+    padding-bottom: 1.5rem;
+  } */
 
   .tier--example-container {
     padding: 0;
