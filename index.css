@@ -1493,7 +1493,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 1.625rem;
+    padding-top: 1.75rem;
     padding-right: 4rem;
     padding-left: 1.5rem;
     padding-bottom: 2.75rem;
@@ -1528,8 +1528,7 @@ body.active::after {
   }
 
   .about {
-    /* padding: 0; */
-    padding-top: 5.5rem;
+    padding-top: 5.75rem;
     padding-right: 4.5rem;
     padding-bottom: 3.25rem;
   }
@@ -1554,8 +1553,8 @@ body.active::after {
   }
 
   .about {
-    padding-top: 5.5rem;
-    /* padding-left: 2rem; */
+    padding-top: 6.25rem;
+    padding-right: 5rem;
   }
 
   .contact {
@@ -1603,7 +1602,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 5.5rem;
+    padding-top: 5.75rem;
   }
 }
 
@@ -1618,7 +1617,7 @@ body.active::after {
   }
 
   .about {
-    padding: 5.5rem 1rem 4rem 0;
+    padding: 6rem 1rem 4rem 0;
   }
 }
 
@@ -1699,22 +1698,8 @@ body.active::after {
 @media (min-width: 1200px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 67% 30%;
-    column-gap: 3%;
-  }
-
-  .about-side-text {
-    padding: 0;
-    margin-top: 2rem;
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 1280px) {
-  .about-side-text {
-    padding: 0;
-    margin-right: 0.5rem;
-    margin-top: 2.25rem;
+    grid-template-columns: 65% 31.5%;
+    column-gap: 3.5%;
   }
 }
 
@@ -1723,12 +1708,6 @@ body.active::after {
     display: grid;
     grid-template-columns: 65% 30%;
     column-gap: 5%;
-  }
-
-  .about-side-text {
-    margin-right: 0;
-    margin-top: 2.125rem;
-    padding: 0;
   }
 }
 
@@ -1748,7 +1727,7 @@ body.active::after {
   }
 
   .about-side-text {
-    margin-top: 3.25rem;
+    margin-top: 2.5rem;
   }
 }
 
