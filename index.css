@@ -144,7 +144,7 @@ li {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1300px) {
   p,
   li,
   a {
@@ -1214,7 +1214,7 @@ body.active::after {
   .slider-btn {
     font-size: 2.375rem;
     padding: 0.25rem;
-    top: 48.25%;
+    top: 46%;
   }
 
   .slider-btn--right {
@@ -1263,7 +1263,6 @@ body.active::after {
   .slider-btn {
     font-size: 2.375rem;
     padding: 0.25rem;
-    top: 48.25%;
   }
 
   .slider-btn--right {
@@ -1356,7 +1355,7 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide-image {
-    width: 75%;
+    width: 73.5%;
   }
 
   .slider-btn {
@@ -1366,11 +1365,11 @@ body.active::after {
   }
 
   .slider-btn--right {
-    right: -1.5%;
+    right: -1.75%;
   }
 
   .slider-btn--left {
-    left: -1.5%;
+    left: -1.75%;
   }
 
   .expand-slider-icon {
@@ -1531,6 +1530,7 @@ body.active::after {
     padding-top: 5.75rem;
     padding-right: 4.5rem;
     padding-bottom: 3.25rem;
+    padding-left: 2.5rem;
   }
 }
 
@@ -1554,7 +1554,9 @@ body.active::after {
 
   .about {
     padding-top: 6.25rem;
-    padding-right: 5rem;
+    padding-right: 6rem;
+    padding-bottom: 3.5rem;
+    padding-left: 2rem;
   }
 
   .contact {
@@ -1564,7 +1566,7 @@ body.active::after {
 
 @media (min-width: 1366px) {
   .section-content-container {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
   }
 
@@ -1580,8 +1582,10 @@ body.active::after {
   }
 
   .about {
-    padding-top: 5.5rem;
-    padding-right: 4rem;
+    padding-top: 6.25rem;
+    padding-right: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 2rem;
   }
 
   .foooter-container {
@@ -1722,8 +1726,8 @@ body.active::after {
 @media (min-width: 1600px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 62.5% 31.5%;
-    column-gap: 6%;
+    grid-template-columns: 62% 31%;
+    column-gap: 7%;
   }
 
   .about-side-text {
