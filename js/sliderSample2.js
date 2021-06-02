@@ -22,7 +22,7 @@ const resizeSampleSliderHeight2 = function () {
     sampleSlider2.style.height = `${sampleImageHeight2 + 30}px`;
   } else {
     let sampleImageHeight2 = sampleSliderImages2[0].height;
-    sampleSlider2.style.height = `${sampleImageHeight2 + 30}px`;
+    sampleSlider2.style.height = `${sampleImageHeight2 + 40}px`;
   }
 };
 

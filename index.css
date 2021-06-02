@@ -2041,7 +2041,7 @@ li.tier--price {
     margin: 0 3.25rem;
   }
 
-  .tier--container.first {
+  /* .tier--container.first {
     padding-bottom: 0;
     margin-bottom: -1rem;
   }
@@ -2049,7 +2049,7 @@ li.tier--price {
   .tier--container.last {
     padding-bottom: 1rem;
     margin-bottom: 0;
-  }
+  } */
 
   .tier--description {
     grid-template-columns: 25% 70%;
@@ -2313,15 +2313,16 @@ li.tier--price {
     left: 3.75rem;
   }
 
-  .sample-slider--nav-dots {
-    bottom: 0.5rem;
+  .sample-slider--nav-dots,
+  .sample-slider--nav-dots-2 {
+    bottom: -0.25rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .sample-slider--image-static {
+  /* .sample-slider--image-static {
     margin-bottom: 0rem;
-  }
+  } */
 
   .sample-slider--image-static,
   .sample-slider--image,
