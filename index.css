@@ -1740,7 +1740,7 @@ body.active::after {
     grid-template-columns: 45% 45%;
     column-gap: 10%;
     margin-top: 0rem;
-    padding: 2rem;
+    padding: 2.125rem;
   }
 
   .services .side-by-side-text {
@@ -2409,7 +2409,7 @@ li.tier--price {
   }
 
   .rates .side-by-side-text {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
   }
 
   .sample-static-container.expand,
@@ -2569,7 +2569,7 @@ li.tier--price {
 
   .rates .side-by-side-text {
     margin: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 
