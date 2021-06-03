@@ -418,7 +418,7 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--clr-header-med);
-    font-size: var(--fs-small);
+    font-size: var(--fs-smaller);
     font-weight: var(--fw-med);
     padding: 0;
     padding-top: 0.125rem;
@@ -1181,6 +1181,7 @@ body.active::after {
 
   .slide {
     padding-top: 0;
+    padding-bottom: 2.5rem;
   }
 
   .slide-image {
@@ -1275,6 +1276,11 @@ body.active::after {
 }
 
 @media (min-width: 1440px) {
+  .slide {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+
   .slider-container.expand .slide-image {
     max-height: 84.5%;
     margin-top: -5.5%;
@@ -1503,7 +1509,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 5.75rem;
+    padding-top: 5rem;
     padding-right: 4.5rem;
     padding-bottom: 3.5rem;
     padding-left: 2.5rem;
@@ -1529,7 +1535,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 6.25rem;
+    padding-top: 5rem;
     padding-right: 6rem;
     padding-bottom: 3.5rem;
     padding-left: 2rem;
@@ -1554,7 +1560,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 6.25rem;
+    padding-top: 5rem;
     padding-right: 3.75rem;
     padding-bottom: 3.5rem;
     padding-left: 2rem;
@@ -1578,7 +1584,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 5.75rem;
+    padding-top: 5.25rem;
   }
 }
 
@@ -1593,7 +1599,7 @@ body.active::after {
   }
 
   .about {
-    padding-top: 6rem;
+    padding-top: 5.5rem;
     padding-right: 3.5rem;
     padding-bottom: 5rem;
     padding-left: 3rem;
