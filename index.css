@@ -175,6 +175,7 @@ strong {
 button {
   background-color: none;
   cursor: pointer;
+  font-family: inherit;
 }
 
 /* Header */
@@ -939,8 +940,16 @@ body.active::after {
 }
 
 .art-type-button {
+  color: var(--clr-header-wide);
   padding: 0.5rem 0.5rem;
   border-radius: 5px;
+  background-color: var(--clr-light-form);
+  border: 1px solid var(--clr-med-lighter);
+}
+
+.art-type-button.active {
+  background-color: #fff;
+  color: var(--clr-reg-dark);
 }
 
 @media (min-width: 600px) {
