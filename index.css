@@ -286,26 +286,15 @@ button {
     height: 55px;
   }
 
-  .business-name-container--sml .business-name {
-    font-size: 1.325rem;
-    color: rgba(255, 255, 255, 0.8);
-    vertical-align: center;
-  }
-
-  .business-name-container--sml .tagline {
-    font-size: 1rem;
-    vertical-align: center;
-    color: rgba(255, 255, 255, 0.95);
-  }
-
   strong {
     color: var(--clr-header-med);
     font-weight: 600;
   }
 
   .business-name-container--sml .business-name {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--clr-reg-dark);
+    vertical-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -377,7 +366,6 @@ button {
   }
 
   .business-name-container--sml .business-name {
-    font-size: 1.6rem;
     color: var(--clr-reg-dark);
     display: flex;
     flex-direction: row;
@@ -386,7 +374,6 @@ button {
   }
 
   .business-name-container--sml .tagline {
-    font-size: 1.1rem;
     vertical-align: center;
     color: var(--clr-business-name-bg-darker);
     margin: 0;
@@ -469,7 +456,7 @@ button {
   }
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .business-name-container--sml .business-name {
     font-size: 1.65rem;
   }
@@ -477,7 +464,7 @@ button {
   .business-name-container--sml .tagline {
     font-size: 1.15rem;
   }
-}
+} */
 
 /* Nav menu */
 .side-nav {
@@ -1626,7 +1613,7 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .section-header {
-    font-size: 1.675rem;
+    font-size: 1.6rem;
     padding-bottom: 0.875rem;
     color: var(--clr-header-med);
   }
