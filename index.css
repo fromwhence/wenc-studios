@@ -932,24 +932,39 @@ body.active::after {
   background-color: var(--clr-header-med);
 }
 
+/* 2-D 3-D Buttons */
+
 .art-type-toggle-container {
   display: grid;
+  width: 280px;
   grid-template-columns: 1fr 1fr;
-  column-gap: 0.75rem;
-  margin: 0 3rem 1.5rem;
+  /* column-gap: 0.75rem; */
+  margin: 0 auto 1.5rem;
 }
 
 .art-type-button {
-  color: var(--clr-header-wide);
+  color: var(--clr-header-wide-darker);
   padding: 0.5rem 0.5rem;
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: var(--clr-light-form);
-  border: 1px solid var(--clr-med-lighter);
+  border: 1px solid var(--clr-header-med-light);
+  font-size: var(--fs-smaller);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.art-type-button:first-of-type {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.art-type-button:last-of-type {
+  border-left-width: 0px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .art-type-button.active {
   background-color: #fff;
   color: var(--clr-reg-dark);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 600px) {
