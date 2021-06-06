@@ -933,10 +933,9 @@ body.active::after {
 }
 
 /* 2-D 3-D Buttons */
-
 .art-type-toggle-container {
   display: grid;
-  width: 280px;
+  width: 270px;
   grid-template-columns: 1fr 1fr;
   /* column-gap: 0.75rem; */
   margin: 0 auto 1.5rem;
@@ -944,12 +943,12 @@ body.active::after {
 
 .art-type-button {
   color: var(--clr-header-wide-darker);
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem;
   border-radius: 0px;
   background-color: var(--clr-light-form);
   border: 1px solid var(--clr-header-med-light);
   font-size: var(--fs-smaller);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); */
 }
 
 .art-type-button:first-of-type {
@@ -964,7 +963,6 @@ body.active::after {
 .art-type-button.active {
   background-color: #fff;
   color: var(--clr-reg-dark);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 600px) {
