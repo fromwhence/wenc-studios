@@ -1768,12 +1768,13 @@ body.active::after {
 }
 
 .full-detail-btn {
+  font-size: var(--fs-smaller);
   color: rgba(255, 255, 255, 0.5);
   padding: 0.5rem 0.75rem;
   background-color: rgba(47, 49, 49, 85%);
   border: none;
   border-radius: 0;
-  width: 6rem;
+  width: 6.5rem;
 }
 
 .full-detail-btn:hover,
