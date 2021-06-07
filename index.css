@@ -1724,18 +1724,92 @@ body.active::after {
 }
 
 /* Services section */
-.studio-image {
-  margin: 1.25rem auto;
-  border: 1px solid var(--clr-med-lighter);
-  width: 100%;
-  height: auto;
-  margin: 0.75 auto 0.5rem;
-  object-fit: contain;
-}
-
 .services-list li {
   padding-left: 0.5rem;
   margin-left: 1.25rem;
+}
+
+/* Artwork detail image */
+.artwork-detail-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--clr-med-lighter);
+  margin: 1.375rem auto;
+}
+
+.artwork-detail-image {
+  margin: 0 auto;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.artwork-detail-image.detail {
+  animation-name: image-zoom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.artwork-detail-image.zoom-out {
+  animation-name: image-zoom-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes image-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(3);
+  }
+}
+
+@keyframes image-zoom-out {
+  0% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.artwork-detail-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* padding-right: 2px; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.full-detail-btn {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(47, 49, 49, 95%);
+  border: none;
+  border-radius: 0;
+  width: 6rem;
+}
+
+.full-detail-btn:hover,
+.full-detail-btn.active {
+  color: #fff;
+  background-color: rgba(47, 49, 49, 85%);
+}
+
+@media (min-width: 768px) {
+  .artwork-detail-container {
+    width: 85%;
+  }
+
+  .full-detail-btn {
+    font-size: var(--fs-small);
+    width: 7rem;
+  }
 }
 
 /* Services text to left, image to right at wider screens */
@@ -1752,13 +1826,11 @@ body.active::after {
     margin-bottom: 2.25rem;
   }
 
-  .studio-image {
-    object-fit: cover;
-    width: 100%;
-    height: 450px;
+  .artwork-detail-image {
+    /* width: 100%; */
     /* height: auto; */
     margin-top: -2.25rem;
-    border: 1px solid var(--clr-med-lighter);
+    /* border: 1px solid var(--clr-med-lighter); */
   }
 
   .side-by-side-text {
