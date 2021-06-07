@@ -1775,6 +1775,7 @@ body.active::after {
   border: none;
   border-radius: 0;
   width: 6.5rem;
+  transition: color 200ms;
 }
 
 .full-detail-btn:hover,
