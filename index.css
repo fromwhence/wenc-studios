@@ -1733,14 +1733,14 @@ body.active::after {
 .artwork-detail-container {
   position: relative;
   width: 100%;
+  height: auto;
   overflow: hidden;
   border: 1px solid var(--clr-med-lighter);
   margin: 1.375rem auto;
 }
 
 .artwork-detail-image {
-  margin: 0 auto;
-  background-color: #fff;
+  /* margin: 0 auto; */
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -1756,6 +1756,33 @@ body.active::after {
   animation-name: image-zoom-out;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+.artwork-detail-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.full-detail-btn {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(47, 49, 49, 85%);
+  border: none;
+  border-radius: 0;
+  width: 6rem;
+}
+
+.full-detail-btn:hover,
+.full-detail-btn.active {
+  color: #fff;
+}
+
+.full-detail-btn.active {
+  pointer-events: none;
 }
 
 @keyframes image-zoom {
@@ -1776,39 +1803,31 @@ body.active::after {
   }
 }
 
-.artwork-detail-buttons {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  /* padding-right: 2px; */
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.full-detail-btn {
-  color: rgba(255, 255, 255, 0.5);
-  padding: 0.5rem 0.75rem;
-  background-color: rgba(47, 49, 49, 95%);
-  border: none;
-  border-radius: 0;
-  width: 6rem;
-}
-
-.full-detail-btn:hover,
-.full-detail-btn.active {
-  color: #fff;
-  background-color: rgba(47, 49, 49, 85%);
-}
-
 @media (min-width: 768px) {
   .artwork-detail-container {
-    width: 85%;
+    width: 75%;
+    margin: 1.675rem auto;
   }
 
   .full-detail-btn {
     font-size: var(--fs-small);
     width: 7rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .artwork-detail-container {
+    margin: 1.25rem auto auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .artwork-detail-container {
+    margin: 1.5rem auto auto;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1823,14 +1842,7 @@ body.active::after {
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
-    margin-bottom: 2.25rem;
-  }
-
-  .artwork-detail-image {
-    /* width: 100%; */
-    /* height: auto; */
-    margin-top: -2.25rem;
-    /* border: 1px solid var(--clr-med-lighter); */
+    margin-bottom: 3rem;
   }
 
   .side-by-side-text {
@@ -1857,6 +1869,12 @@ body.active::after {
 }
 
 @media (min-width: 1200px) {
+  .text-side-image-container {
+    grid-template-columns: 47.5% 40%;
+    column-gap: 12.5%;
+    margin-bottom: 3.5rem;
+  }
+
   .services .side-by-side-text {
     margin-top: 2rem;
   }
