@@ -803,7 +803,7 @@ body.active::after {
   width: 100%;
   max-width: 1000px;
   overflow: hidden;
-  margin: 0.25rem auto;
+  margin: 0.575rem auto 0;
   /* border: 1px solid var(--clr-med-lighter); */
 }
 
@@ -902,12 +902,16 @@ body.active::after {
   align-items: flex-end;
 }
 
+.artist-title a {
+  font-size: inherit;
+}
+
 .is-hidden {
   opacity: 0;
 }
 
 .dots {
-  margin: 0.75rem auto 1.25rem;
+  margin: 0.75rem auto 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
