@@ -399,7 +399,6 @@ button {
 
   li.top-nav-item {
     padding-bottom: 0;
-    border-bottom: 2px solid #fff;
   }
 
   .top-nav-item a {
@@ -410,6 +409,7 @@ button {
     font-size: var(--fs-smaller);
     font-weight: var(--fw-med);
     padding: 0.5rem;
+    padding-top: 0.6rem;
     margin: 0;
     margin-right: 1.5rem;
     cursor: pointer;
@@ -417,11 +417,11 @@ button {
   }
 
   li.top-nav-item:hover a {
-    color: var(--clr-business-name-bg-darkest);
+    color: var(--clr-reg-dark);
   }
 
   .top-nav-item.active a {
-    color: var(--clr-business-name-bg-darkest);
+    color: var(--clr-reg-dark);
   }
 
   .contactNavItem a {
@@ -447,7 +447,7 @@ button {
 
 @media (min-width: 1366px) {
   .top-nav-item a {
-    margin-right: 2rem;
+    margin-right: 1.75rem;
   }
 
   .contactNavItem a {
@@ -1874,7 +1874,7 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .text-side-image-container {
-    grid-template-columns: 47.5% 40%;
+    grid-template-columns: 46% 41.5%;
     column-gap: 12.5%;
     margin-bottom: 3.5rem;
   }
