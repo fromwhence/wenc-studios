@@ -1120,8 +1120,8 @@ body.active::after {
   .slider-container.expand .slide-image {
     width: 100%;
     height: auto;
-    max-height: 83.5%;
-    margin-top: -6%;
+    max-height: 86.5%;
+    margin-top: -6.5%;
     cursor: default;
   }
 
@@ -1146,13 +1146,14 @@ body.active::after {
   }
 
   .slider-container.expand .artist-title {
-    bottom: 8.5%;
-    font-size: var(--fs-smaller);
+    /* bottom: 8.5%;
+    font-size: var(--fs-smaller); */
+    display: none;
   }
 
   .slider-container.expand .dots {
     position: absolute;
-    bottom: 1.5%;
+    bottom: 2%;
     height: 2rem;
     left: 50%;
     transform: translate(-50%, 0);
@@ -1305,7 +1306,7 @@ body.active::after {
   }
 
   .slider-container.expand .slide-image {
-    max-height: 86%;
+    max-height: 87.5%;
     margin-top: -3.5%;
     cursor: default;
   }
