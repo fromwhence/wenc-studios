@@ -1121,7 +1121,7 @@ body.active::after {
     width: 100%;
     height: auto;
     max-height: 86.5%;
-    margin-top: -6.5%;
+    margin-top: -5%;
     cursor: default;
   }
 
