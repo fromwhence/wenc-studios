@@ -1305,8 +1305,8 @@ body.active::after {
   }
 
   .slider-container.expand .slide-image {
-    max-height: 85%;
-    margin-top: -5%;
+    max-height: 86%;
+    margin-top: -3.5%;
     cursor: default;
   }
 
