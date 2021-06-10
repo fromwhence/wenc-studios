@@ -1286,8 +1286,14 @@ body.active::after {
   }
 
   /* Expanded slider */
-  .slider-container.expand .artist-title {
+  /* .slider-container.expand .artist-title {
     font-size: var(--fs-small);
+  } */
+
+  .slider-container.expand .slide-image {
+    max-height: 86%;
+    margin-top: -2.5%;
+    cursor: default;
   }
 
   .slider-container.expand .slider-btn--left {
