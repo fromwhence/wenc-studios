@@ -1630,9 +1630,9 @@ body.active::after {
 
   .about {
     padding-top: 5.5rem;
-    padding-right: 3.5rem;
+    padding-right: 0;
     padding-bottom: 5rem;
-    padding-left: 3rem;
+    padding-left: 1rem;
   }
 }
 
@@ -1728,7 +1728,7 @@ body.active::after {
   }
 
   .about-side-text {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 }
 
