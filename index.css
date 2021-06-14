@@ -1723,8 +1723,8 @@ body.active::after {
 @media (min-width: 1600px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 62.5% 30%;
-    column-gap: 7.5%;
+    grid-template-columns: 62.5% 31%;
+    column-gap: 6.5%;
   }
 
   .about-side-text {
