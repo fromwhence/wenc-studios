@@ -976,11 +976,11 @@ body.active::after {
   }
 
   .slider-btn--right {
-    right: 1rem;
+    right: 0.75rem;
   }
 
   .slider-btn--left {
-    left: 1rem;
+    left: 0.75rem;
   }
 }
 
