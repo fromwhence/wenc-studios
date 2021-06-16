@@ -974,6 +974,14 @@ body.active::after {
   .slider-btn {
     font-size: 2.125rem;
   }
+
+  .slider-btn--right {
+    right: 1rem;
+  }
+
+  .slider-btn--left {
+    left: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
