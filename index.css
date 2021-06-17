@@ -813,7 +813,7 @@ body.active::after {
 /* Default slider heights on page load */
 @media (min-width: 768px) {
   .slider {
-    height: 700px;
+    height: 680px;
   }
 }
 
