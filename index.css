@@ -986,11 +986,11 @@ body.active::after {
 
 @media (min-width: 768px) {
   .slide {
-    padding-top: 2rem;
+    padding-top: 1.75rem;
   }
 
   .slide-image {
-    width: 67.5%;
+    width: 66.5%;
   }
 
   .slider-btn {
