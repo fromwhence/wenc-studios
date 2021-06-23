@@ -1134,11 +1134,13 @@ body.active::after {
   }
 
   .slider-container.expand .slide-image {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     max-height: 86.5%;
     margin-top: -5%;
     cursor: default;
+    pointer-events: none;
+    z-index: 1000;
   }
 
   .slider-container.expand .expand-slider-icon {
@@ -1309,7 +1311,6 @@ body.active::after {
   .slider-container.expand .slide-image {
     max-height: 86%;
     margin-top: -2.5%;
-    cursor: default;
   }
 
   .slider-container.expand .slider-btn--left {
@@ -1330,7 +1331,6 @@ body.active::after {
   .slider-container.expand .slide-image {
     max-height: 86.5%;
     margin-top: -3.5%;
-    cursor: default;
   }
 
   .slider-btn {
@@ -1747,7 +1747,7 @@ body.active::after {
 @media (min-width: 1600px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 62.5% 31%;
+    grid-template-columns: 63.5% 30%;
     column-gap: 6.5%;
   }
 
@@ -1773,8 +1773,9 @@ body.active::after {
 }
 
 .artwork-detail-image {
-  /* margin: 0 auto; */
-  width: 100%;
+  margin: 0 auto;
+  /* width: 100%; */
+  max-width: 100%;
   height: auto;
   overflow: hidden;
 }
@@ -1840,7 +1841,7 @@ body.active::after {
 
 @media (min-width: 768px) {
   .artwork-detail-container {
-    width: 75%;
+    width: 72.5%;
     margin: 1.675rem auto;
   }
 
@@ -1861,7 +1862,7 @@ body.active::after {
 @media (min-width: 1200px) {
   .artwork-detail-container {
     margin: 1.5rem auto auto;
-    width: 100%;
+    width: 85%;
     height: auto;
   }
 }
@@ -1905,8 +1906,8 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .text-side-image-container {
-    grid-template-columns: 46% 41.5%;
-    column-gap: 12.5%;
+    grid-template-columns: 46% 41%;
+    column-gap: 13%;
     margin-bottom: 3.5rem;
   }
 
