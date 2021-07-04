@@ -97,6 +97,10 @@ a:hover {
   text-decoration: none;
 }
 
+business-name-link {
+  display: block;
+}
+
 :focus {
   outline: 2px solid var(--clr-header-wide);
   outline-offset: -2px;
