@@ -2258,6 +2258,7 @@ li.tier--price {
 }
 
 .sample-slider--image-static,
+.sample-slider--image-static-2,
 .sample-slider--image,
 .sample-slider--image-2 {
   position: relative;
@@ -2362,12 +2363,14 @@ li.tier--price {
 }
 
 .static-close-icon,
+.static-close-icon-2,
 .sample-close-icon,
 .sample-close-icon-2 {
   display: none;
 }
 
 .static-expand-icon,
+.static-expand-icon-2,
 .sample-expand-icon,
 .sample-expand-icon-2 {
   display: none;
@@ -2375,6 +2378,7 @@ li.tier--price {
 
 @media (min-width: 768px) {
   .sample-slider--image-static,
+  .sample-slider--image-static-2,
   .sample-slider--image,
   .sample-slider--image-2 {
     width: 60%;
@@ -2405,6 +2409,7 @@ li.tier--price {
 
 @media (min-width: 1024px) {
   .sample-slider--image-static,
+  .sample-slider--image-static-2,
   .sample-slider--image,
   .sample-slider--image-2 {
     width: 75%;
@@ -2484,9 +2489,10 @@ li.tier--price {
 
 @media (min-width: 1200px) {
   .sample-slider--image-static,
+  .sample-slider--image-static-2,
   .sample-slider--image,
   .sample-slider--image-2 {
-    width: 75%;
+    width: 72.5%;
     padding: 0 0 0.5rem;
   }
 
@@ -2511,6 +2517,7 @@ li.tier--price {
   }
 
   .static-expand-icon,
+  .static-expand-icon-2,
   .sample-expand-icon,
   .sample-expand-icon-2 {
     display: inline-block;
@@ -2527,19 +2534,19 @@ li.tier--price {
   }
 
   .static-expand-icon:hover,
-  .sample-expand-icon:hover,
-  .sample-expand-icon-2:hover {
+  .sample-expand-icon:hover {
     color: var(--clr-header-wide);
   }
 
   /* Fullscreen sample view */
   .sample-static-container.expand .is-invisible,
-  .sample-slider-container.expand .is-invisible,
-  .sample-slider-container-2.expand .is-invisible {
+  .sample-static-container-2.expand .is-invisible,
+  .sample-slider-container.expand .is-invisible {
     opacity: 1;
   }
 
   .static-close-icon,
+  .static-close-icon-2,
   .sample-close-icon,
   .sample-close-icon-2 {
     display: none;
@@ -2554,12 +2561,14 @@ li.tier--price {
   }
 
   .static-close-icon.active,
+  .static-close-icon-2.active,
   .sample-close-icon.active,
   .sample-close-icon-2.active {
     display: block;
   }
 
   .static-close-icon.active:hover,
+  .static-close-icon-2.active:hover,
   .sample-close-icon.active:hover,
   .sample-close-icon.active-2:hover {
     color: var(--clr-header-wide);
@@ -2570,6 +2579,7 @@ li.tier--price {
   }
 
   .sample-static-container.expand,
+  .sample-static-container-2.expand,
   .sample-slider-container.expand,
   .sample-slider-container-2.expand {
     position: fixed;
@@ -2585,7 +2595,8 @@ li.tier--price {
   }
 
   /* Tier 1 expanded */
-  .sample-static-container.expand .sample-slider--static {
+  .sample-static-container.expand .sample-slider--static,
+  .sample-static-container-2.expand .sample-slider--static {
     position: relative;
     height: auto;
     width: 100%;
@@ -2599,7 +2610,8 @@ li.tier--price {
     background-color: white;
   }
 
-  .sample-static-container.expand .sample-slider--image-static {
+  .sample-static-container.expand .sample-slider--image-static,
+  .sample-static-container-2.expand .sample-slider--image-static-2 {
     width: 70.5%;
     height: auto;
     max-width: 1200px;
@@ -2610,7 +2622,8 @@ li.tier--price {
     display: flex;
   }
 
-  .sample-static-container.expand .image-description {
+  .sample-static-container.expand .image-description,
+  .sample-static-container-2.expand .image-description {
     width: 100%;
     height: 2.5rem;
     margin: auto;

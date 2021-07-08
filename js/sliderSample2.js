@@ -133,7 +133,7 @@ prevSampleButton2();
 const expandIcon2 = document.querySelector('.sample-expand-icon-2');
 const closeFullScreenIcon2 = document.querySelector('.sample-close-icon-2');
 const sampleSliderContainerExpanded2 = document.querySelector(
-  '.sample-slider-container-2'
+  '.sample-static-container-2'
 );
 
 // sampleSliderImages2.forEach(sampleSlide2 => {

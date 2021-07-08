@@ -129,14 +129,24 @@ nextSampleButton();
 prevSampleButton();
 dotIndicatorsTracking();
 
-// Fullscreen tier 1 view
+// Fullscreen tier 1 view and tier 3 static
 const expandIconStatic = document.querySelector('.static-expand-icon');
+const expandIconStatic2 = document.querySelector('.static-expand-icon-2');
 const closeFullScreenIconStatic = document.querySelector('.static-close-icon');
+const closeFullScreenIconStatic2 = document.querySelector(
+  '.static-close-icon-2'
+);
 const sampleStaticContainer = document.querySelector(
   '.sample-static-container'
 );
+const sampleStaticContainer2 = document.querySelector(
+  '.sample-static-container-2'
+);
 const sampleStaticImage = document.querySelector(
   '.sample-slider--image-static'
+);
+const sampleStaticImage2 = document.querySelector(
+  '.sample-slider--image-static-2'
 );
 
 // sampleStaticImage.addEventListener('click', () => {
@@ -157,6 +167,21 @@ closeFullScreenIconStatic.addEventListener('click', () => {
   closeFullScreenIconStatic.classList.remove('active');
   expandIconStatic.style.display = 'inline-block';
   sampleStaticContainer.classList.remove('expand');
+  resizeSampleSliderHeight();
+});
+
+// Tier 3 static version
+expandIconStatic2.addEventListener('click', () => {
+  closeFullScreenIconStatic2.classList.add('active');
+  expandIconStatic2.style.display = 'none';
+  sampleStaticContainer2.classList.add('expand');
+  resizeSampleSliderHeight();
+});
+
+closeFullScreenIconStatic2.addEventListener('click', () => {
+  closeFullScreenIconStatic2.classList.remove('active');
+  expandIconStatic2.style.display = 'inline-block';
+  sampleStaticContainer2.classList.remove('expand');
   resizeSampleSliderHeight();
 });
 
