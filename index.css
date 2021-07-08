@@ -936,6 +936,10 @@ body.active::after {
   transition: all 250ms;
 }
 
+.dots-dot:hover {
+  background-color: var(--clr-header-med);
+}
+
 .dots-dot--active {
   background-color: var(--clr-header-med);
 }
@@ -2357,6 +2361,11 @@ li.tier--price {
   transition: all 250ms;
 }
 
+.sample-slider--nav-dot:hover,
+.sample-slider--nav-dot-2:hover {
+  background-color: var(--clr-header-med);
+}
+
 .sample-slider--nav-dot.current-slide,
 .sample-slider--nav-dot-2.current-slide-2 {
   background-color: var(--clr-header-med);
@@ -2534,6 +2543,7 @@ li.tier--price {
   }
 
   .static-expand-icon:hover,
+  .static-expand-icon-2:hover,
   .sample-expand-icon:hover {
     color: var(--clr-header-wide);
   }
