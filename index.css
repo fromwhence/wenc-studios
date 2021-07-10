@@ -1871,7 +1871,7 @@ body.active::after {
 @media (min-width: 1200px) {
   .artwork-detail-container {
     margin: 1.5rem auto auto;
-    width: 85%;
+    width: 87.5%;
     height: auto;
   }
 }
@@ -2622,7 +2622,7 @@ li.tier--price {
 
   .sample-static-container.expand .sample-slider--image-static,
   .sample-static-container-2.expand .sample-slider--image-static-2 {
-    width: 70.5%;
+    width: 70%;
     height: auto;
     max-width: 1200px;
     margin: auto;
@@ -2630,6 +2630,10 @@ li.tier--price {
     cursor: auto;
     overflow: visible;
     display: flex;
+  }
+
+  .sample-static-container-2.expand .sample-slider--image-static-2 {
+    width: 61.5%;
   }
 
   .sample-static-container.expand .image-description,
@@ -2732,7 +2736,7 @@ li.tier--price {
   .sample-slider--image-static,
   .sample-slider--image,
   .sample-slider--image-2 {
-    width: 72.5%;
+    width: 70%;
     height: auto;
   }
 
