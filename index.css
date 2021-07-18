@@ -1136,7 +1136,7 @@ body.active::after {
   .slider-container.expand .slide {
     padding-bottom: 0;
     width: 100%;
-    margin-top: -4.5%;
+    margin-top: -5%;
   }
 
   .slider-container.expand .slide-image {
@@ -1209,7 +1209,7 @@ body.active::after {
 @media (min-width: 1024px) and (orientation: portrait) {
   .slider-container.expand .slide-image {
     max-width: 82.5%;
-    margin-top: -9%;
+    margin-top: -11%;
   }
 
   .slider-container.expand .slider-btn--left {
@@ -1374,11 +1374,11 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 
   .slide-image {
-    width: 70%;
+    width: 68.5%;
     /* height: 100%; */
   }
 
@@ -1410,9 +1410,9 @@ body.active::after {
     right: 12.5%;
   }
 
-  .slider-container.expand .dots {
+  /* .slider-container.expand .dots {
     bottom: 5%;
-  }
+  } */
 }
 
 /* Sections */
