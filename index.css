@@ -3630,8 +3630,8 @@ input {
 @media (min-width: 1366px) {
   .footer-container {
     font-size: var(--fs-smaller);
-    padding-right: 3.25rem;
-    padding-left: 3.25rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 
   .scroll-arrow {
