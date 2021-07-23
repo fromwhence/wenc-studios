@@ -1331,7 +1331,7 @@ body.active::after {
   }
 
   .slider-container.expand .slide {
-    margin-top: -2%;
+    margin-top: -2.5%;
   }
 
   .slider-container.expand .slide-image {
