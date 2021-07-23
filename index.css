@@ -285,6 +285,10 @@ button {
     display: flex;
   }
 
+  .business-name--link {
+    text-decoration: none;
+  }
+
   .header-container {
     width: 100%;
   }
@@ -338,10 +342,6 @@ button {
     display: none;
   }
 
-  .business-name-container--sml {
-    display: flex;
-  }
-
   .header-container {
     width: 100%;
     position: fixed;
@@ -367,15 +367,6 @@ button {
     top: 0;
     background-color: white;
     border-bottom: none;
-  }
-
-  .business-name-container--sml {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1.1rem;
-    height: auto;
   }
 
   strong {
@@ -1102,7 +1093,7 @@ body.active::after {
     background: white;
     padding: 0;
     overflow: visible;
-    z-index: 1000;
+    z-index: 1;
   }
 
   .slider-container--expanded .expand {
