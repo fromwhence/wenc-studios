@@ -1972,6 +1972,10 @@ ul.file-format-list {
   }
 }
 
+.file-type-heading {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .file .section-paragraph--rates {
     padding-left: 0;
@@ -1982,14 +1986,24 @@ ul.file-format-list {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 auto;
+  }
+
+  .file-type-heading {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--clr-business-name-bg);
+    padding-bottom: 0.5rem;
+  }
+
+  .file-format-list li {
+    padding-bottom: 0.375rem;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .section-header--rates {
     border-bottom: none;
-    padding-bottom: 0.825rem;
+    padding-bottom: 1.5rem;
     margin-bottom: 0;
   }
 }
@@ -2012,10 +2026,6 @@ ul.file-format-list {
   padding-bottom: 1.25rem;
 }
 
-.tier--container.first {
-  padding-bottom: 0.75rem;
-}
-
 .tier--container.last {
   padding-bottom: 2rem;
 }
@@ -2028,6 +2038,11 @@ ul.file-format-list {
   padding: 1.375rem 0 0;
   margin-right: 1.625rem;
   margin-left: 1.625rem;
+}
+
+.tier--container.first {
+  padding-bottom: 0.75rem;
+  border: none;
 }
 
 .tier--subheader {
@@ -2113,10 +2128,12 @@ li.tier--price {
 @media (min-width: 1024px) {
   .file-format-text-container {
     display: grid;
-    grid-template-columns: 45% 45%;
-    column-gap: 10%;
-    padding: 0.275rem 0 0.5rem;
-    margin: 0 3.25rem;
+    grid-template-columns: 50% 38%;
+    column-gap: 12%;
+    padding: 2rem 2.125rem 2.25rem;
+    margin: 0 3.25rem 0.75rem;
+    background-color: var(--clr-light-form);
+    border: 1px solid var(--clr-med-lighter);
   }
 
   ul.file-format-list {
