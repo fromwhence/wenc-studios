@@ -769,7 +769,7 @@ body.active::after {
 /* About and Rates sections and sliders */
 .about {
   padding-top: 1.125rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.25rem;
 }
 
 .about-text {
@@ -782,6 +782,26 @@ body.active::after {
 
 .about-header {
   display: none;
+}
+
+.desktop-text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-text {
+    display: none;
+  }
+
+  .desktop-text {
+    display: block;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1707,7 +1727,7 @@ body.active::after {
 
   .about-side-text {
     padding: 0;
-    margin-top: 1.5rem;
+    margin-top: 0;
   }
 }
 
@@ -1716,6 +1736,10 @@ body.active::after {
     display: grid;
     grid-template-columns: 65% 31.5%;
     column-gap: 3.5%;
+  }
+
+  .about-side-text {
+    margin-top: 1.5rem;
   }
 }
 
