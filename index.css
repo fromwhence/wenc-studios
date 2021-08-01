@@ -3189,20 +3189,29 @@ input {
   text-align: center;
 }
 
+.left-aligned {
+  text-align: left;
+}
+
 .contact-details-sub-container {
   margin: 0.325rem auto 0.5rem;
   padding-bottom: 0.75rem;
 }
 
 .contact-details-sub-container:first-of-type {
+  margin-top: 1rem;
   margin-bottom: 0.675rem;
+}
+
+.contact-details-sub-container.contact-details-sub-container--hours {
+  margin-bottom: 0;
 }
 
 .contact-sub-header {
   display: block;
   padding: 0.75rem 0 0.75rem;
   margin: 0 auto 0.75rem;
-  width: 40%;
+  width: 45%;
   text-align: center;
   border-bottom: 1px solid var(--clr-med-lighter);
 }
@@ -3260,6 +3269,7 @@ input {
   max-width: 450px;
   margin: 0.75rem auto 0;
   padding: 0 1.625rem 1.5rem;
+  text-align: center;
 }
 
 /* Basic contact form */
@@ -3377,6 +3387,7 @@ input {
 
   .google-map--responsive {
     width: 80%;
+    margin: 1rem auto 2rem;
   }
 
   .contact-sub-header {
@@ -3438,7 +3449,7 @@ input {
 
   .google-map--responsive {
     width: 95%;
-    margin: 0;
+    margin-left: 0;
   }
 
   .contact-details {
@@ -3456,13 +3467,16 @@ input {
 
   .contact-sub-header {
     text-align: left;
-    border: none;
-    margin: 0;
+    margin-left: 0;
+    width: 15rem;
   }
 
   .contact-sub-header--contact-form {
-    width: 11.5rem;
-    margin: 0;
+    width: 100%;
+  }
+
+  .section-paragraph.left-aligned {
+    text-align: left;
   }
 
   .text-contact-form-container {
