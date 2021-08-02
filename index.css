@@ -100,7 +100,6 @@ a:active {
 }
 
 .invisible-anchor-mobile {
-  display: block;
   height: 1px;
   width: 1px;
 }
