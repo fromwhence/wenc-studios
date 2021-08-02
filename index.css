@@ -99,7 +99,7 @@ a:active {
   text-decoration: none;
 }
 
-div.invisible-anchor {
+div.invisible-anchor-mobile {
   height: 0;
   width: 0;
 }
@@ -3618,7 +3618,7 @@ input {
   cursor: pointer;
 }
 
-.footer-icon {
+a.footer-icon {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.75rem;
   padding: 0;
