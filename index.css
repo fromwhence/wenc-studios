@@ -101,8 +101,8 @@ a:active {
 
 .invisible-anchor-mobile {
   display: block;
-  height: 0;
-  width: 0;
+  height: 1px;
+  width: 1px;
 }
 
 business-name-link {
