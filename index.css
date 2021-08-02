@@ -88,12 +88,14 @@ img {
   max-width: 100%;
 }
 
-a {
+a,
+a:visited {
   color: var(--clr-reg-dark);
   font-size: inherit;
 }
 
-a:hover {
+a:hover,
+a:active {
   text-decoration: none;
 }
 
@@ -1117,7 +1119,7 @@ body.active::after {
     background: white;
     padding: 0;
     overflow: visible;
-    z-index: 1;
+    z-index: 0;
   }
 
   .slider-container--expanded .expand {
