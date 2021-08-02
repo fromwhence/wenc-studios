@@ -100,13 +100,22 @@ a:active {
   text-decoration: none;
 }
 
-.invisible-anchor-mobile {
-  height: 1px;
-  width: 1px;
+.business-name-link {
+  display: inline-block;
 }
 
-business-name-link {
-  display: block;
+.desktop-link {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .desktop-link {
+    display: inline-block;
+  }
+
+  .mobile-link {
+    display: none;
+  }
 }
 
 :focus {
