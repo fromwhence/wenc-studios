@@ -570,7 +570,7 @@ body.active::after {
   }
 
   .nav-list {
-    margin-top: 2.5rem;
+    margin-top: 2.75rem;
   }
 
   .nav-item {
@@ -581,7 +581,7 @@ body.active::after {
   }
 
   .nav-item a {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     padding: 0.5rem 0;
   }
 }
@@ -2528,7 +2528,7 @@ li.tier--price {
   }
 
   .section-subheader.payment-methods {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 
   .rates .side-by-side-text {
@@ -3623,7 +3623,7 @@ input {
   font-size: var(--fs-smallest);
   color: rgba(255, 255, 255, 0.9);
   background-color: var(--clr-business-name-bg-darker);
-  padding: 1.625rem;
+  padding: 1.625rem 1.5rem 1.625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
