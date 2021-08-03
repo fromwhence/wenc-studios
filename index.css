@@ -3475,7 +3475,7 @@ input {
   }
 
   .google-map--responsive {
-    width: 95%;
+    width: 100%;
     margin-left: 0;
   }
 
@@ -3496,6 +3496,7 @@ input {
     text-align: left;
     margin-left: 0;
     width: 15rem;
+    width: 100%;
   }
 
   .contact-sub-header--contact-form {
