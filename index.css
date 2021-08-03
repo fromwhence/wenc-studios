@@ -493,7 +493,7 @@ body.active::after {
   width: 100%;
   height: 100%;
   background-color: var(--clr-reg-dark);
-  opacity: 0.5;
+  opacity: 0.6;
   /* backdrop-filter: blur(2px); */
   pointer-events: none;
 }
@@ -501,7 +501,7 @@ body.active::after {
 @media (min-width: 1024px) {
   body.active::after {
     background-color: var(--clr-reg-dark);
-    opacity: 0.5;
+    opacity: 0.6;
   }
 }
 
@@ -888,7 +888,7 @@ body.active::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: auto;
 }
 
 .is-invisible {
@@ -899,7 +899,7 @@ body.active::after {
   position: relative;
   width: 82%;
   height: auto;
-  cursor: pointer;
+  cursor: auto;
   object-fit: contain;
 }
 
@@ -1038,7 +1038,7 @@ body.active::after {
   .slider-btn {
     padding: 0.5rem;
     font-size: 2.25rem;
-    top: 48.5%;
+    top: 47%;
   }
 
   .slider-btn--right {
@@ -1072,7 +1072,7 @@ body.active::after {
   .slider-btn {
     font-size: 2.375rem;
     padding: 0.25rem;
-    top: 48.25%;
+    top: 47%;
   }
 
   .slider-btn--right {
@@ -1127,7 +1127,7 @@ body.active::after {
     color: var(--clr-med-new);
     display: flex;
     position: absolute;
-    font-size: 1.75rem;
+    font-size: 1.875rem;
     right: 3rem;
     bottom: -0.2rem;
     cursor: pointer;
@@ -1266,7 +1266,7 @@ body.active::after {
   .slider-btn {
     font-size: 2.375rem;
     padding: 0.25rem;
-    top: 49.5%;
+    top: 47%;
   }
 
   .slider-btn--right {
@@ -1418,7 +1418,7 @@ body.active::after {
   .slider-btn {
     font-size: 2.375rem;
     padding: 0.25rem;
-    top: 47.5%;
+    top: 47%;
   }
 
   .slider-btn--right {
@@ -1432,6 +1432,7 @@ body.active::after {
   .expand-slider-icon {
     right: 4rem;
     bottom: 0;
+    font-size: 1.95rem;
   }
 
   /* Expanded slider */
