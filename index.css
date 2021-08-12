@@ -81,6 +81,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--clr-reg-dark);
+  overflow-anchor: none;
 }
 
 img {
