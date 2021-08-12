@@ -54,11 +54,11 @@ html {
   background-color: white;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   html {
     background-color: var(--clr-business-name-bg-darker);
   }
-}
+} */
 
 @media (min-width: 1200px) {
   html {
@@ -187,9 +187,9 @@ strong {
 
 @media (min-width: 768px) {
   strong {
-    color: rgba(255, 255, 255, 0.95);
-    font-weight: 500;
-    background-color: transparent;
+    /* color: rgba(255, 255, 255, 0.95); */
+    /* font-weight: 500; */
+    /* background-color: transparent; */
   }
 }
 
@@ -254,28 +254,25 @@ button {
 
 @media (min-width: 768px) {
   .header-container {
-    background-color: var(--clr-business-name-bg-darker);
-    cursor: default;
+    margin: 0 1.75rem;
   }
 
   .header {
     padding: 0;
     margin: 0;
-    background-color: var(--clr-business-name-bg-darker);
-    border-bottom: none;
   }
 
   .business-name-container {
-    padding: 1.1rem 0 0.875rem 1.6rem;
+    padding: 1.75rem 0 1.125rem;
   }
 
   .business-name {
-    color: rgba(255, 255, 255, 0.75);
+    /* color: rgba(255, 255, 255, 0.75); */
     font-size: var(--fs-h2);
   }
 
   .tagline {
-    color: rgba(255, 255, 255, 1);
+    /* color: rgba(255, 255, 255, 1); */
     font-size: 1rem;
     /* padding: 0; */
     margin: 0;
@@ -603,6 +600,7 @@ body.active::after {
 .nav-toggle {
   padding: 1rem 0.425rem;
   background: transparent;
+  background: rgba(255, 255, 255, 0.5);
   border: none;
   cursor: pointer;
   position: fixed;
@@ -619,8 +617,7 @@ body.active::after {
   padding: 1rem 0.5rem;
   top: 0.825rem;
   right: 0.925rem;
-  opacity: 0.75;
-  background: rgba(255, 255, 255, 0.75);
+  opacity: 0.85;
 }
 
 .nav-open .nav-toggle {
@@ -701,7 +698,7 @@ body.active::after {
     position: fixed;
     padding: 1rem 0.5rem;
     opacity: 0.75;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.7);
   }
 
   .hamburger,
