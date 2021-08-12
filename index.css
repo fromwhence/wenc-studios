@@ -1853,7 +1853,6 @@ body.active::after {
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--clr-business-name-bg);
   padding: 0.675rem;
-  /* border-radius: 3px; */
   width: 6.5rem;
   transition: color 200ms;
 }
