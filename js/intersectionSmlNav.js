@@ -26,7 +26,7 @@ const observerOptionsSmall = {
   root: null,
   rootMargin: '0px',
   // threshold: window.innerWidth < 768 ? 0 : 0.25,
-  threshold: 0.3,
+  threshold: 0.2,
 };
 
 function observerCallbackSmall(entries, observerSmall) {
