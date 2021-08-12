@@ -1929,7 +1929,7 @@ body.active::after {
 
 /* Services text to left, image to right at wider screens */
 @media (min-width: 1024px) {
-  .section-subheader--services {
+  .section-subheader-services {
     padding-top: 1.125rem;
     padding-bottom: 1.25rem;
   }
