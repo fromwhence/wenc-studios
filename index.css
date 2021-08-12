@@ -1840,6 +1840,7 @@ body.active::after {
   /* position: absolute;
   bottom: 0;
   left: 0; */
+  font-size: var(--fs-smaller);
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -1848,11 +1849,10 @@ body.active::after {
 
 .full-detail-btn {
   font-size: var(--fs-smaller);
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   padding: 0.5rem 0.75rem;
   background-color: rgba(47, 49, 49, 85%);
-  border: none;
-  border-radius: 0;
+  border-radius: 3px;
   width: 6.5rem;
   transition: color 200ms;
 }
@@ -1860,6 +1860,7 @@ body.active::after {
 .full-detail-btn:hover,
 .full-detail-btn.active {
   color: #fff;
+  background-color: rgba(47, 49, 49, 100%);
 }
 
 .full-detail-btn.active {
@@ -1887,11 +1888,16 @@ body.active::after {
 @media (min-width: 768px) {
   .artwork-detail-container {
     width: 72.5%;
-    margin: 1.675rem auto;
+    margin: 1.675rem auto 1rem;
+  }
+
+  .artwork-detail-buttons {
+    width: 72.5%;
+    margin: auto;
+    margin-bottom: 2rem;
   }
 
   .full-detail-btn {
-    font-size: var(--fs-small);
     width: 7rem;
     padding: 0.75rem 1rem;
   }
@@ -1899,16 +1905,26 @@ body.active::after {
 
 @media (min-width: 1024px) {
   .artwork-detail-container {
-    margin: 1.25rem auto auto;
-    width: 100%;
+    margin: 2rem auto 1rem;
+    width: 90%;
+  }
+
+  .artwork-detail-buttons {
+    width: 90%;
+    margin-bottom: 0;
+    /* margin: auto; */
   }
 }
 
 @media (min-width: 1200px) {
   .artwork-detail-container {
-    margin: 1.5rem auto auto;
+    margin: 2rem auto 1rem;
     width: 87.5%;
     height: auto;
+  }
+
+  .artwork-detail-buttons {
+    width: 87.5%;
   }
 }
 
