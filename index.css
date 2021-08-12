@@ -1844,6 +1844,7 @@ body.active::after {
   padding: 0.675rem 0.75rem;
   /* width: 6.5rem; */
   transition: color 200ms;
+  cursor: pointer;
 }
 
 .full-detail-btn:hover,
@@ -1913,6 +1914,11 @@ body.active::after {
 
   .artwork-detail-buttons {
     width: 87.5%;
+  }
+
+  .full-detail-btn {
+    font-size: var(--fs-small);
+    padding: 0.75rem 1rem;
   }
 }
 
