@@ -1837,9 +1837,9 @@ body.active::after {
 }
 
 .artwork-detail-buttons {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; */
   display: flex;
   width: 100%;
   justify-content: space-between;
