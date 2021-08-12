@@ -2909,7 +2909,7 @@ textarea {
   padding: 0.75rem;
   font-family: inherit;
   font-size: 16px;
-  height: 170px;
+  height: 150px;
   line-height: 1.4rem;
   margin: 0.75rem 0;
   border-radius: 5px;
@@ -3081,6 +3081,7 @@ input {
 }
 
 .form-submit-button.get-started {
+  margin-top: 0.75rem;
   color: rgba(255, 255, 255, 0.85);
   background-color: var(--clr-business-name-bg-darker);
 }
@@ -3103,6 +3104,11 @@ input {
 
   .photoshoot-text {
     margin: 0.5rem 0 0;
+  }
+
+  .form-submit-button.get-started {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .form-group.message {
