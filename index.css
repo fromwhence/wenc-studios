@@ -185,14 +185,6 @@ strong {
   color: var(--clr-business-name-bg);
 }
 
-@media (min-width: 768px) {
-  strong {
-    /* color: rgba(255, 255, 255, 0.95); */
-    /* font-weight: 500; */
-    /* background-color: transparent; */
-  }
-}
-
 button {
   background-color: none;
   cursor: pointer;
