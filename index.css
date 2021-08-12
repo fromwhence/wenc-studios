@@ -710,7 +710,7 @@ body.active::after {
     background: var(--clr-header-med-light);
     width: 2.75em;
     height: 3px;
-    border-radius: 1.25em;
+    /* border-radius: 1.25em; */
     transition: transform 250ms;
   }
 
