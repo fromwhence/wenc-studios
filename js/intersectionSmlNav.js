@@ -26,14 +26,13 @@ const observerOptionsSmall = {
   root: null,
   rootMargin: '0px',
   // threshold: window.innerWidth < 768 ? 0 : 0.25,
-  threshold: 0.25,
+  threshold: 0.3,
 };
 
 function observerCallbackSmall(entries, observerSmall) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // get the nav item corresponding to the id of the section
-      // that is currently in view
+      // get the nav item corresponding to the id of the section that is currently in view
       const navItemSmall = navItemsSmall[entry.target.id];
       // add 'active' class on the navItem
       navItemSmall.classList.add('active');
