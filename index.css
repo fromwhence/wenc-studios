@@ -1895,7 +1895,6 @@ body.active::after {
 
   .full-detail-btn {
     font-size: var(--fs-small);
-    width: 7rem;
     padding: 0.75rem;
   }
 }
