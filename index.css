@@ -305,11 +305,11 @@ button {
 
   .header-container {
     width: 100%;
+    margin: 0;
   }
 
   .header {
-    background-color: #fff;
-    /* border-bottom: 1px solid var(--clr-med-lighter); */
+    border-bottom: none;
   }
 
   .business-name-container--sml {
