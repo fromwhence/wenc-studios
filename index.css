@@ -513,7 +513,7 @@ body.active::after {
 
 .nav-item {
   margin-top: 2.75rem;
-  padding: 0.375rem 0 0.4rem;
+  padding: 0.375rem 0.25rem;
   width: 45%;
   color: var(--clr-business-name-bg);
   font-weight: var(--fw-med);
