@@ -522,7 +522,7 @@ body.active::after {
   width: 45%;
   color: var(--clr-business-name-bg);
   font-weight: var(--fw-med);
-  font-size: 1.125rem;
+  font-size: 1.05rem;
   text-align: center;
   text-transform: capitalize;
 }
