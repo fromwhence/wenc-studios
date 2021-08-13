@@ -406,7 +406,7 @@
                 </div>
                 <p class="section-paragraph--hide section-paragraph--rates">
                   Need a different file format?
-                  <a href="#contact-form-anchor">Just ask</a>.
+                  <a href="#contact">Just ask</a>.
                 </p>
               </div>
               <br />
@@ -898,83 +898,79 @@
                     </p>
                   </div>
                 </div>
-                <div
-                  class="text-contact-form-container"
-                  id="contact-form-anchor"
-                >
-                  <div class="contact-form-header-text">
-                    <h3
-                      class="
-                        section-subheader
-                        contact-sub-header contact-sub-header--contact-form
-                      "
-                    >
-                      Contact Form
-                    </h3>
-                    <p
-                      class="
-                        section-paragraph section-paragraph--contact
-                        left-aligned
-                      "
-                    >
-                      Use the following form to contact us with general
-                      questions. Expect a reply within a maximum of 1-2 business
-                      days.
+                <div class="contact-form-header-text">
+                  <h3
+                    class="
+                      section-subheader
+                      contact-sub-header contact-sub-header--contact-form
+                    "
+                  >
+                    Contact Form
+                  </h3>
+                  <p
+                    class="
+                      section-paragraph section-paragraph--contact
+                      left-aligned
+                    "
+                  >
+                    Use the following form to contact us with general
+                    questions. Expect a reply within a maximum of 1-2 business
+                    days.
+                  </p>
+                  <form
+                    action="https://formspree.io/f/moqyqkgl"
+                    method="POST"
+                    id="contact-form"
+                    class="contact-form-container"
+                  >
+                    <p class="form-group">
+                      <label for="name-contact">First and Last Name</label>
+                      <input
+                        type="text"
+                        id="name-contact"
+                        name="name-contact"
+                        autocapitalize="words"
+                        required
+                      />
                     </p>
-                    <form
-                      action="https://formspree.io/f/moqyqkgl"
-                      method="POST"
-                      id="contact-form"
-                      class="contact-form-container"
-                    >
-                      <p class="form-group">
-                        <label for="name-contact">First and Last Name</label>
-                        <input
-                          type="text"
-                          id="name-contact"
-                          name="name-contact"
-                          autocapitalize="words"
-                          required
-                        />
-                      </p>
 
-                      <p class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required />
-                      </p>
+                    <p class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required />
+                    </p>
 
-                      <p class="form-group">
-                        <label for="phone-contact"
-                          >Phone Number
-                          <span class="extra-small">(optional)</span></label
-                        >
-                        <input
-                          type="tel"
-                          class="phone--contact"
-                          name="phone-contact"
-                          id="phone-contact"
-                          autocomplete="tel"
-                          maxlength="12"
-                        />
-                      </p>
+                    <p class="form-group">
+                      <label for="phone-contact"
+                        >Phone Number
+                        <span class="extra-small">(optional)</span></label
+                      >
+                      <input
+                        type="tel"
+                        class="phone--contact"
+                        name="phone-contact"
+                        id="phone-contact"
+                        autocomplete="tel"
+                        maxlength="12"
+                      />
+                    </p>
 
-                      <p class="form-group">
-                        <label for="message">Message</label>
-                        <textarea
-                          id="message"
-                          name="message"
-                          required
-                        ></textarea>
-                      </p>
+                    <p class="form-group">
+                      <label for="message">Message</label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        required
+                      ></textarea>
+                    </p>
 
-                      <p class="form-group">
-                        <button type="submit" class="form-submit-button">
-                          Submit
-                        </button>
-                      </p>
-                    </form>
-                    <p class="status--contact"></p>
-                  </div>
+                    <p class="form-group">
+                      <button type="submit" class="form-submit-button">
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                  <p class="status--contact"></p>
+                </div>
                 </div>
               </div>
             </section>
