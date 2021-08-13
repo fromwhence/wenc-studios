@@ -2589,8 +2589,7 @@ li.tier--price {
 
   .static-expand-icon,
   .static-expand-icon-2,
-  .sample-expand-icon,
-  .sample-expand-icon-2 {
+  .sample-expand-icon {
     display: inline-block;
     font-size: 1.65rem;
     position: absolute;
