@@ -54,12 +54,6 @@ html {
   background-color: white;
 }
 
-/* @media (min-width: 768px) {
-  html {
-    background-color: var(--clr-business-name-bg-darker);
-  }
-} */
-
 @media (min-width: 1200px) {
   html {
     background-color: white;
