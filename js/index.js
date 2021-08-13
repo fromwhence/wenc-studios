@@ -109,6 +109,16 @@ contactNavItem.addEventListener('click', () => {
   contactId.scrollIntoView({ behavior: 'smooth' });
 });
 
+// Contact scroll to text
+const contactLinks = document.querySelectorAll('.contact-link');
+console.log(contactLinks);
+
+contactLinks.forEach(contactLink => {
+  contactLink.addEventListener('click', event => {
+    contactId.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 // Side nav active assignment
 const sideNavLinks = document.querySelectorAll('.side-nav-link');
 

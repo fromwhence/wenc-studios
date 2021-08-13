@@ -83,14 +83,19 @@ img {
 }
 
 a,
-a:visited {
+a:visited,
+.contact-link,
+.contact-link:visited {
   color: var(--clr-reg-dark);
   font-size: inherit;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 a:hover,
-a:active {
+a:active,
+.contact-link:hover,
+.contact-link:active {
   text-decoration: none;
 }
 
