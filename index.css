@@ -483,7 +483,6 @@ body.active::after {
   height: 100%;
   background-color: var(--clr-reg-dark);
   opacity: 0.6;
-  /* backdrop-filter: blur(2px); */
   pointer-events: none;
 }
 
