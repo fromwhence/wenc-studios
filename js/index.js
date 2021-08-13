@@ -68,6 +68,47 @@ navLinks.forEach(link => {
   });
 });
 
+// Mobile navigation scroll into view
+// About
+const aboutNavItem = document.querySelector('.aboutNavItemSmall');
+const aboutId = document.getElementById('top');
+
+aboutNavItem.addEventListener('click', () => {
+  aboutId.scrollIntoView({ behavior: 'smooth' });
+});
+
+// Services
+const servicesNavItem = document.querySelector('.servicesNavItemSmall');
+const servicesId = document.getElementById('services');
+
+servicesNavItem.addEventListener('click', () => {
+  servicesId.scrollIntoView({ behavior: 'smooth' });
+});
+
+// Rates
+const ratesNavItem = document.querySelector('.ratesNavItemSmall');
+const ratesId = document.getElementById('rates');
+
+ratesNavItem.addEventListener('click', () => {
+  ratesId.scrollIntoView({ behavior: 'smooth' });
+});
+
+// Get Started
+const scheduleNavItem = document.querySelector('.scheduleNavItemSmall');
+const scheduleId = document.getElementById('schedule');
+
+scheduleNavItem.addEventListener('click', () => {
+  scheduleId.scrollIntoView({ behavior: 'smooth' });
+});
+
+// Contact
+const contactNavItem = document.querySelector('.contactNavItemSmall');
+const contactId = document.getElementById('contact');
+
+contactNavItem.addEventListener('click', () => {
+  contactId.scrollIntoView({ behavior: 'smooth' });
+});
+
 // Side nav active assignment
 const sideNavLinks = document.querySelectorAll('.side-nav-link');
 

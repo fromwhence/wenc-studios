@@ -12,6 +12,8 @@ const sectionsSmall = [
   selectElementByClass('contact'),
 ];
 
+console.log(sectionsSmall);
+
 const navItemsSmall = {
   about: selectElementByClass('aboutNavItemSmall'),
   services: selectElementByClass('servicesNavItemSmall'),
@@ -19,6 +21,8 @@ const navItemsSmall = {
   schedule: selectElementByClass('scheduleNavItemSmall'),
   contact: selectElementByClass('contactNavItemSmall'),
 };
+
+console.log(navItemsSmall);
 
 // console.log(thresholdValue);
 // intersection observer setup
