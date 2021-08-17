@@ -1080,6 +1080,7 @@ body.active::after {
 @media (min-width: 1200px) {
   .slide-image {
     width: 60%;
+    cursor: zoom-in;
   }
 
   .slider-btn {

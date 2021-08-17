@@ -4,6 +4,7 @@
 const slider = function () {
   const slider = document.querySelector('.slider');
   const slides = document.querySelectorAll('.slide');
+  const slideImages = document.querySelectorAll('.slide-image');
   const btnLeft = document.querySelector('.slider-btn--left');
   const btnRight = document.querySelector('.slider-btn--right');
   const dotContainer = document.querySelector('.dots');
@@ -52,12 +53,12 @@ const slider = function () {
     resizeSliderHeight();
   });
 
-  // slides.forEach(slide => {
-  //   slide.addEventListener('click', () => {
-  //     sliderContainer.classList.add('expand');
-  //     resizeSliderHeight();
-  //   });
-  // });
+  slideImages.forEach(slideImage => {
+    slideImage.addEventListener('click', () => {
+      sliderContainer.classList.add('expand');
+      resizeSliderHeight();
+    });
+  });
 
   closeExpandedSlider.addEventListener('click', () => {
     sliderContainer.classList.remove('expand');
