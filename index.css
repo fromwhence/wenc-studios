@@ -2556,6 +2556,7 @@ li.tier--price {
   .sample-slider--image-2 {
     width: 72.5%;
     padding: 0 0 0.5rem;
+    cursor: zoom-in;
   }
 
   .sample-slider--btn,

@@ -149,12 +149,13 @@ const sampleStaticImage2 = document.querySelector(
   '.sample-slider--image-static-2'
 );
 
-// sampleStaticImage.addEventListener('click', () => {
-//   closeFullScreenIconStatic.classList.add('active');
-//   expandIconStatic.style.display = 'none';
-//   sampleStaticContainer.classList.add('expand');
-//   resizeSampleSliderHeight();
-// });
+// Expand Tier 1 image on click
+sampleStaticImage.addEventListener('click', () => {
+  closeFullScreenIconStatic.classList.add('active');
+  expandIconStatic.style.display = 'none';
+  sampleStaticContainer.classList.add('expand');
+  resizeSampleSliderHeight();
+});
 
 expandIconStatic.addEventListener('click', () => {
   closeFullScreenIconStatic.classList.add('active');
@@ -171,6 +172,13 @@ closeFullScreenIconStatic.addEventListener('click', () => {
 });
 
 // Tier 3 static version
+sampleStaticImage2.addEventListener('click', () => {
+  closeFullScreenIconStatic2.classList.add('active');
+  expandIconStatic2.style.display = 'none';
+  sampleStaticContainer2.classList.add('expand');
+  resizeSampleSliderHeight();
+});
+
 expandIconStatic2.addEventListener('click', () => {
   closeFullScreenIconStatic2.classList.add('active');
   expandIconStatic2.style.display = 'none';
@@ -192,14 +200,15 @@ const sampleSliderContainerExpanded = document.querySelector(
   '.sample-slider-container'
 );
 
-// sampleSliderImages.forEach(sampleSlide => {
-//   sampleSlide.addEventListener('click', () => {
-//     sampleSliderContainerExpanded.classList.add('expand');
-//     closeFullScreenIcon.classList.add('active');
-//     expandIcon.style.display = 'none';
-//     resizeSampleSliderHeight();
-//   });
-// });
+// Expand tier 2 images
+sampleSliderImages.forEach(sampleSlide => {
+  sampleSlide.addEventListener('click', () => {
+    sampleSliderContainerExpanded.classList.add('expand');
+    closeFullScreenIcon.classList.add('active');
+    expandIcon.style.display = 'none';
+    resizeSampleSliderHeight();
+  });
+});
 
 expandIcon.addEventListener('click', () => {
   closeFullScreenIcon.classList.add('active');

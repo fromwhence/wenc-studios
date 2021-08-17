@@ -111,7 +111,6 @@ contactNavItem.addEventListener('click', () => {
 
 // Contact scroll to text
 const contactLinks = document.querySelectorAll('.contact-link');
-console.log(contactLinks);
 
 contactLinks.forEach(contactLink => {
   contactLink.addEventListener('click', event => {
