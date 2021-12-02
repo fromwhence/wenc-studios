@@ -1005,8 +1005,8 @@ body.active::after {
 
 @media (min-width: 768px) {
   .slide {
-    padding-top: 3.5rem;
-    padding-bottom: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
   }
 
   .slide-image {
@@ -1034,7 +1034,7 @@ body.active::after {
   }
 
   .dots {
-    margin: 0.75rem auto 1.75rem;
+    margin: 0.75rem auto 2.5rem;
     height: 1rem;
   }
 }
