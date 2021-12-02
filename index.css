@@ -3229,8 +3229,7 @@ input {
 }
 
 .contact-details-sub-container {
-  margin: 0.325rem auto 0.5rem;
-  padding-bottom: 0.75rem;
+  margin: 0.325rem auto 0rem;
 }
 
 .contact-details-sub-container:first-of-type {
