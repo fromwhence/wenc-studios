@@ -929,7 +929,7 @@ body.active::after {
 }
 
 .dots {
-  margin: 0.75rem auto 1.675rem;
+  margin: 0.75rem auto 1.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
