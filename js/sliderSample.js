@@ -148,10 +148,12 @@ const sampleStaticImage = document.querySelector(
 const sampleStaticImage2 = document.querySelector(
   '.sample-slider--image-static-2'
 );
+const sampleArtistCredit = document.querySelector('.artist-credit');
 
 // Expand Tier 1 image on click
 sampleStaticImage.addEventListener('click', () => {
   closeFullScreenIconStatic.classList.add('active');
+  sampleArtistCredit.style.display = 'none';
   expandIconStatic.style.display = 'none';
   sampleStaticContainer.classList.add('expand');
   resizeSampleSliderHeight();
@@ -159,6 +161,7 @@ sampleStaticImage.addEventListener('click', () => {
 
 expandIconStatic.addEventListener('click', () => {
   closeFullScreenIconStatic.classList.add('active');
+  sampleArtistCredit.style.display = 'none';
   expandIconStatic.style.display = 'none';
   sampleStaticContainer.classList.add('expand');
   resizeSampleSliderHeight();
@@ -166,6 +169,7 @@ expandIconStatic.addEventListener('click', () => {
 
 closeFullScreenIconStatic.addEventListener('click', () => {
   closeFullScreenIconStatic.classList.remove('active');
+  sampleArtistCredit.style.display = 'inline-block';
   expandIconStatic.style.display = 'inline-block';
   sampleStaticContainer.classList.remove('expand');
   resizeSampleSliderHeight();
