@@ -925,11 +925,15 @@ body.active::after {
 }
 
 .artist-title.artist-credit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex;
+  justify-content: space-between;
+  
   overflow: visible;
-  display: visible;
+  display: visible; */
+  height: 2.625rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .is-hidden {
@@ -2102,7 +2106,7 @@ ul.file-format-list {
 }
 
 .tier--container.first {
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   border: none;
 }
 
@@ -2153,7 +2157,7 @@ li.tier--price {
 
 @media (min-width: 768px) {
   .tier--container.first {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 
   .tier--example-container {
@@ -2226,7 +2230,7 @@ li.tier--price {
   }
 
   .tier--container.first {
-    padding-bottom: 2rem;
+    padding-bottom: 2.75rem;
   }
 
   .tier--description {
@@ -2340,7 +2344,7 @@ li.tier--price {
 }
 
 .sample-slider--image-static {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .sample-slider--btn,
