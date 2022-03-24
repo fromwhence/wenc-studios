@@ -153,7 +153,7 @@ const sampleArtistCredit = document.querySelector('.artist-credit');
 // Expand Tier 1 image on click
 sampleStaticImage.addEventListener('click', () => {
   closeFullScreenIconStatic.classList.add('active');
-  sampleArtistCredit.style.display = 'none';
+  sampleArtistCredit.style.visibility = 'hidden';
   expandIconStatic.style.display = 'none';
   sampleStaticContainer.classList.add('expand');
   resizeSampleSliderHeight();
@@ -161,7 +161,7 @@ sampleStaticImage.addEventListener('click', () => {
 
 expandIconStatic.addEventListener('click', () => {
   closeFullScreenIconStatic.classList.add('active');
-  sampleArtistCredit.style.display = 'none';
+  sampleArtistCredit.style.visibility = 'hidden';
   expandIconStatic.style.display = 'none';
   sampleStaticContainer.classList.add('expand');
   resizeSampleSliderHeight();
@@ -169,7 +169,7 @@ expandIconStatic.addEventListener('click', () => {
 
 closeFullScreenIconStatic.addEventListener('click', () => {
   closeFullScreenIconStatic.classList.remove('active');
-  sampleArtistCredit.style.display = 'inline-block';
+  sampleArtistCredit.style.visibility = 'visible';
   expandIconStatic.style.display = 'inline-block';
   sampleStaticContainer.classList.remove('expand');
   resizeSampleSliderHeight();
