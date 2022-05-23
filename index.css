@@ -1807,7 +1807,7 @@ body.active::after {
   width: 100%;
   height: auto;
   overflow: hidden;
-  border: 1px solid var(--clr-med-lighter);
+  /* border: 1px solid var(--clr-business-name-bg-darker); */
   border-bottom: none;
   margin: 1.375rem auto 0;
 }
@@ -1833,8 +1833,8 @@ body.active::after {
 }
 
 .artwork-detail-buttons {
-  background-color: var(--clr-business-name-bg);
-  border: 1px solid var(--clr-med-lighter);
+  background-color: var(--clr-business-name-bg-darker);
+  /* border: 1px solid var(--clr-business-name-bg-darker); */
   border-top: none;
   font-size: var(--fs-smaller);
   display: flex;
@@ -1846,7 +1846,7 @@ body.active::after {
 .full-detail-btn {
   font-size: var(--fs-smaller);
   color: rgba(255, 255, 255, 0.6);
-  background-color: var(--clr-business-name-bg);
+  background-color: var(--clr-business-name-bg-darker);
   padding: 0.675rem 0.75rem;
   transition: color 200ms;
   cursor: pointer;
