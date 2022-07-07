@@ -3279,7 +3279,7 @@ input {
   width: 90%;
   overflow: hidden;
   padding-top: 66.66%; /* 3:2 Aspect Ratio */
-  margin: 0.7rem auto 1.125rem;
+  margin: 1rem auto 1.125rem;
   border: 1px solid var(--clr-med-lighter);
 }
 
