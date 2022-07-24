@@ -3279,7 +3279,7 @@ input {
   width: 90%;
   overflow: hidden;
   padding-top: 66.66%; /* 3:2 Aspect Ratio */
-  margin: 1rem auto 1.125rem;
+  margin: 1.125rem auto;
   border: 1px solid var(--clr-med-lighter);
 }
 
@@ -3445,7 +3445,7 @@ input {
 
   .google-map--responsive {
     width: 80%;
-    margin: 1rem auto 2rem;
+    margin: 1.5rem auto 2rem;
   }
 
   .contact-sub-header {
@@ -3456,7 +3456,7 @@ input {
 
   .contact-details-sub-container.first {
     margin-top: 1.5rem;
-    margin-bottom: 0.625rem;
+    margin-bottom: 1rem;
   }
 
   .contact-info-container {
@@ -3502,7 +3502,7 @@ input {
 
   .contact-details-sub-container.first {
     margin-top: 0.875rem;
-    margin-bottom: 0.625rem;
+    margin-bottom: 1.125rem;
   }
 
   .google-map--responsive {
