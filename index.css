@@ -843,11 +843,11 @@ body.active::after {
   }
 }
 
-/* @media (min-width: 1336px) {
+@media (min-width: 1336px) {
   .slider {
     height: 616px;
   }
-} */
+}
 
 @media (min-width: 1440px) {
   .slider {
