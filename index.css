@@ -821,7 +821,7 @@ body.active::after {
   width: 100%;
   max-width: 1000px;
   overflow: hidden;
-  margin: 0.575rem auto 0;
+  margin: 0.5rem auto 0;
 }
 
 /* Default slider heights on page load */
@@ -1237,7 +1237,7 @@ body.active::after {
 @media (min-width: 1024px) and (orientation: portrait) {
   .slider-container.expand .slide-image {
     max-width: 82.5%;
-    margin-top: -11%;
+    margin-top: -15%;
   }
 
   .slider-container.expand .slider-btn--left {
@@ -1349,7 +1349,7 @@ body.active::after {
 
 @media (min-width: 1400px) {
   .slide {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     padding-bottom: 4.5rem;
   }
 
@@ -1402,7 +1402,8 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 4.75rem;
   }
 
   .slide-image {
