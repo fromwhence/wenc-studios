@@ -1364,8 +1364,8 @@ body.active::after {
 
 @media (min-width: 1400px) {
   .slide {
-    padding-top: 1.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
 
   .slide-image {
@@ -1417,7 +1417,7 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide {
-    padding-top: 1rem;
+    padding-top: 0.825rem;
     padding-bottom: 4.75rem;
   }
 
