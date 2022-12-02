@@ -1827,7 +1827,9 @@ body.active::after {
   width: 100%;
   height: auto;
   overflow: hidden;
-  /* border: 1px solid var(--clr-business-name-bg-darker); */
+  background-color: var(--clr-business-name-bg-darker);
+  /* border: 1px solid var(--clr-med-lighter); */
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-bottom: none;
   margin: 1.375rem auto 0;
 }
@@ -1855,6 +1857,7 @@ body.active::after {
 .artwork-detail-buttons {
   background-color: var(--clr-business-name-bg-darker);
   /* border: 1px solid var(--clr-business-name-bg-darker); */
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-top: none;
   font-size: var(--fs-smaller);
   display: flex;
