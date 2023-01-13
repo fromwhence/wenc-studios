@@ -28,7 +28,7 @@ async function handleSubmit(event) {
     .then(response => {
       getContactStatus.classList.add('success');
       getContactStatus.innerHTML =
-        'Thank you! We look forward to connecting with you.';
+        'Thank you! I look forward to connecting with you.';
       getContactStatus.addEventListener('click', () => {
         getContactStatus.classList.remove('success');
       });
