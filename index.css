@@ -936,7 +936,7 @@ body.active::after {
 }
 
 .dots {
-  margin: 0.75rem auto 1.75rem;
+  margin: 0.925rem auto 1.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1041,7 +1041,7 @@ body.active::after {
   }
 
   .dots {
-    margin: 0.75rem auto 2.5rem;
+    margin: 0.925rem auto 2.25rem;
     height: 1rem;
   }
 
@@ -1398,7 +1398,7 @@ body.active::after {
     height: 3rem;
     padding: 0;
     padding-bottom: 0;
-    margin: 0rem auto;
+    margin: 0.125rem auto;
   }
 
   /* Expanded slider */
@@ -1455,9 +1455,9 @@ body.active::after {
     right: 12.5%;
   }
 
-  /* .slider-container.expand .dots {
-    bottom: 5%;
-  } */
+  .slider-container.expand .dots {
+    bottom: 4.875%;
+  }
 }
 
 /* Sections */
