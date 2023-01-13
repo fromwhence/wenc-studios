@@ -1704,9 +1704,9 @@ body.active::after {
   }
 
   .about {
-    padding-top: 5.5rem;
+    padding-top: 6.25rem;
     padding-right: 0.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 5.75rem;
     padding-left: 0.5rem;
   }
 }
