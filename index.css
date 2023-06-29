@@ -440,7 +440,7 @@ button {
   .contactNavItem a {
     background-color: #fff;
     color: var(--clr-header-med);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     padding: 0.5rem 1.325rem;
     margin: 0.425rem 0;
     border-radius: 5px;
@@ -448,12 +448,8 @@ button {
     transition: all 100ms;
   }
 
-  .contactNavItem a:hover {
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  }
-
+  .contactNavItem a:hover,
   .contactNavItem.active a {
-    border: 1px solid var(--clr-header-med-light);
     box-shadow: none;
   }
 }
