@@ -3050,7 +3050,7 @@ input {
 
 .form-group label {
   display: block;
-  color: var(--clr-header-wide);
+  color: var(--clr-business-name-bg-darkest);
   font-size: var(--fs-small);
   font-weight: var(--fw-med);
   font-size: var(--fs-small);
