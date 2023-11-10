@@ -3633,10 +3633,10 @@ label.photoshoot-text {
     text-align: left;
   }
 
-  /* .text-contact-form-container {
+  .text-contact-form-container {
     display: grid;
     margin-top: 0.875rem;
-  } */
+  }
 
   .contact-form-container {
     width: 100%;
