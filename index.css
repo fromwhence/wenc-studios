@@ -120,7 +120,7 @@ a:active,
 :focus {
   outline: 2px solid var(--clr-header-wide);
   outline-offset: -2px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .hide {
@@ -443,7 +443,7 @@ button {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     padding: 0.5rem 1.325rem;
     margin: 0.425rem 0;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border: 1px solid var(--clr-header-med-light);
     transition: all 100ms;
   }
@@ -3002,13 +3002,13 @@ textarea {
   height: 90px;
   line-height: 1.35rem;
   margin: 0.75rem 0;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   resize: none;
 }
 
 input {
   border: 1px solid var(--clr-med-lighter);
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background-color: var(--clr-light-form);
   margin-bottom: 0.5rem;
   padding: 0.75rem;
@@ -3073,7 +3073,7 @@ input {
 .form-group textarea:focus {
   background-color: white;
   border: 1px solid var(--clr-header-wide-darker);
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .form-wide input {
@@ -3171,7 +3171,7 @@ label.photoshoot-text {
   font-weight: 500;
   font-size: 1.1rem;
   background-color: var(--clr-header-wide);
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .form-submit-button:hover {
@@ -3189,7 +3189,7 @@ label.photoshoot-text {
 .form-submit-button.get-started:focus {
   background-color: var(--clr-business-name-bg-darkest);
   color: white;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 @media (min-width: 768px) {
