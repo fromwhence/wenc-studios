@@ -3183,12 +3183,12 @@ label.photoshoot-text {
   font-family: inherit;
   font-weight: 500;
   font-size: 1.05rem;
-  background-color: var(--clr-header-med);
+  background-color: var(--clr-header-wide);
   border-radius: 0;
 }
 
 .form-submit-button:hover {
-  background-color: var(--clr-header-wide);
+  background-color: var(--clr-business-name-bg-darker);
   color: white;
 }
 
