@@ -445,7 +445,6 @@ button {
     border: 1px solid var(--clr-header-med-light);
     transition: all 100ms;
     /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); */
-    /* border-radius: 5px; */
   }
 
   .top-nav-item.contactNavItem:hover a {
@@ -2977,10 +2976,13 @@ li.tier--price {
 input:-webkit-autofill {
   border: 1px solid var(--clr-header-wide-darker);
   background-color: white;
+  border-radius: 0;
 }
+
 input:autofill {
   border: 1px solid var(--clr-header-wide-darker);
   background-color: white;
+  border-radius: 0;
 }
 
 input[type='text'],
@@ -2989,6 +2991,7 @@ input[type='tel'],
 input[type='number'],
 textarea {
   -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
 /* Change the white to any color */
@@ -3008,13 +3011,13 @@ textarea {
   height: 7.75rem;
   line-height: 1.35rem;
   margin: 0.75rem 0;
-  /* border-radius: 5px; */
+  border-radius: 0;
   resize: none;
 }
 
 input {
   border: 1px solid var(--clr-med-lighter);
-  /* border-radius: 5px; */
+  border-radius: 0;
   background-color: var(--clr-light-form);
   margin-bottom: 0.5rem;
   padding: 0.75rem;
@@ -3067,12 +3070,14 @@ input {
 
 .form-group input {
   background-color: white;
+  border-radius: 0;
 }
 
 .form-group textarea {
   margin: 0;
   margin-bottom: 0.5rem;
   background-color: white;
+  border-radius: 0;
 }
 
 .form-group input:focus,
@@ -3117,6 +3122,7 @@ label.photoshoot-text {
   cursor: pointer;
   height: 0;
   width: 0;
+  border-radius: 0;
 }
 
 .checkmark {
@@ -3195,7 +3201,7 @@ label.photoshoot-text {
 .form-submit-button.get-started:focus {
   background-color: var(--clr-business-name-bg-darkest);
   color: white;
-  /* border-radius: 5px; */
+  border-radius: 0;
 }
 
 @media (min-width: 768px) {
