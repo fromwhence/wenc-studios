@@ -449,7 +449,7 @@ button {
 
   .top-nav-item.contactNavItem:hover a {
     background-color: #fff;
-    /* border: 1px solid var(--clr-header-med); */
+    border: 1px solid var(--clr-header-med);
   }
 
   .top-nav-item.contactNavItem.active a {
