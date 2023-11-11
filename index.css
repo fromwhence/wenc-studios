@@ -3846,11 +3846,12 @@ a.footer-icon {
 @media (min-width: 1366px) {
   .footer-container {
     font-size: var(--fs-smaller);
-    padding-right: 4rem;
+    padding-right: 3rem;
     padding-left: 4rem;
   }
 
   .scroll-arrow {
     margin-right: 1rem;
+    font-size: 3.5rem;
   }
 }
