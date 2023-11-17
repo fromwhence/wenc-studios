@@ -63,13 +63,13 @@ html {
 
 @media (min-width: 1200px) {
   .anchor {
-    scroll-margin-top: 56px;
+    scroll-margin-top: 52px;
   }
 }
 
 @media (min-width: 1366px) {
   .anchor {
-    scroll-margin-top: 56px;
+    scroll-margin-top: 54px;
   }
 }
 
