@@ -15,7 +15,7 @@ ol[class] {
 }
 
 :root {
-  --clr-light-form: #f1f1f1;
+  --clr-light-form: #ebebeb;
   --clr-med-new: #cccccc;
   --clr-med-lighter: #d8dcdd;
   --clr-header-med-light: #adadad;
@@ -3410,13 +3410,13 @@ label.photoshoot-text {
   max-width: 450px;
   margin: 0.5rem auto 0;
   padding: 1.375rem 1.625rem 2.5rem;
-  background-color: var(--clr-med-lighter);
+  background-color: var(--clr-light-form);
   border-top: 1px solid var(--clr-med-lighter);
 }
 
 @media (min-width: 450px) {
   .contact-form-container {
-    border: 1px solid var(--clr-med-new);
+    border: 1px solid var(--clr-med-lighter);
   }
 
   .section-paragraph--contact {
@@ -3850,6 +3850,6 @@ a.footer-icon {
 
   .scroll-arrow {
     margin-right: 1rem;
-    font-size: 3.375rem;
+    font-size: 3.25rem;
   }
 }
