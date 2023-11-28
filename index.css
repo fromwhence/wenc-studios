@@ -21,13 +21,13 @@ ol[class] {
   --clr-header-med-light: #adadad;
   --clr-header-med: #787f80;
   --clr-header-wide-lighter: #6d7070;
-  --clr-header-wide-lighter-new: #707575;
+  --clr-header-wide-lighter-new: #6d7070;
   --clr-header-wide: #626868;
   --clr-header-wide-darker: #6a6e6e;
   --clr-reg-dark: #1c1c1c;
   --clr-business-name-bg: #4b4e4e;
   --clr-business-name-bg-dark: #484b4b;
-  --clr-business-name-bg-darker: #3b3d3d;
+  --clr-business-name-bg-darker: #353737;
   --clr-business-name-bg-darkest: #2f3131;
   --fw-light: 300;
   --fw-reg: 400;
@@ -456,9 +456,9 @@ button {
   }
 
   .top-nav-item.contactNavItem.active a {
-    background-color: var(--clr-header-med);
+    background-color: #fff;
     border: 1px solid var(--clr-header-med);
-    color: #fff;
+    /* color: #fff; */
   }
 }
 
@@ -1832,7 +1832,6 @@ body.active::after {
   height: auto;
   overflow: hidden;
   background-color: var(--clr-business-name-bg-darker);
-  /* border: 1px solid var(--clr-med-lighter); */
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-bottom: none;
   margin: 1.375rem auto 0;
