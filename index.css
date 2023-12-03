@@ -3410,12 +3410,13 @@ label.photoshoot-text {
   max-width: 450px;
   margin: 0.5rem auto 0;
   padding: 1.375rem 1.625rem 2.5rem;
-  background-color: var(--clr-light-form);
+  background-color: var(--clr-med-lighter);
   border-top: 1px solid var(--clr-med-lighter);
 }
 
 @media (min-width: 450px) {
   .contact-form-container {
+    background-color: var(--clr-light-form);
     border: 1px solid var(--clr-med-lighter);
   }
 
