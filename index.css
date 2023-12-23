@@ -3462,8 +3462,8 @@ label.photoshoot-text {
 .status--get-started.success {
   display: block;
   color: rgba(0, 0, 0, 0.8);
-  background-color: #fff;
-  animation: status 7s ease forwards;
+  background-color: hsl(0, 0%, 100%);
+  animation: status 10s ease forwards;
   border: 1px solid var(--clr-med-new);
   padding: 2.375rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 2px 6px;
@@ -3478,7 +3478,7 @@ label.photoshoot-text {
   display: block;
   color: white;
   background-color: rgb(240, 69, 69);
-  animation: status 7s ease forwards;
+  animation: status 10s ease forwards;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 2px 6px;
 }
 
