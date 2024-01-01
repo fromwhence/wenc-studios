@@ -452,7 +452,7 @@ button {
 
   .top-nav-item.contactNavItem:hover a,
   .top-nav-item.contactNavItem.active a {
-    border: 1px solid var(--clr-header-med);
+    /* border: 1px solid var(--clr-header-med); */
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
 }
