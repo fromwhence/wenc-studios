@@ -1306,7 +1306,7 @@ body.active::after {
 
 @media (min-width: 1366px) {
   .slide {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     padding-bottom: 5rem;
   }
 
@@ -1373,7 +1373,7 @@ body.active::after {
   }
 
   .slider-container.expand .slide {
-    margin-top: -2.5%;
+    margin-top: -2.75%;
   }
 
   .slider-container.expand .slide-image {
