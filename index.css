@@ -2765,7 +2765,7 @@ li.tier--price {
     height: auto;
     max-width: 1200px;
     margin: auto;
-    margin-top: -1rem;
+    margin-top: -1.25rem;
     cursor: auto;
     overflow: visible;
     display: flex;
@@ -2826,7 +2826,7 @@ li.tier--price {
     height: auto;
     max-width: 1200px;
     margin: auto;
-    margin-top: -1rem;
+    margin-top: -1.25rem;
     cursor: auto;
     overflow: visible;
     display: flex;
