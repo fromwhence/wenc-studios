@@ -424,7 +424,8 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--clr-header-med);
-    font-size: var(--fs-smaller);
+    font-size: 0.9rem;
+    /* font-size: var(--fs-smaller); */
     font-weight: var(--fw-med);
     padding: 0.4rem;
     margin: 0;
