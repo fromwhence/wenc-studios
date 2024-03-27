@@ -16,6 +16,7 @@ ol[class] {
 
 :root {
   --clr-light-form: #ebebeb;
+  --clr-light-away-message: #f4f4f4;
   --clr-med-new: #cccccc;
   --clr-med-lighter: #d8dcdd;
   --clr-header-med-light: #adadad;
@@ -189,6 +190,53 @@ button {
   background-color: none;
   cursor: pointer;
   font-family: inherit;
+}
+
+/* Away Message */
+
+.away-text {
+  text-transform: uppercase;
+  color: var(--clr-business-name-bg);
+}
+
+.away-message-mobile,
+.away-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.away-message-mobile p {
+  background-color: var(--clr-light-away-message);
+  font-size: var(--fs-smaller);
+  padding: 0.5rem 1rem;
+  margin-top: -0.425rem;
+  border: 1px solid var(--clr-header-med-light);
+  transition: all 100ms;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .away-message-mobile p {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.away-message p {
+  background-color: var(--clr-light-away-message);
+  font-size: var(--fs-small);
+  padding: 0.8rem 1.275rem;
+  margin-top: -1.5rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--clr-header-med-light);
+  transition: all 100ms;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.away-date {
+  font-weight: var(--fw-bold);
 }
 
 /* Header */

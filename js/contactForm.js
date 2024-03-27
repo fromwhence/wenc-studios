@@ -28,8 +28,8 @@ async function handleSubmit(event) {
     .then(response => {
       contactStatus.classList.add('success');
       contactStatus.innerHTML =
-        'Thank you! I look forward to connecting with you.';
-      // 'Thank you! I will be away until Thursday, 12/28, and look forward to contacting you then.';
+        // 'Thank you! I look forward to connecting with you.';
+        'Thank you! I will be away until Monday, 4/8, and look forward to contacting you then.';
       contactStatus.addEventListener('click', () => {
         contactStatus.classList.remove('success');
       });
