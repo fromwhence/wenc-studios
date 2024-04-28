@@ -77,7 +77,6 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--clr-reg-dark);
-  font-size: 16px;
 }
 
 img {
@@ -124,11 +123,6 @@ a:active,
   outline: 2px solid var(--clr-header-wide);
   outline-offset: -2px;
   /* border-radius: 5px; */
-}
-
-input,
-select {
-  font-size: 100%;
 }
 
 .hide {
