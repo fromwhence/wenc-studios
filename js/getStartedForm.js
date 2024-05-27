@@ -3,7 +3,7 @@
 const getStartedForm = document.getElementById('get-started-form');
 const getStartedPhone = document.querySelector('.phone--get-started');
 
-// Adds hypens to phone input
+// Adds hyphens to phone input
 getStartedPhone.addEventListener('keyup', e => {
   if (
     e.key != 'Backspace' &&

@@ -3,7 +3,7 @@
 const contactForm = document.getElementById('contact-form');
 const contactPhone = document.querySelector('.phone--contact');
 
-// Adds hypens to phone input
+// Adds hyphens to phone input
 contactPhone.addEventListener('keyup', e => {
   if (
     e.key != 'Backspace' &&
