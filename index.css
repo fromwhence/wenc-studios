@@ -1305,7 +1305,7 @@ body.active::after {
 
 @media (min-width: 1024px) and (orientation: portrait) {
   .slider-container.expand .slide-image {
-    max-width: 82.5%;
+    max-height: 75%;
     /* margin-top: -15%; */
   }
 
@@ -1318,11 +1318,13 @@ body.active::after {
   }
 }
 
-@media (min-width: 1180px) {
+/* Expanded slider in progress */
+
+/* @media (min-width: 1180px) {
   .slider-container.expand .slide {
-    /* margin-top: -8.25%; */
+    margin-top: -8.25%;
   }
-}
+} */
 
 @media (min-width: 1280px) {
   .slider {
@@ -1403,27 +1405,29 @@ body.active::after {
     height: 1rem;
   }
 
+  /* Expanded view */
+
   .slider-container.expand .slide {
-    padding-bottom: 0;
     width: 100%;
-    /* margin-top: -4.5%; */
     height: 100%;
+    padding-top: 0rem;
+    padding-bottom: 4.25rem;
   }
 
   .slider-container.expand .slide-image {
-    max-height: 87.5%;
+    max-height: 90%;
   }
 
   .slider-container.expand .slider-btn--left {
-    left: 11.5%;
+    left: 7.5%;
   }
 
   .slider-container.expand .slider-btn--right {
-    right: 11.5%;
+    right: 7.5%;
   }
 
   .slider-container.expand .dots {
-    bottom: 4%;
+    bottom: 3.75%;
   }
 }
 
@@ -1435,15 +1439,6 @@ body.active::after {
 
   .slide-image {
     width: 65.5%;
-  }
-
-  /* IN PROGRESS */
-  .slider-container.expand .slide {
-    padding: 0;
-  }
-
-  .slider-container.expand .slide-image {
-    max-height: 100%;
   }
 
   .slider-btn {
@@ -1466,23 +1461,34 @@ body.active::after {
   }
 
   /* Expanded slider */
+
+  /* IN PROGRESS */
+  .slider-container.expand .slide {
+    padding-top: 0rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .slider-container.expand .slide-image {
+    max-height: 95%;
+  }
+
   .slider-container.expand .dots {
-    bottom: 4.5%;
+    bottom: 4%;
   }
 
   .slider-container.expand .slider-btn--left {
-    left: 13.5%;
+    left: 7.5%;
   }
 
   .slider-container.expand .slider-btn--right {
-    right: 13.5%;
+    right: 7.5%;
   }
 }
 
 @media (min-width: 1600px) {
   .slide {
     padding-top: 1.25rem;
-    padding-bottom: 4.25rem;
+    padding-bottom: 4.5rem;
   }
 
   .slide-image {
@@ -1513,11 +1519,12 @@ body.active::after {
   /* Expanded slider */
   .slider-container.expand .slide {
     /* margin-top: -3.5%; */
-    padding-bottom: 5.25rem;
+    padding-top: 0rem;
+    padding-bottom: 5.5rem;
   }
 
   .slider-container.expand .slide-image {
-    max-height: 96.5%;
+    max-height: 95.5%;
   }
 
   .slider-container.expand .slider-btn--left {
@@ -1529,7 +1536,7 @@ body.active::after {
   }
 
   .slider-container.expand .dots {
-    bottom: 4.875%;
+    bottom: 4.75%;
   }
 }
 
