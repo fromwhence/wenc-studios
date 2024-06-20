@@ -2847,6 +2847,7 @@ li.tier--price {
     background-color: white;
   }
 
+  /* In Progress */
   /* Tier 1 expanded */
   .sample-static-container.expand .sample-slider--static,
   .sample-static-container-2.expand .sample-slider--static {
@@ -2865,31 +2866,34 @@ li.tier--price {
 
   .sample-static-container.expand .sample-slider--image-static,
   .sample-static-container-2.expand .sample-slider--image-static-2 {
-    width: 70%;
+    width: 71.5%;
     height: auto;
     max-width: 1200px;
     margin: auto;
-    margin-top: -1.25rem;
+    padding-bottom: 2rem;
     cursor: auto;
     overflow: visible;
     display: flex;
   }
 
-  .sample-static-container-2.expand .sample-slider--image-static-2 {
+  /* .sample-static-container-2.expand .sample-slider--image-static-2 {
     width: 72%;
-  }
+    padding-bottom: 2rem;
+  } */
 
   .sample-static-container.expand .image-description,
   .sample-static-container-2.expand .image-description {
     width: 100%;
     height: 2.5rem;
     margin: auto;
-    margin-top: 0.5rem;
+    padding-bottom: 4.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: var(--fs-small);
   }
+
+  /* Match formatting of Tier 2 to Tier 1-Static */ 
 
   /* Tier 2 and 3 expanded */
   .sample-slider-container.expand .sample-slider,
