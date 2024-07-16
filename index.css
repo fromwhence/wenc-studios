@@ -1506,11 +1506,11 @@ body.active::after {
 @media (min-width: 1600px) {
   .slide {
     padding-top: 1.5rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 4.75rem;
   }
 
   .slide-image {
-    width: 68%;
+    width: 67.5%;
     /* height: 100%; */
   }
 
@@ -1795,9 +1795,9 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.75rem;
+    padding-top: 4.5rem;
     padding-right: 0.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 4.5rem;
     padding-left: 0.5rem;
   }
 }
@@ -1913,7 +1913,7 @@ body.active::after {
   }
 
   .about-side-text {
-    padding-top: 6rem;
+    padding-top: 6.25rem;
   }
 }
 
