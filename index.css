@@ -2015,13 +2015,13 @@ body.active::after {
     transform: scale(1);
   }
   100% {
-    transform: scale(3.25);
+    transform: scale(3);
   }
 }
 
 @keyframes image-zoom-out {
   0% {
-    transform: scale(3.25);
+    transform: scale(3);
   }
   100% {
     transform: scale(1);
@@ -2058,29 +2058,29 @@ body.active::after {
 
 @media (min-width: 1024px) {
   .artwork-detail-container {
-    margin: 2rem auto 0;
-    width: 90%;
+    margin: 2.5rem auto 0;
+    width: 85%;
   }
 
   .artwork-detail-buttons {
-    width: 90%;
+    width: 85%;
     margin-bottom: 0;
   }
 
   .artist-info {
-    margin-top: 0.325rem;
+    margin-top: 0.4rem;
   }
 }
 
 @media (min-width: 1200px) {
   .artwork-detail-container {
-    margin: 2.5rem auto 0;
-    width: 88.5%;
+    margin: 2.75rem auto 0;
+    width: 85%;
     height: auto;
   }
 
   .artwork-detail-buttons {
-    width: 88.5%;
+    width: 85%;
   }
 
   .full-detail-btn {
@@ -2106,8 +2106,8 @@ body.active::after {
 
   .text-side-image-container {
     display: grid;
-    grid-template-columns: 45% 45%;
-    column-gap: 10%;
+    grid-template-columns: 47% 45%;
+    column-gap: 8%;
     margin-bottom: 2.75rem;
   }
 
@@ -2135,8 +2135,8 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .text-side-image-container {
-    grid-template-columns: 46% 41%;
-    column-gap: 13%;
+    grid-template-columns: 46% 43%;
+    column-gap: 11%;
     margin-bottom: 3.25rem;
   }
 
