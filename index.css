@@ -1505,7 +1505,7 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     padding-bottom: 4.75rem;
   }
 
@@ -1913,7 +1913,7 @@ body.active::after {
   }
 
   .about-side-text {
-    padding-top: 6.25rem;
+    padding-top: 5.75rem;
   }
 }
 
