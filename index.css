@@ -3847,7 +3847,7 @@ label.photoshoot-text {
   font-size: var(--fs-smallest);
   color: rgba(255, 255, 255, 0.9);
   background-color: var(--clr-business-name-bg-darker);
-  padding: 1.625rem 1.5rem 2rem;
+  padding: 1.625rem 1.5rem 2.25rem;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -3891,7 +3891,7 @@ a.footer-icon {
 @media (min-width: 768px) {
   .footer-container {
     font-size: var(--fs-smaller);
-    padding: 1.675rem 2rem 2rem;
+    padding: 1.675rem 2rem 2.5rem;
     margin: 0 auto;
     align-items: center;
   }
