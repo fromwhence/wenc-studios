@@ -1670,8 +1670,7 @@ body.active::after {
   .about,
   .services,
   .schedule,
-  .contact,
-  .footer-container {
+  .contact {
     padding: 2.75rem 3.5rem 3.5rem;
     width: 100%;
     height: auto;
@@ -1705,8 +1704,7 @@ body.active::after {
   .about,
   .services,
   .schedule,
-  .contact,
-  .footer-container {
+  .contact {
     padding: 2.325rem 3.75rem 4rem;
     width: 100%;
     height: auto;
@@ -1731,8 +1729,7 @@ body.active::after {
   .services,
   .rates,
   .schedule,
-  .contact,
-  .footer-container {
+  .contact {
     padding: 2.5rem 4rem 4.5rem;
     width: 100%;
     height: auto;
@@ -1755,8 +1752,7 @@ body.active::after {
   .services,
   .rates,
   .schedule,
-  .contact,
-  .footer-container {
+  .contact {
     padding: 2.5rem 3rem 4.5rem;
     width: 100%;
     height: auto;
@@ -1772,7 +1768,8 @@ body.active::after {
   }
 
   .foooter-container {
-    padding-bottom: 3.25rem;
+    padding: 0;
+    /* padding-bottom: 3.25rem; */
   }
 }
 
@@ -1781,8 +1778,7 @@ body.active::after {
   .services,
   .rates,
   .schedule,
-  .contact,
-  .footer-container {
+  .contact {
     padding-top: 2.675rem;
     width: 100%;
     height: auto;
@@ -3851,7 +3847,7 @@ label.photoshoot-text {
   font-size: var(--fs-smallest);
   color: rgba(255, 255, 255, 0.9);
   background-color: var(--clr-business-name-bg-darker);
-  padding: 1.625rem 1.5rem 2.75rem;
+  padding: 1.625rem 1.5rem 1.725rem;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -3895,7 +3891,7 @@ a.footer-icon {
 @media (min-width: 768px) {
   .footer-container {
     font-size: var(--fs-smaller);
-    padding: 1.675rem 2rem 2.25rem;
+    padding: 1.675rem 2rem 2rem;
     margin: 0 auto;
     align-items: center;
   }
@@ -3938,12 +3934,12 @@ a.footer-icon {
 @media (min-width: 1366px) {
   .footer-container {
     font-size: var(--fs-smaller);
-    padding-right: 3rem;
-    padding-left: 4rem;
+    padding-right: 0.4rem;
+    padding-left: 2.25rem;
   }
 
   .scroll-arrow {
-    margin-right: 1rem;
+    margin-right: 1.125rem;
     font-size: 3.25rem;
   }
 }
