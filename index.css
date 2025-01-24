@@ -1351,6 +1351,11 @@ body.active::after {
 }
 
 @media (min-width: 1280px) {
+  .slide {
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+  }
+
   .slider {
     margin-top: 0;
   }
@@ -1457,7 +1462,7 @@ body.active::after {
 
 @media (min-width: 1400px) {
   .slide {
-    padding-top: 1.25rem;
+    padding-top: 1.5rem;
     padding-bottom: 4rem;
   }
 
@@ -1511,8 +1516,8 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide {
-    padding-top: 1rem;
-    padding-bottom: 4.75rem;
+    padding-top: 1.9rem;
+    padding-bottom: 5rem;
   }
 
   .slide-image {
