@@ -481,7 +481,7 @@ button {
     font-size: 0.95rem;
     /* font-size: var(--fs-smaller); */
     font-weight: var(--fw-med);
-    padding: 0.6rem;
+    padding: 0.65rem 0.6rem;
     margin: 0;
     margin-right: 1.5rem;
     cursor: pointer;
@@ -1758,7 +1758,7 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding: 2.5rem 3rem 4.5rem;
+    padding: 3.5rem 3rem 5.5rem;
     width: 100%;
     height: auto;
   }
@@ -1784,7 +1784,7 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding-top: 2.675rem;
+    padding-top: 4rem;
     width: 100%;
     height: auto;
   }
@@ -1802,9 +1802,9 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.5rem;
+    padding-top: 4.75rem;
     padding-right: 0.5rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 5rem;
     padding-left: 0.5rem;
   }
 }
