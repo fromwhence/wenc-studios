@@ -1463,7 +1463,7 @@ body.active::after {
 @media (min-width: 1400px) {
   .slide {
     padding-top: 1.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 4.5rem;
   }
 
   .slide-image {
@@ -1485,7 +1485,7 @@ body.active::after {
 
   .dots {
     height: 3rem;
-    padding-top: 0.25rem;
+    padding-top: 0.75rem;
     margin: 0rem auto;
   }
 
@@ -1516,7 +1516,7 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide {
-    padding-top: 2rem;
+    padding-top: 1.75rem;
     padding-bottom: 5rem;
   }
 
@@ -1547,8 +1547,8 @@ body.active::after {
 
   /* Expanded slider */
   .slider-container.expand .slide {
-    padding-top: 0rem;
-    padding-bottom: 5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 4.5rem;
   }
 
   .slider-container.expand .slide-image {
@@ -1908,7 +1908,7 @@ body.active::after {
   }
 
   .about-side-text {
-    padding-top: 2.75rem;
+    padding-top: 3rem;
   }
 }
 
@@ -1920,7 +1920,7 @@ body.active::after {
   }
 
   .about-side-text {
-    padding-top: 5rem;
+    padding-top: 5.25rem;
   }
 }
 
