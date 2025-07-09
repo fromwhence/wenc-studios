@@ -2081,13 +2081,14 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .artwork-detail-container {
-    margin: 2.75rem auto 0;
-    width: 85%;
+    margin: 2.75rem 0 0 auto;
+    width: 95%;
     height: auto;
   }
 
   .artwork-detail-buttons {
-    width: 85%;
+    margin-right: 0;
+    width: 95%;
   }
 
   .full-detail-btn {
@@ -2395,8 +2396,8 @@ li.tier--price {
     grid-template-columns: 45% 50%;
     column-gap: 5%;
     border-top: 1px solid var(--clr-med-lighter);
-    padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 2rem;
     margin: 0 3.25rem;
   }
 
@@ -2489,7 +2490,7 @@ li.tier--price {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 750ms;
+  transition: opacity 750ms;it
 }
 
 .sample-slider--slide.current-slide,
@@ -2750,8 +2751,9 @@ li.tier--price {
   .sample-slider--image-static-2,
   .sample-slider--image,
   .sample-slider--image-2 {
-    width: 72.5%;
-    padding: 0 0 0.5rem;
+    width: 80%;
+    padding: 0 0 0.75rem;
+    margin-top: 0;
     cursor: zoom-in;
     pointer-events: all;
   }
@@ -2873,7 +2875,7 @@ li.tier--price {
 
   .sample-static-container.expand .sample-slider--image-static,
   .sample-static-container-2.expand .sample-slider--image-static-2 {
-    width: 71.5%;
+    width: 72.5%;
     height: auto;
     max-width: 1200px;
     margin: auto;
@@ -2990,7 +2992,7 @@ li.tier--price {
   .sample-slider--image-static,
   .sample-slider--image,
   .sample-slider--image-2 {
-    width: 70%;
+    width: 73.5%;
     height: auto;
   }
 
