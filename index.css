@@ -15,16 +15,17 @@ ol[class] {
 }
 
 :root {
-  --clr-light-form: #f1f1f1;
+  --clr-light-form: #f2f2f2;
   --clr-light-away-message: #f4f4f4;
   --clr-med-new: #cccccc;
   --clr-med-lighter: #d8dcdd;
   --clr-header-med-light: #adadad;
   --clr-header-med: #787f80;
   --clr-header-wide-lighter: #6d7070;
-  --clr-header-wide-lighter-new: #666969;
+  /* --clr-header-wide-lighter-new: #666969; Old */
+  --clr-header-wide-lighter-new: #484b4b;
   --clr-header-wide: #626868;
-  --clr-header-wide-darker: #6a6e6e;
+  --clr-header-wide-darker: #585b5b;
   --clr-reg-dark: #1c1c1c;
   --clr-business-name-bg: #4b4e4e;
   --clr-business-name-bg-dark: #484b4b;
@@ -1820,7 +1821,7 @@ body.active::after {
 .section-subheader {
   font-size: var(--fs-h4);
   padding: 1rem 0;
-  color: var(--clr-header-wide-lighter-new);
+  color: var(--clr-header-med);
 }
 
 .section-paragraph {
@@ -1936,7 +1937,7 @@ body.active::after {
   width: 100%;
   height: auto;
   overflow: hidden;
-  background-color: var(--clr-business-name-bg-darker);
+  background-color: var(--clr-header-wide-darker);
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-bottom: none;
   margin: 1.375rem auto 0;
@@ -1963,8 +1964,7 @@ body.active::after {
 }
 
 .artwork-detail-buttons {
-  background-color: var(--clr-business-name-bg-darker);
-  /* border: 1px solid var(--clr-business-name-bg-darker); */
+  background-color: var(--clr-header-wide-darker);
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-top: none;
   font-size: var(--fs-smallest);
@@ -1977,7 +1977,7 @@ body.active::after {
 .full-detail-btn {
   font-size: var(--fs-smallest);
   color: rgba(255, 255, 255, 0.6);
-  background-color: var(--clr-business-name-bg-darker);
+  background-color: var(--clr-header-wide-darker);
   padding: 0.675rem 0.75rem;
   transition: color 200ms;
   cursor: pointer;
@@ -2129,7 +2129,7 @@ body.active::after {
 
   .services .side-by-side-text {
     border: 1px solid rgba(255, 255, 255, 0.4);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--clr-header-wide-darker);
   }
 
   .section-subheader--side {
@@ -3146,7 +3146,7 @@ input {
 @media (min-width: 600px) {
   .get-started--form-container {
     border: 1px solid rgba(255, 255, 255, 0.4);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--clr-header-wide-darker);
     padding: 1.75rem 1.5rem 1.275rem;
     margin: 1rem auto 0;
   }
@@ -3292,26 +3292,28 @@ label.photoshoot-text {
   font-family: inherit;
   font-weight: 500;
   font-size: 1.05rem;
-  background-color: var(--clr-header-wide);
+  background-color: var(--clr-header-med);
   border-radius: 0;
 }
 
 .form-submit-button:hover {
-  background-color: var(--clr-business-name-bg-darker);
+  background-color: var(--clr-header-wide-darker);
   color: white;
 }
 
 .form-submit-button.get-started {
   margin-top: 0.825rem;
   color: rgba(255, 255, 255, 0.85);
-  background-color: var(--clr-business-name-bg-darker);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--clr-business-name-bg-darkest);
 }
 
 .form-submit-button.get-started:hover,
 .form-submit-button.get-started:focus {
-  background-color: var(--clr-business-name-bg-darkest);
+  background-color: #202020;
   color: white;
   border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 @media (min-width: 768px) {
