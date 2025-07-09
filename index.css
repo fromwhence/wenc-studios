@@ -1964,7 +1964,7 @@ body.active::after {
 }
 
 .artwork-detail-buttons {
-  background-color: var(--clr-header-wide-darker);
+  background-color: var(--clr-business-name-bg-darker);
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-top: none;
   font-size: var(--fs-smallest);
@@ -1977,7 +1977,7 @@ body.active::after {
 .full-detail-btn {
   font-size: var(--fs-smallest);
   color: rgba(255, 255, 255, 0.6);
-  background-color: var(--clr-header-wide-darker);
+  background-color: var(--clr-business-name-bg-darker);
   padding: 0.675rem 0.75rem;
   transition: color 200ms;
   cursor: pointer;
