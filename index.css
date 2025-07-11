@@ -1486,7 +1486,7 @@ body.active::after {
 
   .dots {
     height: 3rem;
-    padding-top: 0.75rem;
+    padding-top: 0.25rem;
     margin: 0rem auto;
   }
 
@@ -1517,7 +1517,7 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide {
-    padding-top: 1.75rem;
+    padding-top: 1.425rem;
     padding-bottom: 5rem;
   }
 
@@ -1798,7 +1798,7 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .section-content-container {
-    max-width: 1250px;
+    max-width: 1260px;
     margin: 0 auto;
   }
 
