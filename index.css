@@ -1499,7 +1499,7 @@ body.active::after {
   }
 
   .slider-container.expand .slide-image {
-    max-height: 94.5%;
+    max-height: 94%;
   }
 
   .slider-container.expand .dots {
@@ -1553,7 +1553,7 @@ body.active::after {
   }
 
   .slider-container.expand .slide-image {
-    max-height: 95.5%;
+    max-height: 94%;
   }
 
   .slider-container.expand .slider-btn--left {
