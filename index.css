@@ -1805,8 +1805,18 @@ body.active::after {
   .about {
     padding-top: 4.625rem;
     padding-right: 0.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4.75rem;
     padding-left: 0.5rem;
+  }
+
+  .services,
+  .rates,
+  .schedule,
+  .contact {
+    padding-top: 3.75rem;
+    padding-bottom: 5.5rem;
+    width: 100%;
+    height: auto;
   }
 }
 
