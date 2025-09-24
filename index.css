@@ -1002,8 +1002,8 @@ body.active::after {
 
 .dots-dot {
   border: none;
-  height: 0.4rem;
-  width: 0.4rem;
+  height: 0.35rem;
+  width: 0.35rem;
   margin: 0 0.75rem;
   padding: 0.325rem;
   cursor: pointer;
