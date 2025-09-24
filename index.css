@@ -1002,8 +1002,8 @@ body.active::after {
 
 .dots-dot {
   border: none;
-  height: 0.5rem;
-  width: 0.5rem;
+  height: 0.4rem;
+  width: 0.4rem;
   margin: 0 0.75rem;
   padding: 0.325rem;
   cursor: pointer;
@@ -1518,11 +1518,11 @@ body.active::after {
 @media (min-width: 1600px) {
   .slide {
     padding-top: 1.425rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4.825rem;
   }
 
   .slide-image {
-    width: 67.5%;
+    width: 67%;
     /* height: 100%; */
   }
 
@@ -1798,14 +1798,14 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .section-content-container {
-    max-width: 1260px;
+    max-width: 1280px;
     margin: 0 auto;
   }
 
   .about {
-    padding-top: 4.75rem;
+    padding-top: 4.625rem;
     padding-right: 0.5rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 5rem;
     padding-left: 0.5rem;
   }
 }
@@ -1921,7 +1921,7 @@ body.active::after {
   }
 
   .about-side-text {
-    padding-top: 5.25rem;
+    padding-top: 5.5rem;
   }
 }
 
