@@ -1797,8 +1797,13 @@ body.active::after {
 }
 
 @media (min-width: 1600px) {
-  .section-content-container {
+  .section-content-container .about {
     max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .section-content-container {
+    max-width: 1300px;
     margin: 0 auto;
   }
 
@@ -1813,8 +1818,7 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding-top: 3.75rem;
-    padding-bottom: 5.5rem;
+    padding: 3.75rem 2rem 5.5rem;
     width: 100%;
     height: auto;
   }
@@ -2091,7 +2095,7 @@ body.active::after {
 
 @media (min-width: 1200px) {
   .artwork-detail-container {
-    margin: 2.75rem 0 0 auto;
+    margin: 1.75rem 0 0 auto;
     width: 95%;
     height: auto;
   }
@@ -2108,6 +2112,8 @@ body.active::after {
 
   .artist-info {
     font-size: var(--fs-smaller);
+    margin-top: 0.75rem;
+ 
   }
 
   .artist-info a {
