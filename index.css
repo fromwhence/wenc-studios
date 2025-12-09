@@ -450,6 +450,7 @@ button {
     vertical-align: center;
     color: var(--clr-business-name-bg-darker);
     font-weight: var(--fw-reg);
+    font-size: 1.15rem;
     margin: 0;
     padding: 0;
   }
@@ -479,7 +480,7 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--clr-header-med);
-    font-size: 0.95rem;
+    font-size: 1rem;
     /* font-size: var(--fs-smaller); */
     font-weight: var(--fw-med);
     padding: 0.65rem 0.6rem;
