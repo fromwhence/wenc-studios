@@ -2382,8 +2382,8 @@ li.tier--price {
 @media (min-width: 1024px) {
   .file-format-text-container {
     display: grid;
-    grid-template-columns: 50% 38%;
-    column-gap: 12%;
+    grid-template-columns: 50% 35%;
+    column-gap: 15%;
     padding: 2rem 2.125rem 2.25rem;
     margin: 0 3.25rem 0.25rem;
     background-color: var(--clr-light-form);
