@@ -181,6 +181,7 @@ li::marker {
 
 strong {
   color: var(--clr-header-med);
+  font-weight: 500;
 }
 
 .bold-text {
