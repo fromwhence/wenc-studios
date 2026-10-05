@@ -262,7 +262,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.275rem 0 0.2rem;
+  padding: 1.275rem 0 0;
   margin: 0 1.625rem;
   /* background-color: white; */
   border-bottom: 1px solid var(--clr-med-lighter);
@@ -283,7 +283,7 @@ button {
 
 .business-name {
   font-size: var(--fs-h1);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   text-transform: uppercase;
   font-weight: var(--fw-light);
 }
@@ -322,7 +322,7 @@ button {
 
   .tagline {
     /* color: rgba(255, 255, 255, 1); */
-    font-size: 1rem;
+    font-size: 1.1rem;
     /* padding: 0; */
     margin: 0;
   }
