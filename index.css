@@ -262,7 +262,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.3rem 0 0.25rem;
+  padding: 1.275rem 0 0.2rem;
   margin: 0 1.625rem;
   /* background-color: white; */
   border-bottom: 1px solid var(--clr-med-lighter);
@@ -283,6 +283,7 @@ button {
 
 .business-name {
   font-size: var(--fs-h1);
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: var(--fw-light);
 }
@@ -1487,8 +1488,8 @@ body.active::after {
   }
 
   .dots {
-    height: 3rem;
-    padding-top: 0.3rem;
+    height: 2.75rem;
+    padding-top: 0rem;
     margin: 0rem auto;
   }
 
@@ -1519,12 +1520,12 @@ body.active::after {
 
 @media (min-width: 1600px) {
   .slide {
-    padding-top: 1.425rem;
-    padding-bottom: 4.825rem;
+    padding-top: 1.2rem;
+    padding-bottom: 4.25rem;
   }
 
   .slide-image {
-    width: 67%;
+    width: 68%;
     /* height: 100%; */
   }
 
@@ -1546,6 +1547,7 @@ body.active::after {
     right: 4rem;
     bottom: 0rem;
     font-size: 1.95rem;
+    background-color: white;
   }
 
   /* Expanded slider */
@@ -1555,7 +1557,7 @@ body.active::after {
   }
 
   .slider-container.expand .slide-image {
-    max-height: 94%;
+    max-height: 96.5%;
   }
 
   .slider-container.expand .slider-btn--left {
@@ -1721,7 +1723,7 @@ body.active::after {
   .about {
     padding-top: 5rem;
     padding-right: 4rem;
-    padding-bottom: 3.5rem;
+    padding-bottom: 3rem;
     padding-left: 2.5rem;
   }
 }
@@ -1745,7 +1747,7 @@ body.active::after {
 
   .about {
     padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     padding-left: 2rem;
   }
 }
@@ -1768,7 +1770,7 @@ body.active::after {
 
   .about {
     padding-top: 5rem;
-    padding-bottom: 3.5rem;
+    padding-bottom: 3rem;
   }
 
   .contact {
@@ -1787,14 +1789,14 @@ body.active::after {
   .rates,
   .schedule,
   .contact {
-    padding-top: 3.5rem;
+    padding-top: 3rem;
     width: 100%;
     height: auto;
   }
 
   .about {
-    padding-top: 4.75rem;
-    padding-bottom: 5rem;
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -1810,9 +1812,9 @@ body.active::after {
   }
 
   .about {
-    padding-top: 4.625rem;
+    padding-top: 4.25rem;
     padding-right: 0.5rem;
-    padding-bottom: 4.75rem;
+    padding-bottom: 3rem;
     padding-left: 0.5rem;
   }
 
@@ -1882,14 +1884,14 @@ body.active::after {
 
   .about-side-text {
     padding: 0;
-    padding-top: 0.325rem;
+    padding-top: 1.75rem;
   }
 }
 
 @media (min-width: 1100px) {
   .about-side-text {
     padding: 0;
-    padding-top: 1.5rem;
+    padding-top: 3rem;
   }
 }
 
@@ -1913,31 +1915,31 @@ body.active::after {
   }
 
   .about-side-text {
-    padding-top: 2.5rem;
+    padding-top: 3rem;
   }
 }
 
 @media (min-width: 1440px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 65% 30%;
-    column-gap: 5%;
+    grid-template-columns: 65% 29.5%;
+    column-gap: 5.5%;
   }
 
   .about-side-text {
-    padding-top: 3rem;
+    padding-top: 3.5rem;
   }
 }
 
 @media (min-width: 1600px) {
   .slider-side-text-container {
     display: grid;
-    grid-template-columns: 63.5% 30%;
-    column-gap: 6.5%;
+    grid-template-columns: 64.5% 30.5%;
+    column-gap: 5%;
   }
 
   .about-side-text {
-    padding-top: 5.5rem;
+    padding-top: 6.25rem;
   }
 }
 
